@@ -1,14 +1,40 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
-
 title: Introduction to Materials Informatics
 author: Enze Chen, Mark Asta
+copyright: "2021"
 logo: mi_logo.png
+only_build_toc_files: true
+
+
+# Information about where the book exists on the web
+repository:
+  url: https://github.com/enze-chen/mi-book  # Online location of your book
+  branch: master  # Which branch of the repository should be used when creating links (optional)
+
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
-  execute_notebooks: force
+  execute_notebooks: auto
+  timeout: 100
+  allow_errors: true
+
+
+# Add GitHub buttons to your book
+# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+html:
+  use_issues_button: true
+  use_repository_button: true
+  favicon: "mi_favicon.png"
+
+
+# Launch button settings
+launch_buttons:
+  notebook_interface        : classic 
+  binderhub_url             : https://mybinder.org 
+  colab_url                 : https://colab.research.google.com
+
 
 # Define the name of the latex output file for PDF builds
 latex:
@@ -19,15 +45,3 @@ latex:
 bibtex_bibfiles:
   - references.bib
 bibtex_reference_style: author_year
-
-# Information about where the book exists on the web
-repository:
-  url: https://github.com/enze-chen/mi-book  # Online location of your book
-  branch: master  # Which branch of the repository should be used when creating links (optional)
-
-# Add GitHub buttons to your book
-# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
-html:
-  use_issues_button: true
-  use_repository_button: true
-  favicon: "mi_favicon.png"

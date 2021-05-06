@@ -52,6 +52,10 @@ In your built book.
 For more information on writing directives, see the
 [MyST documentation](https://myst-parser.readthedocs.io/).
 
+```{margin} **ta-da!**
+Here's a tip!
+```
+
 
 ### Using a role
 
