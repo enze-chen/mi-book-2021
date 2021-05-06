@@ -4,6 +4,6 @@
 - file: intro
 - file: content
   sections:
-    - file: markdown
-    - file: notebooks
-    - file: mymarkdown
+    - file: template/markdown
+    - file: template/notebooks
+    - file: template/mymarkdown
