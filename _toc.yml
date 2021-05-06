@@ -2,7 +2,7 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 #
 - file: intro
-- file: content
+- file: week_1/content
   sections:
     - file: template/markdown
     - file: template/notebooks
