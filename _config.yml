@@ -27,6 +27,7 @@ html:
   use_issues_button: true
   use_repository_button: true
   favicon: "mi_favicon.png"
+  extra_footer: <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
 
 
 # Launch button settings
@@ -34,6 +35,18 @@ launch_buttons:
   notebook_interface        : classic 
   binderhub_url             : https://mybinder.org 
   colab_url                 : https://colab.research.google.com
+
+
+# Parse and render settings
+parse:
+  myst_enable_extensions:  # default extensions to enable in the myst parser. See https://myst-parser.readthedocs.io/en/latest/using/syntax-optional.html
+    - amsmath
+    - colon_fence
+    - dollarmath
+    - linkify
+    - substitution
+
+  myst_url_schemes          : [mailto, http, https]  # URI schemes that will be recognised as external URLs in Markdown links
 
 
 # Define the name of the latex output file for PDF builds
