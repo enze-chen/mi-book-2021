@@ -19,18 +19,14 @@ These citations are more relevant {cite}`jain_2016,petousis_2017`
 :filter: docname in docnames
 ```
 
+% This HTML activates utterances only on this page
+```{raw} html
 <script src="https://utteranc.es/client.js"
-        repo="https://github.com/enze-chen/enze-chen.github.io"
+        repo="enze-chen/mi-book"
         issue-term="pathname"
         theme="github-light"
         crossorigin="anonymous"
-        async>
-</script>
-
-<script src="https://utteranc.es/client.js"
-        repo="https://github.com/enze-chen/mi-book"
-        issue-term="pathname"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>
+        async="async"
+        type="text/javascript"
+/>
+```
