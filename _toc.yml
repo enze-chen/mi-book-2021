@@ -4,6 +4,7 @@
 - file: intro
   numbered: 3
 
+
 - part: Week 1️⃣
   chapters:
   - file: week_1/content
@@ -11,9 +12,11 @@
   - file: template/notebooks
   - file: template/mymarkdown
 
+
 - part: Week 2️⃣
   chapters:
   - file: week_2/content2
+
 
 - part: Week 3️⃣
   chapters:

@@ -1,5 +1,7 @@
-jupyter-book==0.10.2
+#jupyter-book==0.10.2
+jupytext>=1.10
 matplotlib>=3.3
 numpy>=1.20
 pandas>=1.2
 scikit-learn>=0.24
+nbgitpuller>=0.8
