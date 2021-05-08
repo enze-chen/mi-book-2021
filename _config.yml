@@ -1,40 +1,48 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
-title: Introduction to Materials Informatics
-author: Enze Chen, Mark Asta
-copyright: "2021"
-logo: mi_logo.png
-only_build_toc_files: true
+title                 : Introduction to Materials Informatics
+author                : Enze Chen, Mark Asta
+copyright             : "2021"
+logo                  : mi_logo.png
+only_build_toc_files  : true
 
 
-# Information about where the book exists on the web
-repository:
-  url: https://github.com/enze-chen/mi-book  # Online location of your book
-  branch: master  # Which branch of the repository should be used when creating links (optional)
-
-
+#######################################################################################
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
-  execute_notebooks: auto
-  timeout: 100
-  allow_errors: true
+  execute_notebooks   : auto
+  timeout             : 300
+  allow_errors        : true
 
 
+#######################################################################################
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
-  use_issues_button: true
+  use_edit_button     : false
+  use_issues_button   : true
   use_repository_button: true
-  favicon: "mi_favicon.png"
-  extra_footer: <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+  favicon             : "mi_favicon.png"
+  baseurl             : https://enze-chen.github.io/mi-book   # The base URL where your book will be hosted. Used for creating image previews and social links.
+  extra_footer        : |
+    <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+      <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" />
+    </a>
 
 
+#######################################################################################
 # Launch button settings
 launch_buttons:
   notebook_interface        : classic 
   binderhub_url             : https://mybinder.org 
   colab_url                 : https://colab.research.google.com
+
+# Information about where the book exists on the web
+repository:
+  url                 : https://github.com/enze-chen/mi-book 
+  path_to_book        : ""
+  branch              : master  # source branch
 
 
 # Parse and render settings
@@ -52,9 +60,16 @@ parse:
 # Define the name of the latex output file for PDF builds
 latex:
   latex_documents:
-    targetname: book.tex
+    targetname              : book.tex
 
 # Add a bibtex file so that we can create citations
 bibtex_bibfiles:
   - references.bib
-bibtex_reference_style: author_year
+bibtex_reference_style      : author_year
+
+
+# Advanced and power-user settings
+sphinx:
+  config:
+    html_extra_path         : ['assets']
+    language                : en
