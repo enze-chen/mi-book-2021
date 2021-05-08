@@ -20,6 +20,14 @@ These citations are more relevant {cite}`jain_2016,petousis_2017`
 ```
 
 <script src="https://utteranc.es/client.js"
+        repo="https://github.com/enze-chen/enze-chen.github.io"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+<script src="https://utteranc.es/client.js"
         repo="https://github.com/enze-chen/mi-book"
         issue-term="pathname"
         theme="github-light"
