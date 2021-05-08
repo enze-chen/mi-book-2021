@@ -12,6 +12,8 @@ Here is a reference to [](section-label).
 
 Here is my nifty citation {cite}`ruby`.
 
+These citations are more relevant {cite}`jain_2016,petousis_2017`
+
 ```{bibliography}
 :style: unsrt
 :filter: docname in docnames

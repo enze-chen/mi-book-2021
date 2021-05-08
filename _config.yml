@@ -1,31 +1,32 @@
-# Book settings
-# Learn more at https://jupyterbook.org/customize/config.html
-title                 : Introduction to Materials Informatics
-author                : Enze Chen, Mark Asta
-copyright             : "2021"
-logo                  : mi_logo.png
-only_build_toc_files  : true
+# Book settings. Learn more at https://jupyterbook.org/customize/config.html
+title                       : Introduction to Materials Informatics
+author                      : Enze Chen, Mark Asta
+copyright                   : "2021" 
+logo                        : mi_logo.png   # logo in top-left corner
+only_build_toc_files        : true          # ignore the extra files
+exclude_patterns            : []
 
 
 #######################################################################################
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
-  execute_notebooks   : auto
-  timeout             : 300
-  allow_errors        : true
+  execute_notebooks         : force      # force build. Can also be 'auto' or 'cache'
+  timeout                   : 300       # max seconds for notebook to execute
+  allow_errors              : true      # allow and show errors
+
 
 
 #######################################################################################
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
-  use_edit_button     : false
-  use_issues_button   : true
-  use_repository_button: true
-  favicon             : "mi_favicon.png"
-  baseurl             : https://enze-chen.github.io/mi-book   # The base URL where your book will be hosted. Used for creating image previews and social links.
-  extra_footer        : |
+  use_edit_page_button      : true      # button for users to edit page and submit a PR
+  use_issues_button         : true      # button for users to submit a GitHub issue
+  use_repository_button     : true      # button for users to look at the source code
+  favicon                   : "mi_favicon.png"
+  baseurl                   : https://enze-chen.github.io/mi-book   # The base URL where the book is hosted
+  extra_footer              : |
     <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
       <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" />
     </a>
@@ -41,36 +42,41 @@ launch_buttons:
 
 # Information about where the book exists on the web
 repository:
-  url                 : https://github.com/enze-chen/mi-book 
-  path_to_book        : ""
-  branch              : master  # source branch
+  url                       : https://github.com/enze-chen/mi-book 
+  path_to_book              : ""
+  branch                    : master  # source branch
 
 
+
+#######################################################################################
 # Parse and render settings
 parse:
-  myst_enable_extensions:  # default extensions to enable in the myst parser. See https://myst-parser.readthedocs.io/en/latest/using/syntax-optional.html
-    - amsmath
-    - colon_fence
-    - dollarmath
-    - linkify
-    - substitution
+  myst_enable_extensions:   # default extensions to enable in the myst parser. See https://myst-parser.readthedocs.io/en/latest/using/syntax-optional.html
+    - amsmath               # LaTeX math
+    - colon_fence           # cleaner directives
+    - dollarmath            # in-line LaTeX
+    - linkify               # something with links
+    - substitution          # allows variable/dictionary substitution
 
   myst_url_schemes          : [mailto, http, https]  # URI schemes that will be recognised as external URLs in Markdown links
 
 
+#######################################################################################
 # Define the name of the latex output file for PDF builds
 latex:
+  latex_engine              : pdflatex
   latex_documents:
     targetname              : book.tex
 
 # Add a bibtex file so that we can create citations
-bibtex_bibfiles:
-  - references.bib
+bibtex_bibfiles             : [references.bib]
 bibtex_reference_style      : author_year
 
 
+#######################################################################################
 # Advanced and power-user settings
 sphinx:
   config:
-    html_extra_path         : ['assets']
-    language                : en
+    html_extra_path         : ['assets']   
+    language                : en   # for accessibility
+    mathjax_path            : https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js  # faster by 60-80%
