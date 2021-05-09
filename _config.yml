@@ -32,11 +32,11 @@ html:
     </a>
   comments:
     hypothesis              : true
-    utterances:
-      repo                  : "enze-chen/mi-book"
-      issue-term            : "pathname"
-      theme                 : "github-light"
-      crossorigin           : "anonymous"
+    # utterances:
+    #   repo                  : "enze-chen/mi-book"
+    #   issue-term            : "pathname"
+    #   theme                 : "github-light"
+    #   crossorigin           : "anonymous"
 
 
 #######################################################################################
@@ -83,7 +83,7 @@ latex:
     targetname              : book.tex
 
 # Add a bibtex file so that we can create citations
-bibtex_bibfiles             : [references.bib]
+bibtex_bibfiles             : ["assets/files/references.bib"]
 bibtex_reference_style      : author_year
 
 
@@ -91,6 +91,6 @@ bibtex_reference_style      : author_year
 # Advanced and power-user settings
 sphinx:
   config:
-    html_extra_path         : ['assets']   
+    html_extra_path         : ["assets"]
     language                : en   # for accessibility
     mathjax_path            : https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js  # faster by 60-80%
