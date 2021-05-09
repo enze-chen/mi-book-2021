@@ -20,7 +20,7 @@ These citations are more relevant {cite}`jain_2016,petousis_2017`
 :filter: docname in docnames
 ```
 
-% This HTML activates utterances only on this page
+<!-- % This HTML activates utterances only on this page
 ```{raw} html
 <script src="https://utteranc.es/client.js"
         repo="enze-chen/mi-book"
@@ -30,4 +30,4 @@ These citations are more relevant {cite}`jain_2016,petousis_2017`
         async="async"
         type="text/javascript"
 />
-```
+``` --> 
