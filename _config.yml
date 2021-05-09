@@ -4,7 +4,7 @@ author                      : Enze Chen, Mark Asta
 copyright                   : "2021" 
 logo                        : mi_logo.png   # logo in top-left corner
 only_build_toc_files        : true          # ignore the extra files
-exclude_patterns            : []
+exclude_patterns            : [README*]
 
 
 #######################################################################################
@@ -33,6 +33,9 @@ html:
   comments:
     utterances:
       repo                  : "https://github.com/enze-chen/mi-book"
+      issue-term            : "pathname"
+      theme                 : "github-light"
+      crossorigin           : "anonymous"
 
 
 #######################################################################################
