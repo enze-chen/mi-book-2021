@@ -12,9 +12,9 @@
   numbered        : 2
   chapters:
   - file          : week_1/content
-  - file          : template/markdown
-  - file          : template/notebooks
-  - file          : template/mymarkdown
+  - file          : week_1/markdown
+  - file          : week_1/notebooks
+  - file          : week_1/mymarkdown
 
 
 - part            : Week 2️⃣

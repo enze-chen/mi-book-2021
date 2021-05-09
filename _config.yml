@@ -3,7 +3,7 @@ title                       : Introduction to Materials Informatics
 author                      : Enze Chen, Mark Asta
 copyright                   : "2021" 
 logo                        : mi_logo.png   # logo in top-left corner
-only_build_toc_files        : true          # ignore the extra files
+only_build_toc_files        : false          # whether to ignore the extra files
 exclude_patterns            : ["README.md", "LICENSE.md"]
 
 
@@ -13,7 +13,7 @@ exclude_patterns            : ["README.md", "LICENSE.md"]
 execute:
   execute_notebooks         : force      # force build. Can also be 'auto' or 'cache'
   timeout                   : 300       # max seconds for notebook to execute
-  allow_errors              : true      # allow and show errors
+  allow_errors              : true      # whether to allow and show errors
 
 
 
