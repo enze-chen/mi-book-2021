@@ -19,3 +19,14 @@ These citations are more relevant {cite}`jain_2016,petousis_2017`
 :style: unsrt
 :filter: docname in docnames
 ```
+
+```{raw} html
+<script src="https://utteranc.es/client.js"
+        repo="enze-chen/mi-book"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async="async"
+        type="text/javascript"
+/>
+```
