@@ -4,7 +4,7 @@ author                      : Enze Chen, Mark Asta
 copyright                   : "2021" 
 logo                        : mi_logo.png   # logo in top-left corner
 only_build_toc_files        : true          # ignore the extra files
-exclude_patterns            : ["README*"]
+exclude_patterns            : []
 
 
 #######################################################################################

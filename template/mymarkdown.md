@@ -14,12 +14,12 @@ Here is my nifty citation {cite}`ruby`.
 
 These citations are more relevant {cite}`jain_2016,petousis_2017`
 
-
 ```{bibliography}
 :style: unsrt
 :filter: docname in docnames
 ```
 
+% This HTML activates utterances only on this page
 ```{raw} html
 <script src="https://utteranc.es/client.js"
         repo="enze-chen/mi-book"
