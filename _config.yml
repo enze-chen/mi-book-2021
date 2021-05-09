@@ -4,7 +4,7 @@ author                      : Enze Chen, Mark Asta
 copyright                   : "2021" 
 logo                        : mi_logo.png   # logo in top-left corner
 only_build_toc_files        : true          # ignore the extra files
-exclude_patterns            : [README*]
+exclude_patterns            : ["README.md", "LICENSE.md"]
 
 
 #######################################################################################
@@ -31,8 +31,9 @@ html:
       <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" />
     </a>
   comments:
+    hypothesis              : true
     utterances:
-      repo                  : "https://github.com/enze-chen/mi-book"
+      repo                  : "enze-chen/mi-book"
       issue-term            : "pathname"
       theme                 : "github-light"
       crossorigin           : "anonymous"
@@ -61,10 +62,17 @@ parse:
     - amsmath               # LaTeX math
     - colon_fence           # cleaner directives
     - dollarmath            # in-line LaTeX
-    - linkify               # something with links
+    - linkify               # auto-detect HTML-like links
+    - replacements          # replace certain character sequences
+    - smartquotes           # transforms quotes and dashes
     - substitution          # allows variable/dictionary substitution
 
   myst_url_schemes          : [mailto, http, https]  # URI schemes that will be recognised as external URLs in Markdown links
+  myst_substitutions:       # key: value
+    lbl                     : "Lawrence Berkeley National Laboratory"
+    mp                      : "Materials Project"
+    ucb                     : "University of California, Berkeley"
+
 
 
 #######################################################################################
