@@ -1,8 +1,9 @@
 #jupyter-book==0.10.2
 jupytext>=1.10
-matplotlib>=3.3
 numpy>=1.20
 pandas>=1.2
 scikit-learn>=0.24
+matplotlib>=3.3
+plotly>=4.10
 nbgitpuller>=0.8
 linkify-it-py>=1.0
