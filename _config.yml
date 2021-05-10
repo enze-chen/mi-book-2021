@@ -45,6 +45,7 @@ launch_buttons:
   notebook_interface        : classic 
   binderhub_url             : https://mybinder.org 
   colab_url                 : https://colab.research.google.com
+  jupyterhub_url            : https://datahub.berkeley.edu
   thebe                     : false
 
 # Information about where the book exists on the web

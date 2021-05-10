@@ -3,9 +3,10 @@
 #
 - file            : intro
 
-- part            : Preface 📝
+- part            : Preamble 📜
   chapters:
-  - file          : preface/content0
+  - file          : preamble/content0
+  - file          : preamble/schedule
 
 
 - part            : Week 1️⃣

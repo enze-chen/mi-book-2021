@@ -9,3 +9,8 @@ covers a few tips for how to do so.
 :width: 20%
 :align: center
 ```
+
+```{admonition} Learning goals
+:class: tip
+❤
+```
