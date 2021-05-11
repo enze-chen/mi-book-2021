@@ -6,7 +6,7 @@
 - part            : Preamble 📜
   chapters:
   - file          : preamble/content0
-  - file          : preamble/schedule
+  # - file          : preamble/schedule
 
 
 - part            : Week 1️⃣
@@ -22,6 +22,7 @@
   numbered        : 2
   chapters:
   - file          : week_2/content2
+  - file          : week_2/week_2_notebook
 
 
 - part            : Week 3️⃣
