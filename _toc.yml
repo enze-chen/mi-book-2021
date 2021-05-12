@@ -7,6 +7,7 @@
   chapters:
   - file          : preamble/content0
   # - file          : preamble/schedule
+  - file          : preamble/acknowl
 
 
 - part            : Week 1️⃣

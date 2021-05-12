@@ -6,7 +6,8 @@ The authors are from {{ ucb }} and {{ lbl }}.
 
 
 ```{warning}
-This curriculum is still a work in progress and may be updated at any time.
+This curriculum is still a work in progress and may be updated at any time. 
+Thank you for your patience and understanding.
 ```
 
 

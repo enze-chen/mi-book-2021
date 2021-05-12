@@ -1,10 +1,10 @@
 # Book settings. Learn more at https://jupyterbook.org/customize/config.html
 title                       : Introduction to Materials Informatics
-author                      : Enze Chen, Mark Asta
+author                      : Enze Chen and Mark Asta
 copyright                   : "2021" 
 logo                        : mi_logo.png   # logo in top-left corner
 only_build_toc_files        : false          # whether to ignore the extra files
-exclude_patterns            : ["README.md", "LICENSE.md"]
+exclude_patterns            : ["README.md", "LICENSE.md", "notes.md"]
 
 
 #######################################################################################
