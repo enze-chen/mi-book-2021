@@ -5,13 +5,15 @@
 
 - part            : Preamble 📜
   chapters:
-  - file          : preamble/content0
-  # - file          : preamble/schedule
+  - file          : preamble/before
+    sections:
+      - file      : preamble/setup
+      - file      : preamble/schedule
   - file          : preamble/acknowl
 
 
 - part            : Week 1️⃣
-  numbered        : 2
+  # numbered        : 2
   chapters:
   - file          : week_1/content
   - file          : week_1/markdown
@@ -21,13 +23,13 @@
 
 
 - part            : Week 2️⃣
-  numbered        : 2
+  # numbered        : 2
   chapters:
   - file          : week_2/content2
   - file          : week_2/week_2_notebook
 
 
 - part            : Week 3️⃣
-  numbered        : 2
+  # numbered        : 2
   chapters:
   - file          : week_3/content3
