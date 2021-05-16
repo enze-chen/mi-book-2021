@@ -11,31 +11,41 @@ kernelspec:
 ---
 
 (h1:pre:setup)=
-# Set up accounts
+# Setup
 
 
 ```{important}
-Estimated time: 10-30 minutes. We greatly appreciate you taking the time to do this. If you have any questions or encounter difficulties, please don't hesitate to ping us.
+_Estimated time: 10-30 minutes_. 
+We greatly appreciate you taking the time to do this. 
+If you have any questions or encounter difficulties, please don't hesitate to ping us! 🙇‍♂️
 ```
 
 
 
-Accounts:
-- GitHub
-- Hypothesis
-- JupyterHub
-- Materials Project
+## Sign up for accounts
 
+TODO
 
-Update:
-- Zoom
-- Slack
-- Chrome
-    - test Slido poll
+### GitHub
 
+### Hypothesis
 
+### JupyterHub
 
 ```{code-cell}
 :tags: [remove-cell]
-print('Hello, World!')
+hidden_message = 'You will never see this.'
 ```
+
+### Materials Project
+
+
+## Update software
+
+### Zoom
+
+### Slack
+
+### Web browser
+
+### Slido poll

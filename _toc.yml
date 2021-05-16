@@ -1,35 +1,61 @@
 # Table of content
 # Learn more at https://jupyterbook.org/customize/toc.html
 #
-- file            : intro
+- file              : intro
 
-- part            : Preamble 📜
+- part              : Preamble 📜
+  # numbered          : 2
   chapters:
-  - file          : preamble/before
-    sections:
-      - file      : preamble/setup
-      - file      : preamble/schedule
-  - file          : preamble/acknowl
+    - file          : preamble/before
+      sections:
+        - file      : preamble/setup
+        - file      : preamble/schedule
 
 
-- part            : Week 1️⃣
-  # numbered        : 2
+- part              : Week 1️⃣
+  # numbered          : 2
   chapters:
-  - file          : week_1/content
-  - file          : week_1/markdown
-  - file          : week_1/notebooks
-  - file          : week_1/mymarkdown
-  - file          : week_1/forms
+    - file          : week_1/01/day_01
+      sections:
+        - file      : week_1/01/content
+        - file      : week_1/01/markdown
+        - file      : week_1/01/notebooks
+        - file      : week_1/01/mymarkdown
+        - file      : week_1/01/forms
+    - file          : week_1/02/day_02
+    - file          : week_1/03/day_03
+    - file          : week_1/04/day_04
+    - file          : week_1/05/day_05
 
 
-- part            : Week 2️⃣
-  # numbered        : 2
+- part              : Week 2️⃣
+  # numbered          : 2
   chapters:
-  - file          : week_2/content2
-  - file          : week_2/week_2_notebook
+    - file          : week_2/06/day_06
+      sections:
+        - file      : week_2/06/week_2_notebook
+    - file          : week_2/07/day_07
+    - file          : week_2/08/day_08
+    - file          : week_2/09/day_09
+    - file          : week_2/10/day_10
 
 
-- part            : Week 3️⃣
-  # numbered        : 2
+- part              : Week 3️⃣
+  # numbered          : 2
   chapters:
-  - file          : week_3/content3
+    - file          : week_3/11/day_11
+    - file          : week_3/12/day_12
+    - file          : week_3/13/day_13
+    - file          : week_3/14/day_14
+    - file          : week_3/15/day_15
+
+
+- part              : Appendices 📝
+  # numbered          : 2
+  chapters:
+    - file          : appendix/appendix
+      sections:
+        - file      : appendix/acknowl
+        - file      : appendix/glossary 
+        - file      : appendix/future
+

@@ -12,9 +12,9 @@ When that happens, things may or may not break.
 Thank you for your patience and understanding.
 ```
 
-Who are we?   
+## Who are we?   
 
-- [Mark Asta](https://mse.berkeley.edu/people_new/asta/) is a Professor of [Materials Science and Engineering](https://mse.berkeley.edu/) at the [University of California, Berkeley](https://www.berkeley.edu/) who leads a computational materials science research group.   
+- [Mark Asta](https://mse.berkeley.edu/people_new/asta/) is a Professor of [Materials Science and Engineering](https://mse.berkeley.edu/) at the [University of California, Berkeley](https://www.berkeley.edu/) who leads a computational materials science [research group](https://asta.mse.berkeley.edu/).   
 - [Enze Chen](https://enze-chen.github.io/) is a 2nd-year Ph.D. student in his group whose research uses simulations and informatics to study the behavior of metal alloys.
 
 We both **love teaching**, and while you can think of us as "instructors" or "mentors," know that we're learning alongside you---_from_ all of you---as well.

@@ -1,0 +1,46 @@
+.text_cell_render{
+    font-family: 'Lusitana', serif;
+    font-size: 1.2em;}  
+blockquote{
+    border-left: 5px solid #FFB25B;
+}
+a{
+    color: #10428A
+}
+h1, h2, h3{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    text-transform: uppercase;
+}
+hr{
+    border-top: 2px solid #A9A9A9;
+    background-color: transparent;
+}
+.intro{
+    background-color:rgba(29,66,138,0.1);
+    padding:3px 15px 15px;
+}
+.section{
+    background-color:rgba(0,156,222,0.1);
+    padding:3px 15px 15px;
+}
+.exercise{
+    border:3px solid rgba(255,130,0,0.5);
+    padding:3px 15px 15px;
+}
+.protip{
+    border:3px solid rgba(249,56,34,0.6);
+    background-color:rgba(249,56,34,0.1);
+    padding:3px 15px 15px;
+}
+.answers{
+    border:3px solid rgba(255,130,0,0.7);
+    background-color:rgba(255,130,0,0.15);
+    padding:3px 15px 15px;
+}
+.rendered_html hr {
+    color: transparent;
+    background-color: transparent;
+}
+.rendered_html pre{
+    padding:10px
+}

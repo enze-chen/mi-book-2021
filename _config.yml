@@ -7,11 +7,12 @@ only_build_toc_files        : false          # whether to ignore the extra files
 exclude_patterns            : ["README.md", "LICENSE.md", "notes.md"]
 
 
+
 #######################################################################################
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
-  execute_notebooks         : force      # force build. Can also be 'auto' or 'cache'
+  execute_notebooks         : auto      # force build. Can also be 'auto' or 'cache'
   timeout                   : 300       # max seconds for notebook to execute
   allow_errors              : true      # whether to allow and show errors
 
@@ -30,13 +31,15 @@ html:
     <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
       <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" />
     </a>
+  google_analytics_id       : ""
   comments:
     hypothesis              : true
-    # utterances:
+    # utterances:    # omit for this curriculum
     #   repo                  : "enze-chen/mi-book"
     #   issue-term            : "pathname"
     #   theme                 : "github-light"
     #   crossorigin           : "anonymous"
+
 
 
 #######################################################################################
@@ -86,7 +89,7 @@ latex:
 
 # Add a bibtex file so that we can create citations
 bibtex_bibfiles             : ["assets/files/references.bib"]
-bibtex_reference_style      : author_year
+bibtex_reference_style      : author_year    # requires sphinxcontrib-bibtex 2.2.0
 
 
 #######################################################################################
