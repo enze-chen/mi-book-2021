@@ -1,3 +1,3 @@
-# A3: Future directions 🔮
+# A3: Future directions 🛣
 
 TODO

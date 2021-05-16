@@ -1,9 +1,9 @@
 # Book settings. Learn more at https://jupyterbook.org/customize/config.html
 title                       : Introduction to Materials Informatics
 author                      : Enze Chen and Mark Asta
-copyright                   : "2021" 
-logo                        : mi_logo.png   # logo in top-left corner
-only_build_toc_files        : false          # whether to ignore the extra files
+copyright                   : "2021"
+logo                        : mi_logo.png     # logo in top-left corner
+only_build_toc_files        : false           # whether to ignore the extra files
 exclude_patterns            : ["README.md", "LICENSE.md", "notes.md"]
 
 
@@ -22,19 +22,19 @@ execute:
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
-  use_edit_page_button      : false      # button for users to edit page and submit a PR. Only use "Issues"
+  use_edit_page_button      : false     # button for users to edit page and submit a PR. Only use "Issues"
   use_issues_button         : true      # button for users to submit a GitHub issue
-  use_repository_button     : true      # button for users to look at the source code
-  favicon                   : "mi_favicon.png"
+  use_repository_button     : true      # button for users to look at the source code in GitHub repo
+  favicon                   : "mi_favicon.png"      # the icon in the browser tab
   baseurl                   : https://enze-chen.github.io/mi-book   # The base URL where the book is hosted
   extra_footer              : |
     <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
       <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" />
     </a>
-  google_analytics_id       : ""
+  google_analytics_id       : ""        # TODO: switch to true later
   comments:
     hypothesis              : true
-    # utterances:    # omit for this curriculum
+    # utterances:             # omit for this curriculum
     #   repo                  : "enze-chen/mi-book"
     #   issue-term            : "pathname"
     #   theme                 : "github-light"
@@ -90,6 +90,7 @@ latex:
 # Add a bibtex file so that we can create citations
 bibtex_bibfiles             : ["assets/files/references.bib"]
 bibtex_reference_style      : author_year    # requires sphinxcontrib-bibtex 2.2.0
+
 
 
 #######################################################################################
