@@ -1,3 +1,3 @@
-# Day 15: Conclusions and outlook
+# Day 15: Conclusions
 
 TODO

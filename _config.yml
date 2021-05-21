@@ -34,11 +34,6 @@ html:
   google_analytics_id       : ""        # TODO: switch to true later
   comments:
     hypothesis              : true
-    # utterances:             # omit for this curriculum
-    #   repo                  : "enze-chen/mi-book"
-    #   issue-term            : "pathname"
-    #   theme                 : "github-light"
-    #   crossorigin           : "anonymous"
 
 
 
@@ -74,8 +69,6 @@ parse:
 
   myst_url_schemes          : [mailto, http, https]  # URI schemes that will be recognised as external URLs in Markdown links
   myst_substitutions:       # key: value
-    lbl                     : "Lawrence Berkeley National Laboratory"
-    mp                      : "Materials Project"
     ucb                     : "University of California, Berkeley"
 
 

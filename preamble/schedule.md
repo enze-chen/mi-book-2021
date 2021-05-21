@@ -1,9 +1,9 @@
 (h1:pre:schedule)=
 # Schedule (one page) 📅
 
-The condensed schedule is included below for your convenience, and we're _always_ happy to hear what questions or concerns you might have regarding the planned curriculum.
+The condensed schedule is included below for your convenience, and we're _always_ happy to hear what questions, concerns, or suggestions you might have regarding the planned curriculum.
 
-```{warning}
+```{attention}
 This schedule may be updated at any time as the program progresses.
 ```
 

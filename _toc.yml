@@ -25,6 +25,8 @@
     - file          : week_1/03/day_03
     - file          : week_1/04/day_04
     - file          : week_1/05/day_05
+      sections:
+        - file      : week_1/05/python
 
 
 
@@ -60,4 +62,7 @@
         - file      : appendix/acknowl
         - file      : appendix/glossary 
         - file      : appendix/future
+
+
+
 

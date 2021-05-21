@@ -1,3 +1,3 @@
-# Day 04: Machine learning speedrun
+# Day 04: ML speedrun
 
 TODO
