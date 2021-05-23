@@ -113,11 +113,9 @@
 - part              : Appendices 📝
   # numbered          : 2
   chapters:
-    - file          : appendix/appendix
-      sections:
-        - file      : appendix/acknowl
-        - file      : appendix/glossary 
-        - file      : appendix/future
+    - file          : appendix/acknowl
+    - file          : appendix/glossary 
+    - file          : appendix/future
 
 
 

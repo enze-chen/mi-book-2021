@@ -11,7 +11,7 @@ kernelspec:
 ---
 
 (h1:appendix:future)=
-# A3: Future directions 🛣
+# Future directions 🛣
 
 ````{margin} 
 ```{admonition} Contact
@@ -33,7 +33,7 @@ If you were looking for content guidance (i.e., what to study after going throug
 
 Two of the main reasons we are such passionate educators because we strongly believe in the enabling potential of a quality education, and that education is _not_ a [zero-sum game](https://en.wikipedia.org/wiki/Zero-sum_game).
 That's why in addition to interactivity, we designed for broad accessibility for everyone who wants to learn about MI, not just students at UC Berkeley.
-We're proud to publicly share as much content as possible (under a [CC BY-SA License](http://creativecommons.org/licenses/by-sa/4.0/)) and we're grateful for the support from like-minded individuals (see {doc}`Acknowledgements <acknowl>`).
+We're proud to publicly share as much content as possible (under a [CC BY-SA License](http://creativecommons.org/licenses/by-sa/4.0/)) and we're grateful for the support from like-minded individuals (see {doc}`acknowl`).
 We hope this makes it easier for others to adapt their own curriculum, or use pieces of this one verbatim, as they see fit.
 
 

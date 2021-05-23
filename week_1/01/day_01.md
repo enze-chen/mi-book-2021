@@ -6,11 +6,11 @@ Welcome to the first day of Module 2!
 We're excited to meet you.
 
 ```{attention}
-If you haven't already, please make sure that you've completed the [introductory survey](https://forms.gle/nUJkB7cPyiQBMDxm8) and completed the {doc}`Setup <../../preamble/setup>`.
+If you haven't done so already, please make sure that you've completed the [introductory survey](https://forms.gle/nUJkB7cPyiQBMDxm8) and completed the {doc}`../../preamble/setup` instructions.
 ```
 
 We also invite you to read through the {doc}`../../preamble/overview` and the condensed {doc}`Schedule <../../preamble/schedule>` to get a feel for what we'll be doing in this module. 
-If you didn't have time to do so, not to worry---we will clarify <s>everything</s>most things today. 🙂
+If you don't have time to do so, not to worry---we will clarify <s>everything</s>most things today. 🙂
 
 
 

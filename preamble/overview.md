@@ -51,6 +51,14 @@ By the end of this module, you will know how to:
 
 ## Who are we?   
 
+
+````{margin} 
+```{admonition} Contact
+:class: tip
+
+Enze can be reached at `chenze` at the Berkeley domain while Mark can be reached at `mdasta` at the same.
+````
+
 - [Mark Asta](https://mse.berkeley.edu/people_new/asta/) is a Professor of [Materials Science and Engineering](https://mse.berkeley.edu/) (MSE) at the [University of California, Berkeley](https://www.berkeley.edu/) (UCB) who leads a computational materials science [research group](https://asta.mse.berkeley.edu/).
 He is also the Director of the [Materials Sciences Division](https://www2.lbl.gov/msd/) (MSD) at [Lawrence Berkeley National Laboratory](https://www.lbl.gov/) (LBL), and a proud 3× UCB alum!
 - [Enze Chen](https://enze-chen.github.io/) is a 2nd-year Ph.D. student in his group whose research uses atomistic simulations and MI to study the behavior of metal alloys.

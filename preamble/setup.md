@@ -11,7 +11,7 @@ kernelspec:
 ---
 
 (h1:pre:setup)=
-# Setup ✅
+# Setup
 
 
 ```{important}
