@@ -4,7 +4,7 @@ author                      : Enze Chen and Mark Asta
 copyright                   : "2021"
 logo                        : mi_logo.png     # logo in top-left corner
 only_build_toc_files        : false           # whether to ignore the extra files
-exclude_patterns            : ["README.md", "LICENSE.md", "notes.md"]
+exclude_patterns            : ["README.md", "LICENSE.md"]
 
 
 
@@ -12,7 +12,7 @@ exclude_patterns            : ["README.md", "LICENSE.md", "notes.md"]
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
-  execute_notebooks         : auto      # force build. Can also be 'auto' or 'cache'
+  execute_notebooks         : auto      # 'auto,' 'cache,' or 'force'
   timeout                   : 300       # max seconds for notebook to execute
   allow_errors              : true      # whether to allow and show errors
 
@@ -44,7 +44,7 @@ launch_buttons:
   binderhub_url             : ""
   colab_url                 : https://colab.research.google.com
   jupyterhub_url            : https://datahub.berkeley.edu
-  thebe                     : false
+  thebe                     : true
 
 # Information about where the book exists on the web
 repository:

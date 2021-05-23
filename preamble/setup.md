@@ -83,7 +83,7 @@ It will be our first time using this tool, and we hope it helps encourage partic
 &nbsp;   
 
 Enter a username, email, and password that you can remember.
-You can probably leave the second box unchecked and then click {guilabel}`Sign up`.
+Check the first box, [probably] don't check the second box, and then click {guilabel}`Sign up`.
 
 2\) Then, _using your UCB account_, open [this Google Drive file](https://drive.google.com/file/d/12Kk58b8DG8_QDMPbkUhnXA2NIAjfik47/view?usp=sharing) and find the link for our private Hypothesis user group that you should join. 
 This will keep our comments a little more private and makes it easier for us to search for each other's comments (I think the public Hypothesis has over 1.5 million comments, lol).
@@ -139,17 +139,18 @@ You should be taken to a CalNet login page, whereupon after you enter your login
 Make sure this completes, and when it does, you can close the tab as you should be all set.
 
 ```{note}
-You have to enter DataHub through this book (at least once, and anytime we update the notebooks) in order for these files to sync with your personal DataHub repo.
+You have to enter DataHub through this textbook (at least once, and anytime we update the notebooks) in order for these files to sync with your personal DataHub repo.
 ```
 
 
 
 ### Materials Project
 
-A lot of the data that we will analyze in this module come from the [Materials Project](https://materialsproject.org/) (MP), which is an initiative spearheaded by some fine folks at UCB and LBL (Mark is a co-PI, or co-principal investigator). 
+A lot of the data that we will analyze in this module come from the [Materials Project](https://materialsproject.org/) (MP) database, which is an initiative spearheaded by some fine folks at UCB and LBL (Mark is a co-PI, or co-principal investigator, for MP). 
 Naturally, in order to access this data, you will have to create an account, which you can conveniently do with your UCB Google account (Enze does this for his research).
 
 Please go to this link: https://materialsproject.org/janrain/loginpage/, and click {guilabel}`Sign in with Google`.
+Follow the steps to completion.
 
 #### Test MP account
 
@@ -191,7 +192,7 @@ More information can be found in their [support documentation](https://support.z
 ### Slack
 
 We will be using [Slack](https://slack.com/) for communications this summer, and we hope that you all feel comfortable reaching out to us (instructors) and each other on Slack with any questions.
-You should already have an account on our Slack workspace, and it doesn't really matter to us whether you use the browser version of Slack or the desktop app, as long as you're monitoring it for updates (you can set notifications in Preferences; see left panel below).
+You should already have an account on our Slack workspace, and it doesn't really matter to us whether you use the browser version of Slack or the desktop app, as long as you're monitoring it for updates during working hours (you can set notifications in Preferences; see left panel below).
 If you do choose the desktop app, make sure you also understand how to update it (see right panel below).
 The Slack channels you should join are 
 
@@ -225,7 +226,7 @@ Update Slack (desktop app only)
 
 Most of this curriculum should be fully functional in any modern web browser, though we find that the experience seems to work best on [Google Chrome](https://www.google.com/chrome/), so we'll "recommend" that.
 [Firefox](https://www.mozilla.org/en-US/firefox/new/) should also be fine, but Safari and Edge may have a few hiccups.
-Regardless of which browser you use, we ask that you **please update it at** least once at the start of this module since we will be relying heavily on the browser for our curricular activities.
+Regardless of which browser you use, we ask that you **please update it** at the start of this module since we will be relying heavily on the browser for our curricular activities.
 All browsers appear to have adopted a similar structure of checking for updates using `[Menu] > Help > About` (see images for examples), while Safari can be updated through the App Store.
 
 ````{panels}
@@ -254,7 +255,7 @@ Update Firefox
 For quick check-ins and formative assessments, we'll be using [Slido polls](https://www.sli.do/) throughout this curriculum.
 In order for this to work, you will have to **enable [third-party] cookies** in your browser, so please make sure this setting is enabled.
 If so, you should be able to submit a vote in the test poll below.
-If not, please look up how to do so for your browser.
+If not, please look up how to enable cookies for your browser. 🍪
 
 <p align="center">
     <iframe src="https://app.sli.do/event/yv5xrtyg/embed/polls/49113d57-715d-48ea-90bd-78e44f336f29" width="300" height="300"></iframe>

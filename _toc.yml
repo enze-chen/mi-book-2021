@@ -6,6 +6,7 @@
 - part              : Preamble 📜
   # numbered          : 2
   chapters:
+    - file          : preamble/overview
     - file          : preamble/setup
     - file          : preamble/schedule
 
@@ -16,17 +17,43 @@
   chapters:
     - file          : week_1/01/day_01
       sections:
+        - file      : week_1/01/module
+        - file      : week_1/01/informatics
+        - file      : week_1/01/python
         - file      : week_1/01/content
         - file      : week_1/01/markdown
         - file      : week_1/01/notebooks
-        - file      : week_1/01/mymarkdown
         - file      : week_1/01/forms
+
     - file          : week_1/02/day_02
+      sections:
+        - file      : week_1/02/opportunities
+        - file      : week_1/02/files
+        - file      : week_1/02/tables
+        - file      : week_1/02/databases
+
     - file          : week_1/03/day_03
+      sections:
+        - file      : week_1/03/recap_data
+        - file      : week_1/03/data_viz
+        - file      : week_1/03/best_viz
+        - file      : week_1/03/advanced_viz
+
     - file          : week_1/04/day_04
+      sections:
+        - file      : week_1/04/recap_viz
+        - file      : week_1/04/intro_ml
+        - file      : week_1/04/ml_perf
+        - file      : week_1/04/features
+        - file      : week_1/04/advanced_ml
+        - file      : week_1/04/practical
+
     - file          : week_1/05/day_05
       sections:
-        - file      : week_1/05/python
+        - file      : week_1/05/research
+        - file      : week_1/05/brainstorm
+        - file      : week_1/05/procedures
+        - file      : week_1/05/install_python
 
 
 
@@ -35,10 +62,21 @@
   chapters:
     - file          : week_2/06/day_06
       sections:
+        - file      : week_2/06/reading_papers
+        - file      : week_2/06/reading_docs
+        - file      : week_2/06/survey_06
         - file      : week_2/06/week_2_notebook
+
     - file          : week_2/07/day_07
+      sections:
+        - file      : week_2/07/abstracts 
+
     - file          : week_2/08/day_08
+      sections:
+        - file      : week_2/08/guest_mp
+
     - file          : week_2/09/day_09
+
     - file          : week_2/10/day_10
 
 
@@ -47,10 +85,28 @@
   # numbered          : 2
   chapters:
     - file          : week_3/11/day_11
+
     - file          : week_3/12/day_12
+      sections:
+        - file      : week_3/12/guest_citrine
+        - file      : week_3/12/presentations
+        - file      : week_3/12/pull_requests
+
     - file          : week_3/13/day_13
+      sections:
+        - file      : week_3/13/deep_ml
+
     - file          : week_3/14/day_14
+      sections:
+        - file      : week_3/14/peer_review
+        - file      : week_3/14/final_presentations
+
     - file          : week_3/15/day_15
+      sections:
+        - file      : week_3/15/summary
+        - file      : week_3/15/reflections
+        - file      : week_3/15/next
+        - file      : week_3/15/finale
 
 
 

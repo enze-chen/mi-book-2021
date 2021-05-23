@@ -1,4 +1,4 @@
-(h1:pre:acknowl)=
+(h1:appendix:acknowl)=
 # A1: Acknowledgements 🙇‍♂️
 
 We thank [Ryan Miyakawa](https://www2.lbl.gov/msd/people/investigators/miyakawa_investigator.html) for organizing the internship, and Ryan and [Sinéad Griffin](https://www2.lbl.gov/msd/people/investigators/griffin_investigator.html) for teaching the other two modules in this sequence (Module 1: Experimental Design and Module 3: DFT Calculations, respectively).
@@ -8,10 +8,13 @@ We thank the developers of [Jupyter Book](https://jupyterbook.org/intro.html) an
 Their open-source code is [released on GitHub](https://github.com/executablebooks/jupyter-book) under a BSD 3-Clause License.
 We also thank the [DataHub](https://datahub.berkeley.edu/) developers at UC Berkeley for the interactive computing resources and technical support.
 
-Enze acknowledges Ph.D. funding through the [NSF GRFP](https://www.nsfgrfp.org/) under Grant No. DGE-1752814.
-Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
+We are grateful for the support from our friends, colleagues, and mentors over the years, whose incredible wisdom and insights into teaching helped refine our own pedagogy.
+And of course, to all of our former students: thank you for your patience and invaluable feedback as you challenged us to always perform at our best.
+
+Enze further acknowledges Ph.D. funding through the [NSF GRFP](https://www.nsfgrfp.org/) under Grant No. DGE-1752814.
+Any opinions, findings, and conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of the [National Science Foundation](https://www.nsf.gov/).
 
 
-```{image} ../assets/fig/preamble/acknowl.png
+```{image} ../assets/fig/appendix/acknowl.png
 :width: 100%
 ```

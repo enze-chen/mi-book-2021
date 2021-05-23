@@ -1,4 +1,4 @@
-(h1:05:python)=
+(h1:05:install_python)=
 # Installing Python locally
 
 ```{attention}

@@ -1,6 +1,8 @@
+(h1:appendix:intro)=
 # Appendices
 
-Here is some extra information regarding this curriculum project that may be of interest to you.
+Here are some extra information regarding this curriculum project that may be of interest to you.
 
 ```{tableofcontents}
 ```
+
