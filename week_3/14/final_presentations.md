@@ -21,10 +21,10 @@ Alphabetical ordering by last name.
 
 
 
-```{admonition} [NAME] [emoji]
-**Title**: 
+```{admonition} Chris [emoji]
+**Title**: foo
 
-**Description**: 
+**Description**: bar
 ```
 
 
