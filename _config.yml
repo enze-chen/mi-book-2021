@@ -31,7 +31,7 @@ html:
     <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
       <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" />
     </a>
-  google_analytics_id       : ""        # TODO: switch to true later
+  google_analytics_id       : UA-197730750-1
   comments:
     hypothesis              : true
 
@@ -44,7 +44,7 @@ launch_buttons:
   binderhub_url             : ""
   colab_url                 : https://colab.research.google.com
   jupyterhub_url            : https://datahub.berkeley.edu
-  thebe                     : true
+  thebe                     : false
 
 # Information about where the book exists on the web
 repository:

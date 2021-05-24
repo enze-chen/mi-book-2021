@@ -5,31 +5,7 @@ TODO
 
 Alphabetical ordering by last name.
 
-```{admonition} Alex [emoji]
-**Title**: foo
-
-**Description**: bar
-```
-
-
-
-```{admonition} Blake [emoji]
-**Title**: foo
-
-**Description**: bar
-```
-
-
-
-```{admonition} Chris [emoji]
-**Title**: foo
-
-**Description**: bar
-```
-
-
-
-```{admonition} [NAME] [emoji]
+```{admonition} NAME [emoji]
 **Title**: 
 
 **Description**: 
@@ -37,7 +13,31 @@ Alphabetical ordering by last name.
 
 
 
-```{admonition} [NAME] [emoji]
+```{admonition} NAME [emoji]
+**Title**: 
+
+**Description**: 
+```
+
+
+
+```{admonition} NAME [emoji]
+**Title**: 
+
+**Description**: 
+```
+
+
+
+```{admonition} NAME [emoji]
+**Title**: 
+
+**Description**: 
+```
+
+
+
+```{admonition} NAME [emoji]
 **Title**: 
 
 **Description**: 
