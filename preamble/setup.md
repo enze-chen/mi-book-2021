@@ -57,6 +57,8 @@ Therefore, we ask that you sign up for a GitHub account by going to: https://git
 Enter a username, email, and password that you can remember.
 You can probably uncheck the "Email preferences" box.
 Verify that you're a human and then click {guilabel}`Create account`.
+You will have to also verify your email and go through a few more steps to set up your account (you can skip the personalization steps).
+
 
 #### Test GitHub account
 

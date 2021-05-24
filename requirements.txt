@@ -1,14 +1,14 @@
 #jupyter-book==0.10.2
-jupytext>=1.10
+jupytext==1.10.3
 nbgitpuller>=0.8
-linkify-it-py>=1.0
+linkify-it-py==1.0.1
 
-numpy>=1.20
-scipy>=1.6
-pandas>=1.2
-matplotlib>=3.3
-plotly>=4.10
-scikit-learn>=0.24
+numpy==1.19.1
+scipy==1.6.2
+pandas==1.2.4
+matplotlib==3.3.4
+plotly==4.14.3
+scikit-learn==0.24.1
 
-pymatgen==2021.3.9
-matminer==0.6.5
+pymatgen==2020.10.20
+matminer==0.6.4
