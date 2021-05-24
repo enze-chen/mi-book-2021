@@ -13,10 +13,10 @@ Alphabetical ordering by last name.
 
 
 
-```{admonition} [NAME] [emoji]
-**Title**: 
+```{admonition} Blake [emoji]
+**Title**: foo
 
-**Description**: 
+**Description**: bar
 ```
 
 
