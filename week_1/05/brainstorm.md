@@ -1,4 +1,4 @@
 (h1:05:brainstorm)=
-# MI research - brainstorm
+# Brainstorm topics
 
 TODO

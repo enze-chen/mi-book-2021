@@ -3,42 +3,45 @@
 
 TODO
 
-Alphabetical ordering by last name.
+The following presenters are ordered alphabetically by last name.
+The order of presentations will be determined during morning scrum on Thursday. 😉
 
-```{admonition} NAME [emoji]
-**Title**: 
 
-**Description**: 
+## NAME [Your emoji]
+
+**Title**: [Your title]
+
+```{image} ../../assets/fig/week_3/14/temp.png
+:width: 66%
+:align: center
 ```
 
+**Description**: [Your abstract]
 
 
-```{admonition} NAME [emoji]
-**Title**: 
 
-**Description**: 
+## NAME [Your emoji]
+
+**Title**: [Your title]
+
+```{image} ../../assets/fig/week_3/14/temp.png
+:width: 66%
+:align: center
 ```
 
+**Description**: [Your abstract]
 
 
-```{admonition} NAME [emoji]
-**Title**: 
 
-**Description**: 
+## NAME [Your emoji]
+
+**Title**: [Your title]
+
+```{image} ../../assets/fig/week_3/14/temp.png
+:width: 66%
+:align: center
 ```
 
+**Description**: [Your abstract]
 
 
-```{admonition} NAME [emoji]
-**Title**: 
-
-**Description**: 
-```
-
-
-
-```{admonition} NAME [emoji]
-**Title**: 
-
-**Description**: 
-```

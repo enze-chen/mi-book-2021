@@ -17,9 +17,10 @@ If you don't have time to do so, not to worry---we will clarify <s>everything</s
 ## Learning goals for today
 
 - Get to know one another better and our motivations for being here.
-- Understand the structure of this module and clarify the expectations.
+- Discuss the structure of this module and clarify the expectations.
 - Introduce materials informatics at a high level.
 - Introduce the Python programming language and how we will use it in this module.
+- Get ample practice with Python and the Jupyter environment.
 
 
 

@@ -3,7 +3,7 @@
 
 ```{attention}
 For the purposes of this summer internship, you should be able to complete everything in DataHub (in the cloud).
-Installing Python on your personal computer is **100% optional** and I include this only for completeness.
+Installing Python on your personal computer is **100% optional** and we include this only for completeness.
 Also, if you already have your personal installation of Python (Anaconda, PyCharm, etc.), you should probably stick with that.
 ```
 
@@ -22,8 +22,8 @@ It's a personal preference, and if you are unsure if this is best for your perso
 However, installing Python and all the packages you need on your computer is not as easy as installing other software.
 A Python environment on your computer can get quite... [_complicated_](https://xkcd.com/1987/).
 So, this is a set of instructions to help guide you as you install Python and associated files on your computer. 
-For this process, I typically like to accompany my mentees as they go through it, just to make sure that everything installs correctly without a hitch.
-I know what it's like to be excited to start a software project, only to be blocked by troubleshooting the installation, so I don't want this misfortune to befall anyone.
+For this process, we typically like to accompany our mentees as they go through it, just to make sure that everything installs correctly without a hitch.
+We know what it's like to be excited to start a software project, only to be blocked by troubleshooting the installation, so we don't want this misfortune to befall anyone.
 
 
 ## The Anaconda/Miniconda distribution 🐍
@@ -32,15 +32,15 @@ The native [Python language](https://www.python.org/) is already quite powerful,
 At some point, people realized that it made sense to bundle these extra packages along with the default Python code, and arguably the most popular _distribution_ of Python is [Anaconda](https://www.anaconda.com/products/individual), or "**conda**" for short.
 By installing Anaconda, we not only get Python, but also an entire suite of the most popular packages along with robust _virtual environments_.
 
-The caveat, however, is that the Anaconda distribution is _very large_ and (personally) has _too many_ bells and whistles, so I don't advise installing it. 😅
-Instead, I recommend **Miniconda**, which is a lite version of Anaconda that has all the essential elements and makes it easier for you to add on what you need.
+The caveat, however, is that the Anaconda distribution is _very large_ and (personally) has _too many_ bells and whistles, so we don't advise installing it. 😅
+Instead, we recommend **Miniconda**, which is a lite version of Anaconda that has all the essential elements and makes it easier for you to add on what you need.
 We'll use Miniconda for the steps below.
 
 
 ### Steps to install Miniconda
 
 1. To install Miniconda, please go to [this page](https://docs.conda.io/en/latest/miniconda.html) and select the appropriate installer for your system.
-    - I recommend choosing the version with **Python 3.8** for better compatibility, although 3.9 should be OK. 
+    - We recommend choosing the version with **Python 3.8** for better compatibility, although 3.9 should be OK. 
     ```{error}
     Please _do not_ install the Python 2.7 version of Miniconda. You will not have a good time. 😢
     ```
@@ -155,7 +155,7 @@ For more information on managing environments, please see [the official document
 
 Sometimes, a package that we need (particularly if it's for a specific materials science application) does not come installed by default with Anaconda.
 To see which packages are currently installed, you can use the `conda list` command.
-To install more packages, there are several options, which I list in order of preference:
+To install more packages, there are several options, which we list in order of preference:
 
 1. Use `conda install [package-name]`. This invokes Anaconda's built-in package manager to make sure there are no conflicts with existing packages and is generally the safest option (it's one of the main reasons people use Anaconda!).
 1. Use a different channel to see if you can find the package, e.g., `conda install -c conda-forge [package-name]`.
@@ -169,9 +169,11 @@ Generally speaking, all Python packages are `pip`-installable, while only some a
 
 
 
-### General use
+## General use
 
-When programming on your own computer, I suggest you still do it in a Jupyter notebook environment as that's pretty user friendly. 
+### Jupyter notebooks 
+
+When programming on your own computer, we suggest you still do it in a Jupyter notebook environment as that's pretty user friendly. 
 If `jupyter` is correctly installed in your conda environment, then you can type 
 ```bash
 jupyter notebook 
@@ -181,6 +183,9 @@ to start the notebook.
 ```{note}
 If you start a notebook and then decide to install a new package, you have to completely close the notebook windows (and maybe start a new Prompt/Terminal, depending on how you installed it) before you can use that package.
 ```
+
+
+### Python files
 
 You can also type your code into a Python file (`.py` extension) using your favorite text editor, such as [Atom](https://atom.io/) or [Sublime Text](https://www.sublimetext.com/).
 You can then run the file using the Prompt/Terminal command:
@@ -193,5 +198,12 @@ The line of code above will only work after you've navigated (in your Prompt/Ter
 
 ### Troubleshooting
 
+````{margin}
+```{tip}
+On Google, look for links to the [Stack Overflow](https://stackoverflow.com/) domain, which is a highly reliable source for all of your programming needs.
+```
+````
+
 Python (and certain packages) can be very tricky to install, so if you run into issues, consult the Anaconda documentation, Google, or YouTube.
 Please also feel free to ask your instructors or classmates on Slack about any technical difficulties you encounter.
+

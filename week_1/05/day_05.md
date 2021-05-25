@@ -1,11 +1,13 @@
 (h1:05:intro)=
-# Day 05: Research best practices
+# Day 05: MI research
 
 TODO
 
 Welcome! 
 A few sentences
 
+Please fill out your _initial_ research topic/question in [this Google Form](https://forms.gle/n5CAX9w8SUL3PfDN8).
+Again, it's totally OK if things change!
 
 
 ## Learning goals for today

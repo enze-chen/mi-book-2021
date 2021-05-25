@@ -61,7 +61,7 @@ While it may seem obvious to include computational learning experiences into a m
 Enhance understanding by illuminating new pathways to understanding. 
 Data analysis and visualization.
 
-Broader reach, to engage more students, making CS _relevant_. Non of this toxic competition BS.
+Broader reach, to engage more students, making CS _relevant_. 
 We also need to understand the ethics of computing broadly in contexts beyond CS.
 
 

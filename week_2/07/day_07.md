@@ -1,5 +1,5 @@
 (h1:07:intro)=
-# Day 07: Research + writing
+# Day 07: Research
 
 TODO
 

@@ -1,5 +1,5 @@
 (h1:09:intro)=
-# Day 09: Research
+# Day 09: Research + guest speaker
 
 TODO
 

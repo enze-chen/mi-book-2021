@@ -4,6 +4,9 @@
 TODO
 
 
+
+
+
 Welcome! 
 A few sentences
 
@@ -28,4 +31,4 @@ A few sentences
 ## Activities for today
 
 - Check-in meeting!
-- Work on your research project
+- Otherwise work on projects.

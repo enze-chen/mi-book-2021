@@ -1,5 +1,5 @@
 (h1:08:intro)=
-# Day 08: Research + guest speaker
+# Day 08: Research + writing
 
 TODO
 

@@ -1,5 +1,5 @@
 (h1:12:intro)=
-# Day 12: Research + guest speaker
+# Day 12: Research
 
 TODO
 

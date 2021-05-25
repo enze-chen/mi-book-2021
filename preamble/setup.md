@@ -88,11 +88,11 @@ Enter a username, email, and password that you can remember.
 Check the first box, [probably] don't check the second box, and then click {guilabel}`Sign up`.
 
 2\) Then, _using your UCB account_, open [this Google Drive file](https://drive.google.com/file/d/12Kk58b8DG8_QDMPbkUhnXA2NIAjfik47/view?usp=sharing) and find the link for our private Hypothesis user group that you should join. 
-This will keep our comments a little more private and makes it easier for us to search for each other's comments (I think the public Hypothesis has over 1.5 million comments, lol).
+This will keep our comments a little more private and makes it easier for us to search for each other's comments (the public Hypothesis has over 1.5 million comments, lol).
 
 #### Test Hypothesis account
 
-To test your Hypothesis account, add your response to the comment I left on the following question: Should Oski learn materials science?
+To test your Hypothesis account, add your response to the comment Enze left on the following question: Should Oski learn materials science?
 In order to see my comment, you will have to open up the Hypothesis tab on the page ({guilabel}`<` in the top-right corner) and change the user group to {guilabel}`MSD internship 2021`.
 
 ````{panels}
@@ -165,7 +165,7 @@ After you finish authenticating, see if you can click {guilabel}`Dashboard` in t
 ```    
 &nbsp;   
 
-You should see your `API key` in the place where I drew the black line.
+You should see your `API key` in the place where Enze drew the black line.
 Do **not** share this API key with anyone as it is unique to you.
 More on this in the near future.
 
