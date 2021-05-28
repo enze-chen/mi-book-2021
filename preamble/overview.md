@@ -9,7 +9,7 @@ A slightly more descriptive title for this module could be the following:
 :width: 66%
 :align: center
 
-A log-log scatter plot of refractive index ($n$) vs. band gap ($E_g$) for several crystal systems (adapted from Petousis, I. et al. {cite}`petousis_2017`).
+A log-log scatter plot of refractive index ($n$) vs. band gap ($E_g$) for materials from several crystal systems (adapted from Petousis, I. et al. {cite}`petousis_2017`).
 ```
 
 
@@ -81,7 +81,7 @@ Go Bears! 🐻
 
 ---
 
-**Mark** 🚲
+**Mark** 🚴‍♂️
 ^^^
 ```{image} ../assets/fig/preamble/mark.jpg
 :alt: mark

@@ -33,7 +33,7 @@ The objective here is have these accounts *created and ready for use*; we'll pro
 ```
 
 ```{note}
-If you already have a GitHub, Hypothesis, and/or Materials Project account, you do _not_ have to create a new account and should just use your existing one on that platform.
+If you _already have_ a GitHub, Hypothesis, and/or Materials Project account, you do **not** have to create a new account and should just use your existing one on that platform.
 ```
 
 
@@ -196,11 +196,8 @@ More information can be found in their [support documentation](https://support.z
 We will be using [Slack](https://slack.com/) for communications this summer, and we hope that you all feel comfortable reaching out to us (instructors) and each other on Slack with any questions.
 You should already have an account on our Slack workspace, and it doesn't really matter to us whether you use the browser version of Slack or the desktop app, as long as you're monitoring it for updates during working hours (you can set notifications in Preferences; see left panel below).
 If you do choose the desktop app, make sure you also understand how to update it (see right panel below).
-The Slack channels you should join are 
-
-- `TODO`, `TODO`, ...    
-
-and we will discuss more details during our first meeting.
+To help focus the discussions and your questions, please use the `#module2` channel for all conversations related to the contents of this module.
+We will discuss more Slack details during our first meeting.
 
 ````{panels}
 Change Slack settings (e.g., notifications)

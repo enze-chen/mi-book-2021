@@ -4,7 +4,7 @@
 
 
 This is a 3-week curriculum for one of three modules for a remote summer 2021 research internship in the [Materials Sciences Division](https://www2.lbl.gov/msd/) at [Lawrence Berkeley National Laboratory](https://www.lbl.gov/).
-It is designed using the open-source [Jupyter Book](https://jupyterbook.org/intro.html) software and interactivity is made possible with the generous support of the [DataHub](https://datahub.berkeley.edu/) program at UC Berkeley (non-Berkeley students may also use Google Colaboratory).
+It is designed using the open-source [Jupyter Book](https://jupyterbook.org/intro.html) software and interactivity is made possible with the generous support of the [DataHub](https://datahub.berkeley.edu/) program at UC Berkeley (non-Berkeley students may also use [Google Colaboratory](https://colab.research.google.com/)).
 
 You may read the book here: https://enze-chen.github.io/mi-book
 

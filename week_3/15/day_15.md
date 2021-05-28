@@ -1,27 +1,28 @@
 (h1:15:intro)=
 # Day 15: Conclusions
 
-TODO
-
-
-Welcome! 
-A few sentences
+It is the **final day** of Module 2, and while we're sad to be leaving you 😭, we're also **unbelievably proud** of you! 👏💯
 
 
 
-## Learning goals for today
+## Goals for today
 
-- Go
-- Fight
-- Win
+- Summarize everything we explored in the past three weeks.
+- Reflect on your learning experience in this module.
+- Discuss directions for future learning and look ahead to Module 3 (led by Sinéad).
+- Wrap up the module with a final survey and sharing resources.
+
+```{admonition} Milestone (last one, promise!)
+:class: important
+Please complete [the final survey](https://forms.gle/1yB81vKCfXx3BRNB9) for Module 2.
+```
 
 
-## Timing
 
-- We will start the day on Zoom at 9:00 AM PDT _sharp_.
-- We will have a mix of synchronous lectures and group exercises, interspersed with several short breaks.
-- We will take a longer break for lunch between XX:XX and YY:YY.
-- We will convene for a quick debrief on Zoom at 4:30 PM PDT.
+## Timing for today
+
+- We will start the day with morning scrum on Zoom at 9:00AM _sharp_.
+- We will _most likely_ be done with everything before noon!
 
 
 

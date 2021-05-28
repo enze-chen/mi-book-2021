@@ -4,7 +4,7 @@
 - file              : intro
 
 - part              : Preamble 📜
-  numbered          : true
+  numbered          : 3
   chapters:
     - file          : preamble/overview
     - file          : preamble/setup
@@ -68,13 +68,16 @@
 
     - file          : week_2/08/day_08
       sections:
+        - file      : week_2/08/guest_ucb
         - file      : week_2/08/abstracts 
 
     - file          : week_2/09/day_09
       sections:
-        - file      : week_2/09/guest_mp
+        - file      : week_2/09/check_in
 
     - file          : week_2/10/day_10
+      sections:
+        - file      : week_2/10/guest_aionics
 
  
 
@@ -83,11 +86,11 @@
     - file          : week_3/11/day_11
       sections:
         - file      : week_3/11/presentations
-        - file      : week_3/11/guest_citrine
 
     - file          : week_3/12/day_12
       sections:
         - file      : week_3/12/pull_requests
+        - file      : week_3/12/guest_citrine
 
     - file          : week_3/13/day_13
       sections:
@@ -108,7 +111,7 @@
 
 
 - part              : Appendices 📝
-  numbered          : true
+  numbered          : 3
   chapters:
     - file          : appendix/acknowl
     - file          : appendix/glossary 

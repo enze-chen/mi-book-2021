@@ -167,6 +167,20 @@ You can search in the documentation for that package for the preferred installat
 Generally speaking, all Python packages are `pip`-installable, while only some are `conda`-installable.
 ```
 
+For this module, you should install `pymatgen` and `matminer` as addition packages.
+In the Prompt/Terminal, activate your conda environment and then type the line:
+
+````{margin}
+```{tip}
+The `==number` syntax means we want to install a specific version of that package, and this is often done for compatibility reasons.
+```
+````
+
+
+```bash
+pip install pymatgen==2020.10.20 matminer==0.6.5
+```
+
 
 
 ## General use
@@ -187,7 +201,7 @@ If you start a notebook and then decide to install a new package, you have to co
 
 ### Python files
 
-You can also type your code into a Python file (`.py` extension) using your favorite text editor, such as [Atom](https://atom.io/) or [Sublime Text](https://www.sublimetext.com/).
+You can also type your code into a Python file (`.py` extension) using your favorite text editor, such as [Atom](https://atom.io/) or [Sublime Text](https://www.sublimetext.com/), or your favorite IDE, such as [PyCharm](https://www.jetbrains.com/pycharm/) or [Spyder](https://www.spyder-ide.org/).
 You can then run the file using the Prompt/Terminal command:
 ```bash
 python my_python_file.py 

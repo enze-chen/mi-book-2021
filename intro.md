@@ -23,3 +23,9 @@ Most of the curriculum will be accessible to everyone (the interactive exercises
 If you want to view the source code of this textbook, you can hover over [Octocat](https://github.com/octocat) in the top-right corner and click {guilabel}`repository` or [click here](https://github.com/enze-chen/mi-book).
 
 
+
+### Note on external links
+
+The default behavior of Jupyter Book/Sphinx/HTML is to open all links _in the current window_, so if you want to open external links in a new tab, you will have to `Ctrl+Click` the link or right click and select {guilabel}`Open link in new tab`.
+Otherwise you'll have to keep clicking the ⬅ button in your browser to return to (and likely reload) the Jupyter Book.
+

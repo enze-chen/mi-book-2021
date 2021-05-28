@@ -1,27 +1,24 @@
 (h1:11:intro)=
-# Day 11: Research + guest speaker
+# Day 11: Research
 
-TODO
-
-
-Welcome! 
-A few sentences
+We hope everyone had a great weekend and welcome to day 🍴 of Module 2.
+We are now in the home stretch 😢, so it's time to start thinking about our final project presentations.
 
 
 
-## Learning goals for today
+## Goals for today
 
-- Go
-- Fight
-- Win
+- Continue working on your self-directed research projects.
+- Discuss tips for effective presentations.
 
 
-## Timing
 
-- We will start the day on Zoom at 9:00 AM PDT _sharp_.
-- We will have a mix of synchronous lectures and group exercises, interspersed with several short breaks.
-- We will take a longer break for lunch between XX:XX and YY:YY.
-- We will convene for a quick debrief on Zoom at 4:30 PM PDT.
+## Timing for today
+
+- We will start the day with morning scrum on Zoom at 9:00AM _sharp_.
+- Enze will hold drop-in OH from 2:00PM to 3:00PM at the same Zoom link.
+- Enze will also hold tea time from 3:00PM to 3:20PM at the same Zoom link. 🍵
+- We will convene for a quick debrief on Zoom at 4:30PM.
 
 
 

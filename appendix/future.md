@@ -24,7 +24,7 @@ Here we will share bits and pieces of our vision for how interactive computing e
 If you have ideas or suggestions and would like to collaborate, please do not hesitate to contact us. 😍
 
 ```{note}
-If you were looking for content guidance (i.e., what to study after going through this curriculum), please refer to {doc}`../week_3/15/next`
+If you were looking for _content suggestions_ (i.e., what to study after going through this curriculum), please refer to {doc}`../week_3/15/next`
 ```
 
 
