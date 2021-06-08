@@ -13,7 +13,7 @@ We're 50% of the way through the module! How time flies.
 
 ```{admonition} Milestone
 :class: important
-Please submit a short abstract for your research project in [this Google Form](https://forms.gle/9SjkKXiRLemKC8768).
+Please submit a short proposal for your research project in [this Google Form](https://forms.gle/9SjkKXiRLemKC8768).
 ```
 
 

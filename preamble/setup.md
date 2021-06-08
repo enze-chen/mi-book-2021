@@ -226,7 +226,7 @@ Update Slack (desktop app only)
 Most of this curriculum should be fully functional in any modern web browser, though we find that the experience seems to work best on [Google Chrome](https://www.google.com/chrome/), so we'll "recommend" that.
 [Firefox](https://www.mozilla.org/en-US/firefox/new/) should also be fine, but Safari and Edge may have a few hiccups.
 Regardless of which browser you use, we ask that you **please update it** at the start of this module since we will be relying heavily on the browser for our curricular activities.
-All browsers appear to have adopted a similar structure of checking for updates using `[Menu] > Help > About` (see images for examples), while Safari can be updated through the App Store.
+All browsers appear to have adopted a similar structure of checking for updates using {guilabel}`[Menu]` > {guilabel}`Help` > {guilabel}`About` (see images for examples), while Safari can be updated through the Apple App Store.
 
 ````{panels}
 Update Chrome

@@ -6,7 +6,7 @@ As we discussed yesterday, there will be many hands-on exercises for you in thes
 
 
 ```{attention}
-Today's activities _might_ take the whole day. Get pumped!! 💪
+Today's synchronous activities _might_ take the whole day. Get pumped!! 💪
 ```
 
 
@@ -24,7 +24,7 @@ Today's activities _might_ take the whole day. Get pumped!! 💪
 - We will kick off the day on Zoom at 9:00AM PDT _sharp_.
 - We will have a mix of synchronous lectures and group exercises, interspersed with several short breaks.
 - We will take a longer break for lunch between 12:00PM and 1:00PM PDT.
-- We will also take a break from 3:00PM to 3:30PM PDT.
+- We will also take a break from 3:00PM to 3:20PM PDT.
 - Since we'll be meeting online for most of the day, we'll debrief as part of the last session.
 
 

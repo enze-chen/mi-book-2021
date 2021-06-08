@@ -2,7 +2,7 @@
 # Acknowledgements
 
 We thank [Ryan Miyakawa](https://www2.lbl.gov/msd/people/investigators/miyakawa_investigator.html) for organizing the internship, and Ryan and [Sinéad Griffin](https://www2.lbl.gov/msd/people/investigators/griffin_investigator.html) for teaching the other two modules in this sequence (Module 1: Experimental Design and Module 3: DFT Calculations, respectively).
-We thank Teresa Calarco and the other Materials Sciences Divison staff for their help in organizing the funding and logistics. 🙇‍♂️
+We thank Teresa Calarco, [Tiffany Reardon](https://engineering.berkeley.edu/popup/tiffany-reardon/), and the other LBL/UCB staff for their help in organizing the funding and logistics. 🙇‍♂️
 
 We thank the developers of [Jupyter Book](https://jupyterbook.org/intro.html) and the [Executable Books Project](https://executablebooks.org/en/latest/index.html) for creating this software and providing **excellent documentation**. 🙏
 Their open-source code is [released on GitHub](https://github.com/executablebooks/jupyter-book) under a BSD 3-Clause License.

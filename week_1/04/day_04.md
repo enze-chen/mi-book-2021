@@ -7,7 +7,7 @@ And we'll do it all in one day.
 It'll be fun. 😎
 
 ```{attention}
-Today's activities _will almost surely_ take the whole day. Get pumped!! 💪
+Today's synchronous activities _will almost surely_ take the whole day. Get pumped!! 💪
 ```
 
 

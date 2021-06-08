@@ -9,7 +9,7 @@ Alex will be sharing her story with us so please come and be ready to ask questi
 ## Goals for today
 
 - Learn about informatics for electron microscopy and life as a UCB Ph.D. student.
-- Have a mini-lesson on writing abstracts (i.e., short summaries of research).
+- Have a mini-lesson on writing proposals (i.e., short summaries of research plan).
 - Continue working on your self-directed research projects.
 
 
