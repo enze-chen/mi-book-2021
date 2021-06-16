@@ -7,11 +7,13 @@ import sys
 import nbformat
 import re
 from copy import deepcopy
+from datetime import datetime
 
 # command line interface
 if len(sys.argv) != 2:
     print('Usage: python make_blank_nb.py [dirname]')
     sys.exit(1)
+print(f'Starting cleaning at {datetime.now()}')
 dirname = sys.argv[1]
 days = os.listdir(dirname)
 for d in days:

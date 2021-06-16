@@ -2,7 +2,7 @@
 # Overview
 
 A slightly more descriptive title for this module could be the following:
-**Data-driven understanding of photoactive materials using methods and tools from materials informatics**.
+**Data-driven understanding of dielectric materials using methods and tools from materials informatics**.
 
 ```{figure} ../assets/fig/preamble/petousis_n_Eg.png
 :alt: petousis_n_Eg
@@ -32,7 +32,7 @@ If you’re more comfortable with a different programming language (e.g., MATLAB
 ```
 ````
 
-In this module, you will conduct a short MI research project that is focused on using data-driven methods to improve our understanding of photoactive materials. 
+In this module, you will conduct a short MI research project that is focused on using data-driven methods to improve our understanding of dielectric materials. 
 We will hold interactive tutorials in Week 1 to introduce the key concepts in MI and ensure everyone is equipped with the main programmatic tools (_in Python_) to succeed. 
 In Weeks 2 and 3, we’ll give you freedom to investigate a research question of interest to you, while still providing you with ample support and resources (and a few mini-lectures). 
 In addition to gaining MI and programming knowledge, you will be strengthening your scientific communication skills, culminating in a short(!) final presentation to share what you learned from your research project. 
@@ -91,6 +91,7 @@ Go Bears! 🐻
 ````
 
 
+## References
 
 ```{bibliography}
 :style: unsrt

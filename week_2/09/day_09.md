@@ -23,7 +23,7 @@ Please submit a short proposal for your research project in [this Google Form](h
 - We will start the day with morning scrum on Zoom at 9:00AM _sharp_.
 - Enze will hold drop-in OH from 2:00PM to 3:00PM on Zoom.
 - Enze will also hold tea time from 3:00PM to 3:20PM on Zoom. 🍵
-- We will convene for a quick debrief on Zoom at 4:30PM.
+- We will convene for a quick debrief on Zoom at 4:00PM.
 
 
 

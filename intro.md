@@ -1,7 +1,7 @@
 (h1:welcome)=
 # Welcome! 👋
 
-This digital, *interactive* textbook contains the curriculum for Module 2, where we will be using **materials informatics** (MI) techniques to study photoactive materials.
+This digital, *interactive* textbook contains the curriculum for Module 2, where we will be using **materials informatics** (MI) techniques to study dielectric materials.
 This website is intended to be a one-stop-shop where you can access all of the educational materials we'll be using.
 We are super excited that you're here and we can't wait to embark on this learning journey with you! 🌱
 
@@ -26,6 +26,6 @@ If you want to view the source code of this textbook, you can hover over [Octoca
 
 ### Note on external links
 
-The default behavior of Jupyter Book/Sphinx/HTML is to open all links _in the current window_, so if you want to open external links in a new tab, you will have to `Ctrl+Click` the link or right click and select {guilabel}`Open link in new tab`.
+The default behavior of Jupyter Book/Sphinx/HTML is to open all links _in the current tab_, so if you want to open external links in a new tab, you will have to `Ctrl+Click` the link or right click and select {guilabel}`Open link in new tab`.
 Otherwise you'll have to keep clicking the ⬅ button in your browser to return to (and likely reload) the Jupyter Book.
 

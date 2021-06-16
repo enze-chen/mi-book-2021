@@ -13,6 +13,15 @@ Revisit our discussion on how to find datasets.
 
 ## Coursework
 
+### Programming
+
+Best practices
+
+Deeper understanding of the language and programming paradigms.
+
+Debugging is painful, but really nice to know.
+
+
 ### Data science and Statistics
 
 DATA courses

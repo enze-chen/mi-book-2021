@@ -16,15 +16,18 @@
   chapters:
     - file              : week_1/01/day_01
       sections:
-        - file          : week_1/01/module
         - file          : week_1/01/informatics
-        - file          : week_1/01/python
+        - file          : week_1/01/module
+        - file          : week_1/01/intro_python_jupyter_blank
+          title         : Intro to Python
+        - file          : week_1/01/homework_01
           sections:
-            - file      : week_1/01/intro_jupyter_python_blank
-              title     : Follow-along notebook
+            - file      : week_1/01/python_greatest_hits_blank
+            - file      : week_1/01/python_gory_details_blank
 
     - file              : week_1/02/day_02
       sections:
+        - file          : week_1/02/recap_logistics
         - file          : week_1/02/opportunities
         - file          : week_1/02/files
         - file          : week_1/02/tables
@@ -88,6 +91,7 @@
     - file              : week_3/11/day_11
       sections:
         - file          : week_3/11/presentations
+        - file          : week_3/11/grad_school
 
     - file              : week_3/12/day_12
       sections:

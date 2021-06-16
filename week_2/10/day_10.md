@@ -24,7 +24,7 @@ Clarify any questions and concerns you may have regarding your project during th
 - Austin will be speaking on Zoom (same link) from 10:00AM to 11:00AM.
 - Enze will hold drop-in OH from 2:00PM to 3:00PM on Zoom.
 - Enze will also hold tea time from 3:00PM to 3:20PM on Zoom. 🍵
-- We will convene for a quick debrief on Zoom at 4:30PM.
+- We will convene for a quick debrief on Zoom at 4:00PM.
 
 
 

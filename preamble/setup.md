@@ -15,7 +15,7 @@ kernelspec:
 
 
 ```{important}
-**Estimated time: 15-30 minutes**. 
+**Estimated time: 15-20 minutes**. 
 We greatly appreciate you taking the time to complete these tasks _before_ the first day we meet (Monday, June 28th). 🙇‍♂️
 If you have any questions or encounter difficulties, please don't hesitate to ping us! 
 ```
@@ -33,7 +33,7 @@ The objective here is have these accounts *created and ready for use*; we'll pro
 ```
 
 ```{note}
-If you _already have_ a GitHub, Hypothesis, and/or Materials Project account, you do **not** have to create a new account and should just use your existing one on that platform.
+If you _already have_ a GitHub and/or Materials Project account, you do **not** have to create a new account and should just use your existing one on that platform.
 ```
 
 
@@ -68,7 +68,7 @@ If it successfully opens an issue for you, then your account is all set up and y
 There's no need to submit the issue (you can just close the tab), unless you actually have an issue.
 
 
-
+<!--
 ### Hypothesis
 
 [Hypothesis](https://web.hypothes.is/) is a neat little tool that we'll be testing out to facilitate questions and discussions in context.
@@ -119,7 +119,7 @@ In order to see my comment, you will have to open up the Hypothesis tab on the p
 Now you should see the question above highlighted (in blue, on my computer) and my comment appear in the Hypothesis sidebar.
 Please contribute your thoughts too. 🙂
 You will also be able to _add your own annotations anywhere in this book_ and it will only be viewable by members of our user group.
-
+-->
 
 
 ### JupyterHub/DataHub

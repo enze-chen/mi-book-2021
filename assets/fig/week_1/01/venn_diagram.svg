@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="venn_diagram.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 210 297"
+   height="297mm"
+   width="210mm"
+   inkscape:export-filename="C:\Users\Enze\Documents\GitHub\mi-book\assets\fig\week_1\01\venn_diagram.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     inkscape:window-maximized="1"
+     inkscape:window-y="-9"
+     inkscape:window-x="-9"
+     inkscape:window-height="1001"
+     inkscape:window-width="1920"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="410.99758"
+     inkscape:cx="535.96336"
+     inkscape:zoom="0.98994949"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <path
+       d="M 148.65625,85.535995 A 43.65625,43.65625 0 0 1 105.11162,129.1921 43.65625,43.65625 0 0 1 61.344321,85.759244 43.65625,43.65625 0 0 1 104.66513,41.88103 43.65625,43.65625 0 0 1 148.65397,85.089504"
+       sodipodi:arc-type="arc"
+       sodipodi:open="true"
+       sodipodi:end="6.2729577"
+       sodipodi:start="0"
+       sodipodi:ry="43.65625"
+       sodipodi:rx="43.65625"
+       sodipodi:cy="85.535995"
+       sodipodi:cx="105"
+       sodipodi:type="arc"
+       id="path833"
+       style="fill:#ff7f0e;fill-opacity:0.2;stroke:none;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       style="fill:#1e73b4;fill-opacity:0.2;stroke:none;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path833-0"
+       sodipodi:type="arc"
+       sodipodi:cx="78.352684"
+       sodipodi:cy="134.9375"
+       sodipodi:rx="43.65625"
+       sodipodi:ry="43.65625"
+       sodipodi:start="0"
+       sodipodi:end="6.2729577"
+       sodipodi:open="true"
+       sodipodi:arc-type="arc"
+       d="M 122.00893,134.9375 A 43.65625,43.65625 0 0 1 78.464309,178.59361 43.65625,43.65625 0 0 1 34.697005,135.16075 43.65625,43.65625 0 0 1 78.017813,91.282534 43.65625,43.65625 0 0 1 122.00665,134.49101" />
+    <path
+       style="fill:#2ca02c;fill-opacity:0.2;stroke:none;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path833-4"
+       sodipodi:type="arc"
+       sodipodi:cx="131.64731"
+       sodipodi:cy="134.9375"
+       sodipodi:rx="43.65625"
+       sodipodi:ry="43.65625"
+       sodipodi:start="0"
+       sodipodi:end="6.2729577"
+       sodipodi:open="true"
+       sodipodi:arc-type="arc"
+       d="M 175.30356,134.9375 A 43.65625,43.65625 0 0 1 131.75893,178.59361 43.65625,43.65625 0 0 1 87.991629,135.16075 43.65625,43.65625 0 0 1 131.31244,91.282534 43.65625,43.65625 0 0 1 175.30128,134.49101" />
+    <text
+       id="text860"
+       y="68.688263"
+       x="104.90353"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87778px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87778px;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         y="68.688263"
+         x="104.90353"
+         id="tspan858"
+         sodipodi:role="line">Materials</tspan><tspan
+         id="tspan862"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87778px;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         y="81.035484"
+         x="104.90353"
+         sodipodi:role="line">informatics</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87778px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.225837"
+       x="146.28601"
+       y="137.4203"
+       id="text860-1"><tspan
+         id="tspan887"
+         sodipodi:role="line"
+         x="146.28601"
+         y="137.4203"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87778px;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.225837">CMS</tspan></text>
+    <text
+       id="text860-1-9"
+       y="136.09097"
+       x="62.586346"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.43124px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.225837"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.43124px;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.225837"
+         y="136.09097"
+         x="62.586346"
+         sodipodi:role="line"
+         id="tspan887-1">Experiments</tspan></text>
+  </g>
+</svg>
