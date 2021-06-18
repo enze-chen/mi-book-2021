@@ -254,6 +254,9 @@ out = interactive_output(plot_XRD, {'a':a_widget, 'wavelength':w_widget, 'cell_t
 display(g, out)
 ```
 
+
+## References
+
 ```{bibliography}
 :style: unsrt
 :filter: docname in docnames

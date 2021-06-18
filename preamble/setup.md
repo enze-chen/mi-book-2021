@@ -196,7 +196,7 @@ More information can be found in their [support documentation](https://support.z
 We will be using [Slack](https://slack.com/) for communications this summer, and we hope that you all feel comfortable reaching out to us (instructors) and each other on Slack with any questions.
 You should already have an account on our Slack workspace, and it doesn't really matter to us whether you use the browser version of Slack or the desktop app, as long as you're monitoring it for updates during working hours (you can set notifications in Preferences; see left panel below).
 If you do choose the desktop app, make sure you also understand how to update it (see right panel below).
-To help focus the discussions and your questions, please use the `#module2` channel for all conversations related to the contents of this module.
+To help focus the discussions and your questions, please use the `#module-2` channel for all conversations related to the contents of this module.
 We will discuss more Slack details during our first meeting.
 
 ````{panels}

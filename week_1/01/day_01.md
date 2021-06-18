@@ -18,12 +18,12 @@ If you don't have time to do so, not to worry---we will clarify <s>everything</s
 
 - Get to know one another better and our motivations for being here.
 - Discuss the structure of this module and clarify the expectations.
-- Introduce materials informatics at a high level.
-- Introduce the Python programming language and how we will use it in this module.
-- Get ample practice with Python and the Jupyter environment, including:
+- Introduce [materials informatics (MI)](https://en.wikipedia.org/wiki/Materials_informatics) at a high level.
+- Introduce the [Python programming language](https://www.python.org/) and how we will use it for MI.
+- Get ample practice with Python and the [Jupyter environment](https://jupyter.org/), including:
     - Common syntax, data types, and data structures
     - Working with files
-    - Scientific computing in NumPy
+    - Scientific computing in [NumPy](https://numpy.org/)
 
 
 

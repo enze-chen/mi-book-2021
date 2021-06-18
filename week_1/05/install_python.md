@@ -11,7 +11,7 @@ While there are many benefits to using a cloud-based platform like DataHub for o
 Some reasons, in no particular order, can include:
 
 - Running Python without an internet connection
-- Flexibility to install more packages
+- Flexibility to install more packages permanently
 - Easier data access and security (i.e., files are stored locally)
 - Using more compute resources (e.g., RAM), if your computer is better equipped
 
@@ -86,7 +86,7 @@ If all of the above worked for you, then it's likely installation was successful
 
 ### Conda virtual environments
 
-By now you've probably seen me use "virtual environments" a few times, so it's time to dig into what this phrase means.
+By now you've probably seen us use "virtual environments" a few times, so it's time to dig into what this phrase means.
 An _environment_ is essentially a configuration of Python and its associated packages and settings. 
 You'll set up an environment any time you want to use Python for a programming project, and this, in and of itself, is straightforward. 
 But now let's imagine you want to do a second project, and this project requires a different set of Python packages that _conflict_ with your current environment (e.g., different versions are required). 
@@ -122,14 +122,14 @@ You choose what `my_env_name` should be (no spaces!). 🙂
 This is the list we want to start off with, so keep all six of them there.
 Recall that unlike Anaconda, Miniconda doesn't come with a lot of these packages preinstalled, so we have to manually specify them!
 
-As the packages install, you might have to type `y` + `Enter` to confirm the installation.
+As the packages install, you might have to type <kbd>y</kbd> + <kbd>Enter</kbd> to confirm the installation.
 Once you have finished creating your environment, you have to **activate** it by typing:
 
 ```bash
 conda activate my_env_name
 ```
 
-and pressing `Enter`, where `my_env_name` is the name of the environment you created. 
+and pressing <kbd>Enter</kbd>, where `my_env_name` is the name of the environment you created. 
 As an example:
 
 ```{image} ../../assets/fig/week_1/05/conda_activate.png

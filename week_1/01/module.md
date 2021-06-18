@@ -54,7 +54,7 @@ There's also _no requirement or expectation_ to be working outside of "working h
 ### Assessments
 
 To help build understanding and collect feedback, there will be a scaffolded sequence of assessments, which are a mix of reading, writing, coding, and making presentations.
-These are (or at least, should be) low stakes and implemented with the following considerations in mind:
+These are (or at least, should be) individually low stakes and implemented with the following considerations in mind:
 
 - You will **learn by doing**, which is particularly important when it comes to data science and programming.
 - Much of the coding, even in self-_directed_ research, will be done in **groups**. 
@@ -70,8 +70,8 @@ Thus, we hope you are excited to challenge yourself to learn new things in this 
 As mentioned in the kickoff meeting, one thing that we will try to incorporate into this module is inviting guest speakers to share their work and life story with us.
 These are great career development opportunities for you to learn about the impact of materials informatics and how graduate school (or not!) can prepare you for this field.
 We've tried to be very intentional about selecting speakers with diverse educational and professional journies for you to learn about (see their respective pages for more information and times).
-**We kindly ask you to attend these talks and ask them questions.**
-They're all very enthusiastic to spend an hour with us and they look forward to the discussions!
+**We kindly ask you to attend these talks and ask the speaker questions.**
+They're all very enthusiastic to spend their time with us and they look forward to the discussions!
 
 
 (h2:01:resources)=
@@ -102,7 +102,7 @@ Feel free to use the method(s) you're most comfortable with.
 ### Slack 
 
 We will use Slack as our primary communication platform for sending private and group messages, in addition to files, images, and _emojis_. 🙌🥳😍🤍🐢
-Let's keep our group conversations in the **#module2 channel**.
+Let's keep our group conversations in the **#module-2 channel**.
 
 We kindly ask that you are "active" during working hours on Slack.
 We encourage you to [turn on notfications](https://slack.com/help/articles/201355156-Configure-your-Slack-notifications) during this time.

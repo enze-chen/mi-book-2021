@@ -33,6 +33,7 @@
         - file          : week_1/02/tables
         - file          : week_1/02/databases
         - file          : week_1/02/reading_docs
+        - file          : week_1/02/homework_02
 
     - file              : week_1/03/day_03
       sections:
@@ -40,6 +41,7 @@
         - file          : week_1/03/data_viz
         - file          : week_1/03/best_viz
         - file          : week_1/03/advanced_viz
+        - file          : week_1/03/homework_03
 
     - file              : week_1/04/day_04
       sections:
@@ -49,6 +51,7 @@
         - file          : week_1/04/features
         - file          : week_1/04/advanced_ml
         - file          : week_1/04/practical
+        - file          : week_1/04/homework_04
 
     - file              : week_1/05/day_05
       sections:
@@ -59,6 +62,7 @@
         - file          : week_1/05/best_practices
         - file          : week_1/05/reading_papers
         - file          : week_1/05/install_python
+        - file          : week_1/05/homework_05
 
 
 
@@ -69,7 +73,6 @@
     - file              : week_2/07/day_07
       sections:
         - file          : week_2/07/survey_07
-        - file          : week_2/07/week_2_notebook
 
     - file              : week_2/08/day_08
       sections:

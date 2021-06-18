@@ -9,7 +9,7 @@ This is a really special opportunity and you won't want to miss Austin's story. 
 ## Goals for today
 
 - Continue working on your self-directed research projects.
-- [Check-in with Enze](https://docs.google.com/spreadsheets/d/1pO6ei4Rua8z8N9CYzgPr4ae1lBM4Cz8NmAfn36zrvNA/edit#gid=0) regarding your research project.
+- [Check-in with Enze](https://docs.google.com/spreadsheets/d/1pO6ei4Rua8z8N9CYzgPr4ae1lBM4Cz8NmAfn36zrvNA/edit#gid=0) at your selected time regarding your research project.
 - Learn about informatics for battery development and the journey from farm (UC Davis) to Farm (Stanford) to... founding your own startup!
 
 ```{admonition} Milestone

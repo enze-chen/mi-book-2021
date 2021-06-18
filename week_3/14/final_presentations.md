@@ -5,7 +5,7 @@
 After three weeks of intense focus on MI, you're ready to showcase what you've learned in your self-directed research projects.
 We'll be starting final presentations on Zoom at 3:00PM PDT and you're welcome to invite family and friends to this event! 🙌
 
-Before then, please [edit this page on GitHub](https://github.com/enze-chen/mi-book/blob/master/week_3/14/final_presentations.md) to add (everything in square brackets): 
+Before then, please [edit this page on GitHub](https://github.com/enze-chen/mi-book/blob/master/week_3/14/final_presentations.md) to add everything in square brackets: 
 
 - Your emoji
 - Presentation title
@@ -16,6 +16,9 @@ Detailed instructions for how to do this can be found in Tuesday's mini-lesson o
 
 The following presenters are ordered alphabetically by first name.
 The actual order of presentations will be determined during today's morning scrum. 😉
+
+_And for everyone else_: Check out the cool projects these students have made! 😎
+
 
 
 ## Alexa [Your emoji]

@@ -12,7 +12,7 @@ exclude_patterns            : ["README.md", "LICENSE.md", "**_master.ipynb"]
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
-  execute_notebooks         : auto      # 'auto,' 'cache,' or 'force'
+  execute_notebooks         : cache      # 'auto,' 'cache,' or 'force'
   timeout                   : 300       # max seconds for notebook to execute
   allow_errors              : true      # whether to allow and show errors
 
