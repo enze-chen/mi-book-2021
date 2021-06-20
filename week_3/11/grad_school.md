@@ -21,7 +21,7 @@ Like undergraduate admissions (unfortunately), the process is anything but clear
 Unlike undergraduate admissions (unfortunately), there is also a different set of evaluation criteria that almost surely has changed in light of recent events.
 What the process is like now is anyone's guess. 🤷‍
 
-And who better to discuss all this [and more] with than our very own?
+And who better to discuss all of this with than our very own?
 As you know from the introduction, Mark is currently a Professor of MSE at UCB and Director of MSD at LBL.
 What you may not know is that previously Mark served as Chair of the [UCB MSE department](https://mse.berkeley.edu/) (2012-2018) and before that held professorships at [Northwestern University](https://www.mccormick.northwestern.edu/materials-science/) (2000-2005) and [UC Davis](https://mse.engineering.ucdavis.edu/) (2005-2009).
 He has been on several graduate admissions committees (and chaired a few) and has mentored dozens of undergraduate and graduate students in his academic career.

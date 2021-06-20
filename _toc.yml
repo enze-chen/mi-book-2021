@@ -29,27 +29,37 @@
       sections:
         - file          : week_1/02/recap_logistics
         - file          : week_1/02/opportunities
-        - file          : week_1/02/files
-        - file          : week_1/02/tables
+        - file          : week_1/02/file_types_blank
+        - file          : week_1/02/tabular_data_blank
         - file          : week_1/02/databases
+          sections:
+            - file      : week_1/02/materials_project_blank
         - file          : week_1/02/reading_docs
         - file          : week_1/02/homework_02
 
     - file              : week_1/03/day_03
       sections:
         - file          : week_1/03/recap_data
-        - file          : week_1/03/data_viz
-        - file          : week_1/03/best_viz
-        - file          : week_1/03/advanced_viz
+        - file          : week_1/03/data_viz_blank
+        - file          : week_1/03/best_practices_viz_blank
+        - file          : week_1/03/advanced_viz_blank
         - file          : week_1/03/homework_03
 
     - file              : week_1/04/day_04
       sections:
         - file          : week_1/04/recap_viz
         - file          : week_1/04/intro_ml
+          sections:
+            - file      : week_1/04/intro_ml_blank
         - file          : week_1/04/ml_perf
+          sections:
+            - file      : week_1/04/ml_perf_blank
         - file          : week_1/04/features
+          sections:
+            - file      : week_1/04/features_blank
         - file          : week_1/04/advanced_ml
+          sections:
+            - file      : week_1/04/advanced_ml_blank
         - file          : week_1/04/practical
         - file          : week_1/04/homework_04
 
@@ -57,12 +67,12 @@
       sections:
         - file          : week_1/05/recap_ml
         - file          : week_1/05/res_overview
-        - file          : week_1/05/photo_mater
+        - file          : week_1/05/dielectrics
         - file          : week_1/05/brainstorm
-        - file          : week_1/05/best_practices
+        - file          : week_1/05/best_practices_blank
         - file          : week_1/05/reading_papers
-        - file          : week_1/05/install_python
         - file          : week_1/05/homework_05
+        - file          : week_1/05/install_python
 
 
 
@@ -103,7 +113,9 @@
 
     - file              : week_3/13/day_13
       sections:
-        - file          : week_3/13/deep_ml
+        - file          : week_3/13/deep_learning
+          sections:
+            - file      : week_3/13/deep_learning_blank
 
     - file              : week_3/14/day_14
       sections:

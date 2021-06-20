@@ -54,7 +54,7 @@ The bullets we list below might not apply to every proposal (here's [the proposa
     - Typically this also has a timeline consideration (i.e., is what you're proposing feasible for the funding period?), but we only have two weeks, lol. So you can dream a little bigger. 🙂
 - Why are you the right person for this job?
     - Typically this includes previous experience, particularly publications. 
-    Feel to free to list previous courses, previous experiences, things you've learned in this module, and/or why this problem is so important to _you_.
+    But that's not really relevant here, so feel to free to list previous courses, previous experiences, things you've learned in this module, and/or why this problem is so important to _you_.
 - What is the metric for success?
 - What will be the impact of this work on science/society?
 
@@ -67,7 +67,7 @@ We encourage you to try and find a suitable figure that illustrates some idea in
 This could be:
 - A figure you generated regarding some data you found (e.g., what we practiced in week 1).
 - A figure describing the steps you're taking (e.g., with boxes and arrows).
-- A figure/illustration made by someone else, which we'll allow for this assignment as long as it's properly cited.
+- A figure/illustration of something cool made by someone else, which we'll allow for this assignment as long as it's properly cited.
 
 
 

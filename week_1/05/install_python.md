@@ -1,5 +1,5 @@
 (h1:05:install_python)=
-# Installing Python locally
+# Installing Python locally (optional)
 
 ```{attention}
 For the purposes of this summer internship, you should be able to complete everything in DataHub (in the cloud).

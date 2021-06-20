@@ -1,7 +1,7 @@
 (h1:05:intro)=
 # Day 05: MI research
 
-Welcome to day 🖐 of Module 2 where we will pivot from discussing programmatic tools to identifying research questions for data-driven design of dielectric materials. 
+Welcome to day 🖐 of Module 2 where we will pivot from discussing programmatic tools to identifying research questions for data-driven design of dielectrics and semiconductors. 
 We want you to think hard about your choice of research question such that by the end of the day, you will have come up with an _initial_ direction of study (and then go relax over the holiday weekend!).
 
 

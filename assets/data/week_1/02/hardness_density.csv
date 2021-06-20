@@ -1,7 +1,9 @@
-﻿lithium,0.6,0.534
+﻿# Data obtained from Wikipedia,,
+Element,Mohs hardness,Density (g/cc)
+lithium,0.6,0.534
 beryllium,5.5,1.85
 boron,9.4,2.34
-carbon (diamond),10,3.513
+carbon,10,3.513
 sodium,0.5,0.968
 magnesium,2.5,1.738
 aluminium,2.75,2.7
