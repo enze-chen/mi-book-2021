@@ -67,7 +67,7 @@ First, let's lay out some ground rules:
 - **Timing**: 6 minutes maximum.
 We won't cut you off per se, but we'll trust you to stick to this upper bound.
 There are six of you and factoring in a few minutes for questions, transitions, and delays, this will help ensure the whole thing wraps up in an hour.
-- **Slides**: 6 slides maximum (including title slide).
+- **Slides**: 5 slides maximum (including title slide).
 This will be **a hard limit**.
 _Please_ respect this out of fairness to everyone and understand we're limiting you to help with the time control and with focusing your narrative to the salient points.
 You can, like in Enze's slam presentation, have animations and multiple pieces of content on one slide (but don't go crazy).
@@ -75,7 +75,6 @@ You can, like in Enze's slam presentation, have animations and multiple pieces o
 As to the sequence of slides, here is one suggestion that you may or may not wish to follow:
 1. Title slide: Title of presentation, your affiliation, and one figure (that may or may not reappear later; in any case, you shouldn't spend time discussing the figure here).
 1. Intro slide: What is the problem and why is it significant?
-1. Methods slide: What approach did you take, what software did you use, what data did you use, etc.
 1. Data/Results slide: Some data visualization, statistical analysis, initial model performance, etc.
 1. Results/Discussion slide: Screening results, materials selection, feature importance, etc.
 1. Conclusion: Summary of presentation, next steps, broader impacts, etc.
@@ -101,7 +100,7 @@ You can continue to finalize your research and your presentation.
 The presentation itself you can and should still work on, and you don't have to submit that.
 
 **Thursday**: In the morning scrum, we'll decide the speaking order. 😁
-In the afternoon, at 3:00PM PDT, we'll start the slam presentations on Zoom.
+In the afternoon, we'll start the slam presentations on Zoom.
 **Please feel free to invite guests** to come see your (and others') work!
 Family, friends, mentors, or anyone else you think is appropriate.
 
@@ -110,8 +109,8 @@ Family, friends, mentors, or anyone else you think is appropriate.
 ## Tools
 
 For your presentation slides, you can use Microsoft PowerPoint, Apple Keynote, Google Slides, [Canva](https://www.canva.com/), or a software of your choice (again, you do _not_ have to share the presentation file with us).
-For any figures that you make, we suggest that the DPI be at least 300, which is also the minimum requirement for top-tier scientific journals.
-If you use figures from other sources, that's also fine, but _make sure to cite it_, even if it's from the public domain or a royalty free site like [Unsplash](https://unsplash.com/) or [Pexels](https://www.pexels.com/royalty-free-images).
+For any figures that you make, we suggest that the DPI (dots per inch) be at least 300, which is also the minimum requirement for top-tier scientific journals.
+If you use figures from other sources, that's also fine, but _make sure to cite it_, unless it's from the public domain or a royalty free site like [Unsplash](https://unsplash.com/) or [Pexels](https://www.pexels.com/royalty-free-images).
 Other tools and tips are best found using a Google search.
 
 

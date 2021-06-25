@@ -9,7 +9,7 @@ It's the start of week 2, and from here on out, we will be applying the concepts
 
 ## Goals for today
 
-- Check in to see how we're all doing after last week's whirlwind of learning.
+- [Check in](https://forms.gle/dtgH9RZcLvHkaDyEA) to see how we're all doing after last week's whirlwind of learning.
 - Roadmap the remaining two weeks of this module.
 - Start working on your self-directed research projects.
 

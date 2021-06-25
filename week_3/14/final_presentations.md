@@ -3,11 +3,11 @@
 
 **This is it**!
 After three weeks of intense focus on MI, you're ready to showcase what you've learned in your self-directed research projects.
-We'll be starting final presentations on Zoom at 3:00PM PDT and you're welcome to invite family and friends to this event! 🙌
+We'll be starting final presentations on Zoom at 2:00PM PDT and you're welcome to invite family and friends to this event! 🙌
 
 Before then, please [edit this page on GitHub](https://github.com/enze-chen/mi-book/blob/master/week_3/14/final_presentations.md) to add everything in square brackets: 
 
-- Your emoji
+- Your emoji ([Emojipedia](https://emojipedia.org/))
 - Presentation title
 - Description
 - A relevant figure that you created

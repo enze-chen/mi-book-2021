@@ -43,6 +43,7 @@
         - file          : week_1/03/data_viz_blank
         - file          : week_1/03/best_practices_viz_blank
         - file          : week_1/03/advanced_viz_blank
+        - file          : week_1/03/reading_papers
         - file          : week_1/03/homework_03
 
     - file              : week_1/04/day_04
@@ -70,7 +71,6 @@
         - file          : week_1/05/dielectrics
         - file          : week_1/05/brainstorm
         - file          : week_1/05/best_practices_blank
-        - file          : week_1/05/reading_papers
         - file          : week_1/05/homework_05
         - file          : week_1/05/install_python
 

@@ -15,7 +15,7 @@ In case you haven't seen a full repo before, [here is the webpage](https://githu
 
 As you can see, the UI is fairly clean with many symbols, lots of whitespace, and light colors.
 This simplicity was [intentionally designed](https://github.blog/changelog/2020-06-23-design-updates-to-repositories-and-github-ui/) to better surface repo elements and key GitHub features.
-Moreover, the developers of GitHub realized that in order to elevate GitHub to the next level and increasing platform adoption, they had to start enabling more CLI features to be accessible through the UI.
+Moreover, the developers of GitHub realized that in order to elevate GitHub to the next level and increase platform adoption, they had to start enabling more CLI features to be accessible through the UI.
 This not only improves the user experience for everyone (who doesn't like point-and-click, drag-and-drop?), but also enables less programming-savvy users to collaborate on projects.
 
 On the main page of this textbook's repo, you will notice that one of the most prominent features on the right-hand side is the **Contributors** list.
@@ -93,6 +93,7 @@ Don't touch any other lines, including adding/removing spaces!
 ```
 
 For the emoji, title, and description, replace the entire `[guiding_text]` parts.
+[Emojipedia](https://emojipedia.org/) is a good source for selecting cross-platform emojis.
 For the image, change just `temp.png` to the name of your own figure file, with the extension.
 Your figure name has to be unique to you, so we suggest something like `name_final.png` (e.g., `enze_final.png`), provided this is what you named the actual figure (PNG) file on your computer!
 We'll upload this image to the repo shortly.
@@ -187,3 +188,11 @@ This takes you to the PR dialogue, and you should note the following:
 
 If everything looks good, you can click {guilabel}`Create pull request` and then ping Enze on Slack to merge your PR!
 Woohoo! 🎉
+
+-------- 
+
+```{admonition} Submission deadline
+:class: tip
+Reminder that you should submit your PR **by EOD Wednesday**, 07/14.
+```
+

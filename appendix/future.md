@@ -13,15 +13,15 @@ kernelspec:
 (h1:appendix:future)=
 # Future directions 🛣
 
+Here we will share bits and pieces of our vision for how interactive computing environments (such as the one demonstrated in this digital textbook, among others) can be extended to enhance materials science education more broadly.
+If you have ideas or suggestions and would like to collaborate, please do not hesitate to contact us. 😍
+
 ````{margin} 
 ```{admonition} Contact
 :class: tip
 
 Enze can be reached at `chenze` at the Berkeley domain while Mark can be reached at `mdasta` at the same.
 ````
-
-Here we will share bits and pieces of our vision for how interactive computing environments (such as the one demonstrated in this digital textbook, among others) can be extended to enhance materials science education more broadly.
-If you have ideas or suggestions and would like to collaborate, please do not hesitate to contact us. 😍
 
 ```{note}
 If you were looking for _content suggestions_ (i.e., what to study after going through this curriculum), please refer to {doc}`../week_3/15/next`

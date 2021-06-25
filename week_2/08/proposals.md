@@ -45,18 +45,24 @@ University of California, Berkeley, CA 94720
 
 ### Content
 
+```{margin}
+As an example, here's [the proposal guide](https://foundry.lbl.gov/user-program/proposal-guide/proposal-questions-and-evaluation-criteria/) from LBL's [Molecular Foundry](https://foundry.lbl.gov/), which is specific to the Foundry's instruments.
+```
+
 What actually goes into the body of a proposal? 
-The bullets we list below might not apply to every proposal (here's [the proposal guide](https://foundry.lbl.gov/user-program/proposal-guide/proposal-questions-and-evaluation-criteria/) from LBL's [Molecular Foundry](https://foundry.lbl.gov/)), but we try to include the salient features in a sensible order:
+The bullets we list below might not apply to every proposal, but we try to include the salient features in a sensible order:
 - What is the scientific problem you're trying to address and why is it significant?
-- What has already been done (by you or others) to try and solve this problem?
 - What are you proposing to do? 
     - Typically this has novelty to it, but don't worry about it for this proposal.
     - Typically this also has a timeline consideration (i.e., is what you're proposing feasible for the funding period?), but we only have two weeks, lol. So you can dream a little bigger. 🙂
+    - Note: As this is only a _proposal_, you only have to write what you're _planning to accomplish_, even if you're not sure of all the nitty-gritty details at this stage.
 - Why are you the right person for this job?
     - Typically this includes previous experience, particularly publications. 
-    But that's not really relevant here, so feel to free to list previous courses, previous experiences, things you've learned in this module, and/or why this problem is so important to _you_.
+    But that's not really relevant here, so feel to free to list previous courses, previous experiences, things you've learned in this module so far, and/or why this problem is so important to _you_.
 - What is the metric for success?
+    - For example, is there a material that's commonly used today whose performance you're trying to exceed?
 - What will be the impact of this work on science/society?
+Just to hammer the message home, and it can reiterate elements of the introduction.
 
 
 
@@ -74,15 +80,15 @@ This could be:
 (h2:08:references)=
 ## References
 
-We ask that you include **at least two citations** in your proposal.
-This gives you practice searching for relevant literature (see {doc}`../../week_1/05/reading_papers`), building your ideas off of others, and giving proper attributions.
+We ask that you include **at least one citation** in your proposal.
+This gives you practice searching for relevant literature (see {doc}`../../week_1/03/reading_papers`), building your ideas off of others, and giving proper attributions.
 There are several papers in [the Google Drive](https://drive.google.com/drive/folders/1FuZJyp1yWqoMXNs0_1s8LtSzPUwC5CpM?usp=sharing) and you can refer to the week 1 pages (like {doc}`../../week_1/02/databases`) for how to format your references.
 
 -------- 
 
 ```{admonition} Submission deadline
 :class: tip
-The proposal is **due Thursday**, 07/08.
+The proposal is **due EOD Thursday**, 07/08.
 When you're ready, please submit a link to your proposal using [this Google Form](https://forms.gle/9SjkKXiRLemKC8768).
 ```
 

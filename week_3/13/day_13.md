@@ -8,9 +8,8 @@ We're almost across the finish line! 🏁
 
 ## Goals for today
 
-- (_Tentative_) Introduce concepts from deep learning for materials design.
-- Put the final touches on your self-directed research projects.
-- Rehearse and time your final presentations.
+- Continue working on your self-directed research projects.
+- **Rehearse and _time_** your final presentations.
 
 ```{admonition} Milestone
 :class: important

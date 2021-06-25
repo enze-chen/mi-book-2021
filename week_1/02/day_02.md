@@ -4,6 +4,9 @@
 Welcome to day ✌ of Module 2 where we will take a deeper dive into the field of MI with a particular emphasis on data types, data representation, and data storage.
 As we discussed yesterday, there will be many hands-on exercises for you in these lessons to build confidence and experience working with programmatic tools.
 
+```{attention}
+Today's synchronous activities _will likely_ take a majority of the day. Get pumped!! 💪
+```
 
 
 ## Goals for today
