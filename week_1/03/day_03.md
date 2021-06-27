@@ -10,7 +10,6 @@ You'll find that the process of making compelling visualizations is not-too-hard
 
 - Learn how to visualize data programmatically using [Matplotlib](https://matplotlib.org/) in Python.
 - Identify best practices for data visualizations.
-- Discuss advanced visualizations and what insights we can draw from them.
 
 
 

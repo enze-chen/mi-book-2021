@@ -41,7 +41,7 @@ Some things to take note of:
 
 - Enze was limited to only three minutes and three technical slides!
 Not a lot of room to squeeze content in.
-- For the content that he did fit in, note that it was still technically rigorous (microstructure, density functional theory, thermodynamics, etc.), but kept at a high level without going into the details.
+- For the content that he did fit in, note that it was still technically rigorous (microstructure, density functional theory, thermodynamics, etc.), but kept at a high level without going into the detailed methodology.
 This is _expected_ and the focus is on crafting a cohesive narrative (but you still gotta pack some meat in).
 - Note the heavy use of figures and light use of text.
 You should similarly use figures and animations to tell your story, with clarifying text when needed (like axes labels).
@@ -65,19 +65,19 @@ You can add in your own personality flairs (if you want) as that's the whole pur
 Alright, so how might you structure your final slam presentation?
 First, let's lay out some ground rules:
 - **Timing**: 6 minutes maximum.
-We won't cut you off per se, but we'll trust you to stick to this upper bound.
-There are six of you and factoring in a few minutes for questions, transitions, and delays, this will help ensure the whole thing wraps up in an hour.
+We won't cut you off and this is a rough upper bound.
+There are six of you and factoring in a few minutes for possible questions, transitions, and delays, this will help ensure the whole thing wraps up in under an hour.
 - **Slides**: 5 slides maximum (including title slide).
 This will be **a hard limit**.
-_Please_ respect this out of fairness to everyone and understand we're limiting you to help with the time control and with focusing your narrative to the salient points.
-You can, like in Enze's slam presentation, have animations and multiple pieces of content on one slide (but don't go crazy).
+Understand we're limiting you to help with the time control and with focusing your narrative to the salient points.
+You can, like in Enze's slam presentation, have animations and multiple pieces of content on one slide (but don't go _too_ crazy lol).
 
-As to the sequence of slides, here is one suggestion that you may or may not wish to follow:
+As to the sequence of slides, here is one _suggestion_ that you may or may not wish to follow:
 1. Title slide: Title of presentation, your affiliation, and one figure (that may or may not reappear later; in any case, you shouldn't spend time discussing the figure here).
 1. Intro slide: What is the problem and why is it significant?
 1. Data/Results slide: Some data visualization, statistical analysis, initial model performance, etc.
 1. Results/Discussion slide: Screening results, materials selection, feature importance, etc.
-1. Conclusion: Summary of presentation, next steps, broader impacts, etc.
+1. Conclusion: Key takeaways, what did you learn, what's next, etc.
 
 We trust that you all have enough experience to ultimately make the call on the content, sequencing, and style that works best for you and your work.
 We will **not** be asking you to submit your presentation files.
@@ -108,8 +108,8 @@ Family, friends, mentors, or anyone else you think is appropriate.
 
 ## Tools
 
-For your presentation slides, you can use Microsoft PowerPoint, Apple Keynote, Google Slides, [Canva](https://www.canva.com/), or a software of your choice (again, you do _not_ have to share the presentation file with us).
-For any figures that you make, we suggest that the DPI (dots per inch) be at least 300, which is also the minimum requirement for top-tier scientific journals.
+For your presentation slides, you can use Microsoft PowerPoint, Apple Keynote, Google Slides, [Canva](https://www.canva.com/), or a software of your choice.
+For any figures that you make, we suggest that the DPI (dots per inch) be _at least 300_, which is also the minimum requirement for top-tier scientific journals.
 If you use figures from other sources, that's also fine, but _make sure to cite it_, unless it's from the public domain or a royalty free site like [Unsplash](https://unsplash.com/) or [Pexels](https://www.pexels.com/royalty-free-images).
 Other tools and tips are best found using a Google search.
 

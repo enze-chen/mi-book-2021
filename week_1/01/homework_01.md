@@ -25,7 +25,7 @@ Enze will periodically check the Google Drive to respond to your comments, but y
 ## Programming
 
 Today's programming assignment is intended to be a Python primer.
-These are some core concepts in the Python language and [NumPy](https://numpy.org/) that we believe are important for you to learn.
+These are some core concepts in the Python language and [NumPy](https://numpy.org/) {cite}`harris_2020` that we believe are important for you to learn.
 As we move forward, we will be building on these concepts and you might find yourself applying them in your self-directed research.
 
 There are two notebook files based on your familiarity with the language.

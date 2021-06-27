@@ -12,7 +12,7 @@ We've opened the floodgates and inundated you with data and tools, and now we're
 And you have a presentation in two weeks' time.
 The task sounds daunting.
 The path forward appears nebulous.
-Your anxiety is rising...
+Your anxiety is rising... 🌡
 Welcome to research! 🤣
 
 In all seriousness, whether or not you identify with the above feelings, we want you to know two things:
@@ -22,7 +22,7 @@ Remember that we specifically chose you all out of a large applicant pool becaus
 You may not realize it yet, and that's OK.
 That's why we're giving you this task. 😁
 1. In terms of the technical skills, you may be better prepared than you think. 
-While there will always be nuances and more things to learn, all of the exercises you completed for last week's tutorials should have prepared you well for the programming aspect.
+While there will always be nuances and more things to learn, all of the exercises you completed for last week's tutorials should have prepared you well for both the programming aspect and how to think about problems in a data-driven way.
 We covered quite a bit of science too, even if it was subtly embedded, and now **the hardest (and non-trivial!) part is applying computational thinking** to tackle the physical science problem using data science methods.
 Fun! 💪
 
@@ -41,7 +41,7 @@ And that, already, clears a huge hurdle. 🤩
 
 ```{important}
 We've probably repeated this so much that it's getting on your nerves, but we will emphasize once more that self-_directed_ research does not mean you're working alone.
-We hope you feel supported by your peers and mentors to pursue the research that is meaningful to you, and please don't hesitate to reach out if you ever have questions or want to discuss your thoughts. 💝
+We hope you feel supported by your peers and mentors to pursue the research that is meaningful to you and to ask questions if anything is ever unclear or you just want to discuss your thoughts. 💝
 ```
 
 

@@ -15,7 +15,7 @@ kernelspec:
 
 
 ```{important}
-**Estimated time: 15-20 minutes**. 
+**Estimated time: 10-15 minutes**. 
 We greatly appreciate you taking the time to complete these tasks _before_ the first day we meet (Monday, June 28th). 🙇‍♂️
 If you have any questions or encounter difficulties, please don't hesitate to ping us! 
 ```
@@ -33,7 +33,7 @@ The objective here is have these accounts *created and ready for use*; we'll pro
 ```
 
 ```{note}
-If you _already have_ a GitHub and/or Materials Project account, you do **not** have to create a new account and should just use your existing one on that platform.
+If you _already have_ a GitHub and/or Materials Project account, you **do not** have to create a new account and should just use your existing one on that platform.
 ```
 
 
@@ -122,7 +122,7 @@ You will also be able to _add your own annotations anywhere in this book_ and it
 -->
 
 
-### JupyterHub/DataHub
+<!-- ### JupyterHub/DataHub
 
 ```{code-cell}
 :tags: [remove-cell]
@@ -137,12 +137,12 @@ Moreover, you will each get individual copies of all of the files in this repo a
 #### Test DataHub account
 
 To verify that you can access UCB's DataHub for the interactive exercises, hover over the {fa}`rocket` icon in the top-right corner and click {guilabel}`JupyterHub`.
-You should be taken to a CalNet login page, whereupon after you enter your login credentials, you should see DataHub start to boot up.
+You should be taken to a CalNet login page, whereupon after you enter your login credentials and authorize access, you should see DataHub start to boot up.
 Make sure this completes, and when it does, you can close the tab as you should be all set.
 
 ```{note}
-You have to enter DataHub through this textbook (at least once, and anytime we update the notebooks) in order for these files to sync with your personal DataHub repo.
-```
+You have to enter DataHub through the {fa}`rocket` icon anytime we update this textbook in order for these files to sync with your personal DataHub repo.
+``` -->
 
 
 

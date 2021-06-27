@@ -52,18 +52,18 @@ def plot_dielectric_data():
     symbols = ['s', 'h', 'X', 'o', '^', 'd', 'H']
     groups = df.groupby('system', sort=True)
 
-    plt.rcParams.update({'figure.figsize':(11,7.5), 'lines.markersize':10})
-    fig, ax = plt.subplots()
-
+    fig, ax = plt.subplots(figsize=(11, 7.5))
     for i, (name, group) in enumerate(groups):
-        ax.scatter(group.Eg, group.n, marker=symbols[i], label=name)
+        ax.scatter(group.Eg, group.n, marker=symbols[i], s=80, label=name)
     ax.set_yscale('log')
     ax.set_ylabel('$n$', fontsize=30)
     ax.set_xscale('log')
     ax.set_xlim(0.09, 10)
     ax.set_xlabel('$E_g$ (eV)', fontsize=28)
-    ax.tick_params(which='major', length=15, width=5, pad=11)
-    ax.tick_params(which='minor', length=10, width=3.5)
+    ax.tick_params(which='major', length=15, width=5, pad=11, direction='in', labelsize=22)
+    ax.tick_params(which='minor', length=10, width=3.5, direction='in', labelsize=22)
     ax.legend(title='crystal system', fontsize=20, title_fontsize=20)
     plt.show()
-#     fig.savefig('../preamble/petousis_n_Eg.png', dpi=600)
+
+
+

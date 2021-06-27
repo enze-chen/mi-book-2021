@@ -41,8 +41,10 @@
       sections:
         - file          : week_1/03/recap_data
         - file          : week_1/03/data_viz_blank
-        - file          : week_1/03/best_practices_viz_blank
-        - file          : week_1/03/advanced_viz_blank
+        - file          : week_1/03/best_practices_viz 
+          sections:
+            - file      : week_1/03/best_practices_viz_blank
+              title     : Follow-along notebook
         - file          : week_1/03/reading_papers
         - file          : week_1/03/homework_03
 
@@ -52,15 +54,19 @@
         - file          : week_1/04/intro_ml
           sections:
             - file      : week_1/04/intro_ml_blank
+              title     : Follow-along notebook
         - file          : week_1/04/ml_perf
           sections:
             - file      : week_1/04/ml_perf_blank
+              title     : Follow-along notebook
         - file          : week_1/04/features
           sections:
             - file      : week_1/04/features_blank
+              title     : Follow-along notebook
         - file          : week_1/04/advanced_ml
           sections:
             - file      : week_1/04/advanced_ml_blank
+              title     : Follow-along notebook
         - file          : week_1/04/practical
         - file          : week_1/04/homework_04
 
