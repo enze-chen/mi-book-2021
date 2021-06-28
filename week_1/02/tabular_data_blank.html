@@ -1,0 +1,3112 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabular data &#8212; Introduction to Materials Informatics</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet" />
+  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="canonical" href="https://enze-chen.github.io/mi-book/week_1/02/tabular_data_blank.html" />
+    <link rel="shortcut icon" href="../../_static/mi_favicon.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Databases" href="databases.html" />
+    <link rel="prev" title="File types" href="file_types_blank.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+      <img src="../../_static/mi_logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Introduction to Materials Informatics</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../intro.html">
+   Welcome! 👋
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Preamble 📜
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../preamble/overview.html">
+   1. Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../preamble/setup.html">
+   2. Setup
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../preamble/schedule.html">
+   3. Schedule (one page) 📅
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Week 1️⃣
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../01/day_01.html">
+   Day 01: Introductions
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../01/informatics.html">
+     Intro to MI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../01/module.html">
+     Intro to Module 2
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../01/intro_python_jupyter_blank.html">
+     Intro to Python
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../01/homework_01.html">
+     Homework
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../01/python_greatest_hits_blank.html">
+       Python: The greatest hits
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../01/python_gory_details_blank.html">
+       Python: The gory details
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="day_02.html">
+   Day 02: MI and data
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="recap_logistics.html">
+     Recap first day
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="opportunities.html">
+     Opportunities and challenges
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="file_types_blank.html">
+     File types
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Tabular data
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="databases.html">
+     Databases
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <label for="toctree-checkbox-4">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="materials_project_blank.html">
+       The Materials Project
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="reading_docs.html">
+     Reading documentation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="homework_02.html">
+     Homework
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../03/day_03.html">
+   Day 03: Data visualization
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../03/recap_data.html">
+     Recap data discussion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../03/data_viz_blank.html">
+     Data visualization
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../03/best_practices_viz.html">
+     Best practices for visualization
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../03/best_practices_viz_blank.html">
+       Follow-along notebook
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../03/reading_papers.html">
+     Reading papers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../03/homework_03.html">
+     Homework
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../04/day_04.html">
+   Day 04: ML speedrun
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../04/recap_viz.html">
+     Recap visualization discussion
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../04/intro_ml.html">
+     Introduction to ML
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+    <label for="toctree-checkbox-8">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../04/intro_ml_blank.html">
+       Follow-along notebook
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../04/ml_perf.html">
+     Quantifying performance
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+    <label for="toctree-checkbox-9">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../04/ml_perf_blank.html">
+       Follow-along notebook
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../04/features.html">
+     Featurization
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+    <label for="toctree-checkbox-10">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../04/features_blank.html">
+       Follow-along notebook
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../04/advanced_ml.html">
+     Advanced ML methods
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+    <label for="toctree-checkbox-11">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../04/advanced_ml_blank.html">
+       Follow-along notebook
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../04/practical.html">
+     Practical considerations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../04/homework_04.html">
+     Homework
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../05/day_05.html">
+   Day 05: MI research
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+  <label for="toctree-checkbox-12">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../05/recap_ml.html">
+     Recap ML discussion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../05/res_discuss.html">
+     Research discussion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../05/best_practices_blank.html">
+     Best practices for MI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../05/homework_05.html">
+     Homework
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../05/install_python.html">
+     Installing Python locally (optional)
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Week 2️⃣
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../week_2/06/day_06.html">
+   Day 06: Independence Day
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_2/07/day_07.html">
+   Day 07: Research
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+  <label for="toctree-checkbox-13">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_2/07/survey_07.html">
+     Check-in survey
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_2/08/day_08.html">
+   Day 08: Research + guest speaker
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+  <label for="toctree-checkbox-14">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_2/08/guest_ucb.html">
+     Guest speaker: Alex!
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_2/08/proposals.html">
+     Proposals
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_2/09/day_09.html">
+   Day 09: Research
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
+  <label for="toctree-checkbox-15">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_2/09/check_in.html">
+     Check-in meeting
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_2/10/day_10.html">
+   Day 10: Research + guest speaker
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
+  <label for="toctree-checkbox-16">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_2/10/guest_aionics.html">
+     Guest speaker: Austin!
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Week 3️⃣
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_3/11/day_11.html">
+   Day 11: Research + grad school
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
+  <label for="toctree-checkbox-17">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/11/presentations.html">
+     Giving presentations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/11/grad_school.html">
+     Grad school talk: Mark!
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_3/12/day_12.html">
+   Day 12: Research + guest speaker
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/>
+  <label for="toctree-checkbox-18">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/12/pull_requests.html">
+     GitHub pull requests
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/12/guest_citrine.html">
+     Guest speaker: Ventura!
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_3/13/day_13.html">
+   Day 13: Research
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/>
+  <label for="toctree-checkbox-19">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../week_3/13/deep_learning.html">
+     Deep learning (tentative)
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/>
+    <label for="toctree-checkbox-20">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../week_3/13/deep_learning_blank.html">
+       Deep learning notebook
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_3/14/day_14.html">
+   Day 14: Slam presentations
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/>
+  <label for="toctree-checkbox-21">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/14/peer_review.html">
+     Peer review
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/14/final_presentations.html">
+     Final presentations
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_3/15/day_15.html">
+   Day 15: Conclusions
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/>
+  <label for="toctree-checkbox-22">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/15/summary.html">
+     Summary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/15/reflections.html">
+     Reflections
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/15/next.html">
+     What’s next?
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/15/finale.html">
+     Finale
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Appendices 📝
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../appendix/acknowl.html">
+   1. Acknowledgements
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../appendix/glossary.html">
+   2. Glossary
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../appendix/future.html">
+   3. Future directions 🛣
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/week_1/02/tabular_data_blank.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/enze-chen/mi-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/enze-chen/mi-book/issues/new?title=Issue%20on%20page%20%2Fweek_1/02/tabular_data_blank.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/enze-chen/mi-book/edit/master/week_1/02/tabular_data_blank.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        
+        <a class="jupyterhub-button" href="https://staging.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/enze-chen/mi-book&urlpath=tree/mi-book/week_1/02/tabular_data_blank.ipynb&branch=master"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
+                data-placement="left"><img class="jupyterhub-button-logo"
+                    src="../../_static/images/logo_jupyterhub.svg"
+                    alt="Interact on JupyterHub">JupyterHub</button></a>
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/enze-chen/mi-book/blob/master/week_1/02/tabular_data_blank.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#learning-objectives">
+   Learning objectives
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#contents">
+   Contents
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#csv-files">
+   CSV files
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#wait-but-what-about-excel-files">
+     Wait, but what about Excel files?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#why-do-we-want-tabular-data">
+     Why do we want tabular data?
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pandas">
+   pandas!
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dataframe-and-series">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       DataFrame
+      </span>
+     </code>
+     and
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Series
+      </span>
+     </code>
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#dataframe-constructor">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         DataFrame
+        </span>
+       </code>
+       constructor
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#reading-in-a-csv-file">
+       Reading in a CSV file
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#working-with-dataframes">
+     Working with DataFrames
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#five-number-summary-and-exploratory-data-analysis">
+       Five-number summary and exploratory data analysis
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#making-heads-or-tails-of-dataframes">
+       Making heads or tails of DataFrames
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exercise-display-the-last-10-rows-of-the-dataframe">
+     Exercise: display the last 10 rows of the DataFrame
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#indexing-and-slicing-a-dataframe">
+     Indexing and slicing a DataFrame
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#looping-through-a-dataframe">
+     Looping through a DataFrame
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#updating-a-dataframe">
+     Updating a DataFrame
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#undefined-values">
+     Undefined values
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#saving-a-dataframe">
+     Saving a DataFrame
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#formatting-tabular-data">
+   Formatting tabular data
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#csv-vs-json">
+     CSV vs. JSON 🥊
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#exercise-conceptual-csv-vs-json">
+       Exercise (conceptual): CSV vs. JSON
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exercise-reformatting-dielectric-constants-dataset">
+     Exercise: Reformatting dielectric constants dataset
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#procuring-tabular-data">
+   Procuring tabular data
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#webplotdigitizer">
+     WebPlotDigitizer
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tabula">
+     Tabula
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#manual-entry">
+     Manual entry
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion">
+   Conclusion
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="tabular-data">
+<h1>Tabular data<a class="headerlink" href="#tabular-data" title="Permalink to this headline">¶</a></h1>
+<p><em>Authors: Enze Chen and Mark Asta (University of California, Berkeley)</em></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is an interactive exercise, so you will want to click the <span class="fa fa-rocket"></span> and open the notebook in DataHub (or Colab for non-UCB students).</p>
+</div>
+<div class="section" id="learning-objectives">
+<h2>Learning objectives<a class="headerlink" href="#learning-objectives" title="Permalink to this headline">¶</a></h2>
+<p>This notebook contains a series of exercises that explore tabular data and <a class="reference external" href="https://pandas.pydata.org/">the pandas package</a>.
+We hope that after going through these exercises, you will be prepared to:</p>
+<ol class="simple">
+<li><p>Follow best practices for structuring data into a tabular format.</p></li>
+<li><p>Use pandas and other programmatic tools to operate tabular data.</p></li>
+<li><p>Perform some <a class="reference external" href="https://en.wikipedia.org/wiki/Exploratory_data_analysis">exploratory data analysis (EDA)</a> to gain insights about your data.</p></li>
+</ol>
+</div>
+<div class="section" id="contents">
+<h2>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h2>
+<p>These exercises are grouped into the following sections:</p>
+<ol class="simple">
+<li><p><a class="reference external" href="#CSV-files">CSV files</a></p></li>
+<li><p><a class="reference external" href="#pandas%21">pandas!</a></p></li>
+<li><p><a class="reference external" href="#Formatting-tabular-data">Formatting tabular data</a></p></li>
+<li><p><a class="reference external" href="#Procuring-tabular-data">Procuring tabular data</a></p></li>
+</ol>
+</div>
+<div class="section" id="csv-files">
+<h2>CSV files<a class="headerlink" href="#csv-files" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="#Contents">Back to top</a></p>
+<p>In the previous exercise, we came across a CSV file with the following data:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Data obtained from Wikipedia</span>
+<span class="n">Element</span><span class="p">,</span><span class="n">Number</span><span class="p">,</span><span class="n">Mohs</span> <span class="n">hardness</span><span class="p">,</span><span class="n">Density</span> <span class="p">(</span><span class="n">g</span><span class="o">/</span><span class="n">cc</span><span class="p">)</span>
+<span class="n">lithium</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mf">0.6</span><span class="p">,</span><span class="mf">0.534</span>
+<span class="n">beryllium</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mf">5.5</span><span class="p">,</span><span class="mf">1.85</span>
+<span class="n">boron</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mf">9.4</span><span class="p">,</span><span class="mf">2.34</span>
+<span class="n">carbon</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mf">3.513</span>
+<span class="o">...</span>
+</pre></div>
+</div>
+<p>and we noted that this data had <em>structure</em> to it (not just arbitrary text characters).
+Specifically, each row after the second has comma-separated tokens that are intuitively represented as <code class="docutils literal notranslate"><span class="pre">str</span></code>, <code class="docutils literal notranslate"><span class="pre">int</span></code>, <code class="docutils literal notranslate"><span class="pre">float</span></code>, and <code class="docutils literal notranslate"><span class="pre">float</span></code>, corresponding to the terms in the second row.
+Now, you may already know that CSV stands for “<strong>comma-separated values</strong>,” but even if you didn’t know this, you probably knew that CSV files are typically opened in an application like Microsoft Excel or Google Sheets, generating a tabular representation of the data.
+It turns out that these programs are specially designed to handle CSV files by splitting the data into cells based on the presence of commas.
+They try to do this with any file that ends in <code class="docutils literal notranslate"><span class="pre">.csv</span></code>, which is why in the previous exercise we mentioned that operating systems with GUIs benefit from having the “correct” file extension, even though a CSV is just a plain ol’ text file.</p>
+<div class="section" id="wait-but-what-about-excel-files">
+<h3>Wait, but what about Excel files?<a class="headerlink" href="#wait-but-what-about-excel-files" title="Permalink to this headline">¶</a></h3>
+<p>So if you’ve used Microsoft Excel, you may be familiar with their <code class="docutils literal notranslate"><span class="pre">.xls</span></code> or <code class="docutils literal notranslate"><span class="pre">.xlsx</span></code> file formats that also store tabular data.
+In fact, if you’ve ever modified a <code class="docutils literal notranslate"><span class="pre">.csv</span></code> file in Excel and then tried to save it, you may have even seen a warning informing you that you should save the data as an Excel file to avoid loss of information (such as preservation of formulas, having multiple sheets in one file, etc.).
+While some of these Excel features are nice, the file format is less so, and can be <em>quite difficult</em> to process programmatically and is often <strong>not cross-platform compatible</strong> (even Windows vs. Mac versions of Excel can conflict with each other!), which is not a good practice in informatics.
+Therefore, we recommend that you do yourselves (and everyone else) a favor and, at least for this module, choose to store tabular data in CSV instead of native Excel.</p>
+</div>
+<div class="section" id="why-do-we-want-tabular-data">
+<h3>Why do we want tabular data?<a class="headerlink" href="#why-do-we-want-tabular-data" title="Permalink to this headline">¶</a></h3>
+<p>CSV data are typically rendered in tabular form to easily identify the association between variables, whether we’re associating all the values in a row, or the value at a particular row-column location.
+They provide a concise summary of the data, without using many words, so that general trends can be surfaced at a glance.
+We can quickly perform statistical analyses of groups (i.e., columns) of data, which you may have done with the <code class="docutils literal notranslate"><span class="pre">=AVERAGE()</span></code> or <code class="docutils literal notranslate"><span class="pre">=SUM()</span></code> functions in Excel.
+It’s also easy to create data visualizations when data are in a table, such as plotting <span class="math notranslate nohighlight">\(y\)</span>-values against <span class="math notranslate nohighlight">\(x\)</span>-values, and we’ll see more examples of this tomorrow!</p>
+<p>While there are many more advantages (and disadvantages!) one could list for tabular data, we still have yet to discuss how to <em>get</em> our data into a table so that we can access these benefits.
+In the previous notebook, we tried reading in the above file as a list of lists and as a NumPy array, which gave</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[[</span><span class="s1">&#39;lithium&#39;</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mf">0.6</span><span class="p">,</span> <span class="mf">0.534</span><span class="p">],</span>
+ <span class="p">[</span><span class="s1">&#39;beryllium&#39;</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mf">5.5</span><span class="p">,</span> <span class="mf">1.85</span><span class="p">],</span>
+ <span class="p">[</span><span class="s1">&#39;boron&#39;</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mf">9.4</span><span class="p">,</span> <span class="mf">2.34</span><span class="p">],</span>
+ <span class="p">[</span><span class="s1">&#39;carbon&#39;</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">,</span> <span class="mf">3.513</span><span class="p">],</span>
+ <span class="o">...</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>and</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">array</span><span class="p">([[</span><span class="s1">&#39;lithium&#39;</span><span class="p">,</span> <span class="s1">&#39;3&#39;</span><span class="p">,</span> <span class="s1">&#39;0.6&#39;</span><span class="p">,</span> <span class="s1">&#39;0.534&#39;</span><span class="p">],</span>
+       <span class="p">[</span><span class="s1">&#39;beryllium&#39;</span><span class="p">,</span> <span class="s1">&#39;4&#39;</span><span class="p">,</span> <span class="s1">&#39;5.5&#39;</span><span class="p">,</span> <span class="s1">&#39;1.85&#39;</span><span class="p">],</span>
+       <span class="p">[</span><span class="s1">&#39;boron&#39;</span><span class="p">,</span> <span class="s1">&#39;5&#39;</span><span class="p">,</span> <span class="s1">&#39;9.4&#39;</span><span class="p">,</span> <span class="s1">&#39;2.34&#39;</span><span class="p">],</span>
+       <span class="p">[</span><span class="s1">&#39;carbon&#39;</span><span class="p">,</span> <span class="s1">&#39;6&#39;</span><span class="p">,</span> <span class="s1">&#39;10.0&#39;</span><span class="p">,</span> <span class="s1">&#39;3.513&#39;</span><span class="p">],</span>
+       <span class="o">...</span>
+      <span class="p">])</span>
+</pre></div>
+</div>
+<p>respectively.
+Neither seem like great options, as the former is tricky to take vertical slices of and the latter is all strings.
+Moreover, it took a few lines of Python to even get the data loaded in the first place, which seems clunky. 😓
+Motivated by our experience with JSON files, it would be great if we could load in <em>the entire file</em> into a tabular form that preserves individual data types in each column…</p>
+</div>
+</div>
+<div class="section" id="pandas">
+<h2>pandas!<a class="headerlink" href="#pandas" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="#Contents">Back to top</a></p>
+<p><img alt="pandas" src="../../_images/pandas.png" /></p>
+<p>Luckily, our furry friends from the East 🐼 have heard our pleas and are here to save the day! …kinda.</p>
+<p><a class="reference external" href="https://pandas.pydata.org/"><code class="docutils literal notranslate"><span class="pre">pandas</span></code></a> is Python package developed in 2008 by <a class="reference external" href="https://wesmckinney.com/">Wes McKinney</a> to facilitate data analysis and it has since become one of the most widely used packages in the Python community.
+The name is cleverly derived from “<a class="reference external" href="https://en.wikipedia.org/wiki/Panel_data">panel data</a>,” which is a phrase from econometrics for “multi-dimensional time series” and is the context for which pandas was first developed.
+pandas is built on top of <a class="reference external" href="https://numpy.org/">NumPy</a>, so there are many aspects of it that you should already be familiar with!</p>
+<div class="section" id="dataframe-and-series">
+<h3><code class="docutils literal notranslate"><span class="pre">DataFrame</span></code> and <code class="docutils literal notranslate"><span class="pre">Series</span></code><a class="headerlink" href="#dataframe-and-series" title="Permalink to this headline">¶</a></h3>
+<p>At the heart of pandas lies two data structures for all of your informatics needs.</p>
+<ul class="simple">
+<li><p>The <a class="reference external" href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html"><code class="docutils literal notranslate"><span class="pre">DataFrame</span></code></a> follows our conventional notion of a spreadsheet for 2D tabular data.
+Note that a DataFrame is for 2D data <strong>only</strong> and does not work for lower or higher dimensions (unlike NumPy arrays).
+They feature row and column labels for intelligent indexing and they support <strong>heterogeneously-typed columns</strong>. 🙌</p></li>
+<li><p>Each column of a DataFrame is a <a class="reference external" href="https://pandas.pydata.org/docs/reference/api/pandas.Series.html"><code class="docutils literal notranslate"><span class="pre">Series</span></code></a>, which is a 1D array with axis labels.
+Note that a Series is <em>homogeneously-typed</em>.</p></li>
+</ul>
+<div class="section" id="dataframe-constructor">
+<h4><code class="docutils literal notranslate"><span class="pre">DataFrame</span></code> constructor<a class="headerlink" href="#dataframe-constructor" title="Permalink to this headline">¶</a></h4>
+<p>The best way to learn is by doing, so let’s go ahead and use pandas to construct a DataFrame.</p>
+<p>The community standard is to import <code class="docutils literal notranslate"><span class="pre">pandas</span></code> with the <code class="docutils literal notranslate"><span class="pre">pd</span></code> alias (similar to <code class="docutils literal notranslate"><span class="pre">np</span></code> for <code class="docutils literal notranslate"><span class="pre">numpy</span></code>), so it’s best practice to stick with this.
+Or else people will look at you like 🤨.</p>
+<p>There are many ways to create DataFrames, but with the <a class="reference external" href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html"><code class="docutils literal notranslate"><span class="pre">DataFrame()</span></code> constructor</a> you will likely use one of two methods:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">pd.DataFrame(dict)</span></code>, where <code class="docutils literal notranslate"><span class="pre">dict</span></code> is a dictionary of <code class="docutils literal notranslate"><span class="pre">str:list</span></code> pairs that correspond to the name and values in each column.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pd.DataFrame(arr,</span> <span class="pre">columns=col_names)</span></code>, where <code class="docutils literal notranslate"><span class="pre">arr</span></code> is a 2D NumPy array or list of lists and <code class="docutils literal notranslate"><span class="pre">col_names</span></code> are the names you want to assign each column.</p></li>
+</ul>
+<p>Let’s see this in practice.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>    <span class="c1"># note alias</span>
+
+<span class="c1"># Create a DataFrame from dict</span>
+<span class="n">df_dict</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>     <span class="c1"># we split onto many lines for ease of reading</span>
+    <span class="s1">&#39;symbol&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;H&#39;</span><span class="p">,</span> <span class="s1">&#39;He&#39;</span><span class="p">,</span> <span class="s1">&#39;Li&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;number&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+    <span class="s1">&#39;mass&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.008</span><span class="p">,</span> <span class="mf">4.003</span><span class="p">,</span> <span class="mf">6.941</span><span class="p">]</span>
+<span class="p">})</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_dict</span><span class="p">)</span>
+
+<span class="c1"># Create the same DataFrame from list of lists</span>
+<span class="n">df_list</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([[</span><span class="s1">&#39;H&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">1.008</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;He&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mf">4.003</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;Li&#39;</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mf">6.941</span><span class="p">]],</span>
+                       <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;symbol&#39;</span><span class="p">,</span> <span class="s1">&#39;number&#39;</span><span class="p">,</span> <span class="s1">&#39;mass&#39;</span><span class="p">])</span>
+<span class="n">df_list</span>    <span class="c1"># in Jupyter notebooks, DataFrames have a pretty display (compare to print above)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  symbol  number   mass
+0      H       1  1.008
+1     He       2  4.003
+2     Li       3  6.941
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>symbol</th>
+      <th>number</th>
+      <th>mass</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>H</td>
+      <td>1</td>
+      <td>1.008</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>He</td>
+      <td>2</td>
+      <td>4.003</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Li</td>
+      <td>3</td>
+      <td>6.941</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Using the constructor directly is a common approach when you’re trying to create a DataFrame from non-tabular data sources, so you might see yourself using this method in your own work if you’re scraping together data from text files or databases.</p>
+<p>But what if your data source is a CSV file that’s already nicely formatted for you?
+As with our first example in this notebook, it would be nice if we could directly use that structure and express it in Python.
+To do this, we will use the <a class="reference external" href="https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html"><code class="docutils literal notranslate"><span class="pre">pd.read_csv()</span></code></a> function which does exactly as the name describes.
+This function, as you can see from the documentation, has <em>a bajillion</em> input arguments that we don’t have time to cover today, so we’ll describe just a few here:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">filepath_or_buffer</span></code>: The only required argument, which is the file you’re trying to read in.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sep</span></code>: The character separating your data tokens.
+Default is comma (<code class="docutils literal notranslate"><span class="pre">','</span></code>), but you can change this to be space (<code class="docutils literal notranslate"><span class="pre">'</span> <span class="pre">'</span></code>), tab (<code class="docutils literal notranslate"><span class="pre">'\t'</span></code>), etc.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">header</span></code>: Which row to read column headers from.
+Default is the first row.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">names</span></code>: If you would like to rename your columns.
+This list cannot have duplicates.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">skiprows</span></code>: Extremely useful if there are lines of comments and extra text in the file that you want to avoid reading.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">nrows</span></code>: Useful if your file is very large, or your data stops before reaching the end of the file (e.g., there’s footer text in the file).</p></li>
+</ul>
+</div>
+<div class="section" id="reading-in-a-csv-file">
+<h4>Reading in a CSV file<a class="headerlink" href="#reading-in-a-csv-file" title="Permalink to this headline">¶</a></h4>
+<p>Let’s use <code class="docutils literal notranslate"><span class="pre">pd.read_csv()</span></code> to read in our <code class="docutils literal notranslate"><span class="pre">hardness_density.csv</span></code> file!
+We’ll save the DataFrame into a variable called <code class="docutils literal notranslate"><span class="pre">df</span></code>.
+This isn’t great practice because our variable names should be descriptive, but for this tutorial it’s an easy reminder of what we’re working with and save our fingers some work.
+We’ll also rename the column names to be:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s1">&#39;element&#39;</span><span class="p">,</span> <span class="s1">&#39;number&#39;</span><span class="p">,</span> <span class="s1">&#39;hardness&#39;</span><span class="p">,</span> <span class="s1">&#39;density&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>which can do if we set <code class="docutils literal notranslate"><span class="pre">header=0</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../../assets/data/week_1/02/hardness_density.csv&#39;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">skiprows</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> 
+                 <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;element&#39;</span><span class="p">,</span> <span class="s1">&#39;number&#39;</span><span class="p">,</span> <span class="s1">&#39;hardness&#39;</span><span class="p">,</span> <span class="s1">&#39;density&#39;</span><span class="p">])</span>   <span class="c1"># we rename for simplicity</span>
+<span class="n">df</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>element</th>
+      <th>number</th>
+      <th>hardness</th>
+      <th>density</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>lithium</td>
+      <td>3</td>
+      <td>0.60</td>
+      <td>0.534</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>beryllium</td>
+      <td>4</td>
+      <td>5.50</td>
+      <td>1.850</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>boron</td>
+      <td>5</td>
+      <td>9.40</td>
+      <td>2.340</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>carbon</td>
+      <td>6</td>
+      <td>10.00</td>
+      <td>3.513</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>sodium</td>
+      <td>11</td>
+      <td>0.50</td>
+      <td>0.968</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>magnesium</td>
+      <td>12</td>
+      <td>2.50</td>
+      <td>1.738</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>aluminium</td>
+      <td>13</td>
+      <td>2.75</td>
+      <td>2.700</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>silicon</td>
+      <td>14</td>
+      <td>6.50</td>
+      <td>2.330</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>sulfur</td>
+      <td>16</td>
+      <td>2.00</td>
+      <td>2.080</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>potassium</td>
+      <td>19</td>
+      <td>0.40</td>
+      <td>0.890</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>calcium</td>
+      <td>20</td>
+      <td>1.75</td>
+      <td>1.550</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>titanium</td>
+      <td>22</td>
+      <td>6.00</td>
+      <td>4.506</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>vanadium</td>
+      <td>23</td>
+      <td>7.00</td>
+      <td>6.110</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>chromium</td>
+      <td>24</td>
+      <td>8.50</td>
+      <td>7.150</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>manganese</td>
+      <td>25</td>
+      <td>6.00</td>
+      <td>7.210</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>iron</td>
+      <td>26</td>
+      <td>4.00</td>
+      <td>7.860</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>cobalt</td>
+      <td>27</td>
+      <td>5.00</td>
+      <td>8.900</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>nickel</td>
+      <td>28</td>
+      <td>4.00</td>
+      <td>8.908</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>copper</td>
+      <td>29</td>
+      <td>3.00</td>
+      <td>8.960</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>zinc</td>
+      <td>30</td>
+      <td>2.50</td>
+      <td>7.140</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>gallium</td>
+      <td>31</td>
+      <td>1.50</td>
+      <td>5.910</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>germanium</td>
+      <td>32</td>
+      <td>6.00</td>
+      <td>5.323</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>arsenic</td>
+      <td>33</td>
+      <td>3.50</td>
+      <td>5.727</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>selenium</td>
+      <td>34</td>
+      <td>2.00</td>
+      <td>4.810</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>rubidium</td>
+      <td>37</td>
+      <td>0.30</td>
+      <td>1.532</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>strontium</td>
+      <td>38</td>
+      <td>1.50</td>
+      <td>2.640</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>zirconium</td>
+      <td>40</td>
+      <td>5.00</td>
+      <td>6.520</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>niobium</td>
+      <td>41</td>
+      <td>6.00</td>
+      <td>8.570</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>molybdenum</td>
+      <td>42</td>
+      <td>5.50</td>
+      <td>10.280</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>ruthenium</td>
+      <td>44</td>
+      <td>6.50</td>
+      <td>12.450</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>rhodium</td>
+      <td>45</td>
+      <td>6.00</td>
+      <td>12.410</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>palladium</td>
+      <td>46</td>
+      <td>4.75</td>
+      <td>12.023</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>silver</td>
+      <td>47</td>
+      <td>2.50</td>
+      <td>10.490</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>cadmium</td>
+      <td>48</td>
+      <td>2.00</td>
+      <td>8.650</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>indium</td>
+      <td>49</td>
+      <td>1.20</td>
+      <td>7.310</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>tin</td>
+      <td>50</td>
+      <td>1.50</td>
+      <td>7.265</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>And there’s all of our data!
+That was pretty efficient.
+To see all of the input/output functions available to you, we point you to <a class="reference external" href="https://pandas.pydata.org/docs/reference/io.html">the documentation</a>.</p>
+</div>
+</div>
+<div class="section" id="working-with-dataframes">
+<h3>Working with DataFrames<a class="headerlink" href="#working-with-dataframes" title="Permalink to this headline">¶</a></h3>
+<p>We got our data into a DataFrame! Now what?</p>
+<p>Well, <strong>now the fun begins</strong>. 😄
+Note: A lot of the following discussion is centered around DataFrames, but many of the attributes/methods apply to Series as well.</p>
+<p>The first thing you might be interested in is the dimensions of your data (DataFrame).
+We can access that using the <a class="reference external" href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.shape.html"><code class="docutils literal notranslate"><span class="pre">df.shape</span></code></a> <em>attribute</em>.
+Again, attributes in Python don’t have parentheses; only methods (i.e., functions) do!</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(36, 4)
+</pre></div>
+</div>
+</div>
+</div>
+<p>Not bad, just like NumPy. 😉
+Note that the column name/header is <em>not</em> part of the “data itself,” which probably aligns with your intuition and we’re just pointing it out for good measure.</p>
+<p><strong>Pause and reflect</strong>: What does the related attribute <code class="docutils literal notranslate"><span class="pre">df.size</span></code> do?</p>
+<hr class="docutils" />
+<p>If you just want the list of column names, you can get (and set!) them using the <code class="docutils literal notranslate"><span class="pre">df.columns</span></code> attribute.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">columns</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Index([&#39;element&#39;, &#39;number&#39;, &#39;hardness&#39;, &#39;density&#39;], dtype=&#39;object&#39;)
+</pre></div>
+</div>
+</div>
+</div>
+<p>How about the data types in the DataFrame?
+We claimed that DataFrames are heterogeneously-typed (different columns (Series) can hold different data types) but the proof is in the pudding 😋, which in this case is the <a class="reference external" href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.info.html"><code class="docutils literal notranslate"><span class="pre">df.info()</span></code></a> <em>method</em>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 36 entries, 0 to 35
+Data columns (total 4 columns):
+ #   Column    Non-Null Count  Dtype  
+---  ------    --------------  -----  
+ 0   element   36 non-null     object 
+ 1   number    36 non-null     int64  
+ 2   hardness  36 non-null     float64
+ 3   density   36 non-null     float64
+dtypes: float64(2), int64(1), object(1)
+memory usage: 1.2+ KB
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Pause and reflect</strong>: Is the above information what you would expect to see?</p>
+<hr class="docutils" />
+<div class="section" id="five-number-summary-and-exploratory-data-analysis">
+<h4>Five-number summary and exploratory data analysis<a class="headerlink" href="#five-number-summary-and-exploratory-data-analysis" title="Permalink to this headline">¶</a></h4>
+<p>When starting out with any data-driven methodology, it is a good idea to perform some elementary statistical analysis on your dataset to get a sense of the distribution, presence of outliers/holes, etc.
+This procedure is termed <a class="reference external" href="https://en.wikipedia.org/wiki/Exploratory_data_analysis"><strong>exploratory data analysis</strong> (EDA)</a> and often involves generating plots of your data, so we’ll be doing more of it during tomorrow’s data visualization lessons.</p>
+<p>There are, however, also some simple numerical tests you can run, such as checking for <code class="docutils literal notranslate"><span class="pre">NaN</span></code> values with the <code class="docutils literal notranslate"><span class="pre">df.info()</span></code> method from above (see third column).
+Another set of descriptive statistics that is helpful to compute is the <a class="reference external" href="https://en.wikipedia.org/wiki/Five-number_summary"><strong>five-number summary</strong></a> for the percentiles in your sample.
+In pandas, we can easily do this by calling the <a class="reference external" href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html"><code class="docutils literal notranslate"><span class="pre">df.describe()</span></code></a> method.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>number</th>
+      <th>hardness</th>
+      <th>density</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>36.000000</td>
+      <td>36.000000</td>
+      <td>36.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>28.166667</td>
+      <td>3.990278</td>
+      <td>5.809639</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>14.035669</td>
+      <td>2.605730</td>
+      <td>3.536701</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>3.000000</td>
+      <td>0.300000</td>
+      <td>0.534000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>18.250000</td>
+      <td>1.937500</td>
+      <td>2.337500</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>28.500000</td>
+      <td>3.750000</td>
+      <td>6.010000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>40.250000</td>
+      <td>6.000000</td>
+      <td>8.590000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>50.000000</td>
+      <td>10.000000</td>
+      <td>12.450000</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>You may have noticed that the <code class="docutils literal notranslate"><span class="pre">'element'</span></code> column was ignored because that Series has a non-numeric type.
+It is still possible to get statistics on that Series if we single it out.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;element&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>   <span class="c1"># More on indexing in a bit!</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>count            36
+unique           36
+top       magnesium
+freq              1
+Name: element, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<p>You can also calculate a specific <a class="reference external" href="https://pandas.pydata.org/docs/getting_started/intro_tutorials/06_calculate_statistics.html">summary statistic</a> using the appropriate method (which typically has an <code class="docutils literal notranslate"><span class="pre">axis</span></code> parameter that you can specify).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>   <span class="c1"># axis=1 gets the mean of the rows</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>number      28.166667
+hardness     3.990278
+density      5.809639
+dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<p>To see the number of unique entries in a column (mostly for categorical data), we can use the <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.nunique.html"><code class="docutils literal notranslate"><span class="pre">df.nunique()</span></code></a> method.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">nunique</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>element     36
+number      36
+hardness    22
+density     36
+dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<p>Another way to check data distribution for categorical variables is through the <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.value_counts.html"><code class="docutils literal notranslate"><span class="pre">df.value_count()</span></code></a> method.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;hardness&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>   <span class="c1"># not super exciting because this is a real-value variable</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>6.00     5
+1.50     3
+2.50     3
+2.00     3
+6.50     2
+5.00     2
+4.00     2
+5.50     2
+0.50     1
+1.20     1
+0.60     1
+2.75     1
+0.30     1
+8.50     1
+1.75     1
+7.00     1
+10.00    1
+0.40     1
+3.00     1
+9.40     1
+3.50     1
+4.75     1
+Name: hardness, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="making-heads-or-tails-of-dataframes">
+<h4>Making heads or tails of DataFrames<a class="headerlink" href="#making-heads-or-tails-of-dataframes" title="Permalink to this headline">¶</a></h4>
+<p>You may have noticed that when we display a DataFrame, we get quite a lot of rows.
+But maybe in some cases we don’t really <em>need</em> to see all the rows, which quickly fills up our Jupyter workspace.
+The <a class="reference external" href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.head.html"><code class="docutils literal notranslate"><span class="pre">df.head(n)</span></code></a> method will return the first <span class="math notranslate nohighlight">\(n\)</span> (default is <code class="docutils literal notranslate"><span class="pre">5</span></code>) rows of your DataFrame, and is commonly used to check that column headers and first few values are correctly loaded in.
+The <a class="reference external" href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.tail.html"><code class="docutils literal notranslate"><span class="pre">df.tail(n)</span></code></a> method works analogously, but for the last <span class="math notranslate nohighlight">\(n\)</span> rows.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>element</th>
+      <th>number</th>
+      <th>hardness</th>
+      <th>density</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>lithium</td>
+      <td>3</td>
+      <td>0.6</td>
+      <td>0.534</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>beryllium</td>
+      <td>4</td>
+      <td>5.5</td>
+      <td>1.850</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>boron</td>
+      <td>5</td>
+      <td>9.4</td>
+      <td>2.340</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>carbon</td>
+      <td>6</td>
+      <td>10.0</td>
+      <td>3.513</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>sodium</td>
+      <td>11</td>
+      <td>0.5</td>
+      <td>0.968</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</div>
+</div>
+<div class="section" id="exercise-display-the-last-10-rows-of-the-dataframe">
+<h3>Exercise: display the last 10 rows of the DataFrame<a class="headerlink" href="#exercise-display-the-last-10-rows-of-the-dataframe" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># -------------   WRITE YOUR CODE IN THE SPACE BELOW   ---------- #</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>There will also be times where you <em>do</em> want to see more columns and rows than what Jupyter allows by default.
+In those cases, we point you to use the suggestion in <a class="reference external" href="https://stackoverflow.com/questions/11707586/how-do-i-expand-the-output-display-to-see-more-columns-of-a-pandas-dataframe">this Stack Overflow post</a>.
+Don’t worry—it’s a safe practice, we’re just making you work for your meal. 😁</p>
+<p>We can also <strong>sort</strong> the values in a DataFrame using the <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.sort_values.html"><code class="docutils literal notranslate"><span class="pre">df.sort_values()</span></code></a> method, which takes a single string or a list of strings for the columns we want to sort by.
+A copy of those values is then returned.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;density&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>element</th>
+      <th>number</th>
+      <th>hardness</th>
+      <th>density</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>lithium</td>
+      <td>3</td>
+      <td>0.60</td>
+      <td>0.534</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>potassium</td>
+      <td>19</td>
+      <td>0.40</td>
+      <td>0.890</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>sodium</td>
+      <td>11</td>
+      <td>0.50</td>
+      <td>0.968</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>rubidium</td>
+      <td>37</td>
+      <td>0.30</td>
+      <td>1.532</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>calcium</td>
+      <td>20</td>
+      <td>1.75</td>
+      <td>1.550</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</div>
+<div class="section" id="indexing-and-slicing-a-dataframe">
+<h3>Indexing and slicing a DataFrame<a class="headerlink" href="#indexing-and-slicing-a-dataframe" title="Permalink to this headline">¶</a></h3>
+<p>There are many ways to <a class="reference external" href="https://pandas.pydata.org/docs/user_guide/indexing.html">index into a DataFrame</a> and slice it to get subsets of your data.
+If we want to get the data in a particular column, we can get the Series using the column name, much like how we would use the key in a dictionary:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">hardness</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;hardness&#39;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">hardness</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Shape: </span><span class="si">{</span><span class="n">hardness</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">hardness</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.series.Series&#39;&gt;
+Shape: (36,)
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0     0.6
+1     5.5
+2     9.4
+3    10.0
+4     0.5
+Name: hardness, dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<p>To select multiple columns, use a list of column names within brackets <code class="docutils literal notranslate"><span class="pre">[]</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">multiple</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;hardness&#39;</span><span class="p">,</span> <span class="s1">&#39;density&#39;</span><span class="p">]]</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">multiple</span><span class="p">))</span>
+<span class="n">multiple</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>hardness</th>
+      <th>density</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.6</td>
+      <td>0.534</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>5.5</td>
+      <td>1.850</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>9.4</td>
+      <td>2.340</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>10.0</td>
+      <td>3.513</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0.5</td>
+      <td>0.968</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>We can perform <strong>Boolean indexing</strong> as follows, combining logical operators as needed (must use <code class="docutils literal notranslate"><span class="pre">|</span></code>/<code class="docutils literal notranslate"><span class="pre">&amp;</span></code> instead of <code class="docutils literal notranslate"><span class="pre">or</span></code>/<code class="docutils literal notranslate"><span class="pre">and</span></code>):</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;hardness&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mf">8.0</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>element</th>
+      <th>number</th>
+      <th>hardness</th>
+      <th>density</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2</th>
+      <td>boron</td>
+      <td>5</td>
+      <td>9.4</td>
+      <td>2.340</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>carbon</td>
+      <td>6</td>
+      <td>10.0</td>
+      <td>3.513</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>chromium</td>
+      <td>24</td>
+      <td>8.5</td>
+      <td>7.150</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;hardness&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mf">8.0</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;density&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mf">5.0</span><span class="p">)]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>element</th>
+      <th>number</th>
+      <th>hardness</th>
+      <th>density</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2</th>
+      <td>boron</td>
+      <td>5</td>
+      <td>9.4</td>
+      <td>2.340</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>carbon</td>
+      <td>6</td>
+      <td>10.0</td>
+      <td>3.513</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>To get slices of the data, particularly when we only want a subset of the rows, we do this in two different ways:</p>
+<ul class="simple">
+<li><p>The <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.loc.html"><code class="docutils literal notranslate"><span class="pre">df.loc[]</span></code></a> property accesses data by labels (mostly) or Boolean arrays (sometimes).</p></li>
+<li><p>The <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.iloc.html"><code class="docutils literal notranslate"><span class="pre">df.iloc[]</span></code></a> property accesses data based on the integer index position.</p></li>
+</ul>
+<p>Note that these are <strong>square brackets</strong>!
+Which one you choose to use depends on your use case.
+In some of the previous examples, you may have noticed that even after the DataFrame got shuffled, the bold row labels were preserved.
+These are labels one would use for the <code class="docutils literal notranslate"><span class="pre">loc()</span></code> method, for example, and we demonstrate this below.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_sub</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;density&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">df_sub</span>    <span class="c1"># a subset of values is easier to work with</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>element</th>
+      <th>number</th>
+      <th>hardness</th>
+      <th>density</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>lithium</td>
+      <td>3</td>
+      <td>0.60</td>
+      <td>0.534</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>potassium</td>
+      <td>19</td>
+      <td>0.40</td>
+      <td>0.890</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>sodium</td>
+      <td>11</td>
+      <td>0.50</td>
+      <td>0.968</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>rubidium</td>
+      <td>37</td>
+      <td>0.30</td>
+      <td>1.532</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>calcium</td>
+      <td>20</td>
+      <td>1.75</td>
+      <td>1.550</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>magnesium</td>
+      <td>12</td>
+      <td>2.50</td>
+      <td>1.738</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>beryllium</td>
+      <td>4</td>
+      <td>5.50</td>
+      <td>1.850</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>sulfur</td>
+      <td>16</td>
+      <td>2.00</td>
+      <td>2.080</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>silicon</td>
+      <td>14</td>
+      <td>6.50</td>
+      <td>2.330</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>boron</td>
+      <td>5</td>
+      <td>9.40</td>
+      <td>2.340</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_sub</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="s1">&#39;hardness&#39;</span><span class="p">]</span>    <span class="c1"># a column</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0     0.60
+9     0.40
+4     0.50
+24    0.30
+10    1.75
+5     2.50
+1     5.50
+8     2.00
+7     6.50
+2     9.40
+Name: hardness, dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_sub</span><span class="o">.</span><span class="n">loc</span><span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;hardness&#39;</span><span class="p">,</span> <span class="s1">&#39;number&#39;</span><span class="p">]]</span>    <span class="c1"># labels can be in any order</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>hardness</th>
+      <th>number</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.6</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>0.4</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>6.5</td>
+      <td>14</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_sub</span><span class="o">.</span><span class="n">loc</span><span class="p">[:</span><span class="mi">10</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;hardness&#39;</span><span class="p">,</span> <span class="s1">&#39;density&#39;</span><span class="p">]]</span>    <span class="c1"># a chunk subset</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>hardness</th>
+      <th>density</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.60</td>
+      <td>0.534</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>0.40</td>
+      <td>0.890</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0.50</td>
+      <td>0.968</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>0.30</td>
+      <td>1.532</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>1.75</td>
+      <td>1.550</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>We want to point out two things about the previous example:</p>
+<ol class="simple">
+<li><p>Note that we’re saying “take all the row indices up to <strong>the label value</strong> <code class="docutils literal notranslate"><span class="pre">10</span></code>,” not <em>the 10th position</em>!
+Try changing the above value to <code class="docutils literal notranslate"><span class="pre">6</span></code> and see what happens.</p></li>
+<li><p>Note that in pandas, unlike Python/NumPy, the upper bound is <strong>inclusive</strong>.</p></li>
+</ol>
+<hr class="docutils" />
+<p>Those examples were with <code class="docutils literal notranslate"><span class="pre">df.loc()</span></code>.
+Now for <code class="docutils literal notranslate"><span class="pre">df.iloc()</span></code>:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_sub</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">4</span><span class="p">,</span> <span class="p">:</span><span class="mi">2</span><span class="p">]</span>    <span class="c1"># a chunk subset</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>element</th>
+      <th>number</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>lithium</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>potassium</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>sodium</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>rubidium</td>
+      <td>37</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_sub</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">]</span>    <span class="c1"># a column of values</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0      3
+9     19
+4     11
+24    37
+10    20
+5     12
+1      4
+8     16
+7     14
+2      5
+Name: number, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_sub</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>    <span class="c1"># a single value</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.534
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="looping-through-a-dataframe">
+<h3>Looping through a DataFrame<a class="headerlink" href="#looping-through-a-dataframe" title="Permalink to this headline">¶</a></h3>
+<p>While a DataFrame supports really clever and advanced indexing, there will be times when, for lack of a better method, we simply need to iterate through a DataFrame and access the entries one row/column at a time.
+If you disagree with us, or want to know why one would disagree, please see <a class="reference external" href="https://stackoverflow.com/questions/16476924/how-to-iterate-over-rows-in-a-dataframe-in-pandas">this Stack Overflow discussion</a>. 😉</p>
+<p>If you want to loop over the rows (more common than looping through columns, simply based on our <a class="reference external" href="#Formatting-tabular-data">formatting conventions</a>), the preferred method is <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.itertuples.html"><code class="docutils literal notranslate"><span class="pre">df.itertuples()</span></code></a>, which returns an iterator over the rows as named tuples.
+Note that by default, the index of the rows is the first element of the tuple, followed by the other elements in the row.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">df_sub</span><span class="o">.</span><span class="n">itertuples</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>           <span class="c1"># the full row</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">element</span><span class="p">)</span>   <span class="c1"># how we access the values by name</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>        <span class="c1"># access by integer index</span>
+    <span class="k">if</span> <span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">:</span>
+        <span class="k">break</span>            <span class="c1"># early stopping; we get the idea</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Pandas(Index=0, element=&#39;lithium&#39;, number=3, hardness=0.6, density=0.534)
+lithium
+3
+Pandas(Index=9, element=&#39;potassium&#39;, number=19, hardness=0.4, density=0.89)
+potassium
+19
+Pandas(Index=4, element=&#39;sodium&#39;, number=11, hardness=0.5, density=0.968)
+sodium
+11
+Pandas(Index=24, element=&#39;rubidium&#39;, number=37, hardness=0.3, density=1.532)
+rubidium
+37
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="updating-a-dataframe">
+<h3>Updating a DataFrame<a class="headerlink" href="#updating-a-dataframe" title="Permalink to this headline">¶</a></h3>
+<p>There are many times when we will want to update the DataFrame that we created.
+This could be for:</p>
+<ul class="simple">
+<li><p>Adding additional columns based on a computation.</p></li>
+<li><p>Changing the values for a particular use case.</p></li>
+<li><p><a class="reference external" href="https://pandas.pydata.org/docs/user_guide/merging.html">Merging</a> several DataFrames together.</p></li>
+</ul>
+<p>Let’s see a few examples of this right now.
+We’ll start by adding on two columns, which we can do as if we’re defining a new dictionary entry.
+Just ensure that the additional columns have the same size as the number of rows in the DataFrame.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;ones&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">))</span>   
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;number_squared&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;number&#39;</span><span class="p">]</span> <span class="o">**</span> <span class="mi">2</span>   <span class="c1"># we can perform arithmetic on other columns</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>element</th>
+      <th>number</th>
+      <th>hardness</th>
+      <th>density</th>
+      <th>ones</th>
+      <th>number_squared</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>lithium</td>
+      <td>3</td>
+      <td>0.6</td>
+      <td>0.534</td>
+      <td>1.0</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>beryllium</td>
+      <td>4</td>
+      <td>5.5</td>
+      <td>1.850</td>
+      <td>1.0</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>boron</td>
+      <td>5</td>
+      <td>9.4</td>
+      <td>2.340</td>
+      <td>1.0</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>carbon</td>
+      <td>6</td>
+      <td>10.0</td>
+      <td>3.513</td>
+      <td>1.0</td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>sodium</td>
+      <td>11</td>
+      <td>0.5</td>
+      <td>0.968</td>
+      <td>1.0</td>
+      <td>121</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>We can eliminate columns/rows of our DataFrame using the <a class="reference external" href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.drop.html"><code class="docutils literal notranslate"><span class="pre">df.drop()</span></code></a> method on the labels we wish to drop.
+Note that by default a copy of the resulting DataFrame is created.
+In addition, the row labels that may have been automatically indexed initially (with a <a class="reference external" href="https://pandas.pydata.org/docs/reference/api/pandas.RangeIndex.html">RangeIndex</a>) will <em>not</em> be reindexed automatically, so we might want to call the <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.reset_index.html"><code class="docutils literal notranslate"><span class="pre">df.reset_index()</span></code></a> method on the DataFrame.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_smaller</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;density&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mf">1.0</span><span class="p">]</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>   <span class="c1"># putting it all together!</span>
+<span class="n">display</span><span class="p">(</span><span class="n">df_smaller</span><span class="p">)</span>
+
+<span class="n">df_smaller</span> <span class="o">=</span> <span class="n">df_smaller</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>   <span class="c1"># arg prevents original index from being inserted as new column</span>
+<span class="n">df_smaller</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>element</th>
+      <th>number</th>
+      <th>hardness</th>
+      <th>density</th>
+      <th>ones</th>
+      <th>number_squared</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>lithium</td>
+      <td>3</td>
+      <td>0.6</td>
+      <td>0.534</td>
+      <td>1.0</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>sodium</td>
+      <td>11</td>
+      <td>0.5</td>
+      <td>0.968</td>
+      <td>1.0</td>
+      <td>121</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>potassium</td>
+      <td>19</td>
+      <td>0.4</td>
+      <td>0.890</td>
+      <td>1.0</td>
+      <td>361</td>
+    </tr>
+  </tbody>
+</table>
+</div></div><div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>element</th>
+      <th>number</th>
+      <th>hardness</th>
+      <th>density</th>
+      <th>ones</th>
+      <th>number_squared</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>lithium</td>
+      <td>3</td>
+      <td>0.6</td>
+      <td>0.534</td>
+      <td>1.0</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>sodium</td>
+      <td>11</td>
+      <td>0.5</td>
+      <td>0.968</td>
+      <td>1.0</td>
+      <td>121</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>potassium</td>
+      <td>19</td>
+      <td>0.4</td>
+      <td>0.890</td>
+      <td>1.0</td>
+      <td>361</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</div>
+<div class="section" id="undefined-values">
+<h3>Undefined values<a class="headerlink" href="#undefined-values" title="Permalink to this headline">¶</a></h3>
+<p>Now let’s see what happens if our data has “holes,” and how we can use built-in pandas functions to change those values.
+pandas represents missing data with the NumPy constant <a class="reference external" href="https://numpy.org/doc/stable/reference/constants.html#numpy.nan"><code class="docutils literal notranslate"><span class="pre">np.nan</span></code></a>.
+In the example below we’re setting values to be <code class="docutils literal notranslate"><span class="pre">NaN</span></code>, but if you were to read in a CSV with missing values, then those positions would also contain <code class="docutils literal notranslate"><span class="pre">NaN</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_holey</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="n">df_holey</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>   <span class="c1"># set last column to be NaN</span>
+<span class="n">df_holey</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>    <span class="c1"># set first element to be NaN</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_holey</span><span class="o">.</span><span class="n">dtypes</span><span class="p">)</span>
+<span class="n">df_holey</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0    float64
+1      int32
+2      int32
+3      int32
+4    float64
+dtype: object
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>NaN</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>5.0</td>
+      <td>6</td>
+      <td>7</td>
+      <td>8</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>10.0</td>
+      <td>11</td>
+      <td>12</td>
+      <td>13</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>As a first step, we might want to know where the <code class="docutils literal notranslate"><span class="pre">NaN</span></code> values are, or to get a mask for post-processing.
+We can do this using the <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.isna.html"><code class="docutils literal notranslate"><span class="pre">df.isna()</span></code></a> method, which returns a Boolean DataFrame that is <code class="docutils literal notranslate"><span class="pre">True</span></code> for <code class="docutils literal notranslate"><span class="pre">NaN</span></code> cells and <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_holey</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>To remove rows or columns of the DataFrame with <code class="docutils literal notranslate"><span class="pre">NaN</span></code> values, we can use the <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.dropna.html"><code class="docutils literal notranslate"><span class="pre">df.dropna()</span></code></a> method, which typically needs the following parameters specified (i.e., don’t just use the default):</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">axis</span></code>: <code class="docutils literal notranslate"><span class="pre">0</span></code> for index, <code class="docutils literal notranslate"><span class="pre">1</span></code> for columns.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">how</span></code>: <code class="docutils literal notranslate"><span class="pre">any</span></code> if that dimension has any <code class="docutils literal notranslate"><span class="pre">NaN</span></code> values, <code class="docutils literal notranslate"><span class="pre">all</span></code> if that dimension has all <code class="docutils literal notranslate"><span class="pre">NaN</span></code> values.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_holey</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">how</span><span class="o">=</span><span class="s1">&#39;any&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>   <span class="c1"># what got dropped? what happens if axis=0? what if how=&#39;all&#39;?</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>6</td>
+      <td>7</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>11</td>
+      <td>12</td>
+      <td>13</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>We can also fill in the <code class="docutils literal notranslate"><span class="pre">NaN</span></code> values with a default value that often depends on the application.
+For example, if we have data on processing times, then a blank value might indicate that process was never performed; or, alternatively, performed for <code class="docutils literal notranslate"><span class="pre">0</span></code> time units.
+Filling in data in this way is called <strong>imputation</strong> and must be done with care to not bias the data or follow-up analyses.
+Filling in <code class="docutils literal notranslate"><span class="pre">NaN</span></code> values can be done with the <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.fillna.html"><code class="docutils literal notranslate"><span class="pre">df.fillna()</span></code></a> method, which is quite flexible.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_holey</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>5.0</td>
+      <td>6</td>
+      <td>7</td>
+      <td>8</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>10.0</td>
+      <td>11</td>
+      <td>12</td>
+      <td>13</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</div>
+<div class="section" id="saving-a-dataframe">
+<h3>Saving a DataFrame<a class="headerlink" href="#saving-a-dataframe" title="Permalink to this headline">¶</a></h3>
+<p>We’ve discussed how to read in CSV file as a DataFrame, so how can we do the reverse to save our work?
+The <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_csv.html"><code class="docutils literal notranslate"><span class="pre">df.to_csv()</span></code></a> method will do this job perfectly.
+Like its counterpart, <code class="docutils literal notranslate"><span class="pre">pd.read_csv()</span></code>, there are <em>a ton</em> of input arguments to this method, but arguably the three most important ones are:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">path_or_buf</span></code>: The filepath where you want to store the CSV file.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">index</span></code>: Whether to include a column for the row indices.
+Default is <code class="docutils literal notranslate"><span class="pre">True</span></code>, but you <strong>should probably</strong> set this to <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sep</span></code>: What delimiter to use to separate values.
+Default is comma (<code class="docutils literal notranslate"><span class="pre">','</span></code>), which probably doesn’t need to change (unless your DataFrame’s values have commas in them).</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_holey</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;../../assets/data/week_1/02/df_holey.csv&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="formatting-tabular-data">
+<h2>Formatting tabular data<a class="headerlink" href="#formatting-tabular-data" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="#Contents">Back to top</a></p>
+<p>In all of our discussion so far, we’ve somewhat casually mentioned ideas like “Oh, now we should average all the values in the <em>column</em>,” or “Now take the norm of each <em>row</em>,” without really motivating <em>why</em> our data might be arranged in that way to begin with.
+Like with many other things in life, there are certain <strong>formatting conventions</strong> when it comes to tabular data, and we’ll take some time to discuss those right now.
+For example, given the same set of data, I could conceivably store it in a spreadsheet (CSV file) in the following two ways:</p>
+<p><img alt="table format" src="../../_images/table_format.png" /></p>
+<p>Now, if you’re looking at the image on the left and thinking, “Pshht, there’s no way anyone would ever do that,” then you are lucky to have great collaborators. 😜
+In any case, the spreadsheet on the left does not have a uniform structure for accessing the data, which can make it tricky to perform statistical analyses or even figure out which values are meant to be associated.
+The image on the right is much more preferred for data science because each row is a distinct entry and each column is a different property of that entry that is clearly labeled.
+In short, the convention for formatting tabular data for MI is:</p>
+<ul class="simple">
+<li><p>Each <strong>row</strong> should be <strong>a single example</strong> (data point), whether that is data collected from a different material, a different site, or at a different time.</p></li>
+<li><p>Each <strong>column</strong> should be <strong>a single property</strong>, or <strong>feature</strong>, associated with the data point.
+In the example above, this would be the element name, number, hardness, and density.</p></li>
+</ul>
+<p>Please don’t get rows and columns transposed!</p>
+<div class="section" id="csv-vs-json">
+<h3>CSV vs. JSON 🥊<a class="headerlink" href="#csv-vs-json" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="exercise-conceptual-csv-vs-json">
+<h4>Exercise (conceptual): CSV vs. JSON<a class="headerlink" href="#exercise-conceptual-csv-vs-json" title="Permalink to this headline">¶</a></h4>
+<p>Based on what you’ve seen so far, what are the advantages of CSV over JSON, and vice versa?
+Please record your thoughts somewhere and we’ll discuss this question later!</p>
+</div>
+</div>
+<div class="section" id="exercise-reformatting-dielectric-constants-dataset">
+<h3>Exercise: Reformatting dielectric constants dataset<a class="headerlink" href="#exercise-reformatting-dielectric-constants-dataset" title="Permalink to this headline">¶</a></h3>
+<p>The Strehlow and Cook dataset you saw in the last notebook was pretty complex partially because it was compiled from a variety of disparate sources, so in this example we will work with a cleaner dataset from <a class="reference external" href="https://www.nature.com/articles/sdata2016134">Petousis et al., <em>Scientific Data</em>, 2017</a>.
+The data from their work is featured in the <a class="reference external" href="https://enze-chen.github.io/mi-book/preamble/overview.html">overview figure</a> for this module and it is shared as a JSON file in the <a class="reference external" href="https://datadryad.org/stash/dataset/doi:10.5061/dryad.ph81h">Dryad repository</a>.</p>
+<p>We’ve downloaded the dataset here for you as <code class="docutils literal notranslate"><span class="pre">dielectric_dataset.json</span></code> and your job is to take this JSON of 1056 materials and <strong>extract</strong> each material’s:</p>
+<ul class="simple">
+<li><p>Materials Project ID (has a value like <code class="docutils literal notranslate"><span class="pre">mp-XXX</span></code>)</p></li>
+<li><p>chemical formula</p></li>
+<li><p>refractive index, <span class="math notranslate nohighlight">\(n\)</span></p></li>
+<li><p>band gap, <span class="math notranslate nohighlight">\(E_g\)</span></p></li>
+<li><p>total dielectric constant, <span class="math notranslate nohighlight">\(\varepsilon_{\text{poly}}\)</span></p></li>
+<li><p>electronic contribution to the dielectric constant, <span class="math notranslate nohighlight">\(\varepsilon_{\text{poly}}^{\infty}\)</span></p></li>
+</ul>
+<p>and <strong>organize this information into an appropriate pandas DataFrame</strong>.
+Finally, <strong>save this DataFrame as a CSV file</strong> in a location where you can find it again.
+We will be using the tabular version of this dataset in tomorrow’s exercises, just so you know. 😁</p>
+<p><em>Hints</em>:</p>
+<ul class="simple">
+<li><p>You should open the file on your computer, or print out the first element in <code class="docutils literal notranslate"><span class="pre">data</span></code>, to see what the appropriate keys and access patterns should be.</p></li>
+<li><p>You may assume that every material has every property that’s listed above and that each JSON entry is formatted the same way.</p></li>
+<li><p>You may want to display the DataFrame when you’re done, just to confirm that you got all the data you needed (correct dimensions, columns, values, etc.).</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">json</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;../../assets/data/week_1/02/dielectric_dataset.json&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+<span class="c1"># -------------   WRITE YOUR CODE IN THE SPACE BELOW   ---------- #</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="procuring-tabular-data">
+<h2>Procuring tabular data<a class="headerlink" href="#procuring-tabular-data" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="#Contents">Back to top</a></p>
+<p>For the final segment of this lesson, we will discuss some other software (outside of the Python ecosystem) that can help us obtain tabular data (i.e., in a CSV format) from sources that are <em>almost, but not quite</em> tabular.</p>
+<div class="section" id="webplotdigitizer">
+<h3>WebPlotDigitizer<a class="headerlink" href="#webplotdigitizer" title="Permalink to this headline">¶</a></h3>
+<p>For example, from Module 1, you all looked at the recent paper by <a class="reference external" href="https://www.spiedigitallibrary.org/journals/journal-of-micro-nanopatterning-materials-and-metrology/volume-20/issue-2/021002/Study-of-novel-EUVL-mask-absorber-candidates/10.1117/1.JMM.20.2.021002.short">Wu et al. <em>J. Micro/Nanopatterning</em>, 2021</a> (<a class="reference external" href="https://drive.google.com/file/d/1mqIMh2psWG6tivRKDe_ml1_KBrZLapNW/view?usp=sharing">in Google Drive</a>) where Figure 1 plotted dielectric constant vs. refractive index for a few alloys.
+This is a nice plot, as are many other plots in published papers, but how can we extract the numerical values from these figures?</p>
+<p><a class="reference external" href="https://automeris.io/WebPlotDigitizer/">WebPlotDigitizer</a> is a common tool for this purpose.
+In the web application, you upload an image file (such as a plot) and you can mark <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> coordinates that get estimated and turned into a CSV file for you.
+Originally we were planning a small exercise for you to practice with this, but we’ll leave it up to you to decide if this is worth exploring for your own self-directed research.</p>
+</div>
+<div class="section" id="tabula">
+<h3>Tabula<a class="headerlink" href="#tabula" title="Permalink to this headline">¶</a></h3>
+<p>Relatedly, published papers and reports will often feature several nice tables… that are stuck in PDFs.
+If the PDF is relatively modern, maybe you can copy-paste the information out from there and into a spreadsheet application.
+But if the PDF is old or of poor quality (such as many scanned documents), you’ll be left with a dingy table that you have to manually copy the data out by hand… or do you?</p>
+<p><a class="reference external" href="https://tabula.technology/">Tabula</a> is a tool that was designed to solve this problem, although it is no longer under active development.
+With this tool, you can upload a PDF file, select the tables inside it, and then the software will attempt to “read” the selection and convert the table into a CSV file.
+There will likely be a few errors here and there, but you might find that this saves you a lot of trouble if you have a lot of PDF-embedded tables to parse!</p>
+</div>
+<div class="section" id="manual-entry">
+<h3>Manual entry<a class="headerlink" href="#manual-entry" title="Permalink to this headline">¶</a></h3>
+<p>It’s possible that at the end of the day, you still have to enter data into CSV files by hand.
+And that’s OK!
+There are pros and cons of taking this route, and since we are teaching you programmatic tools for MI (and benefits like automation, reproducibility, etc.) we haven’t really talked about this, but we definitely don’t want you to think this is off limits. 😆</p>
+</div>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h2>
+<p>This concludes the introduction to tabular data.
+If you would like to learn more about pandas, we suggest you look at the <a class="reference external" href="https://pandas.pydata.org/docs/user_guide/index.html">official user guide</a>.
+Realistically, there’s way too much to cover about pandas, and a lot of your understanding will be built as you work with it for your own datasets.
+But, we hope that by giving a brief introduction, you at least know what’s available, where to go for help, and <em>how to think about tabular data</em> with pandas. 🐼</p>
+<p>For the final notebook lesson of the day, we’ll be learning about databases and the <a class="reference external" href="https://materialsproject.org/">Materials Project</a>!</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./week_1\02"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="file_types_blank.html" title="previous page">File types</a>
+    <a class='right-next' id="next-link" href="databases.html" title="next page">Databases</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Enze Chen and Mark Asta<br/>
+        
+            &copy; Copyright 2021.<br/>
+          <div class="extra_footer">
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+  <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" />
+</a>
+
+          </div>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+                        window.ga = window.ga || function () {
+                            (ga.q = ga.q || []).push(arguments) };
+                        ga.l = +new Date;
+                        ga('create', 'UA-197730750-1', 'auto');
+                        ga('set', 'anonymizeIp', true);
+                        ga('send', 'pageview');
+                    </script>
+
+  </body>
+</html>

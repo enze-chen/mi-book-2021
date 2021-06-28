@@ -1,0 +1,1314 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python: The greatest hits &#8212; Introduction to Materials Informatics</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet" />
+  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="canonical" href="https://enze-chen.github.io/mi-book/week_1/01/python_greatest_hits_blank.html" />
+    <link rel="shortcut icon" href="../../_static/mi_favicon.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Python: The gory details" href="python_gory_details_blank.html" />
+    <link rel="prev" title="Homework" href="homework_01.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+      <img src="../../_static/mi_logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Introduction to Materials Informatics</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../intro.html">
+   Welcome! 👋
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Preamble 📜
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../preamble/overview.html">
+   1. Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../preamble/setup.html">
+   2. Setup
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../preamble/schedule.html">
+   3. Schedule (one page) 📅
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Week 1️⃣
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="day_01.html">
+   Day 01: Introductions
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="informatics.html">
+     Intro to MI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="module.html">
+     Intro to Module 2
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="intro_python_jupyter_blank.html">
+     Intro to Python
+    </a>
+   </li>
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="homework_01.html">
+     Homework
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       Python: The greatest hits
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="python_gory_details_blank.html">
+       Python: The gory details
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../02/day_02.html">
+   Day 02: MI and data
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02/recap_logistics.html">
+     Recap first day
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02/opportunities.html">
+     Opportunities and challenges
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02/file_types_blank.html">
+     File types
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02/tabular_data_blank.html">
+     Tabular data
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../02/databases.html">
+     Databases
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <label for="toctree-checkbox-4">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../02/materials_project_blank.html">
+       The Materials Project
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02/reading_docs.html">
+     Reading documentation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02/homework_02.html">
+     Homework
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../03/day_03.html">
+   Day 03: Data visualization
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../03/recap_data.html">
+     Recap data discussion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../03/data_viz_blank.html">
+     Data visualization
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../03/best_practices_viz.html">
+     Best practices for visualization
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../03/best_practices_viz_blank.html">
+       Follow-along notebook
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../03/reading_papers.html">
+     Reading papers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../03/homework_03.html">
+     Homework
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../04/day_04.html">
+   Day 04: ML speedrun
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../04/recap_viz.html">
+     Recap visualization discussion
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../04/intro_ml.html">
+     Introduction to ML
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+    <label for="toctree-checkbox-8">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../04/intro_ml_blank.html">
+       Follow-along notebook
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../04/ml_perf.html">
+     Quantifying performance
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+    <label for="toctree-checkbox-9">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../04/ml_perf_blank.html">
+       Follow-along notebook
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../04/features.html">
+     Featurization
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+    <label for="toctree-checkbox-10">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../04/features_blank.html">
+       Follow-along notebook
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../04/advanced_ml.html">
+     Advanced ML methods
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+    <label for="toctree-checkbox-11">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../04/advanced_ml_blank.html">
+       Follow-along notebook
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../04/practical.html">
+     Practical considerations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../04/homework_04.html">
+     Homework
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../05/day_05.html">
+   Day 05: MI research
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+  <label for="toctree-checkbox-12">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../05/recap_ml.html">
+     Recap ML discussion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../05/res_discuss.html">
+     Research discussion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../05/best_practices_blank.html">
+     Best practices for MI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../05/homework_05.html">
+     Homework
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../05/install_python.html">
+     Installing Python locally (optional)
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Week 2️⃣
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../week_2/06/day_06.html">
+   Day 06: Independence Day
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_2/07/day_07.html">
+   Day 07: Research
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+  <label for="toctree-checkbox-13">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_2/07/survey_07.html">
+     Check-in survey
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_2/08/day_08.html">
+   Day 08: Research + guest speaker
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+  <label for="toctree-checkbox-14">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_2/08/guest_ucb.html">
+     Guest speaker: Alex!
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_2/08/proposals.html">
+     Proposals
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_2/09/day_09.html">
+   Day 09: Research
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
+  <label for="toctree-checkbox-15">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_2/09/check_in.html">
+     Check-in meeting
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_2/10/day_10.html">
+   Day 10: Research + guest speaker
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
+  <label for="toctree-checkbox-16">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_2/10/guest_aionics.html">
+     Guest speaker: Austin!
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Week 3️⃣
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_3/11/day_11.html">
+   Day 11: Research + grad school
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
+  <label for="toctree-checkbox-17">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/11/presentations.html">
+     Giving presentations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/11/grad_school.html">
+     Grad school talk: Mark!
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_3/12/day_12.html">
+   Day 12: Research + guest speaker
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/>
+  <label for="toctree-checkbox-18">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/12/pull_requests.html">
+     GitHub pull requests
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/12/guest_citrine.html">
+     Guest speaker: Ventura!
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_3/13/day_13.html">
+   Day 13: Research
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/>
+  <label for="toctree-checkbox-19">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../week_3/13/deep_learning.html">
+     Deep learning (tentative)
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/>
+    <label for="toctree-checkbox-20">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../week_3/13/deep_learning_blank.html">
+       Deep learning notebook
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_3/14/day_14.html">
+   Day 14: Slam presentations
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/>
+  <label for="toctree-checkbox-21">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/14/peer_review.html">
+     Peer review
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/14/final_presentations.html">
+     Final presentations
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_3/15/day_15.html">
+   Day 15: Conclusions
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/>
+  <label for="toctree-checkbox-22">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/15/summary.html">
+     Summary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/15/reflections.html">
+     Reflections
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/15/next.html">
+     What’s next?
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/15/finale.html">
+     Finale
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Appendices 📝
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../appendix/acknowl.html">
+   1. Acknowledgements
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../appendix/glossary.html">
+   2. Glossary
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../appendix/future.html">
+   3. Future directions 🛣
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/week_1/01/python_greatest_hits_blank.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/enze-chen/mi-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/enze-chen/mi-book/issues/new?title=Issue%20on%20page%20%2Fweek_1/01/python_greatest_hits_blank.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/enze-chen/mi-book/edit/master/week_1/01/python_greatest_hits_blank.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        
+        <a class="jupyterhub-button" href="https://staging.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/enze-chen/mi-book&urlpath=tree/mi-book/week_1/01/python_greatest_hits_blank.ipynb&branch=master"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
+                data-placement="left"><img class="jupyterhub-button-logo"
+                    src="../../_static/images/logo_jupyterhub.svg"
+                    alt="Interact on JupyterHub">JupyterHub</button></a>
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/enze-chen/mi-book/blob/master/week_1/01/python_greatest_hits_blank.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#contents">
+   Contents
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#strings-and-lists">
+   Strings and lists
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exercise-string-vs-list">
+     Exercise: string vs. list
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exercise-parsing-strings">
+     Exercise: parsing strings
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exercise-functions-and-lists">
+     Exercise: functions and lists
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#working-with-files">
+   Working with files
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#materials-structure">
+     Materials structure
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exercise-reading-files">
+     Exercise: Reading files
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exercise-creating-a-dictionary">
+     Exercise: creating a dictionary
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exercise-inverting-the-dictionary">
+     Exercise: inverting the dictionary
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#working-with-numpy">
+   Working with NumPy
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exercise-creating-numpy-arrays">
+     Exercise: Creating NumPy arrays
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#diffusion-brownian-motion">
+     Diffusion (Brownian motion)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exercise-calculations-along-an-axis">
+     Exercise: calculations along an axis
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#more-numpy-and-linear-algebra-fun-aka-machine-learning">
+     More NumPy and linear algebra fun (aka machine learning??)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exercise-solve-an-ordinary-least-squares-problem-using-the-normal-equation">
+     Exercise: solve an ordinary least squares problem using the normal equation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exercise-last-one">
+     Exercise: last one!
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion">
+   Conclusion
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="python-the-greatest-hits">
+<h1>Python: The greatest hits<a class="headerlink" href="#python-the-greatest-hits" title="Permalink to this headline">¶</a></h1>
+<p><em>Authors: Enze Chen and Mark Asta (University of California, Berkeley)</em></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is an interactive exercise, so you will want to click the <span class="fa fa-rocket"></span> and open the notebook in DataHub (or Colab for non-UCB students).</p>
+</div>
+<p>This notebook contains a series of exercises that are <strong>intended for people who already have some Python experience</strong>.
+If you’re able to complete the exercises without too much difficulty (note: use of Google and Stack Overflow is not only allowed, <em>but encouraged</em>), then you’re in good shape for the rest of this module.
+There are many, <em>many</em> Python tutorials out there, so <strong>we’ve tried to make these exercises as relevant to MSE as possible</strong>.
+If there is a concept that is new to you, feel free to hop over to the “Python: The gory details” notebook for more information, or just ask us.</p>
+<div class="alert alert-block alert-warning">
+We definitely want to clarify that it is <b>100% OK</b> if you don't finish all of these exercises—in one day, or at all.
+We encourage you to do as many as you can for now to get your mindset situated in the world of Python, but we don't want you to be stressed.
+After all, this whole internship is learning-driven and there are no grades.
+We will try to proceed with subsequent tutorials according to the original schedule, but understand that those exercises will be scaffolded as well, and you can always come back to these exercises at a later date.
+</div>
+<div class="section" id="contents">
+<h2>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h2>
+<p>These exercises are grouped into the following sections:</p>
+<ol class="simple">
+<li><p><a class="reference external" href="#Strings-and-lists">Strings and lists</a></p></li>
+<li><p><a class="reference external" href="#Working-with-files">Working with files</a></p></li>
+<li><p><a class="reference external" href="#Working-with-NumPy">Working with NumPy</a></p></li>
+</ol>
+</div>
+<div class="section" id="strings-and-lists">
+<h2>Strings and lists<a class="headerlink" href="#strings-and-lists" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="#Contents">Back to top</a></p>
+<div class="section" id="exercise-string-vs-list">
+<h3>Exercise: string vs. list<a class="headerlink" href="#exercise-string-vs-list" title="Permalink to this headline">¶</a></h3>
+<p>First a conceptual question: Identify one way <code class="docutils literal notranslate"><span class="pre">string</span></code> and <code class="docutils literal notranslate"><span class="pre">list</span></code> are similar in Python and one way they’re different.
+Write your answer here by editing this Markdown cell.</p>
+<hr class="docutils" />
+<p><strong>Answer</strong>: ____</p>
+</div>
+<div class="section" id="exercise-parsing-strings">
+<h3>Exercise: parsing strings<a class="headerlink" href="#exercise-parsing-strings" title="Permalink to this headline">¶</a></h3>
+<p>Often times when working with data, files, etc., we have to take slices of strings (substrings), split them, join them, etc.
+This can be to extract the name of a compound, a date, an experimental parameter, etc.
+Since we have a lot of data, we would like to come up with a robust algorithm that can flexibly handle a variety of inputs (assuming that some overall structure is maintained—not always a safe assumption in the wild!).</p>
+<p>Your colleague gives you a list of files with absorption data and asks you to extract the chemical formulas from the file path and store them into a list.
+They would also like to have the collection date stored in the format <code class="docutils literal notranslate"><span class="pre">MM-DD-YY</span></code> with hyphens instead of the default underscores generated by the program.
+The <code class="docutils literal notranslate"><span class="pre">data</span></code> input list of files is provided below, and your job is to create two lists that look like:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">formulas</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Si&#39;</span><span class="p">,</span> <span class="s1">&#39;GaAs&#39;</span><span class="p">,</span> <span class="s1">&#39;InP&#39;</span><span class="p">,</span> <span class="s1">&#39;AlGaAs&#39;</span><span class="p">]</span>
+<span class="n">dates</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;06-28-21&#39;</span><span class="p">,</span> <span class="s1">&#39;06-28-21&#39;</span><span class="p">,</span> <span class="s1">&#39;06-29-21&#39;</span><span class="p">,</span> <span class="s1">&#39;06-30-21&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p><em>Hints</em>:</p>
+<ul class="simple">
+<li><p>You might want to apply <code class="docutils literal notranslate"><span class="pre">for</span></code> loops, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str.split"><code class="docutils literal notranslate"><span class="pre">str.split()</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str.join"><code class="docutils literal notranslate"><span class="pre">str.join()</span></code></a>, and indexing/slicing.</p></li>
+<li><p>We recommend thinking through all the steps required to solve this problem before jumping into the code.
+Write some comments (or <strong>pseudocode</strong>) to help guide your computational thinking process.</p></li>
+<li><p>We also recommend solving this problem iteratively, doing one string operation at a time and verifying that step works.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;path/to/absorption/data/Si_06_28_21.txt&#39;</span><span class="p">,</span> 
+        <span class="s1">&#39;path/to/absorption/data/GaAs_06_28_21.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;different/path/to/absorption/data/InP_06_29_21.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;path/to/more/absorption/data/AlGaAs_06_30_21.txt&#39;</span><span class="p">]</span>
+<span class="c1"># -------------   WRITE YOUR CODE IN THE SPACE BELOW   ---------- #</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="exercise-functions-and-lists">
+<h3>Exercise: functions and lists<a class="headerlink" href="#exercise-functions-and-lists" title="Permalink to this headline">¶</a></h3>
+<p><img alt="band gap" src="../../_images/band_gap.png" /></p>
+<p>Now we’ll go through another exercise with lists, this time by writing your own helper function.
+Mark gives you some data on band gaps, but his evil twin Kram changed the values from <code class="docutils literal notranslate"><span class="pre">float</span></code> to <code class="docutils literal notranslate"><span class="pre">string</span></code>.
+This makes it difficult to work with (try running the code below).</p>
+<p>Write a <strong>helper function</strong> that takes the list of string as input and returns a list of corresponding floats.
+Also return the minimum and maximum values in the list.
+Finally, call the function on the band gap data to ensure it works as expected.
+Your final returned result should be similar to:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">([</span><span class="mf">1.14</span><span class="p">,</span> <span class="mf">1.43</span><span class="p">,</span> <span class="mf">0.67</span><span class="p">,</span> <span class="mf">5.5</span><span class="p">,</span> <span class="mf">3.4</span><span class="p">,</span> <span class="mf">0.37</span><span class="p">,</span> <span class="mf">0.0001</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">],</span> <span class="mf">0.0001</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">band_gaps</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;1.14&#39;</span><span class="p">,</span> <span class="s1">&#39;1.43&#39;</span><span class="p">,</span> <span class="s1">&#39;0.67&#39;</span><span class="p">,</span> <span class="s1">&#39;5.5&#39;</span><span class="p">,</span> <span class="s1">&#39;3.4&#39;</span><span class="p">,</span> <span class="s1">&#39;0.37&#39;</span><span class="p">,</span> <span class="s1">&#39;1e-4&#39;</span><span class="p">,</span> <span class="s1">&#39;1e1&#39;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;The maximum band gap value in the original list is </span><span class="si">{</span><span class="nb">max</span><span class="p">(</span><span class="n">band_gaps</span><span class="p">)</span><span class="si">}</span><span class="s1"> eV&#39;</span><span class="p">)</span>   <span class="c1"># ???</span>
+<span class="c1"># -------------   WRITE YOUR CODE IN THE SPACE BELOW   ---------- #</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The maximum band gap value in the original list is 5.5 eV
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="working-with-files">
+<h2>Working with files<a class="headerlink" href="#working-with-files" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="#Contents">Back to top</a></p>
+<p>Most of the time, our data will be stored in external files rather than hard coded like the previous examples, so we have to be proficient in working with files.
+On Tuesday, we’ll be going through several examples with different file formats that are commonly used in MI, but for now we’ll practice reading in a text file with data containing the ground-state crystal structure of the elements.</p>
+<div class="section" id="materials-structure">
+<h3>Materials structure<a class="headerlink" href="#materials-structure" title="Permalink to this headline">¶</a></h3>
+<p>First, we’ll discuss a little bit about the science to provide context and motivation.
+In MSE, we are often concerned with the characteristics of and relationships between four central tenets: <strong>processing</strong>, <strong>structure</strong>, <strong>properties</strong>, and <strong>performance</strong> (PSPP).
+As all of these points heavily influence each other, their relationship (and thus, the whole endeavor of MSE) is typically summarized by the following schematic <a class="reference external" href="https://en.wikipedia.org/wiki/Materials_science#Fundamentals">from Wikipedia</a>:</p>
+<p><img alt="MSE_tetrahedron" src="../../_images/mse_tetrahedron.png" /></p>
+<p>In this exercise, we’re focusing on the structure component of the above tetrahedron.
+But note that when we talk about “materials structure,” there are actually many possible length scales on which we can describe the structure.</p>
+<p><img alt="length scales" src="../../_images/length_scales.png" /></p>
+<p>In this problem, we’re looking at the <strong>ground-state crystal structure</strong> of the elements, which is on the far-left end of the above scale.
+Here the length scales are typically on the order of Angstroms, or <span class="math notranslate nohighlight">\(10^{-10}\)</span> meters.
+Moreover, the crystal structures of all crystalline materials can be classified into 14 different <a class="reference external" href="https://en.wikipedia.org/wiki/Bravais_lattice"><strong>Bravais lattices</strong></a> that can be further grouped into six <strong>crystal families</strong>, as shown here:</p>
+<p><img alt="crystal family" src="../../_images/crystal_family.png" /></p>
+<p>The crystal structure (lattice + basis) determines the symmetries of the system and has considerable influence on the physical, mechanical, optoelectronic, and magnetic properties of the material.
+Later this week, we’ll see how we can encode and leverage this structural information to aid our data analysis.</p>
+</div>
+<div class="section" id="exercise-reading-files">
+<h3>Exercise: Reading files<a class="headerlink" href="#exercise-reading-files" title="Permalink to this headline">¶</a></h3>
+<p>We’ve included a file <code class="docutils literal notranslate"><span class="pre">element_structure.txt</span></code> that contains information on the crystal family of the first 50 elements in the periodic table.
+The first few lines of the file look like:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Data from https://periodictable.com/Properties/A/CrystalStructure.html</span>
+<span class="n">Hydrogen</span> <span class="n">Hexagonal</span>
+<span class="n">Helium</span> <span class="n">Cubic</span>
+<span class="n">Lithium</span> <span class="n">Cubic</span>
+<span class="n">Beryllium</span> <span class="n">Hexagonal</span>
+</pre></div>
+</div>
+<p>where there’s a comment in the first line and the subsequent lines are the element and family separated by a single space.
+In this first example, read in the file and print out the first ten elements along with their atomic number.
+You should not have to rely on other packages, just native Python.
+Your output should look something like this (<a class="reference external" href="https://stackoverflow.com/questions/134934/display-number-with-leading-zeros">leading zeros</a> are bonus points!):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">01</span> <span class="n">Hydrogen</span>
+<span class="mi">02</span> <span class="n">Helium</span>
+<span class="o">...</span>
+<span class="mi">10</span> <span class="n">Neon</span>
+</pre></div>
+</div>
+<p><em>Hint</em>: You might want to use <a class="reference external" href="https://docs.python.org/3/library/functions.html#enumerate"><code class="docutils literal notranslate"><span class="pre">enumerate()</span></code></a>, <code class="docutils literal notranslate"><span class="pre">continue</span></code>, <code class="docutils literal notranslate"><span class="pre">break</span></code>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str.startswith"><code class="docutils literal notranslate"><span class="pre">str.startswith()</span></code></a>, and <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str.split"><code class="docutils literal notranslate"><span class="pre">str.split()</span></code></a>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">crystal_data</span> <span class="o">=</span> <span class="s1">&#39;../../assets/data/week_1/01/element_structure.txt&#39;</span>
+<span class="c1"># -------------   WRITE YOUR CODE IN THE SPACE BELOW   ---------- #</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="exercise-creating-a-dictionary">
+<h3>Exercise: creating a dictionary<a class="headerlink" href="#exercise-creating-a-dictionary" title="Permalink to this headline">¶</a></h3>
+<p>Using the same file as the previous exercise, <strong>read in the data from the file and store them into a dictionary</strong> where the <code class="docutils literal notranslate"><span class="pre">key:value</span></code> pairs are <code class="docutils literal notranslate"><span class="pre">element:family</span></code>.
+The first few entries of the dictionary will look similar to (order might be different; that’s OK):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;Hydrogen&#39;</span><span class="p">:</span> <span class="s1">&#39;Hexagonal&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;Helium&#39;</span><span class="p">:</span> <span class="s1">&#39;Cubic&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;Lithium&#39;</span><span class="p">:</span> <span class="s1">&#39;Cubic&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;Beryllium&#39;</span><span class="p">:</span> <span class="s1">&#39;Hexagonal&#39;</span><span class="p">,</span>
+ <span class="o">...</span>
+</pre></div>
+</div>
+<p>Dictionaries are nice because they serve as quick lookup tables when we want to find associated values.
+For those who have learned a bit about algorithmic efficiency, you might be interested to know that a Python dictionary has <em>constant</em> lookup time, whether that dictionary has ten or ten million entries!</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">crystal_data</span> <span class="o">=</span> <span class="s1">&#39;../../assets/data/week_1/01/element_structure.txt&#39;</span>
+<span class="c1"># -------------   WRITE YOUR CODE IN THE SPACE BELOW   ---------- #</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="exercise-inverting-the-dictionary">
+<h3>Exercise: inverting the dictionary<a class="headerlink" href="#exercise-inverting-the-dictionary" title="Permalink to this headline">¶</a></h3>
+<p>Now take that dictionary you created in the previous exercise and “invert” it.
+By this, we mean turn the values into keys and keys into values (still corresponding).
+Doing this allows us to, for example, find all elements that have a similar crystal structure, if we’re only searching for materials with that structure.</p>
+<p>Notice that because <strong>keys have to be unique</strong> in a dictionary, the same crystal family (e.g., <code class="docutils literal notranslate"><span class="pre">Cubic</span></code>) will correspond to multiple elements (e.g., <code class="docutils literal notranslate"><span class="pre">Helium</span></code>, <code class="docutils literal notranslate"><span class="pre">Lithium</span></code>, <code class="docutils literal notranslate"><span class="pre">Neon</span></code>).
+Therefore, the <code class="docutils literal notranslate"><span class="pre">value</span></code> corresponding to each <code class="docutils literal notranslate"><span class="pre">key</span></code> in the inverted dictionary should be a <strong>list</strong> of all the elements belonging to that family.</p>
+<p>Your code takes the previous dictionary as input and returns another dictionary that will look similar to (order of keys and values doesn’t matter):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;Hexagonal&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Hydrogen&#39;</span><span class="p">,</span> <span class="s1">&#39;Beryllium&#39;</span><span class="p">,</span> <span class="s1">&#39;Carbon&#39;</span><span class="p">,</span> <span class="o">...</span><span class="p">],</span>
+ <span class="s1">&#39;Cubic&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Helium&#39;</span><span class="p">,</span> <span class="s1">&#39;Lithium&#39;</span><span class="p">,</span> <span class="s1">&#39;Neon&#39;</span><span class="p">,</span> <span class="o">...</span><span class="p">],</span>
+ <span class="s1">&#39;Trigonal&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Boron&#39;</span><span class="p">,</span> <span class="s1">&#39;Arsenic&#39;</span><span class="p">],</span>
+ <span class="s1">&#39;Monoclinic&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Oxygen&#39;</span><span class="p">,</span> <span class="s1">&#39;Fluorine&#39;</span><span class="p">,</span> <span class="s1">&#39;Selenium&#39;</span><span class="p">],</span>
+ <span class="s1">&#39;Triclinic&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Phosphorus&#39;</span><span class="p">],</span>
+ <span class="s1">&#39;Orthorhombic&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Sulfur&#39;</span><span class="p">,</span> <span class="s1">&#39;Chlorine&#39;</span><span class="p">,</span> <span class="s1">&#39;Gallium&#39;</span><span class="p">,</span> <span class="s1">&#39;Bromine&#39;</span><span class="p">],</span>
+ <span class="s1">&#39;Tetragonal&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Indium&#39;</span><span class="p">,</span> <span class="s1">&#39;Tin&#39;</span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><em>Hint</em>: You might have to check to see if a <code class="docutils literal notranslate"><span class="pre">value</span></code> from the original dictionary (i.e. crystal family) current exists as a <code class="docutils literal notranslate"><span class="pre">key</span></code> in your new dictionary.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># -------------   WRITE YOUR CODE IN THE SPACE BELOW   ---------- #</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="working-with-numpy">
+<h2>Working with NumPy<a class="headerlink" href="#working-with-numpy" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="#Contents">Back to top</a></p>
+<p>In this last section, we’ll be using the <a class="reference external" href="https://numpy.org/">NumPy package</a> to do scientific computing in Python.
+It is <strong>absolutely critical</strong> that you are comfortable using NumPy and its associated arrays, modules, and functions because all scientific computing applications and modules rely on this framework.
+It’s now so popular that the developers even published a review article on NumPy last year in <a class="reference external" href="https://www.nature.com/articles/s41586-020-2649-2"><em>Nature</em></a>, one of the top journals in science.</p>
+<p>At the heart of NumPy is the <strong>NumPy array</strong>, which is used to store data into a structured format with multiple dimensions.
+Depending on the dimensionality, these arrays correspond to our conventional notion of scalars (0D), vectors (1D), and matrices (2D), which is also described by their <code class="docutils literal notranslate"><span class="pre">shape</span></code>.
+Each available dimension of the specific array is called an <code class="docutils literal notranslate"><span class="pre">axis</span></code>, which is how we index into them and it factors into certain calculations.
+The figure below <a class="reference external" href="https://www.oreilly.com/library/view/elegant-scipy/9781491922927/ch01.html">from O’Reilly</a> illustrates these concepts:</p>
+<p><img alt="NumPy arrays" src="../../_images/numpy_arrays.png" /></p>
+<div class="section" id="exercise-creating-numpy-arrays">
+<h3>Exercise: Creating NumPy arrays<a class="headerlink" href="#exercise-creating-numpy-arrays" title="Permalink to this headline">¶</a></h3>
+<p>There are <a class="reference external" href="https://numpy.org/doc/stable/reference/routines.array-creation.html">many ways to create NumPy arrays</a>, and we’ll demonstrate a few here.
+Print the following arrays to confirm that the output is correct (and note the formatting).</p>
+<ul class="simple">
+<li><p>First create a NumPy array by <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.array.html">converting</a> a list of lists (the <code class="docutils literal notranslate"><span class="pre">num</span></code> variable below).</p>
+<ul>
+<li><p>Print the <code class="docutils literal notranslate"><span class="pre">type</span></code> of the original list and the new NumPy array to confirm they’re different.</p></li>
+</ul>
+</li>
+<li><p>Using NumPy, create the following 1D arrays:</p>
+<ul>
+<li><p>A <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.arange.html">range of integers</a> from 0 to 99, inclusive.</p></li>
+<li><p>An array of 15 <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.linspace.html">evenly-spaced numbers</a> from 0 to 50, inclusive.</p></li>
+</ul>
+</li>
+<li><p>Then create the following 2D <span class="math notranslate nohighlight">\(3 \times 3\)</span> arrays using built-in NumPy functions:</p>
+<ul>
+<li><p>A matrix of <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.zeros.html">zeros</a>.</p></li>
+<li><p>A matrix of <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ones.html">ones</a>.</p></li>
+<li><p>An <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.identity.html">identity matrix</a>.</p></li>
+<li><p>A <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.diag.html">diagonal matrix</a> with <code class="docutils literal notranslate"><span class="pre">[1,</span> <span class="pre">2,</span> <span class="pre">3]</span></code> along the main diagonal.</p></li>
+<li><p>A matrix of <a class="reference external" href="https://numpy.org/doc/stable/reference/random/generated/numpy.random.rand.html">random numbers</a> between <span class="math notranslate nohighlight">\([0, 1)\)</span>.</p></li>
+</ul>
+</li>
+</ul>
+<p>Because NumPy is an external package, <strong>we have to first import it</strong> and then attach the prefix to its functions and modules.
+Example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>   <span class="c1"># this is called an alias. Standard practice, saves our fingers. :)</span>
+<span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>           <span class="c1"># this creates a 5-element vector of 1&#39;s. Note the &quot;np&quot; alias.</span>
+<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">()</span>     <span class="c1"># this creates a single random number between [0, 1) using np.random sub-module.</span>
+</pre></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="n">num</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]]</span>
+<span class="c1"># -------------   WRITE YOUR CODE IN THE SPACE BELOW   ---------- #</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="diffusion-brownian-motion">
+<h3>Diffusion (Brownian motion)<a class="headerlink" href="#diffusion-brownian-motion" title="Permalink to this headline">¶</a></h3>
+<p>On the surface, and particularly in the output, a NumPy array looks much like a list of lists (of lists of lists…)—how lame.
+<em>But</em>, once we get a true NumPy array, we can do some cool calculations with it.
+In particular, let’s assume we have some data representing random walk diffusion on a lattice, where our array is structured as follows:</p>
+<p><img alt="lattice diffusion" src="../../_images/lattice_diffusion_schematic.png" /></p>
+<p>Briefly, the data are generated using the following algorithm:</p>
+<ul class="simple">
+<li><p>We start at the origin and each time step we randomly move forward or backward along one dimension in 3D space (hop to a nearest-neighbor lattice site).</p></li>
+<li><p>We do this for a total of 100 time steps to get the first 2D array of data (where its shape is <span class="math notranslate nohighlight">\(101 \times 3\)</span>).</p></li>
+<li><p>Then, we repeat the whole procedure 500 times (trials) to get a 3D array of data (where its shape is <span class="math notranslate nohighlight">\(500 \times 101 \times 3\)</span>).</p></li>
+</ul>
+<p>While this is a relatively basic algorithm, it’s an instructive starting point for diffusion models and, in our case, scientific computing practice.
+The diffusion model could be for species on the surface of a catalyst, substitutional or interstitial atoms in an alloy, or ions in an electrolyte solution.
+In particular, it can be shown that the <strong>mean squared displacement</strong> (MSD) of such a particle from its original position <span class="math notranslate nohighlight">\(\vec{x}_0\)</span> is</p>
+<div class="math notranslate nohighlight">
+\[ \text{MSD} \equiv \langle (\vec{x} - \vec{x}_0)^2 \rangle = 2nDt \]</div>
+<p>where <span class="math notranslate nohighlight">\(n\)</span> is the dimensionality, <span class="math notranslate nohighlight">\(t\)</span> is the time, and <span class="math notranslate nohighlight">\(D\)</span> is the diffusion coefficient.
+Pretty neat!</p>
+</div>
+<div class="section" id="exercise-calculations-along-an-axis">
+<h3>Exercise: calculations along an axis<a class="headerlink" href="#exercise-calculations-along-an-axis" title="Permalink to this headline">¶</a></h3>
+<p>Your job will be to calculate the MSD using the diffusion data that we’ve loaded for you below.
+The NumPy array is structured exactly as shown above (we can print <code class="docutils literal notranslate"><span class="pre">data.shape</span></code> to confirm this).
+Your final answer should be a single array of length 101 with values that are <em>approximately</em> equal to:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span> <span class="mf">0.</span>   <span class="mf">1.</span>   <span class="mf">2.</span>   <span class="o">...</span>   <span class="mf">99.</span>   <span class="mf">100.</span><span class="p">]</span>
+</pre></div>
+</div>
+<p><em>Hint</em>: You might find the <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.linalg.norm.html"><code class="docutils literal notranslate"><span class="pre">np.linalg.norm()</span></code></a> and <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.mean.html"><code class="docutils literal notranslate"><span class="pre">np.mean()</span></code></a> functions helpful.
+You will want to specify a specific <code class="docutils literal notranslate"><span class="pre">axis</span></code> parameter in each function.
+Also, which function should you compute first?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;../../assets/data/week_1/01/lattice_diffusion.npy&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;The data has dimensions </span><span class="si">{</span><span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s1">.&#39;</span><span class="p">)</span>
+<span class="c1"># -------------   WRITE YOUR CODE IN THE SPACE BELOW   ---------- #</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The data has dimensions (500, 101, 3).
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="more-numpy-and-linear-algebra-fun-aka-machine-learning">
+<h3>More NumPy and linear algebra fun (aka machine learning??)<a class="headerlink" href="#more-numpy-and-linear-algebra-fun-aka-machine-learning" title="Permalink to this headline">¶</a></h3>
+<p>In the final set of problems, we’ll practice some more NumPy array operations in the context of a linear regression problem.
+Specifically, we will construct a linear model to predict the atomic weight of an element using its atomic number.
+You know from your previous studies that the two properties are related:</p>
+<div class="math notranslate nohighlight">
+\[ \text{atomic weight = atomic number + weighted average number of neutrons} \]</div>
+<p>but not perfectly linear, which makes this a good problem for demonstrating the method of <strong>least squares</strong>.
+If you need a reminder of the matrix-vector formulation of the least squares regression problem, see <a class="reference external" href="https://github.com/enze-chen/stanford_ta/blob/master/cme104/pseudoinverse.pdf">this handout</a> or similar ones on Google.</p>
+</div>
+<div class="section" id="exercise-solve-an-ordinary-least-squares-problem-using-the-normal-equation">
+<h3>Exercise: solve an ordinary least squares problem using the normal equation<a class="headerlink" href="#exercise-solve-an-ordinary-least-squares-problem-using-the-normal-equation" title="Permalink to this headline">¶</a></h3>
+<p>We have provided some data for you in <code class="docutils literal notranslate"><span class="pre">number_weight.npy</span></code> (loaded below) with 50 rows and 2 columns.
+The first column is the atomic number and the second column is the atomic weight for the corresponding element.</p>
+<p>Your job is to create a <strong>design matrix</strong> <span class="math notranslate nohighlight">\(X\)</span> that consists of the following columns:</p>
+<ul class="simple">
+<li><p>A column of ones.</p></li>
+<li><p>A column of atomic numbers.</p></li>
+<li><p>A column of atomic numbers squared (this is an example of adding polynomial features, which we’ll discuss on Thursday).</p></li>
+</ul>
+<p>You should also create a <strong>target vector</strong> <span class="math notranslate nohighlight">\(\vec{y}\)</span> that is the column of atomic weights.
+To be even more explicit, your code should do the following:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} \text{data}\ = \begin{bmatrix} 1 &amp; 1.008 \\ 2 &amp; 4.003 \\ \vdots &amp; \vdots \\ 49 &amp; 114.818 \\ 50 &amp; 118.71 \end{bmatrix} 
+\quad \stackrel{\text{\{your code\}}}{\implies} \quad 
+X \equiv \begin{bmatrix} \vec{1} &amp; \vec{Z} &amp; \vec{Z^2} \end{bmatrix} = \begin{bmatrix} 1 &amp; 1 &amp; 1 \\ 1 &amp; 2 &amp; 4 \\ \vdots &amp; \vdots &amp; \vdots \\ 1 &amp; 49 &amp; 2401 \\ 1 &amp; 50 &amp; 2500 \end{bmatrix}, \quad
+\vec{y} = \begin{bmatrix} 1.008 \\ 4.003 \\ \vdots \\ 114.818 \\ 118.71 \end{bmatrix} \end{split}\]</div>
+<p>After this is done, you should compute the regression <strong>coefficients (weights)</strong> <span class="math notranslate nohighlight">\(\vec{\theta}\)</span> using the <strong>normal equation</strong>:</p>
+<div class="math notranslate nohighlight">
+\[ \vec{\theta} = (X^T X)^{-1} X^T \vec{y} \]</div>
+<p>where <span class="math notranslate nohighlight">\(\vec{\theta}\)</span> is such that for the <span class="math notranslate nohighlight">\(i\)</span>th element (i.e., <span class="math notranslate nohighlight">\(i\)</span>th row of <span class="math notranslate nohighlight">\(X\)</span>),</p>
+<div class="math notranslate nohighlight">
+\[ \theta_0 x_0^{(i)} + \theta_1 x_1^{(i)} + \theta_2 x_2^{(i)} = y^{(i)} \]</div>
+<p>Finally, compute the <strong>root-mean-square error</strong> (RMSE), which is given by</p>
+<div class="math notranslate nohighlight">
+\[ \text{RMSE}\ = \left( \frac{1}{m} || X \vec{\theta} - \vec{y} ||_2^2 \right)^{1/2} \]</div>
+<p>If you print out your <span class="math notranslate nohighlight">\(\vec{\theta}\)</span> values and RMSE, you should get approximately</p>
+<div class="math notranslate nohighlight">
+\[ \vec{\theta} \approx \begin{bmatrix} -0.342 &amp; 2.021 &amp; 0.007 \end{bmatrix} \qquad \text{RMSE}\ \approx 1.174 \]</div>
+<p><em>Hint</em>: You may want to use <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.column_stack.html"><code class="docutils literal notranslate"><span class="pre">np.column_stack()</span></code></a> (or see <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.concatenate.html"><code class="docutils literal notranslate"><span class="pre">np.concatenate()</span></code></a> for more options), <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.linalg.inv.html"><code class="docutils literal notranslate"><span class="pre">np.linalg.inv()</span></code></a>, <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.T.html"><code class="docutils literal notranslate"><span class="pre">ndarray.T</span></code></a>, <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.matmul.html"><code class="docutils literal notranslate"><span class="pre">np.matmul()</span></code></a> (or simply the <code class="docutils literal notranslate"><span class="pre">&#64;</span></code> operator), and the <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.linalg.norm.html"><code class="docutils literal notranslate"><span class="pre">np.linalg.norm()</span></code></a> function.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;../../assets/data/week_1/01/number_weight.npy&#39;</span><span class="p">)</span>
+<span class="c1"># -------------   WRITE YOUR CODE IN THE SPACE BELOW   ---------- #</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="exercise-last-one">
+<h3>Exercise: last one!<a class="headerlink" href="#exercise-last-one" title="Permalink to this headline">¶</a></h3>
+<p>We’ll conclude with another conceptual exercise.
+Enze receives some measurement data with recorded temperature values.
+He quickly realizes that his collaborators recorded the data in degrees Celsius instead of Kelvin, so he has to add <span class="math notranslate nohighlight">\(273\)</span> to his data and writes the following code to do so.
+Explain what the following code would do and why this is very dangerous!
+Try to first answer the question without actually running the code. 😉</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]])</span>   <span class="c1"># this creates a 2x3 array</span>
+<span class="n">B</span> <span class="o">=</span> <span class="mi">273</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>                   <span class="c1"># this creates a 1x3 array</span>
+<span class="n">C</span> <span class="o">=</span> <span class="n">A</span> <span class="o">+</span> <span class="n">B</span>                              <span class="c1"># what will happen here??</span>
+</pre></div>
+</div>
+<hr class="docutils" />
+<p><strong>Answer</strong>: ____</p>
+</div>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h2>
+<p>Congratulations on completing these exercises! 🎉👏</p>
+<p>These problems were <em>definitely not easy</em> and it’s OK if you need a little more time to digest everything we covered above.</p>
+<p>Please don’t hesitate to reach out on Slack if you have questions or concerns.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./week_1\01"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="homework_01.html" title="previous page">Homework</a>
+    <a class='right-next' id="next-link" href="python_gory_details_blank.html" title="next page">Python: The gory details</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Enze Chen and Mark Asta<br/>
+        
+            &copy; Copyright 2021.<br/>
+          <div class="extra_footer">
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+  <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" />
+</a>
+
+          </div>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+                        window.ga = window.ga || function () {
+                            (ga.q = ga.q || []).push(arguments) };
+                        ga.l = +new Date;
+                        ga('create', 'UA-197730750-1', 'auto');
+                        ga('set', 'anonymizeIp', true);
+                        ga('send', 'pageview');
+                    </script>
+
+  </body>
+</html>

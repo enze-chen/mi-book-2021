@@ -1,0 +1,972 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading documentation &#8212; Introduction to Materials Informatics</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet" />
+  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="canonical" href="https://enze-chen.github.io/mi-book/week_1/02/reading_docs.html" />
+    <link rel="shortcut icon" href="../../_static/mi_favicon.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Homework" href="homework_02.html" />
+    <link rel="prev" title="The Materials Project" href="materials_project_blank.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+      <img src="../../_static/mi_logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Introduction to Materials Informatics</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../intro.html">
+   Welcome! 👋
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Preamble 📜
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../preamble/overview.html">
+   1. Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../preamble/setup.html">
+   2. Setup
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../preamble/schedule.html">
+   3. Schedule (one page) 📅
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Week 1️⃣
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../01/day_01.html">
+   Day 01: Introductions
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../01/informatics.html">
+     Intro to MI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../01/module.html">
+     Intro to Module 2
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../01/intro_python_jupyter_blank.html">
+     Intro to Python
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../01/homework_01.html">
+     Homework
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../01/python_greatest_hits_blank.html">
+       Python: The greatest hits
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../01/python_gory_details_blank.html">
+       Python: The gory details
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="day_02.html">
+   Day 02: MI and data
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="recap_logistics.html">
+     Recap first day
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="opportunities.html">
+     Opportunities and challenges
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="file_types_blank.html">
+     File types
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tabular_data_blank.html">
+     Tabular data
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="databases.html">
+     Databases
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <label for="toctree-checkbox-4">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="materials_project_blank.html">
+       The Materials Project
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Reading documentation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="homework_02.html">
+     Homework
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../03/day_03.html">
+   Day 03: Data visualization
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../03/recap_data.html">
+     Recap data discussion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../03/data_viz_blank.html">
+     Data visualization
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../03/best_practices_viz.html">
+     Best practices for visualization
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../03/best_practices_viz_blank.html">
+       Follow-along notebook
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../03/reading_papers.html">
+     Reading papers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../03/homework_03.html">
+     Homework
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../04/day_04.html">
+   Day 04: ML speedrun
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../04/recap_viz.html">
+     Recap visualization discussion
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../04/intro_ml.html">
+     Introduction to ML
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+    <label for="toctree-checkbox-8">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../04/intro_ml_blank.html">
+       Follow-along notebook
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../04/ml_perf.html">
+     Quantifying performance
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+    <label for="toctree-checkbox-9">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../04/ml_perf_blank.html">
+       Follow-along notebook
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../04/features.html">
+     Featurization
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+    <label for="toctree-checkbox-10">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../04/features_blank.html">
+       Follow-along notebook
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../04/advanced_ml.html">
+     Advanced ML methods
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+    <label for="toctree-checkbox-11">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../04/advanced_ml_blank.html">
+       Follow-along notebook
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../04/practical.html">
+     Practical considerations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../04/homework_04.html">
+     Homework
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../05/day_05.html">
+   Day 05: MI research
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+  <label for="toctree-checkbox-12">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../05/recap_ml.html">
+     Recap ML discussion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../05/res_discuss.html">
+     Research discussion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../05/best_practices_blank.html">
+     Best practices for MI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../05/homework_05.html">
+     Homework
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../05/install_python.html">
+     Installing Python locally (optional)
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Week 2️⃣
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../week_2/06/day_06.html">
+   Day 06: Independence Day
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_2/07/day_07.html">
+   Day 07: Research
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+  <label for="toctree-checkbox-13">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_2/07/survey_07.html">
+     Check-in survey
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_2/08/day_08.html">
+   Day 08: Research + guest speaker
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+  <label for="toctree-checkbox-14">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_2/08/guest_ucb.html">
+     Guest speaker: Alex!
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_2/08/proposals.html">
+     Proposals
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_2/09/day_09.html">
+   Day 09: Research
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
+  <label for="toctree-checkbox-15">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_2/09/check_in.html">
+     Check-in meeting
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_2/10/day_10.html">
+   Day 10: Research + guest speaker
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
+  <label for="toctree-checkbox-16">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_2/10/guest_aionics.html">
+     Guest speaker: Austin!
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Week 3️⃣
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_3/11/day_11.html">
+   Day 11: Research + grad school
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
+  <label for="toctree-checkbox-17">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/11/presentations.html">
+     Giving presentations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/11/grad_school.html">
+     Grad school talk: Mark!
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_3/12/day_12.html">
+   Day 12: Research + guest speaker
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/>
+  <label for="toctree-checkbox-18">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/12/pull_requests.html">
+     GitHub pull requests
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/12/guest_citrine.html">
+     Guest speaker: Ventura!
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_3/13/day_13.html">
+   Day 13: Research
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/>
+  <label for="toctree-checkbox-19">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../week_3/13/deep_learning.html">
+     Deep learning (tentative)
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/>
+    <label for="toctree-checkbox-20">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../week_3/13/deep_learning_blank.html">
+       Deep learning notebook
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_3/14/day_14.html">
+   Day 14: Slam presentations
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/>
+  <label for="toctree-checkbox-21">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/14/peer_review.html">
+     Peer review
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/14/final_presentations.html">
+     Final presentations
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_3/15/day_15.html">
+   Day 15: Conclusions
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/>
+  <label for="toctree-checkbox-22">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/15/summary.html">
+     Summary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/15/reflections.html">
+     Reflections
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/15/next.html">
+     What’s next?
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/15/finale.html">
+     Finale
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Appendices 📝
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../appendix/acknowl.html">
+   1. Acknowledgements
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../appendix/glossary.html">
+   2. Glossary
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../appendix/future.html">
+   3. Future directions 🛣
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/week_1/02/reading_docs.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/enze-chen/mi-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/enze-chen/mi-book/issues/new?title=Issue%20on%20page%20%2Fweek_1/02/reading_docs.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/enze-chen/mi-book/edit/master/week_1/02/reading_docs.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#searching-for-documentation">
+   Searching for documentation
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#searching-for-an-algorithm-or-use-case">
+     Searching for an algorithm or use case
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#searching-for-a-package-module-function">
+     Searching for a package/module/function
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reading-the-docs">
+   Reading the docs
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="reading-documentation">
+<span id="h1-02-reading-docs"></span><h1>Reading documentation<a class="headerlink" href="#reading-documentation" title="Permalink to this headline">¶</a></h1>
+<p>At this point, we’ve already introduced <em>a ton</em> of concepts about Python and third-party Python packages (with more to come), so we want to give some pointers on how to search for and read documentation for Python code.
+This way, you can get answers to your questions directly from the source and apply this knowledge to all of your future work.</p>
+<div class="sidebar">
+<p class="sidebar-title">Wisdom of the Ancients</p>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="../../_images/xkcd_wisdom.png"><img alt="xkcd_wisdom" src="../../_images/xkcd_wisdom.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text"><a class="reference external" href="https://xkcd.com/979/">xkcd comic 979</a>.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="searching-for-documentation">
+<h2>Searching for documentation<a class="headerlink" href="#searching-for-documentation" title="Permalink to this headline">¶</a></h2>
+<p>We’ve all been in situations in the past where some teacher mentions an off-hand comment like, “Oh, if you don’t know what this is, just look it up on Google.”
+While we can appreciate the intent, this standalone comment can be potentially misguided as it’s pretty daunting to sift through all the Google search results to find what [we may not even know] we need.
+In a way, if we don’t even know what something is, then by definition how would we know the proper keywords to conduct a search query?
+And so we write these notes to provide some guidance on this matter.
+Since we can’t cover everything, we’ll summarize two broad <em>categories</em> of search queries that you might conduct for your work.</p>
+<div class="section" id="searching-for-an-algorithm-or-use-case">
+<h3>Searching for an algorithm or use case<a class="headerlink" href="#searching-for-an-algorithm-or-use-case" title="Permalink to this headline">¶</a></h3>
+<p>The first category is when you want to generally know the Python syntax for accomplishing a certain task.
+Such as resolving an error message, as the figure suggests.
+Your queries might look like the following:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">how</span> <span class="n">to</span> <span class="n">create</span> <span class="n">a</span> <span class="n">NumPy</span> <span class="n">array</span> <span class="ow">in</span> <span class="n">Python</span>
+<span class="n">how</span> <span class="n">to</span> <span class="n">sort</span> <span class="n">a</span> <span class="nb">list</span> <span class="n">using</span> <span class="k">lambda</span> <span class="n">functions</span> <span class="ow">in</span> <span class="n">Python</span>
+<span class="n">python</span> <span class="ne">IndexError</span><span class="p">:</span> <span class="nb">list</span> <span class="n">index</span> <span class="n">out</span> <span class="n">of</span> <span class="nb">range</span>
+</pre></div>
+</div>
+<p>These queries are structured pretty much similarly to what you’d expect (i.e., what you would say if you were asking someone else).
+For error messages, we recommend <em>copying the error message directly</em> from your Jupyter notebook or terminal window output.</p>
+<p>You will then get a huge list of results to sift through, so we offer some guidance on what sources might be more helpful than others:</p>
+<ol class="simple">
+<li><p><a class="reference external" href="https://stackoverflow.com/">Stack Overflow</a>: Anything from the <code class="docutils literal notranslate"><span class="pre">stackoverflow.com</span></code> domain is a very good place to look for a solution.
+The solutions are contributed <em>and voted on</em> by community members, and there’s a standard of excellence for what makes a good answer (such as providing a <em>minimum working example</em> (MWE) for a solution).</p></li>
+<li><p>Stack Overflow is part of the larger <a class="reference external" href="https://stackexchange.com/">Stack Exchange</a> community, and you might find answers to more domain-specific questions (like <a class="reference external" href="https://stats.stackexchange.com/">statistics</a>) on other sites (e.g., <code class="docutils literal notranslate"><span class="pre">stats.stackexchange.com</span></code>).</p></li>
+<li><p>Any of the tutorial or blog sites will have plenty of code examples, and some particularly well-known ones are:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.tutorialspoint.com/index.htm">Tutorials Point</a>: <code class="docutils literal notranslate"><span class="pre">tutorialspoint.com</span></code></p></li>
+<li><p><a class="reference external" href="https://www.geeksforgeeks.org/">GeeksforGeeks</a>: <code class="docutils literal notranslate"><span class="pre">geeksforgeeks.org</span></code></p></li>
+<li><p><a class="reference external" href="https://www.w3schools.com/">W3Schools</a>: <code class="docutils literal notranslate"><span class="pre">w3schools.com</span></code></p></li>
+<li><p><a class="reference external" href="https://towardsdatascience.com/">Towards Data Science</a>: <code class="docutils literal notranslate"><span class="pre">towardsdatascience.com</span></code></p></li>
+<li><p><a class="reference external" href="https://www.kdnuggets.com/">KDnuggets</a>: <code class="docutils literal notranslate"><span class="pre">kdnuggets.com</span></code></p></li>
+<li><p><a class="reference external" href="https://www.analyticsvidhya.com/blog/">Analytics Vidhya</a>: <code class="docutils literal notranslate"><span class="pre">analyticsvidhya.com</span></code></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://www.youtube.com/">YouTube</a>: Videos can be a great source for information as there seems to be a lot of different video tutorials out there now.
+You may find it comforting to hear a human talk through your problems.
+Or not. 😂</p></li>
+<li><p>Source documentation will often have simple examples for you to learn from. More on this below.</p></li>
+</ol>
+<p>Note that while we provide domains above for you to recognize the names, we still suggest <em>starting your search</em> from a general search engine like Google and clicking the relevant results.
+Hopefully, one of these sources will give you the exact usage pattern you were looking for, or something pretty close that you can adapt.</p>
+</div>
+<div class="section" id="searching-for-a-package-module-function">
+<h3>Searching for a package/module/function<a class="headerlink" href="#searching-for-a-package-module-function" title="Permalink to this headline">¶</a></h3>
+<p>The second category is when you want to learn how a specific package works, like <code class="docutils literal notranslate"><span class="pre">pymatgen</span></code>, or the <code class="docutils literal notranslate"><span class="pre">MPRester</span></code> module, or <code class="docutils literal notranslate"><span class="pre">numpy.mean()</span></code>.
+Yes, you are probably thinking of a specific use case, but maybe you’re also just curious as to what the possibilities are, or the package isn’t popular enough to have questions on a site like Stack Overflow.
+For this, we suggest structuring your search query like:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pymatgen</span> <span class="n">package</span> <span class="n">documentation</span>
+<span class="n">MPRester</span> <span class="n">pymatgen</span> <span class="n">examples</span>
+<span class="n">numpy</span><span class="o">.</span><span class="n">mean</span> <span class="n">function</span> <span class="n">documentation</span>
+<span class="n">python</span> <span class="n">requests</span> <span class="n">package</span> <span class="n">documentation</span>
+</pre></div>
+</div>
+<p>Notice that we try to be as <strong>specific</strong> as possible.
+If we want to look for documentation from the source, we include “documentation,” and when we want to know usage examples/patterns, we explicitly include “examples.”
+If it’s a package, we’ll say that; and if it’s a function, we’ll say that too, and even write the search term that way (“numpy.mean”).
+If the package/function is a default one in Python, we recommend adding the keyword “python” as well.</p>
+<p>While the previous websites will likely have answers for you, here we will suggest a different approach and that is to consult <strong>the source documentation written by the package developers</strong>.
+The Python community prides itself on writing good documentation, and generally this is where you will find the most comprehensive and up-to-date information.
+Moreover, Python documentation will have not only the syntax (e.g., function names, arguments, and return types) but <strong>also examples</strong> for how you can use those functions (more on this in <a class="reference internal" href="#h2-02-reading-docs"><span class="std std-ref">Reading the docs</span></a>).</p>
+<p>So what are the source domains that you should look for?</p>
+<ol class="simple">
+<li><p>If it’s a general Python question, or a question about a package that comes bundled with Python (e.g., <code class="docutils literal notranslate"><span class="pre">os</span></code>, <code class="docutils literal notranslate"><span class="pre">json</span></code>), consult <a class="reference external" href="https://docs.python.org/3/">the official documentation</a> at <code class="docutils literal notranslate"><span class="pre">docs.python.org/3/</span></code>.</p></li>
+<li><p>If it’s a third-party package, try to select links that are from the official documentation for that package.
+The ones you’ll likely come across in this module are:</p></li>
+</ol>
+<ul class="simple">
+<li><p><a class="reference external" href="https://numpy.org/doc/stable/">NumPy</a>: <code class="docutils literal notranslate"><span class="pre">numpy.org/doc/stable/</span></code></p></li>
+<li><p><a class="reference external" href="https://pandas.pydata.org/docs/">pandas</a>: <code class="docutils literal notranslate"><span class="pre">pandas.pydata.org/docs/</span></code></p></li>
+<li><p><a class="reference external" href="https://matplotlib.org/stable/contents.html">Matplotlib</a>: <code class="docutils literal notranslate"><span class="pre">matplotlib.org/stable/contents/html</span></code></p></li>
+<li><p><a class="reference external" href="https://scikit-learn.org/stable/index.html">Scikit-learn</a>: <code class="docutils literal notranslate"><span class="pre">scikit-learn.org/stable/index.html</span></code></p></li>
+<li><p><a class="reference external" href="https://pymatgen.org/index.html">Pymatgen</a>: <code class="docutils literal notranslate"><span class="pre">pymatgen.org/index.html</span></code></p></li>
+</ul>
+<p>We offer two more points of guidance regarding your search:</p>
+<ul class="simple">
+<li><p>You can try using the search bar on these sites for direct results, which are generally pretty good.
+In other words, while we did not advise doing this in the previous section (since it’s hard to pinpoint where we’ll find answers to those broad inquiries), we <em>do</em> recommend doing this if there’s a question about how to use a specific package/function.
+An example would be to actually click the NumPy link above and search <code class="docutils literal notranslate"><span class="pre">numpy.mean</span></code> directly on the search bar on that page.</p></li>
+<li><p>If you take the “Google search” route, be aware of <em>different versions</em> of these packages, which may give different results.
+You’ll notice our links typed out above have the word <code class="docutils literal notranslate"><span class="pre">stable</span></code> in the URL, which is an alias for the most recent, stable version.
+You might also run into <code class="docutils literal notranslate"><span class="pre">dev</span></code> (development) versions of the documentation (like NumPy v1.22) or need an older version (DataHub uses slightly older versions of these packages), and you can generally change this on the website itself.
+Most of the time, <em>it doesn’t make a difference</em>, but just be aware. 👀</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="reading-the-docs">
+<span id="h2-02-reading-docs"></span><h2>Reading the docs<a class="headerlink" href="#reading-the-docs" title="Permalink to this headline">¶</a></h2>
+<p>Now that you’ve pulled up the documentation page, it still might not be very clear how to <em>read and interpret</em> what’s on this page.
+Here, we hope to provide a breakdown of what each section is and what information to pay attention to, and we’ll use the the documentation for the function <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.mean.html"><code class="docutils literal notranslate"><span class="pre">numpy.mean()</span></code></a> as an example.
+While your particular page will be different, the overall structure will be similar as [good] Python developers have all conformed to the same standard.</p>
+<p>At the top of the page, there is the <strong>function name</strong> and the module(s) it lives under.
+This is followed by the <strong>function header</strong> which shows the input parameters.
+All input parameters with an equal sign (<code class="docutils literal notranslate"><span class="pre">=</span></code>) are <em>optional</em>, with the value that follows being the default value.
+Furthermore, <em>the order of the parameters is important</em>, because that determines how the values from the caller will be assigned if argument names aren’t specified.
+For example, if argument names are specified, we can specify them out of order:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">a</span><span class="o">=</span><span class="n">arr</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>But if argument names aren’t specified, then the assignment is based on the order in the header:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>where <code class="docutils literal notranslate"><span class="pre">a=arr</span></code>, <code class="docutils literal notranslate"><span class="pre">axis=1</span></code>, and <code class="docutils literal notranslate"><span class="pre">dtype=np.float64</span></code> is assumed.</p>
+<p>Next we have a short <strong>description</strong> of what the function does, which in the example is <code class="docutils literal notranslate"><span class="pre">Compute</span> <span class="pre">the</span> <span class="pre">arithmetic</span> <span class="pre">mean</span> <span class="pre">along</span> <span class="pre">the</span> <span class="pre">specified</span> <span class="pre">axis.</span></code></p>
+<p>Then we have a verbose explanation of each input parameter, starting with the name <strong>and type</strong>.
+When reading documentation, make sure to pay attention to the type that the function is expecting for maximum compatibility.
+What follows is a description of what the parameter will do, and particular <em>special cases</em> to be aware of.
+Something that is nice about recent documentation is that it will note the version number that a particular parameter was introduced in, so you know what might be missing in older version of the package (for example, <code class="docutils literal notranslate"><span class="pre">where</span></code> is an invalid input argument in the DataHub version of NumPy, v1.19.5, since it was introduced in v1.20.0).</p>
+<p>Next is the <strong>return</strong> value and type, along with a description.
+Here the biggest thing to pay attention to is whether the output is returned as a <strong>copy or in place</strong>.</p>
+<p>There are then a few notes for data type considerations, and sometimes links to related methods (like <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.average.html"><code class="docutils literal notranslate"><span class="pre">np.average()</span></code></a> in the example), which can be particularly handy when you realized after reading the documentation that the function you actually want is a different one.</p>
+<p>Finally, one of the most important things that you’ll find at the end of NumPy, pandas, Matplotlib, and Scikit-learn documentation (among others) is a list of <strong>examples</strong> using that function and its various input arguments.
+Studying these are often a great way to learn how the module/function behaves!</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./week_1\02"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="materials_project_blank.html" title="previous page">The Materials Project</a>
+    <a class='right-next' id="next-link" href="homework_02.html" title="next page">Homework</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Enze Chen and Mark Asta<br/>
+        
+            &copy; Copyright 2021.<br/>
+          <div class="extra_footer">
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+  <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" />
+</a>
+
+          </div>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+                        window.ga = window.ga || function () {
+                            (ga.q = ga.q || []).push(arguments) };
+                        ga.l = +new Date;
+                        ga('create', 'UA-197730750-1', 'auto');
+                        ga('set', 'anonymizeIp', true);
+                        ga('send', 'pageview');
+                    </script>
+
+  </body>
+</html>

@@ -1,0 +1,1427 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data visualization &#8212; Introduction to Materials Informatics</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet" />
+  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="canonical" href="https://enze-chen.github.io/mi-book/week_1/03/data_viz_blank.html" />
+    <link rel="shortcut icon" href="../../_static/mi_favicon.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Best practices for visualization" href="best_practices_viz.html" />
+    <link rel="prev" title="Recap data discussion" href="recap_data.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+      <img src="../../_static/mi_logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Introduction to Materials Informatics</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../intro.html">
+   Welcome! 👋
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Preamble 📜
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../preamble/overview.html">
+   1. Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../preamble/setup.html">
+   2. Setup
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../preamble/schedule.html">
+   3. Schedule (one page) 📅
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Week 1️⃣
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../01/day_01.html">
+   Day 01: Introductions
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../01/informatics.html">
+     Intro to MI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../01/module.html">
+     Intro to Module 2
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../01/intro_python_jupyter_blank.html">
+     Intro to Python
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../01/homework_01.html">
+     Homework
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../01/python_greatest_hits_blank.html">
+       Python: The greatest hits
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../01/python_gory_details_blank.html">
+       Python: The gory details
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../02/day_02.html">
+   Day 02: MI and data
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02/recap_logistics.html">
+     Recap first day
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02/opportunities.html">
+     Opportunities and challenges
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02/file_types_blank.html">
+     File types
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02/tabular_data_blank.html">
+     Tabular data
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../02/databases.html">
+     Databases
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <label for="toctree-checkbox-4">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../02/materials_project_blank.html">
+       The Materials Project
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02/reading_docs.html">
+     Reading documentation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02/homework_02.html">
+     Homework
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="day_03.html">
+   Day 03: Data visualization
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="recap_data.html">
+     Recap data discussion
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Data visualization
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="best_practices_viz.html">
+     Best practices for visualization
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="best_practices_viz_blank.html">
+       Follow-along notebook
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="reading_papers.html">
+     Reading papers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="homework_03.html">
+     Homework
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../04/day_04.html">
+   Day 04: ML speedrun
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../04/recap_viz.html">
+     Recap visualization discussion
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../04/intro_ml.html">
+     Introduction to ML
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+    <label for="toctree-checkbox-8">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../04/intro_ml_blank.html">
+       Follow-along notebook
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../04/ml_perf.html">
+     Quantifying performance
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+    <label for="toctree-checkbox-9">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../04/ml_perf_blank.html">
+       Follow-along notebook
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../04/features.html">
+     Featurization
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+    <label for="toctree-checkbox-10">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../04/features_blank.html">
+       Follow-along notebook
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../04/advanced_ml.html">
+     Advanced ML methods
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+    <label for="toctree-checkbox-11">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../04/advanced_ml_blank.html">
+       Follow-along notebook
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../04/practical.html">
+     Practical considerations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../04/homework_04.html">
+     Homework
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../05/day_05.html">
+   Day 05: MI research
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+  <label for="toctree-checkbox-12">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../05/recap_ml.html">
+     Recap ML discussion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../05/res_discuss.html">
+     Research discussion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../05/best_practices_blank.html">
+     Best practices for MI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../05/homework_05.html">
+     Homework
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../05/install_python.html">
+     Installing Python locally (optional)
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Week 2️⃣
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../week_2/06/day_06.html">
+   Day 06: Independence Day
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_2/07/day_07.html">
+   Day 07: Research
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+  <label for="toctree-checkbox-13">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_2/07/survey_07.html">
+     Check-in survey
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_2/08/day_08.html">
+   Day 08: Research + guest speaker
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+  <label for="toctree-checkbox-14">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_2/08/guest_ucb.html">
+     Guest speaker: Alex!
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_2/08/proposals.html">
+     Proposals
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_2/09/day_09.html">
+   Day 09: Research
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
+  <label for="toctree-checkbox-15">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_2/09/check_in.html">
+     Check-in meeting
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_2/10/day_10.html">
+   Day 10: Research + guest speaker
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
+  <label for="toctree-checkbox-16">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_2/10/guest_aionics.html">
+     Guest speaker: Austin!
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Week 3️⃣
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_3/11/day_11.html">
+   Day 11: Research + grad school
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
+  <label for="toctree-checkbox-17">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/11/presentations.html">
+     Giving presentations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/11/grad_school.html">
+     Grad school talk: Mark!
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_3/12/day_12.html">
+   Day 12: Research + guest speaker
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/>
+  <label for="toctree-checkbox-18">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/12/pull_requests.html">
+     GitHub pull requests
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/12/guest_citrine.html">
+     Guest speaker: Ventura!
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_3/13/day_13.html">
+   Day 13: Research
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/>
+  <label for="toctree-checkbox-19">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../week_3/13/deep_learning.html">
+     Deep learning (tentative)
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/>
+    <label for="toctree-checkbox-20">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../week_3/13/deep_learning_blank.html">
+       Deep learning notebook
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_3/14/day_14.html">
+   Day 14: Slam presentations
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/>
+  <label for="toctree-checkbox-21">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/14/peer_review.html">
+     Peer review
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/14/final_presentations.html">
+     Final presentations
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_3/15/day_15.html">
+   Day 15: Conclusions
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/>
+  <label for="toctree-checkbox-22">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/15/summary.html">
+     Summary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/15/reflections.html">
+     Reflections
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/15/next.html">
+     What’s next?
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/15/finale.html">
+     Finale
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Appendices 📝
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../appendix/acknowl.html">
+   1. Acknowledgements
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../appendix/glossary.html">
+   2. Glossary
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../appendix/future.html">
+   3. Future directions 🛣
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/week_1/03/data_viz_blank.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/enze-chen/mi-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/enze-chen/mi-book/issues/new?title=Issue%20on%20page%20%2Fweek_1/03/data_viz_blank.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/enze-chen/mi-book/edit/master/week_1/03/data_viz_blank.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        
+        <a class="jupyterhub-button" href="https://staging.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/enze-chen/mi-book&urlpath=tree/mi-book/week_1/03/data_viz_blank.ipynb&branch=master"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
+                data-placement="left"><img class="jupyterhub-button-logo"
+                    src="../../_static/images/logo_jupyterhub.svg"
+                    alt="Interact on JupyterHub">JupyterHub</button></a>
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/enze-chen/mi-book/blob/master/week_1/03/data_viz_blank.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#learning-objectives">
+   Learning objectives
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#contents">
+   Contents
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#intro-to-data-visualization">
+   Intro to data visualization
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example">
+     Example
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#intro-to-matplotlib">
+   Intro to matplotlib
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#create-figure-and-axes-objects">
+     Create Figure and Axes objects
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exercise-write-three-lines-of-code-to-plot-y-x-2-for-the-first-five-positive-integers">
+     Exercise: Write three lines of code to plot
+     <span class="math notranslate nohighlight">
+      \(y = x ^ 2\)
+     </span>
+     for the first five positive integers
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exercise-plot-y-sin-x-in-the-interval-x-in-0-2-pi">
+     Exercise: Plot
+     <span class="math notranslate nohighlight">
+      \(y = \sin(x)\)
+     </span>
+     in the interval
+     <span class="math notranslate nohighlight">
+      \(x \in [0, 2\pi]\)
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-few-stylistic-tips">
+     A few stylistic tips
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#adding-informative-labels">
+       Adding informative labels
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#adding-more-elements-to-the-plot">
+       Adding more elements to the plot
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#improving-visibility">
+       Improving visibility
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exercise-plot-y-1-sin-x-and-y-2-cos-x-with-these-improvements-below">
+     Exercise: plot
+     <span class="math notranslate nohighlight">
+      \(y_1 = \sin(x)\)
+     </span>
+     and
+     <span class="math notranslate nohighlight">
+      \(y_2 = \cos(x)\)
+     </span>
+     with these improvements below
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#numerical-data">
+   Numerical data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#categorical-data">
+   Categorical data
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exercise-create-a-bar-chart-of-the-crystal-structure-data-of-the-first-50-elements">
+     Exercise: create a bar chart of the crystal structure data of the first 50 elements
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#statistical-analyses">
+   Statistical analyses
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#histogram">
+     Histogram
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#saving-your-work">
+     Saving your work!
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#heatmap">
+     Heatmap
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#pandas-to-the-rescue">
+       pandas to the rescue!
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exercise-hmm-its-not-very-clear-what-values-the-colors-correspond-to-can-you-add-a-colorbar">
+     Exercise: hmm… it’s not very clear what values the colors correspond to. Can you add a colorbar?
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion">
+   Conclusion
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="data-visualization">
+<h1>Data visualization<a class="headerlink" href="#data-visualization" title="Permalink to this headline">¶</a></h1>
+<p><em>Authors: Enze Chen and Mark Asta (University of California, Berkeley)</em></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is an interactive exercise, so you will want to click the <span class="fa fa-rocket"></span> and open the notebook in DataHub (or Colab for non-UCB students).</p>
+</div>
+<div class="section" id="learning-objectives">
+<h2>Learning objectives<a class="headerlink" href="#learning-objectives" title="Permalink to this headline">¶</a></h2>
+<p>This notebook contains a series of exercises that introduces data visualization in Python such that, by the end of the lesson, you will be able to:</p>
+<ol class="simple">
+<li><p>Describe what different visualizations are communicating and their pros and cons.</p></li>
+<li><p>Evaluate when a particular type of visualization is suitable for a particular goal.</p></li>
+<li><p>Use the <a class="reference external" href="https://matplotlib.org/stable/index.html">matplotlib package</a> to create basic visualizations in Python.</p></li>
+</ol>
+<p>We will progress through most of this exercise together as a group and please interrupt any time you have a question. ❓</p>
+</div>
+<div class="section" id="contents">
+<h2>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h2>
+<p>These exercises are grouped into the following sections:</p>
+<ol class="simple">
+<li><p><a class="reference external" href="#Intro-to-data-visualization">Intro to data visualization</a></p></li>
+<li><p><a class="reference external" href="#Intro-to-matplotlib">Intro to matplotlib</a></p></li>
+<li><p><a class="reference external" href="#Numerical-data">Numerical data</a></p></li>
+<li><p><a class="reference external" href="#Categorical-data">Categorical data</a></p></li>
+<li><p><a class="reference external" href="#Statistical-analyses">Statistical analyses</a></p></li>
+</ol>
+</div>
+<div class="section" id="intro-to-data-visualization">
+<h2>Intro to data visualization<a class="headerlink" href="#intro-to-data-visualization" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="#Contents">Back to top</a></p>
+<p>Like all the previous sections, before we dive right in, let’s think about the following question:</p>
+<p><strong>Pause and reflect</strong>: Why is data visualization an important topic?</p>
+<div class="section" id="example">
+<h3>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h3>
+<p>Given that this is a lesson on data <em>visualization</em>, it kinda makes sense to just dive right in and <em>display something</em> rather than <em>say something</em>.
+So here’s a plot that may look familiar:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">helper_funcs</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">plot_dielectric_data</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/data_viz_blank_3_0.png" src="../../_images/data_viz_blank_3_0.png" />
+</div>
+</div>
+<p>Surprise!
+Turns out this plot was made in Python all along. 😜
+While we kinda cheated by hiding the details in the above code, you will be able to make a plot just like this one by the end of this lesson.</p>
+</div>
+</div>
+<div class="section" id="intro-to-matplotlib">
+<h2>Intro to matplotlib<a class="headerlink" href="#intro-to-matplotlib" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="#Contents">Back to top</a></p>
+<p>In Python, there are many packages for data visualization, each with their own merits, but the base package that many of them are based off of is <a class="reference external" href="https://matplotlib.org/stable/index.html"><strong>matplotlib</strong></a>, a software that was originally developed by John Hunter (see <a class="reference external" href="https://ieeexplore.ieee.org/document/4160265">John Hunter, <em>Computing in Science Engineering</em>, 2007</a>) and is now used by thousands of scientists.
+It has, in many aspects, become the NumPy equivalent for plotting, and integrates quite well with NumPy arrays and pandas DataFrames.</p>
+<p>You might read the name “matplotlib” and think, “Hey, that kinda sounds like MATLAB.”
+Well, you’d be right, since many aspects of matplotlib were first developed to emulate MATLAB (read Hunter’s article to learn more), and the <strong>Pyplot</strong> module was purposely designed to give a MATLAB-like way of plotting.
+This allows us to get high-quality graphics (like MATLAB) while obeying Python principles of object-oriented programming (OOP) and being free to use. ✨</p>
+<p>To use Pyplot, we write the following:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>   <span class="c1"># standard alias</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline                
+</pre></div>
+</div>
+</div>
+</div>
+<p>In the first line, we import the Pyplot module under the <code class="docutils literal notranslate"><span class="pre">plt</span></code> alias, which is a community standard.</p>
+<p>In the second line, we have our first <a class="reference external" href="https://ipython.readthedocs.io/en/stable/interactive/tutorial.html#magic-functions">IPython magic function</a>, and this one specifically displays our plot outputs directly below the code cell (using the <code class="docutils literal notranslate"><span class="pre">inline</span></code> backend) instead of creating a pop-up window like when running <code class="docutils literal notranslate"><span class="pre">.py</span></code> files.
+This backend is <strong>only for Jupyter notebooks</strong> and it will not work if you include it in a <code class="docutils literal notranslate"><span class="pre">.py</span></code> file.</p>
+<div class="section" id="create-figure-and-axes-objects">
+<h3>Create Figure and Axes objects<a class="headerlink" href="#create-figure-and-axes-objects" title="Permalink to this headline">¶</a></h3>
+<p><strong>Step 1</strong>: There are many ways to create figures using Pyplot, but in true OOP fashion, the <strong>best practice</strong> is to create <a class="reference external" href="https://matplotlib.org/stable/api/figure_api.html#matplotlib.figure.Figure"><code class="docutils literal notranslate"><span class="pre">Figure</span></code></a> and <a class="reference external" href="https://matplotlib.org/stable/api/axes_api.html#matplotlib.axes.Axes"><code class="docutils literal notranslate"><span class="pre">Axes</span></code></a> objects using the <a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.subplots.html"><code class="docutils literal notranslate"><span class="pre">plt.subplots()</span></code></a> function like so:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">Figure</span></code> (<code class="docutils literal notranslate"><span class="pre">fig</span></code> variable) is the top-level container for all plot elements while the <code class="docutils literal notranslate"><span class="pre">Axes</span></code> (<code class="docutils literal notranslate"><span class="pre">ax</span></code> variable) is the object for a particular plot (this is <em>not</em> the plural form of the word “axis”).
+<code class="docutils literal notranslate"><span class="pre">plt.subplots()</span></code> creates both of these objects, which we then assign to the variables on the left.
+Imagine this step as the IRL-equivalent of saying, “Before we can paint a painting, we must fetch a new canvas.”</p>
+<p><strong>Step 2</strong>: To make a plot, we can call a method like <a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.plot.html"><code class="docutils literal notranslate"><span class="pre">ax.plot(x,</span> <span class="pre">y)</span></code></a> <strong>directly using the <code class="docutils literal notranslate"><span class="pre">Axes</span></code> object</strong>—<em>not</em> the <code class="docutils literal notranslate"><span class="pre">Figure</span></code> object or the Pyplot module (unlike MATLAB).
+This standard method plots <span class="math notranslate nohighlight">\(y\)</span> vs. <span class="math notranslate nohighlight">\(x\)</span> points and, by default, connects the points with lines in the order that they’re plotted.
+Note the syntax for <code class="docutils literal notranslate"><span class="pre">ax.plot()</span></code> is a list (or array) of <span class="math notranslate nohighlight">\(x\)</span>-coordinates and <em>then</em> a list of <span class="math notranslate nohighlight">\(y\)</span>-coordinates, <strong>not</strong> a list of <span class="math notranslate nohighlight">\((x,y)\)</span> pairs.</p>
+<p><strong>Step 3</strong>: Finally, and perhaps unintuitively, we have to call <a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.show.html"><code class="docutils literal notranslate"><span class="pre">plt.show()</span></code></a> to actually display the plot.
+Matplotlib can be quite literal!
+As we shall soon see, this is also what makes it shine. 💖</p>
+<hr class="docutils" />
+<p>We’ve done too much talking, so let’s put this into practice!</p>
+</div>
+<div class="section" id="exercise-write-three-lines-of-code-to-plot-y-x-2-for-the-first-five-positive-integers">
+<h3>Exercise: Write three lines of code to plot <span class="math notranslate nohighlight">\(y = x ^ 2\)</span> for the first five positive integers<a class="headerlink" href="#exercise-write-three-lines-of-code-to-plot-y-x-2-for-the-first-five-positive-integers" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># -------------   WRITE YOUR CODE IN THE SPACE BELOW   ---------- #</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="exercise-plot-y-sin-x-in-the-interval-x-in-0-2-pi">
+<h3>Exercise: Plot <span class="math notranslate nohighlight">\(y = \sin(x)\)</span> in the interval <span class="math notranslate nohighlight">\(x \in [0, 2\pi]\)</span><a class="headerlink" href="#exercise-plot-y-sin-x-in-the-interval-x-in-0-2-pi" title="Permalink to this headline">¶</a></h3>
+<p><em>Hint</em>: Importing <code class="docutils literal notranslate"><span class="pre">numpy</span></code> is a good idea!</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># -------------   WRITE YOUR CODE IN THE SPACE BELOW   ---------- #</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="a-few-stylistic-tips">
+<h3>A few stylistic tips<a class="headerlink" href="#a-few-stylistic-tips" title="Permalink to this headline">¶</a></h3>
+<p>We’re off to a great start!
+Before we continue further with other plot types, let’s discuss a few important features that are currently missing from the above two plots.</p>
+<p><strong>Pause and reflect</strong>: What are some ways we can improve the above plots?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># some blank space - you can take notes here if you want</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="adding-informative-labels">
+<h4>Adding informative labels<a class="headerlink" href="#adding-informative-labels" title="Permalink to this headline">¶</a></h4>
+<p>Whether it’s a title, axes labels, or a legend, plot labels are extremely important!
+They can be easily added to an Axes object using built-in methods:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_title.html"><code class="docutils literal notranslate"><span class="pre">ax.set_title('title_str')</span></code></a>: Adds a title to the plot.</p></li>
+<li><p><a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_xlabel.html"><code class="docutils literal notranslate"><span class="pre">ax.set_xlabel('xlabel_str')</span></code></a>: Adds a label to the <span class="math notranslate nohighlight">\(x\)</span>-axis.</p></li>
+<li><p><a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_ylabel.html"><code class="docutils literal notranslate"><span class="pre">ax.set_ylabel('ylabel_str')</span></code></a>: Adds a label to the <span class="math notranslate nohighlight">\(y\)</span>-axis.</p></li>
+<li><p><a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.legend.html"><code class="docutils literal notranslate"><span class="pre">ax.legend()</span></code></a>: Adds a legend to the plot.</p></li>
+</ul>
+<p><strong>Note</strong>: All of these methods must be called <em>before</em> <code class="docutils literal notranslate"><span class="pre">plt.show()</span></code>.</p>
+<p>The first three methods are relatively straightforward as the input argument becomes the label.
+If you know <span class="math notranslate nohighlight">\(\LaTeX\)</span>, it can be rendered if you include it in the string, where <code class="docutils literal notranslate"><span class="pre">'$E_g$'</span></code> will render as <span class="math notranslate nohighlight">\(E_g\)</span> like in the first plot.</p>
+<p>The last method <code class="docutils literal notranslate"><span class="pre">ax.legend()</span></code> will display a legend with labels <strong>only</strong> for plot elements that have labels assigned to them.
+To assign a label to a plot element, add <code class="docutils literal notranslate"><span class="pre">label='legend_str'</span></code> in the input arguments to the <code class="docutils literal notranslate"><span class="pre">ax.plot()</span></code> method.</p>
+</div>
+<div class="section" id="adding-more-elements-to-the-plot">
+<h4>Adding more elements to the plot<a class="headerlink" href="#adding-more-elements-to-the-plot" title="Permalink to this headline">¶</a></h4>
+<p>If you want to add more plot elements (lines, points, etc.) to the plot, that can easily be done with more calls to <code class="docutils literal notranslate"><span class="pre">ax.plot()</span></code>.
+These lines will be added with a different color in <a class="reference external" href="https://matplotlib.org/stable/users/dflt_style_changes.html#colors-color-cycles-and-colormaps">the color cycle</a> and they <strong>will not replace</strong> previous lines.
+This is <em>different</em> behavior than in MATLAB, where you have to type <code class="docutils literal notranslate"><span class="pre">hold</span> <span class="pre">on</span></code> to put multiple curves on the same plot.
+Hopefully this is a welcome change. 🙂</p>
+<p>Example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y1</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;sin(x)&#39;</span><span class="p">)</span>   <span class="c1"># plots y1 = sin(x) in blue</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;cos(x)&#39;</span><span class="p">)</span>   <span class="c1"># plots y2 = cos(x) in orange; y1 is still there!</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="improving-visibility">
+<h4>Improving visibility<a class="headerlink" href="#improving-visibility" title="Permalink to this headline">¶</a></h4>
+<p><strong>Step 1</strong>: Perhaps one of your first criticisms of the demo plots was that they’re too small!
+This can be easily fixed by adding <code class="docutils literal notranslate"><span class="pre">figsize=(width,</span> <span class="pre">height)</span></code> as an input argument to <code class="docutils literal notranslate"><span class="pre">plt.subplots()</span></code>, where <code class="docutils literal notranslate"><span class="pre">width</span></code> and <code class="docutils literal notranslate"><span class="pre">height</span></code> are numbers representing “inches.”
+We recommend <strong>enlarging your plots</strong> to <code class="docutils literal notranslate"><span class="pre">(8,</span> <span class="pre">6)</span></code> to start with, and adjust based on personal preference.</p>
+<p><strong>Step 2</strong>: Another improvement to plot visibility is increasing the thickness of your lines.
+To change this, add a <code class="docutils literal notranslate"><span class="pre">linewidth=width</span></code> parameter to your call to <code class="docutils literal notranslate"><span class="pre">ax.plot()</span></code>, where <code class="docutils literal notranslate"><span class="pre">width</span></code> is a number.
+We recommend a line width of <strong>at least <code class="docutils literal notranslate"><span class="pre">4</span></code></strong>, which you can assign to a <code class="docutils literal notranslate"><span class="pre">CONSTANT</span></code> variable</p>
+<p><strong>Step “3”</strong>: Finally, you’ll notice that if you <em>only</em> increase the size of your figure, then the font size remains small.
+To increase the font size, you have to add <code class="docutils literal notranslate"><span class="pre">fontsize=size</span></code> to <em>every function call that adds text</em> to your plot.
+For example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;my title&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="n">size</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>We recommend a font size of <strong>at least <code class="docutils literal notranslate"><span class="pre">20</span></code></strong>.
+If this seems cumbersome, that’s because it is—we’ll discuss a better option in the next lesson.</p>
+<p><strong>Step 3.5</strong>: This is very subtle, but you’ll notice that the <span class="math notranslate nohighlight">\(x\)</span>- and <span class="math notranslate nohighlight">\(y\)</span>-ticks are <em>also</em> labeled, but you never called a function to label them(!), which means their font needs to be increased in a different way.
+To do this, we use the <a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.tick_params.html"><code class="docutils literal notranslate"><span class="pre">ax.tick_params()</span></code></a> method like so:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ax</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">labelsize</span><span class="o">=</span><span class="n">size</span><span class="p">)</span>    <span class="c1"># note the different keyword!</span>
+</pre></div>
+</div>
+<p>The documentation reveals that this method is quite flexible, but we can just use the other default options for now, which includes changing the label size for both <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> axes.</p>
+</div>
+</div>
+<div class="section" id="exercise-plot-y-1-sin-x-and-y-2-cos-x-with-these-improvements-below">
+<h3>Exercise: plot <span class="math notranslate nohighlight">\(y_1 = \sin(x)\)</span> and <span class="math notranslate nohighlight">\(y_2 = \cos(x)\)</span> with these improvements below<a class="headerlink" href="#exercise-plot-y-1-sin-x-and-y-2-cos-x-with-these-improvements-below" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">y1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="n">y2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="n">FONTSIZE</span> <span class="o">=</span> <span class="mi">20</span>    <span class="c1"># you can change these to your liking!</span>
+<span class="n">LINEWIDTH</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="c1"># -------------   WRITE YOUR CODE IN THE SPACE BELOW   ---------- #</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="numerical-data">
+<h2>Numerical data<a class="headerlink" href="#numerical-data" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="#Contents">Back to top</a></p>
+<p>So far we’ve discussed how to make line plots, which give you the ability to plot curves, functions, etc., which already covers a lot!
+There is another, related type of plot of numerical data that we want to briefly discuss, and that is a <strong>scatter plot</strong> like the very first figure in this notebook.
+To create a scatter plot in matplotlib, we can use the <a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.scatter.html"><code class="docutils literal notranslate"><span class="pre">ax.scatter(x,</span> <span class="pre">y)</span></code></a> method akin to <code class="docutils literal notranslate"><span class="pre">ax.plot(x,</span> <span class="pre">y)</span></code>.
+The nice part of plotting in matplotlib is that we can swap out the plotting method but keep a lot of the other methods unchanged!</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">x</span> <span class="o">**</span> <span class="mi">2</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>   <span class="c1"># note how this was the only thing that had to change...</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">labelsize</span><span class="o">=</span><span class="n">FONTSIZE</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/data_viz_blank_20_0.png" src="../../_images/data_viz_blank_20_0.png" />
+</div>
+</div>
+<p>Haha, oh boy, not another style issue! 😓
+In matplotlib language, the individual plot points themselves are called <strong>markers</strong>, so there’s a couple of things we can do to customize the markers:</p>
+<p><strong>Step 1</strong>: The most obvious thing is we need to <strong>increase the marker size</strong>.
+There is an <code class="docutils literal notranslate"><span class="pre">s</span></code> parameter that can be a single number or an array of the same length as the number of points to set the size of each individual marker.
+For scatter plots, we have to make this number pretty large (e.g., <code class="docutils literal notranslate"><span class="pre">100</span></code>).</p>
+<p><strong>Step 2</strong>: We can also <strong>change the marker color</strong> using the <code class="docutils literal notranslate"><span class="pre">c</span></code> parameter, which like the size, can be a single color or an array of colors for each marker.
+In terms of color choices, there are several options!
+You can use a <a class="reference external" href="https://matplotlib.org/stable/gallery/color/named_colors.html">named color</a>, a <a class="reference external" href="https://matplotlib.org/stable/users/dflt_style_changes.html#colors-color-cycles-and-colormaps">cycler notation</a>, or any hex code (see <a class="reference external" href="https://htmlcolorcodes.com/color-picker/">here</a> for a color picker).</p>
+<p><strong>Step 3</strong>: We can also <strong>change the marker style</strong> using the <code class="docutils literal notranslate"><span class="pre">marker</span></code> parameter, which takes a string symbol that represents the marker.
+A list of all possible marker styles can be found in <a class="reference external" href="https://matplotlib.org/stable/api/markers_api.html">the documentation</a>.
+The default is <code class="docutils literal notranslate"><span class="pre">'o'</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">x</span> <span class="o">**</span> <span class="mi">2</span>
+
+<span class="c1"># some custom settings! Feel free to experiment</span>
+<span class="n">marker_size</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;tab:purple&#39;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)]</span>
+<span class="n">marker_symbol</span> <span class="o">=</span> <span class="s1">&#39;o&#39;</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="n">marker_size</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="n">colors</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="n">marker_symbol</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">labelsize</span><span class="o">=</span><span class="n">FONTSIZE</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/data_viz_blank_22_0.png" src="../../_images/data_viz_blank_22_0.png" />
+</div>
+</div>
+</div>
+<div class="section" id="categorical-data">
+<h2>Categorical data<a class="headerlink" href="#categorical-data" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="#Contents">Back to top</a></p>
+<p>In addition to numerical data, you might also find yourself working with <strong>categorical data</strong> (materials type, crystal structure, etc.), so we will now discuss a canonical plot for categorical data: the <strong>bar chart</strong>.
+To make a bar chart in matplotlib, we can use the <a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.bar.html"><code class="docutils literal notranslate"><span class="pre">ax.bar(x,</span> <span class="pre">height)</span></code></a> method that plots bars of height <code class="docutils literal notranslate"><span class="pre">height</span></code> at the positions specified by <code class="docutils literal notranslate"><span class="pre">x</span></code> (<code class="docutils literal notranslate"><span class="pre">x</span></code> can also just be the labels, and Pyplot will space them apart evenly).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">mentors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Ryan&#39;</span><span class="p">,</span> <span class="s1">&#39;Enze&#39;</span><span class="p">,</span> <span class="s1">&#39;Mark&#39;</span><span class="p">,</span> <span class="s1">&#39;Sinéad&#39;</span><span class="p">]</span>
+<span class="n">random_vals</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">default_rng</span><span class="p">()</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="mi">4</span><span class="p">,))</span>   <span class="c1"># what&#39;ll it be???</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">mentors</span><span class="p">,</span> <span class="n">random_vals</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">labelsize</span><span class="o">=</span><span class="n">FONTSIZE</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;???&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="n">FONTSIZE</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/data_viz_blank_24_0.png" src="../../_images/data_viz_blank_24_0.png" />
+</div>
+</div>
+<p>If you want custom labels for your bars, you can set the <code class="docutils literal notranslate"><span class="pre">tick_label</span></code> parameter in the function call.
+For more options and examples, we encourage you to look at the linked documentation up above for inspiration!</p>
+<div class="section" id="exercise-create-a-bar-chart-of-the-crystal-structure-data-of-the-first-50-elements">
+<h3>Exercise: create a bar chart of the crystal structure data of the first 50 elements<a class="headerlink" href="#exercise-create-a-bar-chart-of-the-crystal-structure-data-of-the-first-50-elements" title="Permalink to this headline">¶</a></h3>
+<p>Remember the data from the first day that mapped element <span class="math notranslate nohighlight">\(\rightarrow\)</span> structure?
+Recall that the file is structured as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Data from https://periodictable.com/Properties/A/CrystalStructure.html</span>
+<span class="n">Hydrogen</span> <span class="n">Hexagonal</span>
+<span class="n">Helium</span> <span class="n">Cubic</span>
+<span class="n">Lithium</span> <span class="n">Cubic</span>
+<span class="n">Beryllium</span> <span class="n">Hexagonal</span>
+<span class="o">...</span>
+</pre></div>
+</div>
+<p>We’ll now create a bar chart that counts how many elements belong to each family.
+Write some code below to <em>load in the data</em> and then create a bar chart.
+Don’t forget to add some descriptive labels! 😊</p>
+<p><em>Hints</em>:</p>
+<ul class="simple">
+<li><p>🐼</p></li>
+<li><p>Is there a way for us to <em>count</em> the number of occurrences of each <em>value</em>?</p></li>
+<li><p>Recall that we can get all the row labels of a Series/DataFrame with the <code class="docutils literal notranslate"><span class="pre">.index</span></code> attribute.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># -------------   WRITE YOUR CODE IN THE SPACE BELOW   ---------- #</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Additionally, you may have noticed that the tick labels are running into each other, which makes it pretty unreadable.
+There are many ways to fix this, but we’ll suggest two here:</p>
+<ul class="simple">
+<li><p>You can rotate the labels by adding the following code:</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">tick</span> <span class="ow">in</span> <span class="n">ax</span><span class="o">.</span><span class="n">get_xticklabels</span><span class="p">():</span>
+    <span class="n">tick</span><span class="o">.</span><span class="n">set_rotation</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Or you can plot a <em>horizontal</em> bar chart using the <a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.barh.html"><code class="docutils literal notranslate"><span class="pre">ax.barh(x,</span> <span class="pre">height)</span></code></a> method. 😎</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="statistical-analyses">
+<h2>Statistical analyses<a class="headerlink" href="#statistical-analyses" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="#Contents">Back to top</a></p>
+<p>For our final act, we’ll show you two more types of plots (<a class="reference external" href="https://matplotlib.org/stable/tutorials/introductory/sample_plots.html"><em>there are many more</em></a>) that can be generated using matplotlib that may be useful for your self-directed research and future work.</p>
+<div class="section" id="histogram">
+<h3>Histogram<a class="headerlink" href="#histogram" title="Permalink to this headline">¶</a></h3>
+<p>The first is a <strong>histogram</strong>, which can be very helpful for visualizing the distribution of your data.
+A histogram <strong>bins</strong> your data into different value ranges and plots the number of data points that fall within each range.
+We can plot a histogram using the <a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.hist.html"><code class="docutils literal notranslate"><span class="pre">ax.hist(x,</span> <span class="pre">bins=None)</span></code></a> method, which takes in an array of values <code class="docutils literal notranslate"><span class="pre">x</span></code> and returns</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">vals</span><span class="p">,</span> <span class="n">bin_edges</span><span class="p">,</span> <span class="n">patches</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="n">nbins</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>where</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">vals</span></code>: The values of the histogram bins, stored in an array of length <code class="docutils literal notranslate"><span class="pre">nbins</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">bin_edges</span></code>: The edges of the bins, stored in an array of length <code class="docutils literal notranslate"><span class="pre">nbins</span> <span class="pre">+</span> <span class="pre">1</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">patches</span></code>: Container of indiviudal <a class="reference external" href="https://matplotlib.org/stable/api/artist_api.html">artists</a> used to create the histogram.</p></li>
+</ul>
+<p>We’ll do this for you below on the diffusion data from the first day, where we plot the distribution of distances from the origin at the final time step.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;../../assets/data/week_1/01/lattice_diffusion.npy&#39;</span><span class="p">)</span>
+<span class="n">distances</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>    <span class="c1"># compute distances to origin</span>
+<span class="n">final_dists</span> <span class="o">=</span> <span class="n">distances</span><span class="p">[:,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span>              <span class="c1"># get all final distances to origin</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">vals</span><span class="p">,</span> <span class="n">bin_edges</span><span class="p">,</span> <span class="n">patches</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">final_dists</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>   <span class="c1"># we store the returned values, but don&#39;t need them here</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">labelsize</span><span class="o">=</span><span class="n">FONTSIZE</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Final distance to origin&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="n">FONTSIZE</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Number of trials&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="n">FONTSIZE</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;2D diffusion data&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="n">FONTSIZE</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;../../assets/fig/week_1/03/histogram.png&#39;</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">,</span> <span class="n">transparent</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/data_viz_blank_29_0.png" src="../../_images/data_viz_blank_29_0.png" />
+</div>
+</div>
+</div>
+<div class="section" id="saving-your-work">
+<h3>Saving your work!<a class="headerlink" href="#saving-your-work" title="Permalink to this headline">¶</a></h3>
+<p>You may have noticed that in the last line above we snuck in the <a class="reference external" href="https://matplotlib.org/stable/api/figure_api.html#matplotlib.figure.Figure.savefig"><code class="docutils literal notranslate"><span class="pre">fig.savefig()</span></code></a> method to demonstrate its usage.
+Recall that a <code class="docutils literal notranslate"><span class="pre">Figure</span></code> includes all plot elements, which is why <code class="docutils literal notranslate"><span class="pre">savefig()</span></code> is called from that object as opposed to the <code class="docutils literal notranslate"><span class="pre">Axes</span></code> object (one <code class="docutils literal notranslate"><span class="pre">Figure</span></code> can have multiple <code class="docutils literal notranslate"><span class="pre">Axes</span></code>, as we’ll show in the next lesson).
+This method is quite powerful, but for most cases, you will only need the following four arguments:</p>
+<ol class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">fname</span></code>: The first argument should be the path to the filename you want to save it as, <em>including the extension</em>.
+Possible extensions include <code class="docutils literal notranslate"><span class="pre">eps</span></code>, <code class="docutils literal notranslate"><span class="pre">jpg</span></code>, <code class="docutils literal notranslate"><span class="pre">png</span></code>, <code class="docutils literal notranslate"><span class="pre">pdf</span></code>, <code class="docutils literal notranslate"><span class="pre">svg</span></code>, <code class="docutils literal notranslate"><span class="pre">tif</span></code>, among others.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">dpi</span></code>: This is short for “dots per inch,” and controls the resolution of your figure, more or less.
+We recommend a DPI of <strong>at least 300</strong> for all plots, which is the minimum enforced by top-tier scientific journals.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">bbox_inches</span></code>: This setting controls the bounding box for your figure.
+<code class="docutils literal notranslate"><span class="pre">tight</span></code> is generally a good setting for auto-adjustment.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">transparent</span></code>: This determines whether <code class="docutils literal notranslate"><span class="pre">Axes</span></code> patches (background) will be transparent or not.
+<code class="docutils literal notranslate"><span class="pre">False</span></code> means a solid white background, while <code class="docutils literal notranslate"><span class="pre">True</span></code> might be nice if your figure is placed in a setting with a colored background.</p></li>
+</ol>
+</div>
+<div class="section" id="heatmap">
+<h3>Heatmap<a class="headerlink" href="#heatmap" title="Permalink to this headline">¶</a></h3>
+<p><strong>Heatmaps</strong> are very useful for quickly identifying associations between pairs of variables arranged on a grid.
+These associations can be many things, and the one we will focus on in this example is the <strong>Pearson correlation coefficient</strong> (<span class="math notranslate nohighlight">\(r\)</span>).
+This statistical quantity measures the linear correlation between two sets of data, computed as the <em>covariance</em> of two variables divided by the product of their <em>standard deviations</em>.
+Mathematically, for two random variables <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(Y\)</span>, this is expressed as:</p>
+<div class="math notranslate nohighlight">
+\[ r_{X,Y} = \frac{\text{cov}(X, Y)}{\sigma_X \sigma_Y}, \quad r \in [-1, +1] \]</div>
+<p>For our case when we’re dealing with a sample of data points given as <span class="math notranslate nohighlight">\(\{(x_1, y_1), \dots, (x_n, y_n)\}\)</span>, it is given by:</p>
+<div class="math notranslate nohighlight">
+\[ r_{xy} = \frac{\sum_{i=1}^{n} (x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum_{i=1}^{n} (x_i - \bar{x})^2} \sqrt{\sum_{i=1}^{n} (y_i - \bar{y})^2}} \tag{1} \]</div>
+<p>Visually, the Pearson correlation coefficient demonstrates the following behaviors (the line is fictitious and meant to help guide the eye):</p>
+<p><img alt="Pearson" src="../../_images/pearson.png" /></p>
+<div class="section" id="pandas-to-the-rescue">
+<h4>pandas to the rescue!<a class="headerlink" href="#pandas-to-the-rescue" title="Permalink to this headline">¶</a></h4>
+<p>When doing exploratory data analysis (EDA) for your data, it is a very good idea to visualize the correlations between different variables as a heatmap to see if there are any expected or unexpected trends.
+Luckily for us, we do not have to compute Eq. 1 by hand, which would be very annoying when we’re trying to compute pairwise correlations for every possible pair between dozens of variables.
+Instead, we can take advantage of a built-in method from pandas, <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.corr.html"><code class="docutils literal notranslate"><span class="pre">df.corr()</span></code></a>, which computes the pairwise correlation of all the numerical columns and returns a <strong>matrix</strong> of correlations.</p>
+<p>We can then <a class="reference external" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/image_annotated_heatmap.html">use matplotlib to create our heatmap</a> using the <a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.imshow.html"><code class="docutils literal notranslate"><span class="pre">ax.imshow(X)</span></code></a> method, where <code class="docutils literal notranslate"><span class="pre">X</span></code> is a matrix of values.
+With some clever styling, we can even get labels and numbers to appear.
+We’ll demonstrate this below with some elemental data that we saw previously.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../../assets/data/week_1/02/hardness_density.csv&#39;</span><span class="p">,</span> <span class="n">skiprows</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+                 <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;element&#39;</span><span class="p">,</span> <span class="s1">&#39;number&#39;</span><span class="p">,</span> <span class="s1">&#39;hardness&#39;</span><span class="p">,</span> <span class="s1">&#39;density&#39;</span><span class="p">])</span>
+<span class="n">corr</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Correlation matrix has dimensions </span><span class="si">{</span><span class="n">corr</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s1">.&#39;</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">corr</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">corr</span><span class="p">)))</span>                 <span class="c1"># we say exactly where we want ticks to appear</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">corr</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="n">FONTSIZE</span><span class="p">)</span>   <span class="c1"># and what their labels should be</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">corr</span><span class="p">)))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_yticklabels</span><span class="p">(</span><span class="n">corr</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="n">FONTSIZE</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Correlation matrix has dimensions (3, 3).
+</pre></div>
+</div>
+<img alt="../../_images/data_viz_blank_33_1.png" src="../../_images/data_viz_blank_33_1.png" />
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="exercise-hmm-its-not-very-clear-what-values-the-colors-correspond-to-can-you-add-a-colorbar">
+<h3>Exercise: hmm… it’s not very clear what values the colors correspond to. Can you add a colorbar?<a class="headerlink" href="#exercise-hmm-its-not-very-clear-what-values-the-colors-correspond-to-can-you-add-a-colorbar" title="Permalink to this headline">¶</a></h3>
+<p>What correlations do we see?</p>
+</div>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h2>
+<p>This concludes our introduction to data visualization! 📊📈
+For a 1-page summary of this information and more, you can check out the <a class="reference external" href="https://raw.githubusercontent.com/matplotlib/cheatsheets/master/cheatsheets-1.png">cheatsheet</a> made by the developers of matplotlib.</p>
+<p>Up next, we’ll discuss some <strong>common pitfalls and best practices</strong> when it comes to making visualizations.
+In the meantime, feel free to explore more on your own and let us know if you have any questions.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./week_1\03"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="recap_data.html" title="previous page">Recap data discussion</a>
+    <a class='right-next' id="next-link" href="best_practices_viz.html" title="next page">Best practices for visualization</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Enze Chen and Mark Asta<br/>
+        
+            &copy; Copyright 2021.<br/>
+          <div class="extra_footer">
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+  <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" />
+</a>
+
+          </div>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+                        window.ga = window.ga || function () {
+                            (ga.q = ga.q || []).push(arguments) };
+                        ga.l = +new Date;
+                        ga('create', 'UA-197730750-1', 'auto');
+                        ga('set', 'anonymizeIp', true);
+                        ga('send', 'pageview');
+                    </script>
+
+  </body>
+</html>

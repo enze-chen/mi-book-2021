@@ -1,0 +1,1321 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File types &#8212; Introduction to Materials Informatics</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet" />
+  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="canonical" href="https://enze-chen.github.io/mi-book/week_1/02/file_types_blank.html" />
+    <link rel="shortcut icon" href="../../_static/mi_favicon.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Tabular data" href="tabular_data_blank.html" />
+    <link rel="prev" title="Opportunities and challenges" href="opportunities.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+      <img src="../../_static/mi_logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Introduction to Materials Informatics</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../intro.html">
+   Welcome! 👋
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Preamble 📜
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../preamble/overview.html">
+   1. Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../preamble/setup.html">
+   2. Setup
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../preamble/schedule.html">
+   3. Schedule (one page) 📅
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Week 1️⃣
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../01/day_01.html">
+   Day 01: Introductions
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../01/informatics.html">
+     Intro to MI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../01/module.html">
+     Intro to Module 2
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../01/intro_python_jupyter_blank.html">
+     Intro to Python
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../01/homework_01.html">
+     Homework
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../01/python_greatest_hits_blank.html">
+       Python: The greatest hits
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../01/python_gory_details_blank.html">
+       Python: The gory details
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="day_02.html">
+   Day 02: MI and data
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="recap_logistics.html">
+     Recap first day
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="opportunities.html">
+     Opportunities and challenges
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     File types
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tabular_data_blank.html">
+     Tabular data
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="databases.html">
+     Databases
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <label for="toctree-checkbox-4">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="materials_project_blank.html">
+       The Materials Project
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="reading_docs.html">
+     Reading documentation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="homework_02.html">
+     Homework
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../03/day_03.html">
+   Day 03: Data visualization
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../03/recap_data.html">
+     Recap data discussion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../03/data_viz_blank.html">
+     Data visualization
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../03/best_practices_viz.html">
+     Best practices for visualization
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../03/best_practices_viz_blank.html">
+       Follow-along notebook
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../03/reading_papers.html">
+     Reading papers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../03/homework_03.html">
+     Homework
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../04/day_04.html">
+   Day 04: ML speedrun
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../04/recap_viz.html">
+     Recap visualization discussion
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../04/intro_ml.html">
+     Introduction to ML
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+    <label for="toctree-checkbox-8">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../04/intro_ml_blank.html">
+       Follow-along notebook
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../04/ml_perf.html">
+     Quantifying performance
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+    <label for="toctree-checkbox-9">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../04/ml_perf_blank.html">
+       Follow-along notebook
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../04/features.html">
+     Featurization
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+    <label for="toctree-checkbox-10">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../04/features_blank.html">
+       Follow-along notebook
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../04/advanced_ml.html">
+     Advanced ML methods
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+    <label for="toctree-checkbox-11">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../04/advanced_ml_blank.html">
+       Follow-along notebook
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../04/practical.html">
+     Practical considerations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../04/homework_04.html">
+     Homework
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../05/day_05.html">
+   Day 05: MI research
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+  <label for="toctree-checkbox-12">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../05/recap_ml.html">
+     Recap ML discussion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../05/res_discuss.html">
+     Research discussion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../05/best_practices_blank.html">
+     Best practices for MI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../05/homework_05.html">
+     Homework
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../05/install_python.html">
+     Installing Python locally (optional)
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Week 2️⃣
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../week_2/06/day_06.html">
+   Day 06: Independence Day
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_2/07/day_07.html">
+   Day 07: Research
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+  <label for="toctree-checkbox-13">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_2/07/survey_07.html">
+     Check-in survey
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_2/08/day_08.html">
+   Day 08: Research + guest speaker
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+  <label for="toctree-checkbox-14">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_2/08/guest_ucb.html">
+     Guest speaker: Alex!
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_2/08/proposals.html">
+     Proposals
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_2/09/day_09.html">
+   Day 09: Research
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
+  <label for="toctree-checkbox-15">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_2/09/check_in.html">
+     Check-in meeting
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_2/10/day_10.html">
+   Day 10: Research + guest speaker
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
+  <label for="toctree-checkbox-16">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_2/10/guest_aionics.html">
+     Guest speaker: Austin!
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Week 3️⃣
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_3/11/day_11.html">
+   Day 11: Research + grad school
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
+  <label for="toctree-checkbox-17">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/11/presentations.html">
+     Giving presentations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/11/grad_school.html">
+     Grad school talk: Mark!
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_3/12/day_12.html">
+   Day 12: Research + guest speaker
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/>
+  <label for="toctree-checkbox-18">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/12/pull_requests.html">
+     GitHub pull requests
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/12/guest_citrine.html">
+     Guest speaker: Ventura!
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_3/13/day_13.html">
+   Day 13: Research
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/>
+  <label for="toctree-checkbox-19">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../week_3/13/deep_learning.html">
+     Deep learning (tentative)
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/>
+    <label for="toctree-checkbox-20">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../week_3/13/deep_learning_blank.html">
+       Deep learning notebook
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_3/14/day_14.html">
+   Day 14: Slam presentations
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/>
+  <label for="toctree-checkbox-21">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/14/peer_review.html">
+     Peer review
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/14/final_presentations.html">
+     Final presentations
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_3/15/day_15.html">
+   Day 15: Conclusions
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/>
+  <label for="toctree-checkbox-22">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/15/summary.html">
+     Summary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/15/reflections.html">
+     Reflections
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/15/next.html">
+     What’s next?
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/15/finale.html">
+     Finale
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Appendices 📝
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../appendix/acknowl.html">
+   1. Acknowledgements
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../appendix/glossary.html">
+   2. Glossary
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../appendix/future.html">
+   3. Future directions 🛣
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/week_1/02/file_types_blank.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/enze-chen/mi-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/enze-chen/mi-book/issues/new?title=Issue%20on%20page%20%2Fweek_1/02/file_types_blank.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/enze-chen/mi-book/edit/master/week_1/02/file_types_blank.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        
+        <a class="jupyterhub-button" href="https://staging.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/enze-chen/mi-book&urlpath=tree/mi-book/week_1/02/file_types_blank.ipynb&branch=master"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
+                data-placement="left"><img class="jupyterhub-button-logo"
+                    src="../../_static/images/logo_jupyterhub.svg"
+                    alt="Interact on JupyterHub">JupyterHub</button></a>
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/enze-chen/mi-book/blob/master/week_1/02/file_types_blank.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#learning-objectives">
+   Learning objectives
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#contents">
+   Contents
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#paper-discussion">
+   Paper discussion
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-do-people-think-of-kyle-and-bryces-article">
+     <em>
+      What do people think of Kyle and Bryce’s article?
+     </em>
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#text-files">
+   Text files
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#when-might-this-access-pattern-be-less-suitable">
+     When might this access pattern be less suitable?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#when-the-file-is-structured">
+     When the file is
+     <em>
+      structured
+     </em>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exercise-more-elemental-properties">
+     Exercise: more elemental properties
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#json-files">
+   JSON files
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#json-to-the-rescue">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       json
+      </span>
+     </code>
+     to the rescue
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exercise-small-group-create-a-list-that-stores-all-of-the-band-gap-values-in-the-strehlow-and-cook-dataset">
+     Exercise (small group): create a list that stores all of the band gap values in the Strehlow and Cook dataset
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#writing-json-files">
+     Writing JSON files
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#versatility">
+     Versatility
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#images">
+   Images?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#when-files-simply-arent-enough">
+   When files simply aren’t enough
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion">
+   Conclusion
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="file-types">
+<h1>File types<a class="headerlink" href="#file-types" title="Permalink to this headline">¶</a></h1>
+<p><em>Authors: Enze Chen and Mark Asta (University of California, Berkeley)</em></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is an interactive exercise, so you will want to click the <span class="fa fa-rocket"></span> and open the notebook in DataHub (or Colab for non-UCB students).</p>
+</div>
+<div class="section" id="learning-objectives">
+<h2>Learning objectives<a class="headerlink" href="#learning-objectives" title="Permalink to this headline">¶</a></h2>
+<p>This notebook contains exercises that explore a few of the different file types that are commonly used to store materials data.
+We want to give you ample hands-on practice working with different file types so that you:</p>
+<ol class="simple">
+<li><p>Understand the advantages and disadvantages of each file format.</p></li>
+<li><p>Are prepared to work with a variety of datasets during self-directed research.</p></li>
+</ol>
+<p>We will progress through most of this notebook together as a group and we’re happy to answer any questions you may have about this content.</p>
+</div>
+<div class="section" id="contents">
+<h2>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h2>
+<p>These exercises are grouped into the following sections:</p>
+<ol class="simple">
+<li><p><a class="reference external" href="#Paper-discussion">Paper discussion</a></p></li>
+<li><p><a class="reference external" href="#Text-files">Text files</a></p></li>
+<li><p><a class="reference external" href="#JSON-files">JSON files</a></p></li>
+<li><p><a class="reference external" href="#Images?">Images</a></p></li>
+<li><p><a class="reference external" href="#When-files-simply-aren%27t-enough">Beyond files</a></p></li>
+</ol>
+</div>
+<div class="section" id="paper-discussion">
+<h2>Paper discussion<a class="headerlink" href="#paper-discussion" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="what-do-people-think-of-kyle-and-bryces-article">
+<h3><em>What do people think of Kyle and Bryce’s <a class="reference external" href="https://www.cambridge.org/core/journals/mrs-bulletin/article/beyond-bulk-single-crystals-a-data-format-for-all-materials-structurepropertyprocessing-relationships/AADBAEDA62B0391D708CF02269989E8B">article</a>?</em><a class="headerlink" href="#what-do-people-think-of-kyle-and-bryces-article" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="text-files">
+<h2>Text files<a class="headerlink" href="#text-files" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="#Contents">Back to top</a></p>
+<p>From yesterday’s exercises and your own experience, you’ve worked with text files in many contexts, which speaks to their <strong>great flexibility</strong>.
+Indeed this is one of their strengths, as they simply consist of characters on lines that can then be represented in Python as a sequence of strings.</p>
+<p>To revisit an example from yesterday, let’s open the file <code class="docutils literal notranslate"><span class="pre">mentors.txt</span></code> and print its contents.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">filepath</span> <span class="o">=</span> <span class="s1">&#39;../../assets/data/week_1/01/mentors.txt&#39;</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filepath</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Enze
+Mark
+Ryan
+Sinead
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Pause and reflect</strong>: Why did we include the <code class="docutils literal notranslate"><span class="pre">strip()</span></code> method?</p>
+<hr class="docutils" />
+<p>Text files are great, because we can store all sorts of information in them and they are <strong>human readable</strong>.
+When we talk about readability, we typically refer to humans; but in MI, you’ll soon see that there seems to be an unfortunate tradeoff between what’s readable (interpretable) to humans and what’s readable (interpretable) to computers.</p>
+<p>Another quick note about text files is that <strong>they don’t have to end in <code class="docutils literal notranslate"><span class="pre">.txt</span></code></strong> to be a “text file.”
+A Python file (<code class="docutils literal notranslate"><span class="pre">.py</span></code> extension) or Jupyter notebook file (<code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>), for example, are considered text files too!
+In Module 3, when you’re working with DFT calculations, you’ll likely see a lot of text files that don’t even have an extension! (Yes, this is possible on any OS, though rarely helpful on ones with GUIs.)</p>
+<div class="section" id="when-might-this-access-pattern-be-less-suitable">
+<h3>When might this access pattern be less suitable?<a class="headerlink" href="#when-might-this-access-pattern-be-less-suitable" title="Permalink to this headline">¶</a></h3>
+<p>We’ll go through another text file example shortly, but before we get there, we’d like to hear from you as to how you would answer the above question.
+It seems like</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filepath</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
+        <span class="c1"># do something</span>
+</pre></div>
+</div>
+<p>is quite powerful!
+But can you think of situations where we might not want to use it? 🤔</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># some blank space - feel free to take notes here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>A cop-out answer to the above question would be: when the file is not a text file (duh).
+Many such files exist, and they’re generally referred to as <a class="reference external" href="https://en.wikipedia.org/wiki/Binary_file"><em>binary files</em></a>.
+In fact, if you didn’t click the previous link to the Wikipedia page, just know that the first sentence literally reads: 🤣</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">A</span> <span class="n">binary</span> <span class="n">file</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">computer</span> <span class="n">file</span> <span class="n">that</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">a</span> <span class="n">text</span> <span class="n">file</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>These are data stored as a sequence of bytes that aren’t necessarily text characters, and you’ve seen an example in yesterday’s exercises with the <code class="docutils literal notranslate"><span class="pre">.npy</span></code> NumPy arrays.
+If we try to use the same code to read this file, we get something pretty gnarly:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;../../assets/data/week_1/01/2d_walk.npy&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>   <span class="c1"># whoa!</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">:</span>
+            <span class="k">break</span>     <span class="c1"># early stopping; we get the idea</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<pre class="output stream literal-block">“NUMPYv{'descr': '&lt;i4', 'fortran_order': False, 'shape': (1001, 2), }                                                       
+
+ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿþÿÿÿýÿÿÿýÿÿÿýÿÿÿþÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿþÿÿÿýÿÿÿýÿÿÿüÿÿÿüÿÿÿýÿÿÿüÿÿÿüÿÿÿûÿÿÿûÿÿÿúÿÿÿúÿÿÿúÿÿÿúÿÿÿùÿÿÿúÿÿÿúÿÿÿùÿÿÿùÿÿÿúÿÿÿûÿÿÿüÿÿÿüÿÿÿýÿÿÿýÿÿÿýÿÿÿýÿÿÿýÿÿÿþÿÿÿþÿÿÿ	þÿÿÿ	ýÿÿÿýÿÿÿüÿÿÿûÿÿÿúÿÿÿûÿÿÿüÿÿÿýÿÿÿüÿÿÿüÿÿÿûÿÿÿûÿÿÿûÿÿÿüÿÿÿüÿÿÿýÿÿÿýÿÿÿüÿÿÿüÿÿÿüÿÿÿûÿÿÿüÿÿÿûÿÿÿûÿÿÿûÿÿÿúÿÿÿùÿÿÿøÿÿÿ÷ÿÿÿ÷ÿÿÿøÿÿÿøÿÿÿùÿÿÿúÿÿÿûÿÿÿúÿÿÿùÿÿÿøÿÿÿøÿÿÿøÿÿÿøÿÿÿøÿÿÿøÿÿÿøÿÿÿùÿÿÿùÿÿÿùÿÿÿøÿÿÿ÷ÿÿÿöÿÿÿöÿÿÿõÿÿÿõÿÿÿõÿÿÿôÿÿÿóÿÿÿóÿÿÿóÿÿÿóÿÿÿòÿÿÿòÿÿÿóÿÿÿóÿÿÿóÿÿÿóÿÿÿôÿÿÿôÿÿÿôÿÿÿôÿÿÿõÿÿÿõÿÿÿöÿÿÿ÷ÿÿÿöÿÿÿõÿÿÿõÿÿÿöÿÿÿõÿÿÿõÿÿÿôÿÿÿôÿÿÿóÿÿÿóÿÿÿóÿÿÿôÿÿÿõÿÿÿöÿÿÿõÿÿÿõÿÿÿõÿÿÿöÿÿÿöÿÿÿöÿÿÿõÿÿÿöÿÿÿöÿÿÿõÿÿÿöÿÿÿ÷ÿÿÿ÷ÿÿÿ÷ÿÿÿøÿÿÿùÿÿÿùÿÿÿùÿÿÿùÿÿÿùÿÿÿúÿÿÿûÿÿÿúÿÿÿúÿÿÿúÿÿÿûÿÿÿüÿÿÿýÿÿÿüÿÿÿüÿÿÿüÿÿÿüÿÿÿüÿÿÿýÿÿÿýÿÿÿýÿÿÿþÿÿÿþÿÿÿþÿÿÿþÿÿÿþÿÿÿþÿÿÿþÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿþÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿþÿÿÿýÿÿÿüÿÿÿüÿÿÿüÿÿÿûÿÿÿúÿÿÿúÿÿÿùÿÿÿúÿÿÿûÿÿÿúÿÿÿúÿÿÿûÿÿÿûÿÿÿúÿÿÿúÿÿÿûÿÿÿúÿÿÿúÿÿÿúÿÿÿûÿÿÿûÿÿÿüÿÿÿüÿÿÿýÿÿÿþÿÿÿýÿÿÿüÿÿÿûÿÿÿûÿÿÿüÿÿÿüÿÿÿüÿÿÿûÿÿÿüÿÿÿüÿÿÿûÿÿÿúÿÿÿûÿÿÿûÿÿÿûÿÿÿúÿÿÿúÿÿÿúÿÿÿùÿÿÿøÿÿÿøÿÿÿøÿÿÿøÿÿÿùÿÿÿøÿÿÿøÿÿÿøÿÿÿøÿÿÿøÿÿÿøÿÿÿ÷ÿÿÿ÷ÿÿÿ÷ÿÿÿøÿÿÿùÿÿÿùÿÿÿùÿÿÿùÿÿÿøÿÿÿøÿÿÿøÿÿÿøÿÿÿøÿÿÿøÿÿÿøÿÿÿøÿÿÿùÿÿÿùÿÿÿøÿÿÿÿÿÿÿøÿÿÿøÿÿÿÿÿÿÿøÿÿÿøÿÿÿÿÿÿÿøÿÿÿøÿÿÿÿÿÿÿøÿÿÿøÿÿÿ÷ÿÿÿøÿÿÿùÿÿÿøÿÿÿùÿÿÿøÿÿÿ÷ÿÿÿÿÿÿÿ÷ÿÿÿ÷ÿÿÿÿÿÿÿ÷ÿÿÿ÷ÿÿÿÿÿÿÿ÷ÿÿÿþÿÿÿ÷ÿÿÿýÿÿÿ÷ÿÿÿýÿÿÿøÿÿÿþÿÿÿøÿÿÿþÿÿÿùÿÿÿýÿÿÿùÿÿÿýÿÿÿøÿÿÿýÿÿÿ÷ÿÿÿýÿÿÿöÿÿÿüÿÿÿöÿÿÿüÿÿÿ÷ÿÿÿüÿÿÿöÿÿÿüÿÿÿ÷ÿÿÿýÿÿÿ÷ÿÿÿýÿÿÿøÿÿÿüÿÿÿøÿÿÿüÿÿÿùÿÿÿýÿÿÿùÿÿÿýÿÿÿøÿÿÿüÿÿÿøÿÿÿüÿÿÿ÷ÿÿÿûÿÿÿ÷ÿÿÿúÿÿÿ÷ÿÿÿúÿÿÿöÿÿÿûÿÿÿöÿÿÿûÿÿÿõÿÿÿûÿÿÿôÿÿÿúÿÿÿôÿÿÿúÿÿÿõÿÿÿúÿÿÿöÿÿÿûÿÿÿöÿÿÿûÿÿÿõÿÿÿûÿÿÿöÿÿÿûÿÿÿõÿÿÿúÿÿÿõÿÿÿùÿÿÿõÿÿÿøÿÿÿõÿÿÿøÿÿÿôÿÿÿøÿÿÿõÿÿÿùÿÿÿõÿÿÿøÿÿÿõÿÿÿøÿÿÿöÿÿÿøÿÿÿ÷ÿÿÿùÿÿÿ÷ÿÿÿùÿÿÿøÿÿÿùÿÿÿ÷ÿÿÿøÿÿÿ÷ÿÿÿøÿÿÿøÿÿÿùÿÿÿøÿÿÿùÿÿÿùÿÿÿùÿÿÿøÿÿÿøÿÿÿøÿÿÿøÿÿÿùÿÿÿ÷ÿÿÿùÿÿÿöÿÿÿùÿÿÿ÷ÿÿÿùÿÿÿ÷ÿÿÿúÿÿÿ÷ÿÿÿûÿÿÿöÿÿÿûÿÿÿ÷ÿÿÿûÿÿÿ÷ÿÿÿúÿÿÿ÷ÿÿÿûÿÿÿöÿÿÿûÿÿÿöÿÿÿüÿÿÿöÿÿÿýÿÿÿöÿÿÿüÿÿÿõÿÿÿüÿÿÿõÿÿÿýÿÿÿôÿÿÿýÿÿÿôÿÿÿþÿÿÿôÿÿÿÿÿÿÿôÿÿÿôÿÿÿÿÿÿÿôÿÿÿõÿÿÿöÿÿÿõÿÿÿõÿÿÿõÿÿÿôÿÿÿóÿÿÿóÿÿÿÿÿÿÿóÿÿÿþÿÿÿóÿÿÿÿÿÿÿóÿÿÿóÿÿÿòÿÿÿóÿÿÿóÿÿÿóÿÿÿÿÿÿÿóÿÿÿóÿÿÿóÿÿÿóÿÿÿÿÿÿÿôÿÿÿÿÿÿÿôÿÿÿþÿÿÿóÿÿÿþÿÿÿòÿÿÿþÿÿÿòÿÿÿýÿÿÿñÿÿÿýÿÿÿòÿÿÿýÿÿÿñÿÿÿýÿÿÿñÿÿÿüÿÿÿñÿÿÿûÿÿÿñÿÿÿüÿÿÿñÿÿÿýÿÿÿñÿÿÿþÿÿÿðÿÿÿþÿÿÿñÿÿÿþÿÿÿñÿÿÿÿÿÿÿðÿÿÿÿÿÿÿïÿÿÿÿÿÿÿîÿÿÿÿÿÿÿîÿÿÿþÿÿÿîÿÿÿÿÿÿÿïÿÿÿÿÿÿÿðÿÿÿÿÿÿÿðÿÿÿðÿÿÿðÿÿÿðÿÿÿðÿÿÿðÿÿÿðÿÿÿðÿÿÿðÿÿÿñÿÿÿñÿÿÿòÿÿÿòÿÿÿñÿÿÿñÿÿÿñÿÿÿñÿÿÿÿÿÿÿñÿÿÿñÿÿÿðÿÿÿïÿÿÿîÿÿÿïÿÿÿðÿÿÿïÿÿÿïÿÿÿïÿÿÿïÿÿÿðÿÿÿðÿÿÿñÿÿÿòÿÿÿñÿÿÿñÿÿÿðÿÿÿñÿÿÿðÿÿÿñÿÿÿðÿÿÿðÿÿÿñÿÿÿñÿÿÿñÿÿÿðÿÿÿðÿÿÿðÿÿÿðÿÿÿðÿÿÿðÿÿÿñÿÿÿñÿÿÿòÿÿÿñÿÿÿñÿÿÿðÿÿÿïÿÿÿïÿÿÿïÿÿÿðÿÿÿïÿÿÿîÿÿÿîÿÿÿîÿÿÿîÿÿÿîÿÿÿïÿÿÿïÿÿÿÿÿÿÿïÿÿÿþÿÿÿîÿÿÿþÿÿÿîÿÿÿÿÿÿÿîÿÿÿîÿÿÿÿÿÿÿïÿÿÿÿÿÿÿïÿÿÿïÿÿÿïÿÿÿïÿÿÿîÿÿÿîÿÿÿïÿÿÿðÿÿÿðÿÿÿÿÿÿÿðÿÿÿïÿÿÿïÿÿÿïÿÿÿîÿÿÿîÿÿÿíÿÿÿîÿÿÿîÿÿÿîÿÿÿïÿÿÿðÿÿÿðÿÿÿñÿÿÿòÿÿÿòÿÿÿñÿÿÿñÿÿÿñÿÿÿòÿÿÿñÿÿÿòÿÿÿòÿÿÿñÿÿÿñÿÿÿñÿÿÿðÿÿÿñÿÿÿñÿÿÿñÿÿÿñÿÿÿñÿÿÿñÿÿÿÿÿÿÿðÿÿÿÿÿÿÿðÿÿÿþÿÿÿðÿÿÿÿÿÿÿðÿÿÿïÿÿÿïÿÿÿÿÿÿÿîÿÿÿÿÿÿÿîÿÿÿþÿÿÿíÿÿÿþÿÿÿìÿÿÿþÿÿÿëÿÿÿþÿÿÿêÿÿÿþÿÿÿêÿÿÿÿÿÿÿéÿÿÿÿÿÿÿêÿÿÿÿÿÿÿêÿÿÿþÿÿÿêÿÿÿýÿÿÿëÿÿÿýÿÿÿëÿÿÿþÿÿÿìÿÿÿþÿÿÿëÿÿÿþÿÿÿëÿÿÿÿÿÿÿëÿÿÿìÿÿÿíÿÿÿîÿÿÿïÿÿÿîÿÿÿïÿÿÿïÿÿÿïÿÿÿïÿÿÿðÿÿÿñÿÿÿðÿÿÿðÿÿÿñÿÿÿòÿÿÿóÿÿÿóÿÿÿóÿÿÿóÿÿÿóÿÿÿóÿÿÿòÿÿÿóÿÿÿôÿÿÿóÿÿÿòÿÿÿòÿÿÿñÿÿÿñÿÿÿñÿÿÿñÿÿÿðÿÿÿðÿÿÿïÿÿÿïÿÿÿîÿÿÿíÿÿÿîÿÿÿïÿÿÿïÿÿÿïÿÿÿðÿÿÿðÿÿÿðÿÿÿðÿÿÿñÿÿÿñÿÿÿñÿÿÿðÿÿÿðÿÿÿïÿÿÿðÿÿÿñÿÿÿñÿÿÿñÿÿÿðÿÿÿñÿÿÿðÿÿÿðÿÿÿðÿÿÿïÿÿÿïÿÿÿîÿÿÿîÿÿÿïÿÿÿîÿÿÿïÿÿÿïÿÿÿðÿÿÿñÿÿÿðÿÿÿðÿÿÿïÿÿÿïÿÿÿïÿÿÿïÿÿÿðÿÿÿïÿÿÿðÿÿÿñÿÿÿòÿÿÿòÿÿÿñÿÿÿðÿÿÿðÿÿÿïÿÿÿïÿÿÿïÿÿÿïÿÿÿ	ïÿÿÿ
+
+ðÿÿÿ
+
+ïÿÿÿ
+
+</pre>
+</div>
+</div>
+</div>
+<div class="section" id="when-the-file-is-structured">
+<h3>When the file is <em>structured</em><a class="headerlink" href="#when-the-file-is-structured" title="Permalink to this headline">¶</a></h3>
+<p>A more subtle answer to the above question would be when the file <em>is</em> still a text file, but the text is written in a way that has some internal structure.
+The flexibility of text files is really nice if we’re writing prose or poetry, but data are usually more systematically organized to facilitate access.
+This means there might be a <strong>more specialized/targeted way</strong> to read in the contents of the file than going line by line and interpreting the contents as strings, particularly as a lot of data are numeric.
+As we move forward and discuss different examples of structured data, we invite you to think about what we said earlier about the tradeoff between human interpretability and computer interpretability.</p>
+</div>
+<div class="section" id="exercise-more-elemental-properties">
+<h3>Exercise: more elemental properties<a class="headerlink" href="#exercise-more-elemental-properties" title="Permalink to this headline">¶</a></h3>
+<p>For this next exercise, we’ll attempt to do some <em>live coding</em> together.
+This means that we’ll need to work as a team and have <strong>everyone contribute</strong> to the solution.
+This exercise will give us practice working with files, control flow, lists, and casting.</p>
+<p>Inside the text file <code class="docutils literal notranslate"><span class="pre">hardness_density.csv</span></code> (CSV is another type of text file), we have some data organized as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Data obtained from Wikipedia</span>
+<span class="n">Element</span><span class="p">,</span><span class="n">Number</span><span class="p">,</span><span class="n">Mohs</span> <span class="n">hardness</span><span class="p">,</span><span class="n">Density</span> <span class="p">(</span><span class="n">g</span><span class="o">/</span><span class="n">cc</span><span class="p">)</span>
+<span class="n">lithium</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mf">0.6</span><span class="p">,</span><span class="mf">0.534</span>
+<span class="n">beryllium</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mf">5.5</span><span class="p">,</span><span class="mf">1.85</span>
+<span class="n">boron</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mf">9.4</span><span class="p">,</span><span class="mf">2.34</span>
+<span class="n">carbon</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mf">3.513</span>
+<span class="o">...</span>
+</pre></div>
+</div>
+<p>Our job is to read in this text file and store the data, starting from the third line, as a <strong>list of lists</strong>.
+The outer list has an element for each line, and the inner list should have elements of type <code class="docutils literal notranslate"><span class="pre">[str,</span> <span class="pre">int,</span> <span class="pre">float,</span> <span class="pre">float]</span></code> representing the element, atomic number, Mohs hardness, and density, respectively.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> 
+<span class="p">[[</span><span class="s1">&#39;lithium&#39;</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mf">0.6</span><span class="p">,</span> <span class="mf">0.534</span><span class="p">],</span>
+ <span class="p">[</span><span class="s1">&#39;beryllium&#39;</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mf">5.5</span><span class="p">,</span> <span class="mf">1.85</span><span class="p">],</span>
+ <span class="p">[</span><span class="s1">&#39;boron&#39;</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mf">9.4</span><span class="p">,</span> <span class="mf">2.34</span><span class="p">],</span>
+ <span class="p">[</span><span class="s1">&#39;carbon&#39;</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">,</span> <span class="mf">3.513</span><span class="p">],</span>
+ <span class="o">...</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">filepath</span> <span class="o">=</span> <span class="s1">&#39;../../assets/data/week_1/02/hardness_density.csv&#39;</span>
+<span class="c1"># -------------   WRITE YOUR CODE IN THE SPACE BELOW   ---------- #</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Pause and reflect</strong>: Is there any structure in the above data?
+We will revisit this example in the next lesson!</p>
+</div>
+</div>
+<div class="section" id="json-files">
+<h2>JSON files<a class="headerlink" href="#json-files" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="#Contents">Back to top</a></p>
+<p>A CSV file is an example of a text file with some structure, but there’s so much to say on this topic that we’ll dedicate an entire lesson to it.
+In the meantime, we’ll explore another kind of structured text file that is very commonly used for materials data, and that is <a class="reference external" href="https://en.wikipedia.org/wiki/JSON">JavaScript Object Notation</a>, or <strong>JSON</strong> for short.
+It is very commonly used to store <strong>hierarchical data</strong> in array structures (like lists!) or key-value pairs (like dictionaries!), both of which we’re familiar with, so it makes sense to discuss this next.
+An example of what a JSON entry for the above data would look like could be:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;element&quot;</span><span class="p">:</span> <span class="s2">&quot;lithium&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;number&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+        <span class="s2">&quot;hardness&quot;</span><span class="p">:</span> <span class="mf">0.6</span><span class="p">,</span>
+        <span class="s2">&quot;density&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="mf">0.534</span><span class="p">,</span>
+            <span class="s2">&quot;units&quot;</span><span class="p">:</span> <span class="s2">&quot;g/cc&quot;</span><span class="p">,</span>
+        <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;element&quot;</span><span class="p">:</span> <span class="s2">&quot;beryllium&quot;</span><span class="p">,</span>
+        <span class="o">...</span>
+    <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<hr class="docutils" />
+<p><strong>Pause and reflect</strong>: What <em>data types</em> and <em>data structures</em> do we see in the snippet above?</p>
+<p>Fundamentally, <em>a JSON file is just another text file</em>.
+For example, we have some band gap data from the canonical dataset compiled by <a class="reference external" href="https://aip.scitation.org/doi/10.1063/1.3253115">Strehlow and Cook, <em>J. Phys. Chem. Ref. Data</em>, 1973</a> stored in the file <code class="docutils literal notranslate"><span class="pre">band_gaps_sc.json</span></code>, which was obtained from <a class="reference external" href="https://citrination.com/datasets/1160/">Citrination</a>.
+We could, if we want to, simply try to read this file from top to bottom like so:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">filepath</span> <span class="o">=</span> <span class="s1">&#39;../../assets/data/week_1/02/band_gaps_sc.json&#39;</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filepath</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">rstrip</span><span class="p">())</span>   <span class="c1"># this removes invisibles from the right side of the string ONLY</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">25</span><span class="p">:</span>
+            <span class="k">break</span>              <span class="c1"># early stopping, we get the idea</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[
+    {
+        &quot;category&quot;: &quot;system.chemical&quot;,
+        &quot;references&quot;:
+        [
+            {
+                &quot;doi&quot;: &quot;10.1063/1.3253115&quot;
+            }
+        ],
+        &quot;properties&quot;:
+        [
+            {
+                &quot;name&quot;: &quot;Crystallinity&quot;,
+                &quot;scalars&quot;:
+                [
+                    {
+                        &quot;value&quot;: &quot;Single crystalline&quot;
+                    }
+                ]
+            },
+            {
+                &quot;name&quot;: &quot;Band gap&quot;,
+                &quot;scalars&quot;:
+                [
+                    {
+                        &quot;value&quot;: &quot;13.6&quot;
+                    }
+</pre></div>
+</div>
+</div>
+</div>
+<p>While this <em>works</em>, it feels clunky if we wanted to extract all band gap values and we wouldn’t be able to take advantage of all the nice indexing features that come with lists and dictionaries.
+If only there was a way for us to load in <em>the entire file</em> as a list of dictionaries representing our materials…</p>
+<div class="section" id="json-to-the-rescue">
+<h3><code class="docutils literal notranslate"><span class="pre">json</span></code> to the rescue<a class="headerlink" href="#json-to-the-rescue" title="Permalink to this headline">¶</a></h3>
+<p><img alt="Super JSON" src="../../_images/super_json.png" /></p>
+<p>Fortunately, there exists another package in Python that allows us to do that, and this package is called, appropriately, <a class="reference external" href="https://docs.python.org/3.8/library/json.html"><code class="docutils literal notranslate"><span class="pre">json</span></code></a>.
+We first <strong>import</strong> the <code class="docutils literal notranslate"><span class="pre">json</span></code> package and then use it as follows:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">json</span>
+<span class="n">filepath</span> <span class="o">=</span> <span class="s1">&#39;../../assets/data/week_1/02/band_gaps_sc.json&#39;</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filepath</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>   <span class="c1"># same as any other text file</span>
+    <span class="n">materials</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>     <span class="c1"># special function from the json package!</span>
+
+<span class="c1"># display the first material in the dataset</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;&#39;materials&#39; is a variable of type </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">materials</span><span class="p">)</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Its elements are of type </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">materials</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="si">}</span><span class="s1">.&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The first element is the following:&#39;</span><span class="p">)</span>
+<span class="n">materials</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;materials&#39; is a variable of type &lt;class &#39;list&#39;&gt;.
+Its elements are of type &lt;class &#39;dict&#39;&gt;.
+The first element is the following:
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;category&#39;: &#39;system.chemical&#39;,
+ &#39;references&#39;: [{&#39;doi&#39;: &#39;10.1063/1.3253115&#39;}],
+ &#39;properties&#39;: [{&#39;name&#39;: &#39;Crystallinity&#39;,
+   &#39;scalars&#39;: [{&#39;value&#39;: &#39;Single crystalline&#39;}]},
+  {&#39;name&#39;: &#39;Band gap&#39;,
+   &#39;scalars&#39;: [{&#39;value&#39;: &#39;13.6&#39;}],
+   &#39;units&#39;: &#39;eV&#39;,
+   &#39;conditions&#39;: [{&#39;name&#39;: &#39;Transition&#39;, &#39;scalars&#39;: [{&#39;value&#39;: &#39;Direct&#39;}]},
+    {&#39;name&#39;: &#39;Temperature&#39;, &#39;scalars&#39;: [{&#39;value&#39;: &#39;300&#39;}], &#39;units&#39;: &#39;K&#39;}],
+   &#39;method&#39;: {&#39;name&#39;: &#39;Reflection&#39;},
+   &#39;dataType&#39;: &#39;EXPERIMENTAL&#39;}],
+ &#39;chemicalFormula&#39;: &#39;Li1F1&#39;}
+</pre></div>
+</div>
+</div>
+</div>
+<p>Aha!
+Now our data are represented by sensible Python constructs.
+In particular, you’ll notice that the JSON allows <strong>metadata</strong> to be intuitively associated with the corresponding data (e.g., the temperature at which a particular measurement was made).
+Let’s see if we can dig a little deeper and extract some useful data out of this dataset.</p>
+</div>
+<div class="section" id="exercise-small-group-create-a-list-that-stores-all-of-the-band-gap-values-in-the-strehlow-and-cook-dataset">
+<h3>Exercise (small group): create a list that stores all of the band gap values in the Strehlow and Cook dataset<a class="headerlink" href="#exercise-small-group-create-a-list-that-stores-all-of-the-band-gap-values-in-the-strehlow-and-cook-dataset" title="Permalink to this headline">¶</a></h3>
+<p>Your first few values should be: <code class="docutils literal notranslate"><span class="pre">band_gaps</span> <span class="pre">=</span> <span class="pre">[13.6,</span> <span class="pre">12.61,</span> <span class="pre">12.6,</span> <span class="pre">12.1,</span> <span class="pre">12,</span> <span class="pre">...]</span></code></p>
+<p><em>Hint</em>: Band gap is stored in the <code class="docutils literal notranslate"><span class="pre">properties</span></code> entry of the dictionary, but <strong>not every material has every property</strong>, so the list (value) associated with this key will have varying lengths!
+How can we ensure we’ve found the <code class="docutils literal notranslate"><span class="pre">&quot;Band</span> <span class="pre">gap&quot;</span></code> property?
+You may assume that every material has a band gap associated with it.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">band_gaps</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="c1"># -------------   WRITE YOUR CODE IN THE SPACE BELOW   ---------- #</span>
+
+<span class="c1"># --------------------------------------------------------------- #</span>
+<span class="n">band_gaps</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[]
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="writing-json-files">
+<h3>Writing JSON files<a class="headerlink" href="#writing-json-files" title="Permalink to this headline">¶</a></h3>
+<p>If you have some hierarchical data stored inside lists and dictionaries, you may want to save it to an external JSON file.
+As a very simple example, let’s take the list of band gap values you created in the previous exercise and try writing that list (<code class="docutils literal notranslate"><span class="pre">band_gaps</span></code>) to a JSON (for any other data, the code is the same, and only the file contents will be different).
+We use the <a class="reference external" href="https://docs.python.org/3/library/json.html#json.dump"><code class="docutils literal notranslate"><span class="pre">json.dump()</span></code></a> function as follows:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;path/to/output_file.json&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>   <span class="c1"># note the &#39;w&#39; for write!</span>
+    <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">data_object</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>            <span class="c1"># indent=4 is a best practice</span>
+</pre></div>
+</div>
+<p>When applied to our data, the result is:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;../../assets/data/week_1/02/band_gaps_only.json&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">band_gaps</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="versatility">
+<h3>Versatility<a class="headerlink" href="#versatility" title="Permalink to this headline">¶</a></h3>
+<p>JSON files are very good at storing <strong>hierarchical data</strong>, which makes them suitable for many materials data, as explained by Kyle and Bryce <a class="reference external" href="https://www.cambridge.org/core/journals/mrs-bulletin/article/beyond-bulk-single-crystals-a-data-format-for-all-materials-structurepropertyprocessing-relationships/AADBAEDA62B0391D708CF02269989E8B">in their paper</a>.
+But JSON is used in many other applications too, such as this very notebook that you’re currently reading! 😉</p>
+</div>
+</div>
+<div class="section" id="images">
+<h2>Images?<a class="headerlink" href="#images" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="#Contents">Back to top</a></p>
+<p><img alt="Images" src="../../_images/images.png" /></p>
+<p>While we will not have time to teach you about image data in this module, we will briefly show how they can be handled in Python.
+Given the importance and diversity of materials characterization techniques, it would be remiss of us to not at least mention image analysis.
+You have probably heard a lot about this topic in the media in the context of <a class="reference external" href="https://towardsdatascience.com/how-do-self-driving-cars-see-13054aee2503">self-driving cars</a>, <a class="reference external" href="https://www.nytimes.com/interactive/2020/11/21/science/artificial-intelligence-fake-people-faces.html">deep fakes</a>, and <a class="reference external" href="https://www.nature.com/articles/s41746-020-00376-2">medicine</a> just to name a few, and it’s becoming a big deal in MI too.</p>
+<p>There are <em>many</em> packages out there for working with image data, so for the purposes of demonstration, we will work with the standard <em>Python Imaging Library (PIL)</em>, now developed under the <a class="reference external" href="https://python-pillow.org/"><strong>Pillow</strong></a> project, for reading an image file.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import modules</span>
+<span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+<span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s1">&#39;../../assets/fig/week_1/02/microstructure.png&#39;</span><span class="p">)</span>
+<span class="c1"># img = Image.open(&#39;../../assets/fig/week_1/02/diffraction.jpg&#39;)</span>
+
+<span class="c1"># We can even convert the image into a NumPy array</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="n">img_arr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;The image has dimensions </span><span class="si">{</span><span class="n">img_arr</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s1">.&#39;</span><span class="p">)</span>   <span class="c1"># what are all the dimensions?</span>
+
+<span class="c1"># Display the image</span>
+<span class="n">img</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The image has dimensions (768, 960, 3).
+</pre></div>
+</div>
+<img alt="../../_images/file_types_blank_26_1.png" src="../../_images/file_types_blank_26_1.png" />
+</div>
+</div>
+<p>While this is all we have time for today, fear not, because <a class="reference external" href="https://scott.mse.berkeley.edu/people/alexandra-bruefach/">Alex</a> will be speaking to us next Wednesday about her own research at the intersection of MI and electron microscopy!
+For more information on data-driven electron microscopy, you can also check out <a class="reference external" href="https://www.nature.com/articles/s41563-020-00833-z">this commentary in <em>Nature Materials</em></a> by the leading researchers in this field.</p>
+</div>
+<div class="section" id="when-files-simply-arent-enough">
+<h2>When files simply aren’t enough<a class="headerlink" href="#when-files-simply-arent-enough" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="#Contents">Back to top</a></p>
+<p>At this point, you’ve seen a lot of different files types for storing materials data.
+Specifically, we’ve discussed regular text files, binary files, CSVs, JSONs, and images, and you’ll get more practice working with several of these in this module.
+However, there will be times when our data get so large and complex that it becomes infeasible to store them in files, even if these files are stored in the cloud.
+This calls for something else—this calls for <strong>databases</strong>!
+Stay tuned for more. 🙂</p>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h2>
+<p>This concludes our discussion of files. 📄📂
+Up next, we’re going to take a <strong>deep dive into tabular data</strong> and CSV files specifically.
+Please don’t hesitate to reach out on Slack if you have questions or concerns about this content.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./week_1\02"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="opportunities.html" title="previous page">Opportunities and challenges</a>
+    <a class='right-next' id="next-link" href="tabular_data_blank.html" title="next page">Tabular data</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Enze Chen and Mark Asta<br/>
+        
+            &copy; Copyright 2021.<br/>
+          <div class="extra_footer">
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+  <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" />
+</a>
+
+          </div>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+                        window.ga = window.ga || function () {
+                            (ga.q = ga.q || []).push(arguments) };
+                        ga.l = +new Date;
+                        ga('create', 'UA-197730750-1', 'auto');
+                        ga('set', 'anonymizeIp', true);
+                        ga('send', 'pageview');
+                    </script>
+
+  </body>
+</html>

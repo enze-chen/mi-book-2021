@@ -1,0 +1,1478 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Materials Project &#8212; Introduction to Materials Informatics</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet" />
+  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="canonical" href="https://enze-chen.github.io/mi-book/week_1/02/materials_project_blank.html" />
+    <link rel="shortcut icon" href="../../_static/mi_favicon.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Reading documentation" href="reading_docs.html" />
+    <link rel="prev" title="Databases" href="databases.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+      <img src="../../_static/mi_logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Introduction to Materials Informatics</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../intro.html">
+   Welcome! 👋
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Preamble 📜
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../preamble/overview.html">
+   1. Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../preamble/setup.html">
+   2. Setup
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../preamble/schedule.html">
+   3. Schedule (one page) 📅
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Week 1️⃣
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../01/day_01.html">
+   Day 01: Introductions
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../01/informatics.html">
+     Intro to MI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../01/module.html">
+     Intro to Module 2
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../01/intro_python_jupyter_blank.html">
+     Intro to Python
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../01/homework_01.html">
+     Homework
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../01/python_greatest_hits_blank.html">
+       Python: The greatest hits
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../01/python_gory_details_blank.html">
+       Python: The gory details
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="day_02.html">
+   Day 02: MI and data
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="recap_logistics.html">
+     Recap first day
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="opportunities.html">
+     Opportunities and challenges
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="file_types_blank.html">
+     File types
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tabular_data_blank.html">
+     Tabular data
+    </a>
+   </li>
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="databases.html">
+     Databases
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <label for="toctree-checkbox-4">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       The Materials Project
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="reading_docs.html">
+     Reading documentation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="homework_02.html">
+     Homework
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../03/day_03.html">
+   Day 03: Data visualization
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../03/recap_data.html">
+     Recap data discussion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../03/data_viz_blank.html">
+     Data visualization
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../03/best_practices_viz.html">
+     Best practices for visualization
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../03/best_practices_viz_blank.html">
+       Follow-along notebook
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../03/reading_papers.html">
+     Reading papers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../03/homework_03.html">
+     Homework
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../04/day_04.html">
+   Day 04: ML speedrun
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../04/recap_viz.html">
+     Recap visualization discussion
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../04/intro_ml.html">
+     Introduction to ML
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+    <label for="toctree-checkbox-8">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../04/intro_ml_blank.html">
+       Follow-along notebook
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../04/ml_perf.html">
+     Quantifying performance
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+    <label for="toctree-checkbox-9">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../04/ml_perf_blank.html">
+       Follow-along notebook
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../04/features.html">
+     Featurization
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+    <label for="toctree-checkbox-10">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../04/features_blank.html">
+       Follow-along notebook
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../04/advanced_ml.html">
+     Advanced ML methods
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+    <label for="toctree-checkbox-11">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../04/advanced_ml_blank.html">
+       Follow-along notebook
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../04/practical.html">
+     Practical considerations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../04/homework_04.html">
+     Homework
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../05/day_05.html">
+   Day 05: MI research
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+  <label for="toctree-checkbox-12">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../05/recap_ml.html">
+     Recap ML discussion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../05/res_discuss.html">
+     Research discussion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../05/best_practices_blank.html">
+     Best practices for MI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../05/homework_05.html">
+     Homework
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../05/install_python.html">
+     Installing Python locally (optional)
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Week 2️⃣
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../week_2/06/day_06.html">
+   Day 06: Independence Day
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_2/07/day_07.html">
+   Day 07: Research
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+  <label for="toctree-checkbox-13">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_2/07/survey_07.html">
+     Check-in survey
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_2/08/day_08.html">
+   Day 08: Research + guest speaker
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+  <label for="toctree-checkbox-14">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_2/08/guest_ucb.html">
+     Guest speaker: Alex!
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_2/08/proposals.html">
+     Proposals
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_2/09/day_09.html">
+   Day 09: Research
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
+  <label for="toctree-checkbox-15">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_2/09/check_in.html">
+     Check-in meeting
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_2/10/day_10.html">
+   Day 10: Research + guest speaker
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
+  <label for="toctree-checkbox-16">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_2/10/guest_aionics.html">
+     Guest speaker: Austin!
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Week 3️⃣
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_3/11/day_11.html">
+   Day 11: Research + grad school
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
+  <label for="toctree-checkbox-17">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/11/presentations.html">
+     Giving presentations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/11/grad_school.html">
+     Grad school talk: Mark!
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_3/12/day_12.html">
+   Day 12: Research + guest speaker
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/>
+  <label for="toctree-checkbox-18">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/12/pull_requests.html">
+     GitHub pull requests
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/12/guest_citrine.html">
+     Guest speaker: Ventura!
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_3/13/day_13.html">
+   Day 13: Research
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/>
+  <label for="toctree-checkbox-19">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../week_3/13/deep_learning.html">
+     Deep learning (tentative)
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/>
+    <label for="toctree-checkbox-20">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../week_3/13/deep_learning_blank.html">
+       Deep learning notebook
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_3/14/day_14.html">
+   Day 14: Slam presentations
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/>
+  <label for="toctree-checkbox-21">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/14/peer_review.html">
+     Peer review
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/14/final_presentations.html">
+     Final presentations
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_3/15/day_15.html">
+   Day 15: Conclusions
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/>
+  <label for="toctree-checkbox-22">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/15/summary.html">
+     Summary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/15/reflections.html">
+     Reflections
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/15/next.html">
+     What’s next?
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/15/finale.html">
+     Finale
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Appendices 📝
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../appendix/acknowl.html">
+   1. Acknowledgements
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../appendix/glossary.html">
+   2. Glossary
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../appendix/future.html">
+   3. Future directions 🛣
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/week_1/02/materials_project_blank.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/enze-chen/mi-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/enze-chen/mi-book/issues/new?title=Issue%20on%20page%20%2Fweek_1/02/materials_project_blank.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/enze-chen/mi-book/edit/master/week_1/02/materials_project_blank.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        
+        <a class="jupyterhub-button" href="https://staging.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/enze-chen/mi-book&urlpath=tree/mi-book/week_1/02/materials_project_blank.ipynb&branch=master"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
+                data-placement="left"><img class="jupyterhub-button-logo"
+                    src="../../_static/images/logo_jupyterhub.svg"
+                    alt="Interact on JupyterHub">JupyterHub</button></a>
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/enze-chen/mi-book/blob/master/week_1/02/materials_project_blank.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#learning-objectives">
+   Learning objectives
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#contents">
+   Contents
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#api-overview">
+   API overview
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#rest">
+     REST 😴
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#materials-api">
+   Materials API
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#api-key">
+     API key
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#option-1-saving-the-api-key-in-your-systems-environment-variables">
+     Option 1: saving the API key in your system’s environment variables
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#option-2-saving-the-api-key-in-another-file">
+     Option 2: saving the API key in another file
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#making-requests-for-data">
+     Making
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       requests
+      </span>
+     </code>
+     for data
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ground-states-and-convex-hulls">
+     Ground states and convex hulls
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pymatgen-tutorial">
+   Pymatgen tutorial
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#more-mprester-examples">
+     More
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       MPRester
+      </span>
+     </code>
+     examples
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#other-criteria-and-properties-settings">
+       Other
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         criteria
+        </span>
+       </code>
+       and
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         properties
+        </span>
+       </code>
+       settings
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#revisiting-dielectrics-and-mongodb-syntax">
+       Revisiting dielectrics and MongoDB syntax
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exercise-find-all-stable-metal-oxides-in-mp-with-a-band-gap-exceeding-6-ev">
+     Exercise: Find all stable metal oxides in MP with a band gap exceeding 6 eV
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion">
+   Conclusion
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="the-materials-project">
+<h1>The Materials Project<a class="headerlink" href="#the-materials-project" title="Permalink to this headline">¶</a></h1>
+<p><em>Authors: Enze Chen and Mark Asta (University of California, Berkeley)</em></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is an interactive exercise, so you will want to click the <span class="fa fa-rocket"></span> and open the notebook in DataHub (or Colab for non-UCB students).</p>
+</div>
+<div class="section" id="learning-objectives">
+<h2>Learning objectives<a class="headerlink" href="#learning-objectives" title="Permalink to this headline">¶</a></h2>
+<p>This notebook contains a series of exercises that explore the <a class="reference external" href="https://materialsproject.org/open">Materials API (MAPI)</a>, with some content borrowed from the <a class="reference external" href="https://workshop.materialsproject.org/">Materials Project Workshop</a> and <a class="reference external" href="http://matgenb.materialsvirtuallab.org/">Materials Virtual Lab</a>.
+We want to give you some hands-on practice working with the MAPI so that you:</p>
+<ol class="simple">
+<li><p>Are familiar with REST principles and API usage (broadly speaking).</p></li>
+<li><p>Feel comfortable using the MAPI and <a class="reference external" href="https://pymatgen.org/">Pymatgen</a> for your self-directed research.</p></li>
+<li><p>Learn best practices for working with programmatic tools.</p></li>
+</ol>
+<p>We will progress through most of this notebook together as a group and we’re happy to answer any questions you may have about this content.</p>
+</div>
+<div class="section" id="contents">
+<h2>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h2>
+<p>These exercises are grouped into the following sections:</p>
+<ol class="simple">
+<li><p><a class="reference external" href="#API-overview">API overview</a></p></li>
+<li><p><a class="reference external" href="#Materials-API">Materials API</a></p></li>
+<li><p><a class="reference external" href="#Pymatgen-tutorial">Pymatgen tutorial</a></p></li>
+</ol>
+</div>
+<div class="section" id="api-overview">
+<h2>API overview<a class="headerlink" href="#api-overview" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="#Contents">Back to top</a></p>
+<p>The word “API” is a term that you’ve probably heard before, and it’s short for “application programming interface” (which you may not have heard before).
+What an API does is that it gives a way for your computer to communicate with a database through a series of actions that you <em>call</em>.
+One benefit of having an API is that it hides away the implementation details of the database and you can focus on getting the data you need, with the method of your choice—like Python!
+This would be analogous to, instead of writing <code class="docutils literal notranslate"><span class="pre">with</span> <span class="pre">open('ridiculous/path/that/we/never/remember')</span></code> and sifting through the file, simply saying “<em>Accio, data!</em>”… yeah, something like that. 😅</p>
+<p><img alt="API" src="../../_images/api.png" /></p>
+<div class="section" id="rest">
+<h3>REST 😴<a class="headerlink" href="#rest" title="Permalink to this headline">¶</a></h3>
+<p>As we all know, “All APIs are equal, but some APIs are more equal than others.”
+In particular, a preferred design of APIs is one that follows the <a class="reference external" href="https://en.wikipedia.org/wiki/Representational_state_transfer">Representational State Transfer (REST)</a> architectural style, which enforces a standardized set of commands that can be performed over <strong>HTTP requests</strong>.
+APIs that obey these principles are termed “RESTful” and they allow the data to be queried with <strong>unique resource IDs</strong> in a uniform manner.
+The details of this aren’t too important for this module, but later when we talk about access patterns you will at least be familiar with some of the underlying context.</p>
+</div>
+</div>
+<div class="section" id="materials-api">
+<h2>Materials API<a class="headerlink" href="#materials-api" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="#Contents">Back to top</a></p>
+<p>Now we’re ready to work with <a class="reference external" href="https://materialsproject.org/open">the Materials API</a>, or MAPI, and programmatically access data from the MP database.</p>
+<div class="section" id="api-key">
+<h3>API key<a class="headerlink" href="#api-key" title="Permalink to this headline">¶</a></h3>
+<p>For security reasons, MAPI (and most APIs) requires an <strong>API key</strong> in order for you to access the data.
+This key can be generated from the <a class="reference external" href="https://materialsproject.org/dashboard">MP Dashboard</a> and is <strong>unique to you</strong>.
+Therefore, you should keep this key private so no one uses it for nefarious purposes.</p>
+<p>While this intuitively makes sense, how might we implement it in our code that is later shared with our collaborators?
+In particular, it seems like we would have to <em>hard code</em> it as a string in our code, and then have to remember to scrub it later, which sounds risky.
+As a solution to this problem, we’ll suggest two alternatives, one of which follows best practice and the other is a
+temporary workaround.</p>
+</div>
+<div class="section" id="option-1-saving-the-api-key-in-your-systems-environment-variables">
+<h3>Option 1: saving the API key in your system’s environment variables<a class="headerlink" href="#option-1-saving-the-api-key-in-your-systems-environment-variables" title="Permalink to this headline">¶</a></h3>
+<p>All operating systems have a set of environment variables that programs will reference (such as <code class="docutils literal notranslate"><span class="pre">$HOME</span></code> or <code class="docutils literal notranslate"><span class="pre">$PATH</span></code>), and it’s possible to add to this list by creating your own environment variables.
+Therefore, one option is to store your MP API key under a new variable named <code class="docutils literal notranslate"><span class="pre">MAPI_KEY</span></code>, much like how you associate entities in a Python <code class="docutils literal notranslate"><span class="pre">dict</span></code>.
+The API key is stored <em>locally</em> on your computer only.</p>
+<p>Now when you want to use the API key in your code, you will type:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="n">api_key</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;MAPI_KEY&#39;</span><span class="p">]</span>
+<span class="c1"># do something with API key now stored in the &quot;api_key&quot; variable</span>
+</pre></div>
+</div>
+<p>where <a class="reference external" href="https://docs.python.org/3/library/os.html"><code class="docutils literal notranslate"><span class="pre">os</span></code></a> is a handy package that interfaces with your operating system.
+Note that the above Python code will work on any OS, and runs for any user that has this set up without revealing any private information!</p>
+</div>
+<div class="section" id="option-2-saving-the-api-key-in-another-file">
+<h3>Option 2: saving the API key in another file<a class="headerlink" href="#option-2-saving-the-api-key-in-another-file" title="Permalink to this headline">¶</a></h3>
+<p>The first method is the preferred way, but it only works if we can access our environment variables.
+This might fail if you’re on a company device that doesn’t give you admin priviledges, or you’re on a [shared] cloud system like DataHub where it’s not clear how one would do this—safely, or at all. 😓
+So, the workaround that we’ve devised for you, at least for this lesson, is for you to store your API in an external text file, and then load the <code class="docutils literal notranslate"><span class="pre">api_key</span></code> variable by reading the contents of that file.</p>
+<p>Please click the <code class="docutils literal notranslate"><span class="pre">{jupyterhub}</span></code> logo in the top-left corner and navigate to the file</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mi</span><span class="o">-</span><span class="n">book</span> <span class="o">&gt;</span> <span class="n">assets</span> <span class="o">&gt;</span> <span class="n">files</span> <span class="o">&gt;</span> <span class="n">mp_api_key</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+<p>Once there, copy your API key from <a class="reference external" href="https://materialsproject.org/dashboard">the website</a> and paste it onto <strong>the second line</strong> of that file, below the comment.
+Then <strong>save the file</strong> and close the tab.
+When we can then load in our API key with the familiar syntax:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;../../assets/files/mp_api_key.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">api_key</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>In the code below, we combine the two methods into one using a <code class="docutils literal notranslate"><span class="pre">try</span></code>/<code class="docutils literal notranslate"><span class="pre">except</span></code> block and include some <a class="reference external" href="https://python-reference.readthedocs.io/en/latest/docs/statements/assert.html"><code class="docutils literal notranslate"><span class="pre">assert</span></code></a> statements as some guardrails.
+Run this code <strong>ONLY AFTER</strong> you have pasted your API key into the correct place (see above).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># get API key using one of two ways</span>
+<span class="n">api_key</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="k">try</span><span class="p">:</span>       <span class="c1"># this is for running locally</span>
+    <span class="kn">import</span> <span class="nn">os</span>
+    <span class="n">api_key</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;MAPI_KEY&#39;</span><span class="p">]</span>
+<span class="k">except</span><span class="p">:</span>    <span class="c1"># this is for running on DataHub</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;../../assets/files/mp_api_key.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">api_key</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+
+<span class="c1"># assert helps catch potential bugs</span>
+<span class="k">assert</span> <span class="n">api_key</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">,</span> <span class="s1">&#39;API key not set correctly in environment!&#39;</span>
+<span class="k">assert</span> <span class="n">api_key</span> <span class="o">!=</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;API key not found in mp_api_key.txt file!&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="making-requests-for-data">
+<h3>Making <code class="docutils literal notranslate"><span class="pre">requests</span></code> for data<a class="headerlink" href="#making-requests-for-data" title="Permalink to this headline">¶</a></h3>
+<p>Alright, now that we have the boilerplate out of the way, it’s time to pull down some data!
+We will first do it the old-fashioned way where we create a URL for the data we want to get in the form of an HTTP request.
+The RESTful URL format for the MAPI is as follows:</p>
+<p><img alt="MAPI URL" src="../../_images/mapi_url.png" /></p>
+<p>There are more details to this (which you can see in the paper by <a class="reference external" href="http://www.sciencedirect.com/science/article/pii/S0927025614007113">Ong et al. <em>Comp. Mater. Sci.</em>, 2015</a>), but these are the main pieces.
+In fact, the only part that really has to change is the <strong>identifier</strong>, which could be:</p>
+<ul class="simple">
+<li><p>a chemical formula, like what’s pictured.
+Note that this will return <em>all</em> materials in the database with the same <em>ratio</em> of elements.</p></li>
+<li><p>a MP ID, for a specific material.</p></li>
+<li><p>a chemical system (<a class="reference external" href="https://pymatgen.org/pymatgen.entries.entry_tools.html?highlight=chemsys">chemsys</a>), <code class="docutils literal notranslate"><span class="pre">A-B-C</span></code>, that gets all systems <em>and subsystems</em> with those elements in <em>any ratio</em>.</p></li>
+</ul>
+<p>Conveniently, the data returned from this query will be in <strong>JSON format</strong>, which you already know how to parse!</p>
+<p>What we haven’t covered yet, however, is how we can make <em>Python</em> access this URL instead of our web browser.
+To do this, we will use the powerful <a class="reference external" href="https://docs.python-requests.org/en/master/index.html"><code class="docutils literal notranslate"><span class="pre">requests</span></code></a> package, which allows us to make a <a class="reference external" href="https://www.tutorialspoint.com/http/http_requests.htm">GET request</a> with the following syntax:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;API_KEY&#39;</span><span class="p">:</span><span class="n">api_key</span><span class="p">})</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">url</span></code> is a variable placeholder for the specific URL we want, which we will specify below.
+We have to include a dictionary for our API key in order to authenticate the request.
+Finally, in the third line, because we <em>know</em> that the data is returned as JSON, we can use <a class="reference external" href="https://docs.python-requests.org/en/master/user/quickstart/#json-response-content">the built-in JSON decoder</a> to convert our data quickly.
+Let’s see this in action!</p>
+<div class="cell tag_remove-output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">import</span> <span class="nn">pprint</span>
+<span class="n">formula</span> <span class="o">=</span> <span class="s1">&#39;Si&#39;</span>
+<span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;https://www.materialsproject.org/rest/v2/materials/</span><span class="si">{</span><span class="n">formula</span><span class="si">}</span><span class="s1">/vasp&#39;</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;API_KEY&#39;</span><span class="p">:</span> <span class="n">api_key</span><span class="p">})</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+<span class="n">pprint</span><span class="o">.</span><span class="n">pprint</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Since there’s <strong>a lot</strong> of JSON output, we use the <a class="reference external" href="https://docs.python.org/3/library/pprint.html"><code class="docutils literal notranslate"><span class="pre">pprint</span></code></a> package to format it to be more readable.</p>
+<p>Also, wow!
+How did we get so many records? 😅
+What happens if we change the <code class="docutils literal notranslate"><span class="pre">formula</span></code> variable up above?</p>
+<hr class="docutils" />
+<p>We see that there’s a bit of metadata (e.g., when the request was made) and also our data stored in the <code class="docutils literal notranslate"><span class="pre">response</span></code> key of this dictionary.
+Even then, it seems like there’s a ton of data!
+Any of the properties stand out to you?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">results</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;response&#39;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">results</span><span class="p">)</span><span class="si">}</span><span class="s1"> results were returned for </span><span class="si">{</span><span class="n">formula</span><span class="si">}</span><span class="s1">.&#39;</span><span class="p">)</span>
+
+<span class="n">formulas</span> <span class="o">=</span> <span class="p">[</span><span class="n">res</span><span class="p">[</span><span class="s1">&#39;full_formula&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">res</span> <span class="ow">in</span> <span class="n">results</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;The full formulas are </span><span class="si">{</span><span class="n">formulas</span><span class="si">}</span><span class="s1">.&#39;</span><span class="p">)</span>
+
+<span class="n">ground</span> <span class="o">=</span> <span class="p">[</span><span class="n">res</span> <span class="k">for</span> <span class="n">res</span> <span class="ow">in</span> <span class="n">results</span> <span class="k">if</span> <span class="n">res</span><span class="p">[</span><span class="s1">&#39;e_above_hull&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mf">0.0001</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">ground</span><span class="p">))</span>    <span class="c1"># how many records are there now? Why?</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>39 results were returned for Si.
+The full formulas are [&#39;Si8&#39;, &#39;Si4&#39;, &#39;Si58&#39;, &#39;Si68&#39;, &#39;Si6&#39;, &#39;Si46&#39;, &#39;Si1&#39;, &#39;Si232&#39;, &#39;Si8&#39;, &#39;Si23&#39;, &#39;Si12&#39;, &#39;Si2&#39;, &#39;Si100&#39;, &#39;Si4&#39;, &#39;Si8&#39;, &#39;Si8&#39;, &#39;Si1&#39;, &#39;Si46&#39;, &#39;Si8&#39;, &#39;Si4&#39;, &#39;Si8&#39;, &#39;Si1&#39;, &#39;Si100&#39;, &#39;Si100&#39;, &#39;Si100&#39;, &#39;Si8&#39;, &#39;Si82&#39;, &#39;Si6&#39;, &#39;Si2&#39;, &#39;Si3&#39;, &#39;Si40&#39;, &#39;Si106&#39;, &#39;Si2&#39;, &#39;Si41&#39;, &#39;Si6&#39;, &#39;Si1&#39;, &#39;Si100&#39;, &#39;Si4&#39;, &#39;Si34&#39;].
+1
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="ground-states-and-convex-hulls">
+<h3>Ground states and convex hulls<a class="headerlink" href="#ground-states-and-convex-hulls" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">convex_hull_NiAl</span> <span class="kn">import</span> <span class="o">*</span>   <span class="c1"># here we show how you can import your own Python functions :)</span>
+<span class="n">plot_convex_hull</span><span class="p">(</span><span class="n">api_key</span><span class="p">)</span>        <span class="c1"># don&#39;t worry, we&#39;ll cover plotting tomorrow! a sneak peek ;)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/materials_project_blank_16_0.png" src="../../_images/materials_project_blank_16_0.png" />
+</div>
+</div>
+<p>Wow, using this method, we can conceivably pull all of the data off of MP (don’t actually try this, they will block you if you’re not careful 😁), and should have more than enough data to begin a data-driven exploration of materials design.</p>
+<p><em>But</em>, this method seems a little lacking, because, at the end of the day, it’s actually not too different from our files approach!</p>
+<ol class="simple">
+<li><p>Note that we had to type out the full URL to make the request, and thus know <em>a priori</em> what compounds/materials we needed and where in the MP database it’s located (the other parts of the URL).
+If we wanted more materials, we’d have to write a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop through those formulas, which seems logical, but cumbersome.</p></li>
+<li><p>Furthermore, this method returned basically <em>all</em> the data associated with each material, when in most practical use cases, we only need a small subset of properties.
+This is one of the advantages of an API, after all, and it would be nice if we had a higher-level interface that gave us only what we needed on-demand…</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="pymatgen-tutorial">
+<h2>Pymatgen tutorial<a class="headerlink" href="#pymatgen-tutorial" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="#Contents">Back to top</a></p>
+<p>Enter Python Materials Genomics, or <a class="reference external" href="https://pymatgen.org/index.html"><strong>Pymatgen</strong></a>, which is a package for materials analysis that also interfaces with the MAPI in a cleaner way than the <code class="docutils literal notranslate"><span class="pre">requests</span></code> approach.
+To access the MAPI, we use the <a class="reference external" href="https://pymatgen.org/pymatgen.ext.matproj.html#pymatgen.ext.matproj.MPRester"><code class="docutils literal notranslate"><span class="pre">MPRester()</span></code></a>  module, which is imported from <code class="docutils literal notranslate"><span class="pre">pymatgen.ext.matproj</span></code> and called as follows:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="n">MPRester</span><span class="p">(</span><span class="n">api_key</span><span class="p">)</span> <span class="k">as</span> <span class="n">mpr</span><span class="p">:</span>
+    <span class="c1"># do something, such as mpr.query()</span>
+</pre></div>
+</div>
+<p>We see that the <code class="docutils literal notranslate"><span class="pre">with</span></code> keyword appears again, which safely closes the connection to the MAPI when we are done with it.
+<code class="docutils literal notranslate"><span class="pre">mpr</span></code> is now the variable name for the object that we can use to make API calls.
+We can’t demonstrate all the methods today, mostly because it’s <em>incredibly</em> flexible, but we’ll briefly discuss how you might use the <a class="reference external" href="https://pymatgen.org/pymatgen.ext.matproj.html#pymatgen.ext.matproj.MPRester.query"><code class="docutils literal notranslate"><span class="pre">query()</span></code></a> method in particular.</p>
+<p>First let’s just run an example to clear up some of the abstractness.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pymatgen.ext.matproj</span> <span class="kn">import</span> <span class="n">MPRester</span>
+
+<span class="n">props</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;formation_energy_per_atom&#39;</span><span class="p">,</span> <span class="s1">&#39;pretty_formula&#39;</span><span class="p">,</span> <span class="s1">&#39;e_above_hull&#39;</span><span class="p">,</span> <span class="s1">&#39;material_id&#39;</span><span class="p">]</span>
+<span class="k">with</span> <span class="n">MPRester</span><span class="p">(</span><span class="n">api_key</span><span class="p">)</span> <span class="k">as</span> <span class="n">mpr</span><span class="p">:</span>
+    <span class="n">entries</span> <span class="o">=</span> <span class="n">mpr</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">criteria</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;elements&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Al&#39;</span><span class="p">,</span> <span class="s1">&#39;Ni&#39;</span><span class="p">]},</span> 
+                        <span class="n">properties</span><span class="o">=</span><span class="n">props</span><span class="p">)</span>
+    
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Results are returned as a </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">entries</span><span class="p">)</span><span class="si">}</span><span class="s1">.&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;There are </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">entries</span><span class="p">)</span><span class="si">}</span><span class="s1"> results in total.&#39;</span><span class="p">)</span>
+<span class="n">entries</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Results are returned as a &lt;class &#39;list&#39;&gt;.
+There are 13 results in total.
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;formation_energy_per_atom&#39;: -0.4121809650000001,
+ &#39;pretty_formula&#39;: &#39;AlNi&#39;,
+ &#39;e_above_hull&#39;: 0.24662689499999946,
+ &#39;material_id&#39;: &#39;mp-1228854&#39;}
+</pre></div>
+</div>
+</div>
+</div>
+<p>While we won’t be working with NiAl alloys in this module, you can at least check to see if the above results correspond with the previous plot (they better…).
+In any case, we make a few observations:</p>
+<ul class="simple">
+<li><p>The import statement is a little more complex than what we’ve seen so far.
+This is a good thing(?) because Pymatgen has grown quite a bit over the years and now supports a lot of functionality, so the developers created this submodule structure so you only have to import what you need.</p></li>
+<li><p>We specified a list of property keys for the properties that we’re interested in.</p></li>
+<li><p>For the arguments to <code class="docutils literal notranslate"><span class="pre">query()</span></code>, we used a dictionary for the <code class="docutils literal notranslate"><span class="pre">criteria</span></code> and the list of properties for the <code class="docutils literal notranslate"><span class="pre">properties</span></code>.</p></li>
+<li><p>We see the results were returned as a list (JSON).
+You can verify <a class="reference external" href="https://materialsproject.org/#search/materials/%7B%22nelements%22%3A2%2C%22elements%22%3A%22Al-Ni%22%7D">in the UI</a> that there should only be 13 entries.</p></li>
+<li><p>Each entry now <strong>only contains the properties we asked for</strong> instead of everything.
+This is very nice!</p></li>
+</ul>
+<p>We imagine you have a lot of questions at this point and we’d be happy to take them.</p>
+<hr class="docutils" />
+<p>We’ll also go through a few more examples to help you gain comfort in using <code class="docutils literal notranslate"><span class="pre">MPRester()</span></code> and we’ll also give some tips.
+For example, one question that you might have is, “<strong>What properties are available to me</strong>? It seems silly for me to specify them if I don’t even know their names.”
+To answer this, we present the following:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="n">MPRester</span><span class="p">(</span><span class="n">api_key</span><span class="p">)</span> <span class="k">as</span> <span class="n">mpr</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">mpr</span><span class="o">.</span><span class="n">supported_properties</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;energy&#39;, &#39;energy_per_atom&#39;, &#39;volume&#39;, &#39;formation_energy_per_atom&#39;, &#39;nsites&#39;, &#39;unit_cell_formula&#39;, &#39;pretty_formula&#39;, &#39;is_hubbard&#39;, &#39;elements&#39;, &#39;nelements&#39;, &#39;e_above_hull&#39;, &#39;hubbards&#39;, &#39;is_compatible&#39;, &#39;spacegroup&#39;, &#39;task_ids&#39;, &#39;band_gap&#39;, &#39;density&#39;, &#39;icsd_id&#39;, &#39;icsd_ids&#39;, &#39;cif&#39;, &#39;total_magnetization&#39;, &#39;material_id&#39;, &#39;oxide_type&#39;, &#39;tags&#39;, &#39;elasticity&#39;)
+</pre></div>
+</div>
+</div>
+</div>
+<p>Unfortunately, that’s not even everything, and there are a few more keys <a class="reference external" href="https://docs.materialsproject.org/open-apis/the-materials-api/#resource-details">in the documentation</a>.</p>
+<hr class="docutils" />
+<p>You might also have a related question and that is, “<strong>How do I specify different search criteria</strong>?”
+For that, the answer is less clear, with the best answer being: “Just look at a lot of examples.”
+The exact structure of the query <em>is</em> database dependent, with MAPI in particular using <a class="reference external" href="https://www.mongodb.com/">MongoDB</a> and its associated syntax.
+We’ll provide some more examples below, which will hopefully give you enough to start with.</p>
+<div class="section" id="more-mprester-examples">
+<h3>More <code class="docutils literal notranslate"><span class="pre">MPRester</span></code> examples<a class="headerlink" href="#more-mprester-examples" title="Permalink to this headline">¶</a></h3>
+<p>Here we provide a few more <code class="docutils literal notranslate"><span class="pre">query()</span></code> examples.</p>
+<div class="section" id="other-criteria-and-properties-settings">
+<h4>Other <code class="docutils literal notranslate"><span class="pre">criteria</span></code> and <code class="docutils literal notranslate"><span class="pre">properties</span></code> settings<a class="headerlink" href="#other-criteria-and-properties-settings" title="Permalink to this headline">¶</a></h4>
+<p>In this first one, we search for ground state materials with only one element.
+We will return the formula, density, <a class="reference external" href="https://en.wikipedia.org/wiki/Space_group">space group</a>, and <a class="reference external" href="https://pymatgen.org/pymatgen.core.structure.html">structure</a>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">crit</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;nelements&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;e_above_hull&#39;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">}</span>
+<span class="n">props</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;pretty_formula&#39;</span><span class="p">,</span> <span class="s1">&#39;density&#39;</span><span class="p">,</span> <span class="s1">&#39;spacegroup&#39;</span><span class="p">,</span> <span class="s1">&#39;structure&#39;</span><span class="p">]</span>
+
+<span class="k">with</span> <span class="n">MPRester</span><span class="p">(</span><span class="n">api_key</span><span class="p">)</span> <span class="k">as</span> <span class="n">mpr</span><span class="p">:</span>
+    <span class="n">entries</span> <span class="o">=</span> <span class="n">mpr</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">criteria</span><span class="o">=</span><span class="n">crit</span><span class="p">,</span> <span class="n">properties</span><span class="o">=</span><span class="n">props</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;We obtained </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">entries</span><span class="p">)</span><span class="si">}</span><span class="s1"> total results.&#39;</span><span class="p">)</span>
+<span class="n">entries</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>We obtained 91 total results.
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;pretty_formula&#39;: &#39;Au&#39;,
+ &#39;density&#39;: 18.02565607297311,
+ &#39;spacegroup&#39;: {&#39;symprec&#39;: 0.1,
+  &#39;source&#39;: &#39;spglib&#39;,
+  &#39;symbol&#39;: &#39;Fm-3m&#39;,
+  &#39;number&#39;: 225,
+  &#39;point_group&#39;: &#39;m-3m&#39;,
+  &#39;crystal_system&#39;: &#39;cubic&#39;,
+  &#39;hall&#39;: &#39;-F 4 2 3&#39;},
+ &#39;structure&#39;: Structure Summary
+ Lattice
+     abc : 2.9495460310820714 2.9495460310820714 2.9495460310820714
+  angles : 60.00000000000001 60.00000000000001 60.00000000000001
+  volume : 18.144731116281537
+       A : 0.0 2.085644 2.085644
+       B : 2.085644 0.0 2.085644
+       C : 2.085644 2.085644 0.0
+ PeriodicSite: Au (0.0000, 0.0000, 0.0000) [0.0000, 0.0000, 0.0000]}
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="revisiting-dielectrics-and-mongodb-syntax">
+<h4>Revisiting dielectrics and MongoDB syntax<a class="headerlink" href="#revisiting-dielectrics-and-mongodb-syntax" title="Permalink to this headline">¶</a></h4>
+<p>Remember the dielectric constants dataset from the last notebook?
+That work was published four years ago with 1056 materials, and it’s conceivable that the workflow has since been used for many more calculations.
+Just how many more? Let’s find out.</p>
+<p>The key to search for calculated dielectric properties is <code class="docutils literal notranslate"><span class="pre">diel</span></code>.
+But if we just queried on this, we would actually get a lot of results where <code class="docutils literal notranslate"><span class="pre">diel=None</span></code>.
+Therefore, we need to set a criteria to filter for only the materials that actually have dielectric properties calculated.</p>
+<p>For that, we turn to MongoDB’s syntax for <a class="reference external" href="https://docs.mongodb.com/manual/reference/operator/query/#query-selectors">query operators</a> that allows us to bulid complex conditionals into our queries.
+These all start with the <code class="docutils literal notranslate"><span class="pre">$</span></code> character and some important MongoDB operators you should be familiar with are:</p>
+<ul class="simple">
+<li><p>$in (in)</p></li>
+<li><p>$nin (not in)</p></li>
+<li><p>$gt (greater than)</p></li>
+<li><p>$gte (greater than or equal to)</p></li>
+<li><p>$lt (less than)</p></li>
+<li><p>$lte (less than or equal to)</p></li>
+<li><p>$not (is not)</p></li>
+<li><p>$exists (matches existing field)</p></li>
+<li><p>$all (matches all elements in array)</p></li>
+</ul>
+<p>We used these more advanced operators as <em>strings</em> as follows:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;field_name&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;$op&#39;</span><span class="p">:</span> <span class="n">value</span><span class="p">}}</span>
+</pre></div>
+</div>
+<p>For example, “entries with energy above the convex hull that is less than 0.05 eV” would be:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;e_above_hull&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;$lt&#39;</span><span class="p">:</span> <span class="mf">0.05</span><span class="p">}}</span>
+</pre></div>
+</div>
+<p>In our case, we will check that</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;diel&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;$exists&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">}}</span>
+</pre></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">crit</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;diel&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;$exists&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">}}</span>
+<span class="n">props</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;material_id&#39;</span><span class="p">,</span> <span class="s1">&#39;pretty_formula&#39;</span><span class="p">,</span> <span class="s1">&#39;diel&#39;</span><span class="p">]</span>
+
+<span class="k">with</span> <span class="n">MPRester</span><span class="p">(</span><span class="n">api_key</span><span class="p">)</span> <span class="k">as</span> <span class="n">mpr</span><span class="p">:</span>
+    <span class="n">entries</span> <span class="o">=</span> <span class="n">mpr</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">criteria</span><span class="o">=</span><span class="n">crit</span><span class="p">,</span> <span class="n">properties</span><span class="o">=</span><span class="n">props</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">entries</span><span class="p">))</span>
+<span class="n">entries</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "d0f0a07468804aac9aea1cefefec19a9", "version_major": 2, "version_minor": 0}
+</script><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>7180
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;material_id&#39;: &#39;mp-1008867&#39;,
+ &#39;pretty_formula&#39;: &#39;NaCuO&#39;,
+ &#39;diel&#39;: {&#39;e_electronic&#39;: [[1.0,
+    5.438807266083676e-17,
+    2.4650520398003856e-34],
+   [5.438807266083676e-17, 1.0, 5.438807266083676e-17],
+   [2.4650520398003856e-34, 5.438807266083676e-17, 1.0]],
+  &#39;e_total&#39;: [[5.0287299999999995,
+    2.735029326317298e-16,
+    1.2396081144105392e-33],
+   [2.735029326317298e-16, 5.0287299999999995, 2.735029326317298e-16],
+   [1.2396081144105392e-33, 2.735029326317298e-16, 5.0287299999999995]],
+  &#39;n&#39;: 1.0,
+  &#39;poly_electronic&#39;: 1.0,
+  &#39;poly_total&#39;: 5.0287299999999995}}
+</pre></div>
+</div>
+</div>
+</div>
+<p>😲 Over 7000! That’s a lot.
+Since the query returned so many results, we even got a nice progress bar to return our results in chunks.</p>
+</div>
+</div>
+<div class="section" id="exercise-find-all-stable-metal-oxides-in-mp-with-a-band-gap-exceeding-6-ev">
+<h3>Exercise: Find all stable metal oxides in MP with a band gap exceeding 6 eV<a class="headerlink" href="#exercise-find-all-stable-metal-oxides-in-mp-with-a-band-gap-exceeding-6-ev" title="Permalink to this headline">¶</a></h3>
+<p>We’ve started a bit of the code for you to again showcase some of the other Pymatgen functionality (<a class="reference external" href="https://pymatgen.org/pymatgen.core.periodic_table.html#pymatgen.core.periodic_table.Element"><code class="docutils literal notranslate"><span class="pre">Element</span></code></a> in particular), but we’ll ask you to complete the correct filter criteria.
+You should return the <code class="docutils literal notranslate"><span class="pre">material_id</span></code>, <code class="docutils literal notranslate"><span class="pre">pretty_formula</span></code>, <code class="docutils literal notranslate"><span class="pre">band_gap</span></code> properties.</p>
+<p><em>Hints</em>:</p>
+<ul class="simple">
+<li><p>You will want to match an <code class="docutils literal notranslate"><span class="pre">element</span></code> criteria such that there is <em>at least</em> one metal and <em>always</em> an oxygen.</p></li>
+<li><p>You will want to include another criteria for the number of elements to be <code class="docutils literal notranslate"><span class="pre">2</span></code>.</p></li>
+<li><p>You will want another criteria to filter <code class="docutils literal notranslate"><span class="pre">e_above_hull</span></code> with a sensible threshold (<code class="docutils literal notranslate"><span class="pre">0.1</span></code> eV, perhaps).</p></li>
+<li><p>You will want a filter for the <code class="docutils literal notranslate"><span class="pre">band_gap</span></code>.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pymatgen.ext.matproj</span> <span class="kn">import</span> <span class="n">MPRester</span>
+<span class="kn">from</span> <span class="nn">pymatgen.core.periodic_table</span> <span class="kn">import</span> <span class="n">Element</span>
+<span class="n">elems</span> <span class="o">=</span> <span class="p">[</span><span class="n">Element</span><span class="o">.</span><span class="n">from_Z</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">119</span><span class="p">)]</span>   <span class="c1"># create Element from atomic number</span>
+<span class="n">metals</span> <span class="o">=</span> <span class="p">[</span><span class="n">e</span><span class="o">.</span><span class="n">symbol</span> <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">elems</span> <span class="k">if</span> <span class="n">e</span><span class="o">.</span><span class="n">is_metal</span><span class="p">]</span>     <span class="c1"># filter using is_metal property</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;The first ten metals are: </span><span class="si">{</span><span class="n">metals</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>    <span class="c1"># print for validation</span>
+<span class="c1"># # -------------   WRITE YOUR CODE IN THE SPACE BELOW   ---------- #</span>
+<span class="c1"># </span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The first ten metals are: [&#39;Li&#39;, &#39;Be&#39;, &#39;Na&#39;, &#39;Mg&#39;, &#39;Al&#39;, &#39;K&#39;, &#39;Ca&#39;, &#39;Sc&#39;, &#39;Ti&#39;, &#39;V&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<p>We taught you the <code class="docutils literal notranslate"><span class="pre">query()</span></code> method first because it’s the most expressive and perhaps logical (in the sense it is what you as an engineer would want to get out of a database and how you would logically approach extracting the data).
+But there are some other methods that have more targeted applications that we also want to surface for you (the full list can be found in <a class="reference external" href="https://pymatgen.org/pymatgen.ext.matproj.html">the <code class="docutils literal notranslate"><span class="pre">MPRester</span></code> documentation</a>).</p>
+<p>The first method is <a class="reference external" href="https://pymatgen.org/pymatgen.ext.matproj.html#pymatgen.ext.matproj.MPRester.get_structure_by_material_id"><code class="docutils literal notranslate"><span class="pre">get_structure_by_material_id()</span></code></a>, which takes as input a MP ID and returns a Pymatgen <a class="reference external" href="https://pymatgen.org/pymatgen.core.structure.html">Structure</a> object.
+This gives information on the unit cell and lattice sites, which could be used for further analysis or ML features (more on this on Thursday).
+An example of how this can be used is as follows:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="n">MPRester</span><span class="p">(</span><span class="n">api_key</span><span class="p">)</span> <span class="k">as</span> <span class="n">mpr</span><span class="p">:</span>
+    <span class="n">struct</span> <span class="o">=</span> <span class="n">mpr</span><span class="o">.</span><span class="n">get_structure_by_material_id</span><span class="p">(</span><span class="s1">&#39;mp-2534&#39;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">struct</span><span class="o">.</span><span class="n">get_space_group_info</span><span class="p">())</span>
+<span class="n">struct</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;F-43m&#39;, 216)
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Structure Summary
+Lattice
+    abc : 4.065992685256824 4.065992685256824 4.065992685256824
+ angles : 60.00000000000001 60.00000000000001 60.00000000000001
+ volume : 47.531856924098754
+      A : 0.0 2.875091 2.875091
+      B : 2.875091 0.0 2.875091
+      C : 2.875091 2.875091 0.0
+PeriodicSite: Ga (0.0000, 0.0000, 0.0000) [0.0000, 0.0000, 0.0000]
+PeriodicSite: As (4.3126, 4.3126, 4.3126) [0.7500, 0.7500, 0.7500]
+</pre></div>
+</div>
+</div>
+</div>
+<p>Another method that is very useful when studying electronic properties of materials is <a class="reference external" href="https://pymatgen.org/pymatgen.ext.matproj.html#pymatgen.ext.matproj.MPRester.get_bandstructure_by_material_id"><code class="docutils literal notranslate"><span class="pre">get_bandstructure_by_material_id()</span></code></a>, which returns a Pymatgen <a class="reference external" href="https://pymatgen.org/pymatgen.electronic_structure.bandstructure.html">BandStructure</a> object.
+We’ll leave the discussion for band structures and density of states for Sinéad’s module, but just so you have an idea of what this looks like, we’ll use the <a class="reference external" href="https://pymatgen.org/pymatgen.electronic_structure.plotter.html#pymatgen.electronic_structure.plotter.BSPlotter">BSPlotter</a> module to visualization the bands.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pymatgen.electronic_structure.plotter</span> <span class="kn">import</span> <span class="n">BSPlotter</span>
+
+<span class="k">with</span> <span class="n">MPRester</span><span class="p">(</span><span class="n">api_key</span><span class="p">)</span> <span class="k">as</span> <span class="n">mpr</span><span class="p">:</span>
+    <span class="n">bs</span> <span class="o">=</span> <span class="n">mpr</span><span class="o">.</span><span class="n">get_bandstructure_by_material_id</span><span class="p">(</span><span class="s1">&#39;mp-2534&#39;</span><span class="p">)</span>
+
+<span class="n">BSPlotter</span><span class="p">(</span><span class="n">bs</span><span class="p">)</span><span class="o">.</span><span class="n">get_plot</span><span class="p">()</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/materials_project_blank_33_0.png" src="../../_images/materials_project_blank_33_0.png" />
+</div>
+</div>
+<p><em>But wait!</em>
+This is cool, you say, but how do we know <em>a priori</em> what the exact MP IDs are?
+The answer is, “You don’t; but luckily, <code class="docutils literal notranslate"><span class="pre">MPRester</span></code> can get us this information too.” 😁</p>
+<hr class="docutils" />
+<p>The <a class="reference external" href="https://pymatgen.org/pymatgen.ext.matproj.html#pymatgen.ext.matproj.MPRester.get_bandstructure_by_material_id"><code class="docutils literal notranslate"><span class="pre">get_materials_ids()</span></code></a> method takes in a formula or <a class="reference external" href="https://pymatgen.org/pymatgen.entries.entry_tools.html?highlight=chemsys">chemsys</a> and returns all the MP IDs with matching composition.
+This is a nice method to call towards the beginning of your data-driven efforts to collect all the relevant materials systems.
+For good measure, we also show a corresponding <code class="docutils literal notranslate"><span class="pre">query()</span></code> method, and you choose which one you prefer.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="n">MPRester</span><span class="p">(</span><span class="n">api_key</span><span class="p">)</span> <span class="k">as</span> <span class="n">mpr</span><span class="p">:</span>
+    <span class="n">SiO2</span> <span class="o">=</span> <span class="n">mpr</span><span class="o">.</span><span class="n">get_materials_ids</span><span class="p">(</span><span class="s1">&#39;SiO2&#39;</span><span class="p">)</span>
+<span class="c1">#     SiO2 = mpr.query(&#39;SiO2&#39;, properties=[&#39;material_id&#39;])   # equivalent</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">SiO2</span><span class="p">)</span><span class="si">}</span><span class="s1"> records found.&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;The first five MP IDs are: </span><span class="si">{</span><span class="n">SiO2</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>317 records found.
+The first five MP IDs are: [&#39;mp-10948&#39;, &#39;mp-553881&#39;, &#39;mp-557465&#39;, &#39;mp-558891&#39;, &#39;mp-561488&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<p>Pymatgen actually has <strong>a lot</strong> more functionality that analyzes materials data (from MP or otherwise), but that will be for another time.
+Feel free to ask during OH if you see something in the UI/API that interests you or you think might be useful for self-directed research.</p>
+</div>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h2>
+<p>This concludes our tutorial on the MAPI and Pymatgen.
+The primary goal here was just to get you familiar with the basic functionality so you can decide if it’s useful for your self-directed research (you might not need it, and that’s OK!).
+This knowledge will also be helpful if you do more programming or data science in the future since you almost certainly will need to interact with APIs, and all RESTful APIs are not too different.</p>
+<p>As always, please don’t hesitate to reach out on Slack if you have questions or concerns!</p>
+</div>
+</div>
+
+
+<script type="application/vnd.jupyter.widget-state+json">
+{"state": {"050ef3bdb65a4ea9b7e0444655ddea13": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "0cec3cfa96264a749c2a27088053d7a8": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "41ba1a187fbb47c9ba0f16728405aae0": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "42fe8b1128a04499befd3d06ea6002a8": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "HTMLModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HTMLModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HTMLView", "description": "", "description_tooltip": null, "layout": "IPY_MODEL_5d7af1c800ca4eedb7c6dd545057ec86", "placeholder": "\u200b", "style": "IPY_MODEL_601e4184cc3b4263b9d52757d81f36e1", "value": " 7180/7180 [00:06&lt;00:00, 1048.24it/s]"}}, "4deeaed9424145a8aa2c7aac1d4c63ba": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "ProgressStyleModel", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ProgressStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "bar_color": null, "description_width": ""}}, "5d7af1c800ca4eedb7c6dd545057ec86": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "601e4184cc3b4263b9d52757d81f36e1": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "DescriptionStyleModel", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "7bea30e33616411ebd6379cced4dd447": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "HTMLModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HTMLModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HTMLView", "description": "", "description_tooltip": null, "layout": "IPY_MODEL_41ba1a187fbb47c9ba0f16728405aae0", "placeholder": "\u200b", "style": "IPY_MODEL_ccb179b590f8467e8d7efd696cab94b2", "value": "100%"}}, "ccb179b590f8467e8d7efd696cab94b2": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "DescriptionStyleModel", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "d0f0a07468804aac9aea1cefefec19a9": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "HBoxModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HBoxView", "box_style": "", "children": ["IPY_MODEL_7bea30e33616411ebd6379cced4dd447", "IPY_MODEL_e1c50c0e08a1415bbbd9c9643873ebf4", "IPY_MODEL_42fe8b1128a04499befd3d06ea6002a8"], "layout": "IPY_MODEL_050ef3bdb65a4ea9b7e0444655ddea13"}}, "e1c50c0e08a1415bbbd9c9643873ebf4": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "FloatProgressModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "FloatProgressModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ProgressView", "bar_style": "", "description": "", "description_tooltip": null, "layout": "IPY_MODEL_0cec3cfa96264a749c2a27088053d7a8", "max": 7180.0, "min": 0.0, "orientation": "horizontal", "style": "IPY_MODEL_4deeaed9424145a8aa2c7aac1d4c63ba", "value": 7180.0}}}, "version_major": 2, "version_minor": 0}
+</script>
+
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./week_1\02"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="databases.html" title="previous page">Databases</a>
+    <a class='right-next' id="next-link" href="reading_docs.html" title="next page">Reading documentation</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Enze Chen and Mark Asta<br/>
+        
+            &copy; Copyright 2021.<br/>
+          <div class="extra_footer">
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+  <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" />
+</a>
+
+          </div>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+                        window.ga = window.ga || function () {
+                            (ga.q = ga.q || []).push(arguments) };
+                        ga.l = +new Date;
+                        ga('create', 'UA-197730750-1', 'auto');
+                        ga('set', 'anonymizeIp', true);
+                        ga('send', 'pageview');
+                    </script>
+
+  </body>
+</html>

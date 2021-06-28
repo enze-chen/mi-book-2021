@@ -1,0 +1,1070 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Installing Python locally (optional) &#8212; Introduction to Materials Informatics</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet" />
+  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="canonical" href="https://enze-chen.github.io/mi-book/week_1/05/install_python.html" />
+    <link rel="shortcut icon" href="../../_static/mi_favicon.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Day 06: Independence Day" href="../../week_2/06/day_06.html" />
+    <link rel="prev" title="Homework" href="homework_05.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+      <img src="../../_static/mi_logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Introduction to Materials Informatics</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../intro.html">
+   Welcome! 👋
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Preamble 📜
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../preamble/overview.html">
+   1. Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../preamble/setup.html">
+   2. Setup
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../preamble/schedule.html">
+   3. Schedule (one page) 📅
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Week 1️⃣
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../01/day_01.html">
+   Day 01: Introductions
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../01/informatics.html">
+     Intro to MI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../01/module.html">
+     Intro to Module 2
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../01/intro_python_jupyter_blank.html">
+     Intro to Python
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../01/homework_01.html">
+     Homework
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../01/python_greatest_hits_blank.html">
+       Python: The greatest hits
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../01/python_gory_details_blank.html">
+       Python: The gory details
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../02/day_02.html">
+   Day 02: MI and data
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02/recap_logistics.html">
+     Recap first day
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02/opportunities.html">
+     Opportunities and challenges
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02/file_types_blank.html">
+     File types
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02/tabular_data_blank.html">
+     Tabular data
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../02/databases.html">
+     Databases
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <label for="toctree-checkbox-4">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../02/materials_project_blank.html">
+       The Materials Project
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02/reading_docs.html">
+     Reading documentation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02/homework_02.html">
+     Homework
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../03/day_03.html">
+   Day 03: Data visualization
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../03/recap_data.html">
+     Recap data discussion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../03/data_viz_blank.html">
+     Data visualization
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../03/best_practices_viz.html">
+     Best practices for visualization
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../03/best_practices_viz_blank.html">
+       Follow-along notebook
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../03/reading_papers.html">
+     Reading papers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../03/homework_03.html">
+     Homework
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../04/day_04.html">
+   Day 04: ML speedrun
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../04/recap_viz.html">
+     Recap visualization discussion
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../04/intro_ml.html">
+     Introduction to ML
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+    <label for="toctree-checkbox-8">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../04/intro_ml_blank.html">
+       Follow-along notebook
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../04/ml_perf.html">
+     Quantifying performance
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+    <label for="toctree-checkbox-9">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../04/ml_perf_blank.html">
+       Follow-along notebook
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../04/features.html">
+     Featurization
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+    <label for="toctree-checkbox-10">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../04/features_blank.html">
+       Follow-along notebook
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../04/advanced_ml.html">
+     Advanced ML methods
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+    <label for="toctree-checkbox-11">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../04/advanced_ml_blank.html">
+       Follow-along notebook
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../04/practical.html">
+     Practical considerations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../04/homework_04.html">
+     Homework
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="day_05.html">
+   Day 05: MI research
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+  <label for="toctree-checkbox-12">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="recap_ml.html">
+     Recap ML discussion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="res_discuss.html">
+     Research discussion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="best_practices_blank.html">
+     Best practices for MI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="homework_05.html">
+     Homework
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Installing Python locally (optional)
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Week 2️⃣
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../week_2/06/day_06.html">
+   Day 06: Independence Day
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_2/07/day_07.html">
+   Day 07: Research
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+  <label for="toctree-checkbox-13">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_2/07/survey_07.html">
+     Check-in survey
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_2/08/day_08.html">
+   Day 08: Research + guest speaker
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+  <label for="toctree-checkbox-14">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_2/08/guest_ucb.html">
+     Guest speaker: Alex!
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_2/08/proposals.html">
+     Proposals
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_2/09/day_09.html">
+   Day 09: Research
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
+  <label for="toctree-checkbox-15">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_2/09/check_in.html">
+     Check-in meeting
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_2/10/day_10.html">
+   Day 10: Research + guest speaker
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
+  <label for="toctree-checkbox-16">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_2/10/guest_aionics.html">
+     Guest speaker: Austin!
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Week 3️⃣
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_3/11/day_11.html">
+   Day 11: Research + grad school
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
+  <label for="toctree-checkbox-17">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/11/presentations.html">
+     Giving presentations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/11/grad_school.html">
+     Grad school talk: Mark!
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_3/12/day_12.html">
+   Day 12: Research + guest speaker
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/>
+  <label for="toctree-checkbox-18">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/12/pull_requests.html">
+     GitHub pull requests
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/12/guest_citrine.html">
+     Guest speaker: Ventura!
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_3/13/day_13.html">
+   Day 13: Research
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/>
+  <label for="toctree-checkbox-19">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../week_3/13/deep_learning.html">
+     Deep learning (tentative)
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/>
+    <label for="toctree-checkbox-20">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../week_3/13/deep_learning_blank.html">
+       Deep learning notebook
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_3/14/day_14.html">
+   Day 14: Slam presentations
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/>
+  <label for="toctree-checkbox-21">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/14/peer_review.html">
+     Peer review
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/14/final_presentations.html">
+     Final presentations
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week_3/15/day_15.html">
+   Day 15: Conclusions
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/>
+  <label for="toctree-checkbox-22">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/15/summary.html">
+     Summary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/15/reflections.html">
+     Reflections
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/15/next.html">
+     What’s next?
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_3/15/finale.html">
+     Finale
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Appendices 📝
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../appendix/acknowl.html">
+   1. Acknowledgements
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../appendix/glossary.html">
+   2. Glossary
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../appendix/future.html">
+   3. Future directions 🛣
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/week_1/05/install_python.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/enze-chen/mi-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/enze-chen/mi-book/issues/new?title=Issue%20on%20page%20%2Fweek_1/05/install_python.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/enze-chen/mi-book/edit/master/week_1/05/install_python.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-anaconda-miniconda-distribution">
+   The Anaconda/Miniconda distribution 🐍
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#steps-to-install-miniconda">
+     Steps to install Miniconda
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#verify-installation">
+     Verify installation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#conda-virtual-environments">
+     Conda virtual environments
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#installing-more-packages">
+     Installing more packages
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#general-use">
+   General use
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#jupyter-notebooks">
+     Jupyter notebooks
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#python-files">
+     Python files
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#troubleshooting">
+     Troubleshooting
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="installing-python-locally-optional">
+<span id="h1-05-install-python"></span><h1>Installing Python locally (optional)<a class="headerlink" href="#installing-python-locally-optional" title="Permalink to this headline">¶</a></h1>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>For the purposes of this summer internship, you should be able to complete everything in DataHub (in the cloud).
+Installing Python on your personal computer is <strong>100% optional</strong> and we include this only for completeness.
+Also, if you already have your personal installation of Python (Anaconda, PyCharm, etc.), you should probably stick with that.</p>
+</div>
+<p>While there are many benefits to using a cloud-based platform like DataHub for our Python needs, you might find that for your personal projects (such as this upcoming research project), it is easier to work with your local installation of Python.
+Some reasons, in no particular order, can include:</p>
+<ul class="simple">
+<li><p>Running Python without an internet connection</p></li>
+<li><p>Flexibility to install more packages permanently</p></li>
+<li><p>Easier data access and security (i.e., files are stored locally)</p></li>
+<li><p>Using more compute resources (e.g., RAM), if your computer is better equipped</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It’s a personal preference, and if you are unsure if this is best for your personal situation, let’s chat. 🙂</p>
+</div>
+<p>However, installing Python and all the packages you need on your computer is not as easy as installing other software.
+A Python environment on your computer can get quite… <a class="reference external" href="https://xkcd.com/1987/"><em>complicated</em></a>.
+So, this is a set of instructions to help guide you as you install Python and associated files on your computer.
+For this process, we typically like to accompany our mentees as they go through it, just to make sure that everything installs correctly without a hitch.
+We know what it’s like to be excited to start a software project, only to be blocked by troubleshooting the installation, so we don’t want this misfortune to befall anyone.</p>
+<div class="section" id="the-anaconda-miniconda-distribution">
+<h2>The Anaconda/Miniconda distribution 🐍<a class="headerlink" href="#the-anaconda-miniconda-distribution" title="Permalink to this headline">¶</a></h2>
+<p>The native <a class="reference external" href="https://www.python.org/">Python language</a> is already quite powerful, but there are several bells and whistles that have been developed by the community to make it <em>even more powerful</em> and user friendly.
+At some point, people realized that it made sense to bundle these extra packages along with the default Python code, and arguably the most popular <em>distribution</em> of Python is <a class="reference external" href="https://www.anaconda.com/products/individual">Anaconda</a>, or “<strong>conda</strong>” for short.
+By installing Anaconda, we not only get Python, but also an entire suite of the most popular packages along with robust <em>virtual environments</em>.</p>
+<p>The caveat, however, is that the Anaconda distribution is <em>very large</em> and (personally) has <em>too many</em> bells and whistles, so we don’t advise installing it. 😅
+Instead, we recommend <strong>Miniconda</strong>, which is a lite version of Anaconda that has all the essential elements and makes it easier for you to add on what you need.
+We’ll use Miniconda for the steps below.</p>
+<div class="section" id="steps-to-install-miniconda">
+<h3>Steps to install Miniconda<a class="headerlink" href="#steps-to-install-miniconda" title="Permalink to this headline">¶</a></h3>
+<ol>
+<li><p>To install Miniconda, please go to <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">this page</a> and select the appropriate installer for your system.</p>
+<ul class="simple">
+<li><p>We recommend choosing the version with <strong>Python 3.8</strong> for better compatibility, although 3.9 should be OK.</p></li>
+</ul>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Please <em>do not</em> install the Python 2.7 version of Miniconda. You will not have a good time. 😢</p>
+</div>
+</li>
+<li><p>Open the installer and follow the instructions.</p>
+<ul class="simple">
+<li><p><em>Do</em> check the box that lets Anaconda be your default Python version.</p></li>
+<li><p><strong>Only if</strong> you don’t have other Python versions installed on your computer, you can also check the box that adds it to <code class="docutils literal notranslate"><span class="pre">PATH</span></code>.</p></li>
+</ul>
+</li>
+</ol>
+<a class="reference internal image-reference" href="../../_images/conda_install.png"><img alt="conda_install" class="align-center" src="../../_images/conda_install.png" style="width: 60%;" /></a>
+</div>
+<div class="section" id="verify-installation">
+<h3>Verify installation<a class="headerlink" href="#verify-installation" title="Permalink to this headline">¶</a></h3>
+<p>Now to run Python:</p>
+<ul class="simple">
+<li><p><strong>On Windows</strong>, you can use Anaconda Prompt, which you can find if you search for the application.</p>
+<ul>
+<li><p>If you added Anaconda to <code class="docutils literal notranslate"><span class="pre">PATH</span></code>, you can also use the native Command Prompt.</p></li>
+</ul>
+</li>
+<li><p><strong>On Mac/Linux</strong>, you can directly use Terminal.</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/conda_start.png"><img alt="conda_start" class="align-center" src="../../_images/conda_start.png" style="width: 66%;" /></a>
+<p>Next, try to do the following:</p>
+<ol class="simple">
+<li><p>The first thing you should notice is the <code class="docutils literal notranslate"><span class="pre">(base)</span></code> word on the very left, which indicates the default virtual environment that is loaded.
+Seeing this is a good sign.</p></li>
+<li><p>Type <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">--version</span></code> to see which version of Python you have installed.
+If something reasonable shows up (e.g., <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">3.8.x</span></code>), then it’s a good sign.</p></li>
+<li><p>Type <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span> <span class="pre">list</span></code> to see which virtual environments have been created.
+At this stage you should only see <code class="docutils literal notranslate"><span class="pre">(base)</span></code>.
+More on this in the next section.</p></li>
+</ol>
+<p>If all of the above worked for you, then it’s likely installation was successful! 🎉</p>
+</div>
+<div class="section" id="conda-virtual-environments">
+<h3>Conda virtual environments<a class="headerlink" href="#conda-virtual-environments" title="Permalink to this headline">¶</a></h3>
+<p>By now you’ve probably seen us use “virtual environments” a few times, so it’s time to dig into what this phrase means.
+An <em>environment</em> is essentially a configuration of Python and its associated packages and settings.
+You’ll set up an environment any time you want to use Python for a programming project, and this, in and of itself, is straightforward.
+But now let’s imagine you want to do a second project, and this project requires a different set of Python packages that <em>conflict</em> with your current environment (e.g., different versions are required).
+Heck, maybe Project #2 requires a different version of Python altogether!
+Do you reinstall the packages and lose the ability to work on Project #1?
+Do you buy a new computer?
+Do you shake your fist at the sky in anger?</p>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<a class="reference internal image-reference" href="../../_images/conda_what_if.png"><img alt="conda_what_if" class="align-center" src="../../_images/conda_what_if.png" style="width: 75%;" /></a>
+</div>
+<p>That’s where virtual environments come in.
+Anaconda can create separate environments, each with their own [possibly different] versions of Python and associated packages, all contained on the same computer (hence, “virtual”).
+The <code class="docutils literal notranslate"><span class="pre">(base)</span></code> word you see is one such virtual environment, and <strong>it is best practice to create a new environment for each project</strong>.</p>
+<p>To do so, use the following command in the Prompt/Terminal window:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda create --name my_env_name <span class="nv">python</span><span class="o">=</span><span class="m">3</span>.8 numpy scipy pandas matplotlib scikit-learn jupyter 
+</pre></div>
+</div>
+<p>Let’s break this down:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span></code> is the command to run conda.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">create</span></code> is the keyword to say “Create a new virtual environment.”</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--name</span> <span class="pre">my_env_name</span></code> is the input parameter + argument for the name of your virtual environment.
+You choose what <code class="docutils literal notranslate"><span class="pre">my_env_name</span></code> should be (no spaces!). 🙂</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">python=3.8</span></code> specifies which version of Python you want installed (in this case, the latest Python 3.8.x).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">numpy</span> <span class="pre">scipy</span> <span class="pre">...</span></code> are a list of packages that you also wanted installed in this environment.
+This is the list we want to start off with, so keep all six of them there.
+Recall that unlike Anaconda, Miniconda doesn’t come with a lot of these packages preinstalled, so we have to manually specify them!</p></li>
+</ul>
+<p>As the packages install, you might have to type <kbd>y</kbd> + <kbd>Enter</kbd> to confirm the installation.
+Once you have finished creating your environment, you have to <strong>activate</strong> it by typing:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda activate my_env_name
+</pre></div>
+</div>
+<p>and pressing <kbd>Enter</kbd>, where <code class="docutils literal notranslate"><span class="pre">my_env_name</span></code> is the name of the environment you created.
+As an example:</p>
+<a class="reference internal image-reference" href="../../_images/conda_activate.png"><img alt="conda_activate" class="align-center" src="../../_images/conda_activate.png" style="width: 66%;" /></a>
+<p>You should then see <code class="docutils literal notranslate"><span class="pre">(base)</span></code> be replaced by <code class="docutils literal notranslate"><span class="pre">(my_env_name)</span></code>.
+Now you can work with the desired version of Python and its correct packages!</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You will have to go through this activation process <em>each time</em> you open a new Prompt/Terminal window, as conda will always open in the default <code class="docutils literal notranslate"><span class="pre">(base)</span></code> environment.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>For more information on managing environments, please see <a class="reference external" href="https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html">the official documentation</a>.</p>
+</div>
+</div>
+<div class="section" id="installing-more-packages">
+<h3>Installing more packages<a class="headerlink" href="#installing-more-packages" title="Permalink to this headline">¶</a></h3>
+<p>Sometimes, a package that we need (particularly if it’s for a specific materials science application) does not come installed by default with Anaconda.
+To see which packages are currently installed, you can use the <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">list</span></code> command.
+To install more packages, there are several options, which we list in order of preference:</p>
+<ol class="simple">
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">[package-name]</span></code>. This invokes Anaconda’s built-in package manager to make sure there are no conflicts with existing packages and is generally the safest option (it’s one of the main reasons people use Anaconda!).</p></li>
+<li><p>Use a different channel to see if you can find the package, e.g., <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">-c</span> <span class="pre">conda-forge</span> <span class="pre">[package-name]</span></code>.</p></li>
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">pip</span></code>, the default package manager in Python, e.g., <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">[package-name]</span></code>.
+This pretty much always installs the newest version of a package, and may cause conflicts with your conda environment (it doesn’t do compatibility checks).</p></li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can search in the documentation for that package for the preferred installation method.
+Generally speaking, all Python packages are <code class="docutils literal notranslate"><span class="pre">pip</span></code>-installable, while only some are <code class="docutils literal notranslate"><span class="pre">conda</span></code>-installable.</p>
+</div>
+<p>For this module, you should install <code class="docutils literal notranslate"><span class="pre">pymatgen</span></code> and <code class="docutils literal notranslate"><span class="pre">matminer</span></code> as addition packages.
+In the Prompt/Terminal, activate your conda environment and then type the line:</p>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">==number</span></code> syntax means we want to install a specific version of that package, and this is often done for compatibility reasons.</p>
+</div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install <span class="nv">pymatgen</span><span class="o">==</span><span class="m">2020</span>.10.20 <span class="nv">matminer</span><span class="o">==</span><span class="m">0</span>.6.5
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="general-use">
+<h2>General use<a class="headerlink" href="#general-use" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="jupyter-notebooks">
+<h3>Jupyter notebooks<a class="headerlink" href="#jupyter-notebooks" title="Permalink to this headline">¶</a></h3>
+<p>When programming on your own computer, we suggest you still do it in a Jupyter notebook environment as that’s pretty user friendly.
+If <code class="docutils literal notranslate"><span class="pre">jupyter</span></code> is correctly installed in your conda environment, then you can type</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter notebook 
+</pre></div>
+</div>
+<p>to start the notebook.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you start a notebook and then decide to install a new package, you have to completely close the notebook windows (and maybe start a new Prompt/Terminal, depending on how you installed it) before you can use that package.</p>
+</div>
+</div>
+<div class="section" id="python-files">
+<h3>Python files<a class="headerlink" href="#python-files" title="Permalink to this headline">¶</a></h3>
+<p>You can also type your code into a Python file (<code class="docutils literal notranslate"><span class="pre">.py</span></code> extension) using your favorite text editor, such as <a class="reference external" href="https://atom.io/">Atom</a> or <a class="reference external" href="https://www.sublimetext.com/">Sublime Text</a>, or your favorite IDE, such as <a class="reference external" href="https://www.jetbrains.com/pycharm/">PyCharm</a> or <a class="reference external" href="https://www.spyder-ide.org/">Spyder</a>.
+You can then run the file using the Prompt/Terminal command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python my_python_file.py 
+</pre></div>
+</div>
+<p>The line of code above will only work after you’ve navigated (in your Prompt/Terminal) to the same directory as <code class="docutils literal notranslate"><span class="pre">my_python_file.py</span></code>.</p>
+</div>
+<div class="section" id="troubleshooting">
+<h3>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h3>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>On Google, look for links to the <a class="reference external" href="https://stackoverflow.com/">Stack Overflow</a> domain, which is a highly reliable source for all of your programming needs.</p>
+</div>
+</div>
+<p>Python (and certain packages) can be very tricky to install, so if you run into issues, consult the Anaconda documentation, Google, or YouTube.
+Please also feel free to ask your instructors or classmates on Slack about any technical difficulties you encounter.</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./week_1\05"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="homework_05.html" title="previous page">Homework</a>
+    <a class='right-next' id="next-link" href="../../week_2/06/day_06.html" title="next page">Day 06: Independence Day</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Enze Chen and Mark Asta<br/>
+        
+            &copy; Copyright 2021.<br/>
+          <div class="extra_footer">
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+  <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" />
+</a>
+
+          </div>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+                        window.ga = window.ga || function () {
+                            (ga.q = ga.q || []).push(arguments) };
+                        ga.l = +new Date;
+                        ga('create', 'UA-197730750-1', 'auto');
+                        ga('set', 'anonymizeIp', true);
+                        ga('send', 'pageview');
+                    </script>
+
+  </body>
+</html>
