@@ -249,7 +249,7 @@ Update Firefox
 
 
 
-### Slido poll
+<!-- ### Slido poll
 
 For quick check-ins and formative assessments, we'll be using [Slido polls](https://www.sli.do/) throughout this curriculum.
 In order for this to work, you will have to **enable [third-party] cookies** in your browser, so please make sure this setting is enabled.
@@ -258,6 +258,6 @@ If not, please look up how to enable cookies for your browser. 🍪
 
 <p align="center">
     <iframe src="https://app.sli.do/event/yv5xrtyg/embed/polls/49113d57-715d-48ea-90bd-78e44f336f29" width="300" height="300"></iframe>
-</p>
+</p> -->
 
 

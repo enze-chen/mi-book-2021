@@ -1,6 +1,8 @@
 (h1:01:homework_01)=
 # Homework
 
+Today's "homework" is a mix of reading and programming.
+
 ## Reading  
 
 To help prepare for tomorrow's tutorial on MI, please read the following papers, which can be found in [this Google Drive folder](https://drive.google.com/drive/folders/1FuZJyp1yWqoMXNs0_1s8LtSzPUwC5CpM?usp=sharing).
@@ -11,7 +13,7 @@ To help prepare for tomorrow's tutorial on MI, please read the following papers,
     - The exact schema (Physical Information File) is not important, but pay attention to their motivations and design choices, because they raise important issues.
 1. (optional) The viewpoint by [Jeannette Wing](https://datascience.columbia.edu/people/jeannette-m-wing/) {cite}`wing_2006`.
     - This is the original paper on computational thinking and nicely encapsulates some of our views on computing education and how we're approaching our role as mentors.
-    - It is only three pages, and not too technical. Also, it truly is _optional_!
+    - It is only three pages, and not too technical. Also, _it truly is optional_!
 
 To make your reading experience a little more interactive and to allow for more targeted questions, we'll experiment with leaving comments _directly on the PDF_ in Google Drive.
 You're welcome to ask/answer questions, share observations/reactions, link related content, etc.

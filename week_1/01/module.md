@@ -26,9 +26,11 @@ The three main sections are as follows:
 ## Structure and expectations
 
 First, we'll start with a quick poll:
-<p align="center">
+**Do you feel comfortable with being recorded on Zoom?**
+
+<!-- <p align="center">
     <iframe src="https://app.sli.do/event/kgqntect/embed/polls/c6e8efef-64fb-4b44-86a5-9907761e3c79" width="300" height="360"></iframe>
-</p>
+</p> -->
 
 The reason we ask this is because there will be a few sessions where some of us won't be able to make it, and we'd like to record those sessions so those folks can catch up on the information. 
 But we also recognize some might feel uncomfortable about being recorded, so please let us know.

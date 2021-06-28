@@ -73,9 +73,7 @@
     - file              : week_1/05/day_05
       sections:
         - file          : week_1/05/recap_ml
-        - file          : week_1/05/res_overview
-        - file          : week_1/05/dielectrics
-        - file          : week_1/05/brainstorm
+        - file          : week_1/05/res_discuss
         - file          : week_1/05/best_practices_blank
         - file          : week_1/05/homework_05
         - file          : week_1/05/install_python
