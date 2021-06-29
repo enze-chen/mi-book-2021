@@ -51,6 +51,8 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="canonical" href="https://enze-chen.github.io/mi-book/week_1/04/ml_perf_blank.html" />
     <link rel="shortcut icon" href="../../_static/mi_favicon.png"/>
@@ -772,6 +774,96 @@
   <a class="reference internal nav-link" href="#contents">
    Contents
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#import-python-packages">
+     Import Python packages
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#regression-model-performance">
+   Regression model performance
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#error-metrics-rmse-and-mae">
+     Error metrics: RMSE and MAE
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#scikit-learn-performance-metrics">
+     Scikit-learn performance metrics
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exercise-compute-both-error-metrics-for-linear-regression-for-the-atomic-mass-prediction-problem">
+     Exercise: compute both error metrics for linear regression for the atomic mass prediction problem
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#visualizations-parity-plots">
+     Visualizations: parity plots
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exercise-please-create-a-parity-plot-for-your-results-from-the-previous-part">
+     Exercise: please create a parity plot for your results from the previous part.
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#classification-model-performance">
+   Classification model performance
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Scikit-learn performance metrics
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exercise-compute-both-performance-metrics-for-logistic-regression-for-the-metal-classification-problem">
+     Exercise: compute both performance metrics for logistic regression for the metal classification problem
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#caveat-f1-score-on-your-own-time">
+     Caveat: F1 score 🏎 (on your own time)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#train-validate-test">
+   Train-validate-test
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#splitting-data-in-scikit-learn">
+     Splitting data in scikit-learn
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cross-validation">
+   Cross-validation
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#scikit-learn-for-cross-validation">
+     scikit-learn for cross validation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exercise-perform-5-fold-cv-for-the-atomic-mass-prediction-problem">
+     Exercise: perform 5-fold CV for the atomic mass prediction problem.
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#conclusion">
@@ -798,31 +890,698 @@
 </div>
 <div class="section" id="learning-objectives">
 <h2>Learning objectives<a class="headerlink" href="#learning-objectives" title="Permalink to this headline">¶</a></h2>
-<p>This notebook contains a series of exercises that explore a few of the different file types that are commonly used to store materials data.
-We want to give you ample hands-on practice working with different file types so that you:</p>
+<p>This notebook contains a series of exercises that will teach you ways we evaluate ML model performance in the train-validate-test paradigm.
+We will rely heavily on modules in the <a class="reference external" href="https://scikit-learn.org/stable/">scikit-learn package</a> to implement these concepts.
+By the end of this lesson, you will be able to:</p>
 <ol class="simple">
-<li><p>Understand the advantages and disadvantages of each file format.</p></li>
-<li><p>Are prepared to work with your own datasets during self-directed research.</p></li>
-<li><p>Build comfort with and learn best practices for working with programmatic tools.</p></li>
+<li><p>Use error metrics and visualizations to assess model performance and evaluate the appropriateness of these methods in regression and classification settings.</p></li>
+<li><p>Articulate the importance of having training, validation, and test datasets.</p></li>
+<li><p>Implement these ideas, including cross-validation, using scikit-learn.</p></li>
 </ol>
-<p>We will progress through most of this exercise together as a group, but if there’s a part that’s particularly tricky, feel free to review it on your own time.
-As always, we’re happy to hear from you if you have any questions.</p>
+<p>We will progress through most of this exercise together as a group and are happy to take questions you might have.</p>
 </div>
 <div class="section" id="contents">
 <h2>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h2>
 <p>These exercises are grouped into the following sections:</p>
 <ol class="simple">
-<li><p><a class="reference external" href="#CSV-and-spreadsheets">CSV and spreadsheets</a></p></li>
-<li><p><a class="reference external" href="#pandas%21">pandas!</a></p></li>
-<li><p><a class="reference external" href="#Procuring-tabular-data">Procuring tabular data</a></p></li>
-<li><p><a class="reference external" href="#When-files-simply-aren%27t-enough">Beyond files</a></p></li>
+<li><p><a class="reference external" href="#Regression-model-performance">Regression model performance</a></p></li>
+<li><p><a class="reference external" href="#Classification-model-performance">Classification model performance</a></p></li>
+<li><p><a class="reference external" href="#Train-validate-test">Train-validate-test</a></p></li>
+<li><p><a class="reference external" href="#Cross-validation">Cross-validation</a></p></li>
 </ol>
+<div class="section" id="import-python-packages">
+<h3>Import Python packages<a class="headerlink" href="#import-python-packages" title="Permalink to this headline">¶</a></h3>
+<p>Please remember to run the following cell before continuing!</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;figure.figsize&#39;</span><span class="p">:(</span><span class="mi">8</span><span class="p">,</span><span class="mi">6</span><span class="p">),</span>       <span class="c1"># Increase figure size</span>
+                     <span class="s1">&#39;font.size&#39;</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span>               <span class="c1"># Increase font size</span>
+                     <span class="s1">&#39;mathtext.fontset&#39;</span><span class="p">:</span><span class="s1">&#39;cm&#39;</span><span class="p">,</span>      <span class="c1"># Change math font to Computer Modern</span>
+                     <span class="s1">&#39;mathtext.rm&#39;</span><span class="p">:</span><span class="s1">&#39;serif&#39;</span><span class="p">,</span>        <span class="c1"># Documentation recommended follow-up</span>
+                     <span class="s1">&#39;lines.linewidth&#39;</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span>          <span class="c1"># Thicker plot lines</span>
+                     <span class="s1">&#39;lines.markersize&#39;</span><span class="p">:</span><span class="mi">12</span><span class="p">,</span>        <span class="c1"># Larger plot points</span>
+                     <span class="s1">&#39;axes.linewidth&#39;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span>           <span class="c1"># Thicker axes lines (but not too thick)</span>
+                     <span class="s1">&#39;xtick.major.size&#39;</span><span class="p">:</span><span class="mi">8</span><span class="p">,</span>         <span class="c1"># Make the x-ticks longer (our plot is larger!)</span>
+                     <span class="s1">&#39;xtick.major.width&#39;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span>        <span class="c1"># Make the x-ticks wider</span>
+                     <span class="s1">&#39;ytick.major.size&#39;</span><span class="p">:</span><span class="mi">8</span><span class="p">,</span>         <span class="c1"># Ditto for y-ticks</span>
+                     <span class="s1">&#39;ytick.major.width&#39;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span>        <span class="c1"># Ditto for y-ticks</span>
+                     <span class="s1">&#39;xtick.direction&#39;</span><span class="p">:</span><span class="s1">&#39;in&#39;</span><span class="p">,</span> 
+                     <span class="s1">&#39;ytick.direction&#39;</span><span class="p">:</span><span class="s1">&#39;in&#39;</span><span class="p">})</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="regression-model-performance">
+<h2>Regression model performance<a class="headerlink" href="#regression-model-performance" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="#Contents">Back to top</a></p>
+<p>Like the previous lesson, we’ll talk about regression and classification problems separately, as they will have different performance metrics.
+Also like in the previous lesson, we’ll spend quite some time sketching and discussing these concepts live using an iPad, so we’ll only offer a quick summary here and use the notebook mostly for live demonstrations and hands-on practice.</p>
+<div class="section" id="error-metrics-rmse-and-mae">
+<h3>Error metrics: RMSE and MAE<a class="headerlink" href="#error-metrics-rmse-and-mae" title="Permalink to this headline">¶</a></h3>
+<p>In the last notebook, we used the squared loss for the cost function, and we can do something similar to get the <strong>root-mean-square error (RMSE)</strong>.
+The mathematical expression for the RMSE between the target vector <span class="math notranslate nohighlight">\(\vec{y}\)</span> and the predicted values <span class="math notranslate nohighlight">\(\hat{y}\)</span> is:</p>
+<div class="math notranslate nohighlight">
+\[ \text{RMSE}(\vec{y}, \hat{y}) = \sqrt{\frac{1}{m} \sum_{i=1}^{m} (\hat{y}_i - y_i)^2} \]</div>
+<p>Another popular error metric is the <strong>mean absolute error (MAE)</strong>, which is given by</p>
+<div class="math notranslate nohighlight">
+\[ \text{MAE}(\vec{y}, \hat{y}) = \frac{1}{m} \sum_{i=1}^{m} | \hat{y}_i - y_i | \]</div>
+<p>The minimum values for both of these metrics is 0, and the closer we get to this the better our predictions.</p>
+<hr class="docutils" />
+<p><strong>Pause and reflect</strong>: What are the differences between these two metrics?</p>
+</div>
+<div class="section" id="scikit-learn-performance-metrics">
+<h3>Scikit-learn performance metrics<a class="headerlink" href="#scikit-learn-performance-metrics" title="Permalink to this headline">¶</a></h3>
+<p>Scikit-learn has RMSE and MAE (and many other) regression performance metrics accessible through the <a class="reference external" href="https://scikit-learn.org/stable/modules/classes.html#module-sklearn.metrics"><code class="docutils literal notranslate"><span class="pre">sklearn.metrics</span></code></a> module.</p>
+<p>The RMSE can be computed using the <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_squared_error.html"><code class="docutils literal notranslate"><span class="pre">mean_squared_error(y_true,</span> <span class="pre">y_pred,</span> <span class="pre">squared=False)</span></code></a> method by passing an additional parameter <code class="docutils literal notranslate"><span class="pre">squared=False</span></code>.</p>
+<p>The MAE can be computed using the <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_absolute_error.html"><code class="docutils literal notranslate"><span class="pre">mean_absolute_error(y_true,</span> <span class="pre">y_pred)</span></code></a> method.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">mean_squared_error</span><span class="p">,</span> <span class="n">mean_absolute_error</span>   <span class="c1"># syntax for multiple imports from same module</span>
+
+<span class="c1"># simple arrays for demonstration; you can verify results by hand!</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;The RMSE is </span><span class="si">{</span><span class="n">mean_squared_error</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">squared</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="si">}</span><span class="s1">.&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;The MAE is </span><span class="si">{</span><span class="n">mean_absolute_error</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span><span class="si">}</span><span class="s1">.&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The RMSE is 7.106335201775948.
+The MAE is 5.5.
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="exercise-compute-both-error-metrics-for-linear-regression-for-the-atomic-mass-prediction-problem">
+<h3>Exercise: compute both error metrics for linear regression for the atomic mass prediction problem<a class="headerlink" href="#exercise-compute-both-error-metrics-for-linear-regression-for-the-atomic-mass-prediction-problem" title="Permalink to this headline">¶</a></h3>
+<p>Note that unlike the previous notebook, we’re giving you a lot more <strong>features</strong> (and many more elements) to work with, so have fun!
+You can start with just using the atomic number to predict atomic mass, and then see what other features you want to add to your design matrix to lower the error.</p>
+<p><em>Hints</em>:</p>
+<ul class="simple">
+<li><p>When selecting columns of pandas DataFrames to construct <span class="math notranslate nohighlight">\(X\)</span>, <em>even for a single column</em>, format your selection as a list.
+By which we mean:</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">X</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;atomic_number&#39;</span><span class="p">,</span> <span class="s1">&#39;row&#39;</span><span class="p">]]</span>   <span class="c1"># this is good; a list of 2 column names</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;atomic_number&#39;</span><span class="p">]]</span>          <span class="c1"># this is good; a list of 1 column name</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;atomic_number&#39;</span><span class="p">]</span>            <span class="c1"># avoid this!!! a string of 1 column name</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Using the original list of 50 elements (if you truncate the following), your RMSE/MAE will be around 1.72/1.34.
+Using the full list of 100 elements (what’s loaded in), your RMSE/MAE will be around 3.54/2.88.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../../assets/data/week_1/04/elem_props.csv&#39;</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<span class="c1"># -------------   WRITE YOUR CODE IN THE SPACE BELOW   ---------- #</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>symbol</th>
+      <th>name</th>
+      <th>atomic_number</th>
+      <th>atomic_mass</th>
+      <th>atomic_radius</th>
+      <th>row</th>
+      <th>group</th>
+      <th>is_metal</th>
+      <th>electronegativity</th>
+      <th>density_solid</th>
+      <th>melting_point</th>
+      <th>molar_volume</th>
+      <th>refractive_index</th>
+      <th>elec_resist</th>
+      <th>therm_cond</th>
+      <th>youngs_mod</th>
+      <th>poissons_ratio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>H</td>
+      <td>Hydrogen</td>
+      <td>1</td>
+      <td>1.007940</td>
+      <td>0.25</td>
+      <td>1</td>
+      <td>1</td>
+      <td>False</td>
+      <td>2.20</td>
+      <td>NaN</td>
+      <td>14.01 K</td>
+      <td>11.42</td>
+      <td>1.000132 (gas; liquid 1.12)(no units)</td>
+      <td>NaN</td>
+      <td>0.1805</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>He</td>
+      <td>Helium</td>
+      <td>2</td>
+      <td>4.002602</td>
+      <td>NaN</td>
+      <td>1</td>
+      <td>18</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.95 K</td>
+      <td>21.00</td>
+      <td>1.000035 (gas; liquid 1.028)(no units)</td>
+      <td>NaN</td>
+      <td>0.1513</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Li</td>
+      <td>Lithium</td>
+      <td>3</td>
+      <td>6.941000</td>
+      <td>1.45</td>
+      <td>2</td>
+      <td>1</td>
+      <td>True</td>
+      <td>0.98</td>
+      <td>535.0</td>
+      <td>453.69 K</td>
+      <td>13.02</td>
+      <td>NaN</td>
+      <td>9.500000e-08</td>
+      <td>85.0000</td>
+      <td>4.9</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Be</td>
+      <td>Beryllium</td>
+      <td>4</td>
+      <td>9.012182</td>
+      <td>1.05</td>
+      <td>2</td>
+      <td>2</td>
+      <td>True</td>
+      <td>1.57</td>
+      <td>1848.0</td>
+      <td>1560.0 K</td>
+      <td>4.85</td>
+      <td>NaN</td>
+      <td>3.800000e-08</td>
+      <td>190.0000</td>
+      <td>287.0</td>
+      <td>0.032</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>B</td>
+      <td>Boron</td>
+      <td>5</td>
+      <td>10.811000</td>
+      <td>0.85</td>
+      <td>2</td>
+      <td>13</td>
+      <td>False</td>
+      <td>2.04</td>
+      <td>2460.0</td>
+      <td>2349.0 K</td>
+      <td>4.39</td>
+      <td>NaN</td>
+      <td>1.000000e+12</td>
+      <td>27.0000</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</div>
+<div class="section" id="visualizations-parity-plots">
+<h3>Visualizations: parity plots<a class="headerlink" href="#visualizations-parity-plots" title="Permalink to this headline">¶</a></h3>
+<p>Note that previously when we visualized our regression results, we showed output vs. inputs (a single feature), where the scattered points are <span class="math notranslate nohighlight">\(y\)</span> (truth) vs. <span class="math notranslate nohighlight">\(x\)</span> and the regression line was <span class="math notranslate nohighlight">\(\hat{y}\)</span> (prediction) vs. <span class="math notranslate nohighlight">\(x\)</span>.
+The regression line is really made of 100 predictions from our model, and these predicted points are connected by a line—this line is the line of best fit.</p>
+<p>Another way to visualize the results, particularly when there are many input features, is with a <strong>parity plot</strong> or <strong>predicted vs. actual plot</strong>.
+As the second name implies, this plot shows <em>a scatter plot</em> of the predicted target values (from the model) on the <span class="math notranslate nohighlight">\(y\)</span>-axis and the actual target values (from the original dataset) on the <span class="math notranslate nohighlight">\(x\)</span>-axis.
+A perfect model (error = 0.0) would have a parity plot where all the points lie along <span class="math notranslate nohighlight">\(y=x\)</span> (all predicted points exactly match their true values).</p>
+</div>
+<div class="section" id="exercise-please-create-a-parity-plot-for-your-results-from-the-previous-part">
+<h3>Exercise: please create a parity plot for your results from the previous part.<a class="headerlink" href="#exercise-please-create-a-parity-plot-for-your-results-from-the-previous-part" title="Permalink to this headline">¶</a></h3>
+<p><em>Hints</em>:</p>
+<ul class="simple">
+<li><p>We recommend making the marker sizes smaller, by passing <code class="docutils literal notranslate"><span class="pre">s=40</span></code> into the <code class="docutils literal notranslate"><span class="pre">ax.scatter()</span></code> method.</p></li>
+<li><p>One typically adds the line <span class="math notranslate nohighlight">\(y=x\)</span> in the background of such a plot, to help guide the eye.
+To make the line appear <em>under the points</em>, pass <code class="docutils literal notranslate"><span class="pre">zorder=-5</span></code> as an input parameter.</p></li>
+<li><p>One also typically makes the axes of such figures equal, to emphasize that there should be a sense of “perfect <span class="math notranslate nohighlight">\(y=x\)</span> agreement.”
+We can use the <a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_aspect.html"><code class="docutils literal notranslate"><span class="pre">ax.set_aspect('equal')</span></code></a> method to do this!</p></li>
+<li><p>Definitely need axes labels!</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">7</span><span class="p">))</span>
+<span class="c1"># -------------   WRITE YOUR CODE IN THE SPACE BELOW   ---------- #</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/ml_perf_blank_10_0.png" src="../../_images/ml_perf_blank_10_0.png" />
+</div>
+</div>
+<p><strong>Pause and reflect</strong>: For what atomic weights are our linear regression model predicting <em>too high</em>?
+Where is it predicting <em>too low</em>?
+This is how the parity plot helps with <strong>interpretability</strong> of our model predictions!</p>
+</div>
+</div>
+<div class="section" id="classification-model-performance">
+<h2>Classification model performance<a class="headerlink" href="#classification-model-performance" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="#Contents">Back to top</a></p>
+<p>For classification metrics, rather than measuring a difference between real values, we’re more concerned about whether the predicted class matches the true class.
+Ironically, despite having fewer possible output values (they’re now discrete class labels), the types of error metrics actually increases, so there’s a lot that we could discuss.
+So we only have time for a few of the most common ones.</p>
+<p>We will again focus on binary classification to illustrate the idea, and actually start with a visualization: the <strong>confusion matrix</strong>.
+For a two-class classification problem, the confusion matrix is given by</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+<th class="text-align:left head"><p>Positive prediction</p></th>
+<th class="text-align:left head"><p>Negative prediction</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><em>Positive label</em>:</p></td>
+<td class="text-align:left"><p>True positive (TP)</p></td>
+<td class="text-align:left"><p>False negative (FN)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><em>Negative label</em>:</p></td>
+<td class="text-align:left"><p>False positive (FP)</p></td>
+<td class="text-align:left"><p>True negative (TN)</p></td>
+</tr>
+</tbody>
+</table>
+<p>where TP, FP, FN, TN are typically counts given in integers.
+For the confusion matrix, the <strong>accuracy</strong> of a classifer is generally speaking the most intuitive metric we could calculate, given by:</p>
+<div class="math notranslate nohighlight">
+\[ \text{accuracy}\ = \frac{\text{TP + TN}}{\text{TP + FP + FN + TN}} \in [0, 1] \]</div>
+<p>which is interpreted as “the number of correct classifications out of all data points.”</p>
+<div class="section" id="id1">
+<h3>Scikit-learn performance metrics<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>Scikit-learn can compute confusion matrices and accuracy (and many other) classification performance metrics using functions in the <a class="reference external" href="https://scikit-learn.org/stable/modules/classes.html#module-sklearn.metrics"><code class="docutils literal notranslate"><span class="pre">sklearn.metrics</span></code></a> module.</p>
+<p>The confusion matrix given a target vector <span class="math notranslate nohighlight">\(\vec{y}\)</span> and predicted classes <span class="math notranslate nohighlight">\(\hat{y}\)</span> can be computed using the function <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html"><code class="docutils literal notranslate"><span class="pre">confusion_matrix(y_true,</span> <span class="pre">y_pred)</span></code></a>, which returns a matrix of dimension <span class="math notranslate nohighlight">\(\text{num_classes} \times \text{num_classes}\)</span> with element <span class="math notranslate nohighlight">\((i,j)\)</span> being the number of samples with true label <span class="math notranslate nohighlight">\(i\)</span> and predicted label <span class="math notranslate nohighlight">\(j\)</span>.
+Note that <strong>the order of the two input vectors matters</strong>!
+Also, if the labels are numerical (e.g., <code class="docutils literal notranslate"><span class="pre">0</span></code>, <code class="docutils literal notranslate"><span class="pre">1</span></code>), then the output confusion matrix is sorted from smallest to largest, so it might help to explicitly pass a <code class="docutils literal notranslate"><span class="pre">labels=[1,</span> <span class="pre">0]</span></code> argument to fix the label order for the final confusion matrix [to match what we had above].</p>
+<p>The accuracy can be computed by hand from the above confusion matrix, or if we want to directly compute it from the true classes <span class="math notranslate nohighlight">\(\vec{y}\)</span> and predicted classes <span class="math notranslate nohighlight">\(\hat{y}\)</span>, we can use the <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html"><code class="docutils literal notranslate"><span class="pre">accuracy_score(y_true,</span> <span class="pre">y_pred)</span></code></a> function.</p>
+<p>We again start with an example by hand to get the feel for things.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">confusion_matrix</span><span class="p">,</span> <span class="n">accuracy_score</span>
+<span class="n">y</span>    <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+<span class="n">yhat</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+<span class="n">classes</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+<span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">classes</span><span class="p">)</span>
+<span class="n">cm</span> <span class="o">=</span> <span class="n">confusion_matrix</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">yhat</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="n">classes</span><span class="p">)</span>
+<span class="n">acc</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">yhat</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;The confusion matrix is:</span><span class="se">\n</span><span class="si">{</span><span class="n">cm</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;The accuracy is: </span><span class="si">{</span><span class="n">acc</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">cm</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;Blues&#39;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">j</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="n">cm</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">bbox</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">fc</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">))</span>  
+        <span class="c1"># note i,j had to be swapped above for labeling text!</span>
+        
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">classes</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_yticklabels</span><span class="p">(</span><span class="n">classes</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;predicted class&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;true class&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The confusion matrix is:
+[[3 2]
+ [1 4]]
+The accuracy is: 0.7
+</pre></div>
+</div>
+<img alt="../../_images/ml_perf_blank_14_1.png" src="../../_images/ml_perf_blank_14_1.png" />
+</div>
+</div>
+</div>
+<div class="section" id="exercise-compute-both-performance-metrics-for-logistic-regression-for-the-metal-classification-problem">
+<h3>Exercise: compute both performance metrics for logistic regression for the metal classification problem<a class="headerlink" href="#exercise-compute-both-performance-metrics-for-logistic-regression-for-the-metal-classification-problem" title="Permalink to this headline">¶</a></h3>
+<p><em>Hints</em>:</p>
+<ul class="simple">
+<li><p>In this problem, you should use <code class="docutils literal notranslate"><span class="pre">lr.predict(X)</span></code> to get discrete predicted class labels instead of probabilities.</p></li>
+<li><p>Feel free to change up the features and see if you can increase your accuracy!</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../../assets/data/week_1/04/elem_props.csv&#39;</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<span class="c1"># -------------   WRITE YOUR CODE IN THE SPACE BELOW   ---------- #</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>symbol</th>
+      <th>name</th>
+      <th>atomic_number</th>
+      <th>atomic_mass</th>
+      <th>atomic_radius</th>
+      <th>row</th>
+      <th>group</th>
+      <th>is_metal</th>
+      <th>electronegativity</th>
+      <th>density_solid</th>
+      <th>melting_point</th>
+      <th>molar_volume</th>
+      <th>refractive_index</th>
+      <th>elec_resist</th>
+      <th>therm_cond</th>
+      <th>youngs_mod</th>
+      <th>poissons_ratio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>H</td>
+      <td>Hydrogen</td>
+      <td>1</td>
+      <td>1.007940</td>
+      <td>0.25</td>
+      <td>1</td>
+      <td>1</td>
+      <td>False</td>
+      <td>2.20</td>
+      <td>NaN</td>
+      <td>14.01 K</td>
+      <td>11.42</td>
+      <td>1.000132 (gas; liquid 1.12)(no units)</td>
+      <td>NaN</td>
+      <td>0.1805</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>He</td>
+      <td>Helium</td>
+      <td>2</td>
+      <td>4.002602</td>
+      <td>NaN</td>
+      <td>1</td>
+      <td>18</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.95 K</td>
+      <td>21.00</td>
+      <td>1.000035 (gas; liquid 1.028)(no units)</td>
+      <td>NaN</td>
+      <td>0.1513</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Li</td>
+      <td>Lithium</td>
+      <td>3</td>
+      <td>6.941000</td>
+      <td>1.45</td>
+      <td>2</td>
+      <td>1</td>
+      <td>True</td>
+      <td>0.98</td>
+      <td>535.0</td>
+      <td>453.69 K</td>
+      <td>13.02</td>
+      <td>NaN</td>
+      <td>9.500000e-08</td>
+      <td>85.0000</td>
+      <td>4.9</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Be</td>
+      <td>Beryllium</td>
+      <td>4</td>
+      <td>9.012182</td>
+      <td>1.05</td>
+      <td>2</td>
+      <td>2</td>
+      <td>True</td>
+      <td>1.57</td>
+      <td>1848.0</td>
+      <td>1560.0 K</td>
+      <td>4.85</td>
+      <td>NaN</td>
+      <td>3.800000e-08</td>
+      <td>190.0000</td>
+      <td>287.0</td>
+      <td>0.032</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>B</td>
+      <td>Boron</td>
+      <td>5</td>
+      <td>10.811000</td>
+      <td>0.85</td>
+      <td>2</td>
+      <td>13</td>
+      <td>False</td>
+      <td>2.04</td>
+      <td>2460.0</td>
+      <td>2349.0 K</td>
+      <td>4.39</td>
+      <td>NaN</td>
+      <td>1.000000e+12</td>
+      <td>27.0000</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</div>
+<div class="section" id="caveat-f1-score-on-your-own-time">
+<h3>Caveat: F1 score 🏎 (on your own time)<a class="headerlink" href="#caveat-f1-score-on-your-own-time" title="Permalink to this headline">¶</a></h3>
+<p>If we had a little more time, or for those who are interested, we would discuss how accuracy <em>is not the best performance metric for classification</em>.
+The biggest reason is due to <strong>dataset imbalance</strong>, which is most often the case with real-world data (materials and otherwise), such as the following:
+Imagine you do very well (20/20) for positive labels, and pretty well (900/980) for negative labels.
+In other words, the confusion matrix is:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+<th class="text-align:left head"><p>Positive prediction</p></th>
+<th class="text-align:left head"><p>Negative prediction</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><em>Positive label</em>:</p></td>
+<td class="text-align:left"><p>20 TP</p></td>
+<td class="text-align:left"><p>0 FN</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><em>Negative label</em>:</p></td>
+<td class="text-align:left"><p>80 FP</p></td>
+<td class="text-align:left"><p>900 TN</p></td>
+</tr>
+</tbody>
+</table>
+<p>What is your accuracy?
+92%, which is not bad.
+<strong>But</strong>, you might look at this classifier and think, “Uh oh, it’s not picking negative labels that well, which would be a huge problem if those false positives corresponded to a disastrous consequence, like an electric car battery exploding.” 😬</p>
+<p>Therefore, we need a different metric(s), and the most common metrics you’ll see in the literature for classification are actually <strong>precision</strong>, <strong>recall</strong>, and <strong>F1 score</strong>.</p>
+<p>The <em>precision</em> is the number of True positives out of all positive predictions, given by</p>
+<div class="math notranslate nohighlight">
+\[ \frac{\text{TP}}{\text{TP + FP}} \]</div>
+<p>It is useful when we want to <em>minimize false positives</em> (since we want to maximize precision).</p>
+<p>The <em>recall</em> is the number of True positives out of all actual positives, given by</p>
+<div class="math notranslate nohighlight">
+\[ \frac{\text{TP}}{\text{TP + FN}} \]</div>
+<p>It is useful when we want to <em>minimize false negatives</em> (since we want to maximize recall).</p>
+<p>In most cases, there’s a tradeoff between precision and recall, which is nicely illustrated in <a class="reference external" href="https://developers.google.com/machine-learning/crash-course/classification/precision-and-recall#precision-and-recall:-a-tug-of-war">this lesson from Google Developers</a>.
+To balance these two distinct performance criteria, we can compute the <strong>F1 score</strong>, which is the harmonic mean of the two quantities:</p>
+<div class="math notranslate nohighlight">
+\[ F_1 = \frac{2}{\text{precision}^{-1} + \text{recall}^{-1}} \]</div>
+<p>If you want, you can experiment with the appropriate functions in <a class="reference external" href="https://scikit-learn.org/stable/modules/classes.html#module-sklearn.metrics"><code class="docutils literal notranslate"><span class="pre">sklearn.metrics</span></code></a> to calculate these quantities.</p>
+<div class="alert alert-block alert-warning">
+    <center><b>~ BREAK ~</b></center>
+    At this point, we're going to give ourselves a short break before continuing further.
+    Great work so far! 💪
+</div></div>
+</div>
+<div class="section" id="train-validate-test">
+<h2>Train-validate-test<a class="headerlink" href="#train-validate-test" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="#Contents">Back to top</a></p>
+<p>So far our workflow has been something like this:</p>
+<ol class="simple">
+<li><p>Gather some data <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(\vec{y}\)</span> for the purposes of training the supervised ML model.
+We call these data <strong>training data</strong>.</p></li>
+<li><p>Fit (train) the ML model on these data, <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(\vec{y}\)</span>, to learn the correct parameters <span class="math notranslate nohighlight">\(\vec{\theta}\)</span>.</p></li>
+<li><p>Evaluate the ML model on <span class="math notranslate nohighlight">\(X\)</span> to get the <strong>training error</strong>.</p></li>
+</ol>
+<p>While this methodology is fine, it can be <strong>misleading</strong> in that we’ll think our ML model is doing better than it really is.
+This is because we’re evaluating its performance on data that it has already seen (been trained on), instead of <em>new, unseen data</em> that would be a better test of the model’s true predictive power.
+This is not such a big deal with these simpler linear models, but will matter a great deal for more complex ML models, if you choose to use them, that can “memorize” the training data really well.
+Imagine studying for an exam with practice problems, and then seeing those exact same questions appear on the real exam!</p>
+<p>Given this, it is common to split our full dataset into <strong>three parts</strong>:</p>
+<ol class="simple">
+<li><p>The <strong>training data</strong>, <span class="math notranslate nohighlight">\(X_{\text{train}}\)</span> and <span class="math notranslate nohighlight">\(\vec{y}_{\text{train}}\)</span>, used for training our model’s parameters.</p></li>
+<li><p>The <strong>validation data</strong>, <span class="math notranslate nohighlight">\(X_{\text{val}}\)</span> and <span class="math notranslate nohighlight">\(\vec{y}_{\text{val}}\)</span>, used for evaluating our trained model’s performance.
+The trained model’s performance on the validation data is the validation error.
+Depending on how satisfied we are with this, we might adjust our ML model, and repeat the training-validation loop.</p></li>
+<li><p>The <strong>test data</strong>, <span class="math notranslate nohighlight">\(X_{\text{test}}\)</span> and <span class="math notranslate nohighlight">\(\vec{y}_{\text{test}}\)</span>, used for evaluating our <em>final</em> trained model’s performance.
+Ideally (in theory), you will run your model on the test data <em>only once</em>, after all your validation iterations have finished!
+The error incurred at this step is the <strong>test error</strong>.
+This is the error that everyone will care about and the one you should <em>always report</em>!</p></li>
+</ol>
+<p>There’s no real guidelines on how much of your data to allocate to each set.
+Some common heuristics are 60/20/20 (train/val/test), 50/20/30, and 50/25/25.</p>
+<div class="section" id="splitting-data-in-scikit-learn">
+<h3>Splitting data in scikit-learn<a class="headerlink" href="#splitting-data-in-scikit-learn" title="Permalink to this headline">¶</a></h3>
+<p>How might you create these divisions?
+A very simple way would just be to take (for a 50/20/30 split) the first 50% of the rows (examples) in <span class="math notranslate nohighlight">\(X\)</span> <em>and</em> <span class="math notranslate nohighlight">\(\vec{y}\)</span> to be your training data.
+Then take the next 20% of the rows to be your validation data.
+Then use the remaining 30% to be your test data.
+This could work, but it seems a little clunky to have to manually calculate the index of the splits, and we might actually induce <strong>bias</strong> by using adjacent examples, depending on how our data were collected/organized.</p>
+<p>If we look inside the <a class="reference external" href="https://scikit-learn.org/stable/modules/classes.html#module-sklearn.model_selection"><code class="docutils literal notranslate"><span class="pre">sklearn.model_selection</span></code></a> module, we see there’s a handy <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html"><code class="docutils literal notranslate"><span class="pre">train_test_split(arrays,</span> <span class="pre">test_size=0.25,</span> <span class="pre">shuffle=True)</span></code></a> function that will take a sequence of arrays and produce a randomized (shuffled) train/test split of <strong>each</strong> array according to the proportion specified with the <code class="docutils literal notranslate"><span class="pre">test_size</span></code> parameter.
+For example, to execute a 50/20/30 split, one could do:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">X_tv</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_tv</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.30</span><span class="p">)</span>             <span class="c1"># first get test data</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_val</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_val</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X_tv</span><span class="p">,</span> <span class="n">y_tv</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.20</span><span class="p">)</span>   <span class="c1"># then get train/val data</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="cross-validation">
+<h2>Cross-validation<a class="headerlink" href="#cross-validation" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="#Contents">Back to top</a></p>
+<p>As we know, in MI our datasets are often quite small (sometimes only dozens of data points), so it might not seem very practical to conduct a training/validation/test split when we ideally want to maximize the amount of training data available for training our ML models.
+A common practice to help mitigate this issue and maximally leverage our data is through <strong>cross-validation (CV)</strong>.</p>
+<p>In particular, we will be discussing a form of CV known as <span class="math notranslate nohighlight">\(k\)</span><strong>-fold CV</strong>, where they data is randomly split into <span class="math notranslate nohighlight">\(k\)</span> folds (groups), and we take turns building a ML model trained on <span class="math notranslate nohighlight">\(k-1\)</span> folds and validating on the final fold.
+We repeat this for each of <span class="math notranslate nohighlight">\(k\)</span> possible validation folds and average the results from all the validation trials to get the <strong>CV error</strong> (or whatever performance metric).</p>
+<div class="section" id="scikit-learn-for-cross-validation">
+<h3>scikit-learn for cross validation<a class="headerlink" href="#scikit-learn-for-cross-validation" title="Permalink to this headline">¶</a></h3>
+<p>If you thought splitting a dataset once into training/validation was hard, then imagine doing it <span class="math notranslate nohighlight">\(k\)</span> times.
+Luckily, scikit-learn has <a class="reference external" href="https://scikit-learn.org/stable/modules/classes.html#module-sklearn.model_selection">so many options</a> that it’s actually hard to make sense of them all.
+We’ll be looking at two of them:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.KFold.html"><code class="docutils literal notranslate"><span class="pre">KFold(n_splits=5,</span> <span class="pre">shuffle=False)</span></code></a> is used to construct an object that saves our CV settings.
+The arguments listed here are the default values.</p></li>
+<li><p><a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_val_score.html"><code class="docutils literal notranslate"><span class="pre">cross_val_score(estimator,</span> <span class="pre">X,</span> <span class="pre">y,</span> <span class="pre">scoring,</span> <span class="pre">cv)</span></code></a> is a function that takes many arguments, and we describe the five we are choosing to highlight below:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">estimator</span></code>: the ML model used to fit the data. It doesn’t have to be fit yet.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">X</span></code>: the design matrix.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">y</span></code>: the target vector (for supervised learning).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">scoring</span></code>: a metric for evaluating performance, where <em>higher values are always better</em>.
+There are many options, which you can see <a class="reference external" href="https://scikit-learn.org/stable/modules/model_evaluation.html#common-cases-predefined-values">here</a>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cv</span></code>: where the CV object goes.</p></li>
+</ul>
+</li>
+<li><p>Later, on your own, you might be interested in the similar <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_val_predict.html"><code class="docutils literal notranslate"><span class="pre">cross_val_predict()</span></code></a> function.</p></li>
+</ul>
+</div>
+<div class="section" id="exercise-perform-5-fold-cv-for-the-atomic-mass-prediction-problem">
+<h3>Exercise: perform 5-fold CV for the atomic mass prediction problem.<a class="headerlink" href="#exercise-perform-5-fold-cv-for-the-atomic-mass-prediction-problem" title="Permalink to this headline">¶</a></h3>
+<p><em>Hints</em>:</p>
+<ul class="simple">
+<li><p>You should construct a <code class="docutils literal notranslate"><span class="pre">KFold()</span></code> object.</p></li>
+<li><p>For <code class="docutils literal notranslate"><span class="pre">scoring</span></code>, use the <code class="docutils literal notranslate"><span class="pre">'neg_root_mean_squared_error'</span></code>.
+It returns an array of scores, and you should print these.</p></li>
+<li><p>Start with <code class="docutils literal notranslate"><span class="pre">shuffle=False</span></code> inside the <code class="docutils literal notranslate"><span class="pre">KFold()</span></code> constructor.
+Then change it to <code class="docutils literal notranslate"><span class="pre">True</span></code>.
+Do your scores change? Why?</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">KFold</span><span class="p">,</span> <span class="n">cross_val_score</span><span class="p">,</span> <span class="n">cross_val_predict</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../../assets/data/week_1/04/elem_props.csv&#39;</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;atomic_number&#39;</span><span class="p">]]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;atomic_mass&#39;</span><span class="p">]</span>
+<span class="c1"># -------------   WRITE YOUR CODE IN THE SPACE BELOW   ---------- #</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div class="section" id="conclusion">
 <h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h2>
-<p>Congratulations on making it to the end! 🎉👏</p>
-<p>There is a lot of information that we covered in this notebook, so it’s totally reasonable if not everything clicked right away and you find yourself needing to revist these concepts.</p>
-<p>Please don’t hesitate to reach out on Slack if you have questions or concerns.</p>
+<p>This concludes the exercises on model performance evaluation.
+In the third leg of this introduction to ML, we’ll take a look at <strong>featurization</strong> for MI applications, which continues to build on this knowledge.
+Therefore, please do let us know if you have questions about the material so far.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># -------------   WRITE YOUR CODE IN THE SPACE BELOW   ---------- #</span>
+</pre></div>
+</div>
+</div>
+</div>
 </div>
 </div>
 

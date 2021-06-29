@@ -21,7 +21,7 @@ Again, it's totally OK if things change!
 
 ## Timing for today
 
-- We will start the day on Zoom at 9:00AM _sharp_.
+- We will start the day on Zoom at 9:00AM.
 - We will have a mix of synchronous lectures and group exercises, interspersed with several short breaks.
 - We will take a longer break for lunch between 12:00PM and 1:00PM.
 - Enze will hold drop-in OH from 2:00PM to 3:00PM on Zoom.

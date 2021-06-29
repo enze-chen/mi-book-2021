@@ -1,4 +1,4 @@
-mp-id,formula,n,band_gap,poly_total,poly_electronic
+mp-id,formula,n,band_gap,diel_total,diel_elec
 mp-441,Rb2Te,1.86,1.88,6.23,3.44
 mp-22881,CdCl2,1.78,3.52,6.73,3.16
 mp-28013,MnI2,2.23,1.17,10.64,4.97

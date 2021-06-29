@@ -4,9 +4,9 @@
 Welcome to day ✌ of Module 2 where we will take a deeper dive into the field of MI with a particular emphasis on data types, data representation, and data storage.
 As we discussed yesterday, there will be many hands-on exercises for you in these lessons to build confidence and experience working with programmatic tools.
 
-```{attention}
+<!-- ```{attention}
 Today's synchronous activities _will likely_ take a majority of the day. Get pumped!! 💪
-```
+``` -->
 
 
 ## Goals for today
@@ -21,11 +21,11 @@ Today's synchronous activities _will likely_ take a majority of the day. Get pum
 
 ## Timing for today
 
-- We will kick off the day on Zoom at 9:00AM PDT _sharp_.
+- We will kick off the day on Zoom at 9:00AM PDT.
 - We will have a mix of synchronous lectures and group exercises, interspersed with several short breaks.
 - We will take a longer break for lunch between 12:00PM and 1:00PM PDT.
-- We will also take a break from 3:00PM to 3:20PM PDT.
-- Since we'll be meeting online for most of the day, we'll debrief as part of the last session.
+- Enze will hold drop-in OH from 2:00PM to 3:00PM PDT.
+- We will have an afternoon check-in at 3:00PM PDT.
 
 
 
@@ -33,3 +33,5 @@ Today's synchronous activities _will likely_ take a majority of the day. Get pum
 
 ```{tableofcontents}
 ```
+
+

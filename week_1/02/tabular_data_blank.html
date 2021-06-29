@@ -884,16 +884,9 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#csv-vs-json">
-     CSV vs. JSON 🥊
+    <a class="reference internal nav-link" href="#exercise-conceptual-csv-vs-json">
+     Exercise (conceptual): CSV vs. JSON 🥊
     </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#exercise-conceptual-csv-vs-json">
-       Exercise (conceptual): CSV vs. JSON
-      </a>
-     </li>
-    </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#exercise-reformatting-dielectric-constants-dataset">
@@ -989,8 +982,8 @@ They try to do this with any file that ends in <code class="docutils literal not
 <h3>Wait, but what about Excel files?<a class="headerlink" href="#wait-but-what-about-excel-files" title="Permalink to this headline">¶</a></h3>
 <p>So if you’ve used Microsoft Excel, you may be familiar with their <code class="docutils literal notranslate"><span class="pre">.xls</span></code> or <code class="docutils literal notranslate"><span class="pre">.xlsx</span></code> file formats that also store tabular data.
 In fact, if you’ve ever modified a <code class="docutils literal notranslate"><span class="pre">.csv</span></code> file in Excel and then tried to save it, you may have even seen a warning informing you that you should save the data as an Excel file to avoid loss of information (such as preservation of formulas, having multiple sheets in one file, etc.).
-While some of these Excel features are nice, the file format is less so, and can be <em>quite difficult</em> to process programmatically and is often <strong>not cross-platform compatible</strong> (even Windows vs. Mac versions of Excel can conflict with each other!), which is not a good practice in informatics.
-Therefore, we recommend that you do yourselves (and everyone else) a favor and, at least for this module, choose to store tabular data in CSV instead of native Excel.</p>
+While some of these Excel features are nice, the file format is less so, and can be <em>quite difficult</em> to process programmatically and is often <strong>not cross-platform compatible</strong> (even Windows vs. Mac versions of Excel can conflict with each other!), which is not a good practice in MI.
+Therefore, we recommend that you choose to store tabular data in CSV instead of native Excel, at least when working with your peers in this module.</p>
 </div>
 <div class="section" id="why-do-we-want-tabular-data">
 <h3>Why do we want tabular data?<a class="headerlink" href="#why-do-we-want-tabular-data" title="Permalink to this headline">¶</a></h3>
@@ -1027,7 +1020,8 @@ Motivated by our experience with JSON files, it would be great if we could load 
 <h2>pandas!<a class="headerlink" href="#pandas" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="#Contents">Back to top</a></p>
 <p><img alt="pandas" src="../../_images/pandas.png" /></p>
-<p>Luckily, our furry friends from the East 🐼 have heard our pleas and are here to save the day! …kinda.</p>
+<p>Luckily, our furry friends from the East 🐼 have heard our pleas and are here to save the day! …kinda.
+Not really.</p>
 <p><a class="reference external" href="https://pandas.pydata.org/"><code class="docutils literal notranslate"><span class="pre">pandas</span></code></a> is Python package developed in 2008 by <a class="reference external" href="https://wesmckinney.com/">Wes McKinney</a> to facilitate data analysis and it has since become one of the most widely used packages in the Python community.
 The name is cleverly derived from “<a class="reference external" href="https://en.wikipedia.org/wiki/Panel_data">panel data</a>,” which is a phrase from econometrics for “multi-dimensional time series” and is the context for which pandas was first developed.
 pandas is built on top of <a class="reference external" href="https://numpy.org/">NumPy</a>, so there are many aspects of it that you should already be familiar with!</p>
@@ -1044,8 +1038,12 @@ Note that a Series is <em>homogeneously-typed</em>.</p></li>
 <div class="section" id="dataframe-constructor">
 <h4><code class="docutils literal notranslate"><span class="pre">DataFrame</span></code> constructor<a class="headerlink" href="#dataframe-constructor" title="Permalink to this headline">¶</a></h4>
 <p>The best way to learn is by doing, so let’s go ahead and use pandas to construct a DataFrame.</p>
-<p>The community standard is to import <code class="docutils literal notranslate"><span class="pre">pandas</span></code> with the <code class="docutils literal notranslate"><span class="pre">pd</span></code> alias (similar to <code class="docutils literal notranslate"><span class="pre">np</span></code> for <code class="docutils literal notranslate"><span class="pre">numpy</span></code>), so it’s best practice to stick with this.
-Or else people will look at you like 🤨.</p>
+<p>The community standard is to use the alias</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span> 
+</pre></div>
+</div>
+<p>which is similar to using <code class="docutils literal notranslate"><span class="pre">np</span></code> for <code class="docutils literal notranslate"><span class="pre">numpy</span></code>, so it’s best practice to stick with this alias.
+Or else people might look at you like 🤨.</p>
 <p>There are many ways to create DataFrames, but with the <a class="reference external" href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html"><code class="docutils literal notranslate"><span class="pre">DataFrame()</span></code> constructor</a> you will likely use one of two methods:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">pd.DataFrame(dict)</span></code>, where <code class="docutils literal notranslate"><span class="pre">dict</span></code> is a dictionary of <code class="docutils literal notranslate"><span class="pre">str:list</span></code> pairs that correspond to the name and values in each column.</p></li>
@@ -1067,7 +1065,7 @@ Or else people will look at you like 🤨.</p>
 <span class="c1"># Create the same DataFrame from list of lists</span>
 <span class="n">df_list</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([[</span><span class="s1">&#39;H&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">1.008</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;He&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mf">4.003</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;Li&#39;</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mf">6.941</span><span class="p">]],</span>
                        <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;symbol&#39;</span><span class="p">,</span> <span class="s1">&#39;number&#39;</span><span class="p">,</span> <span class="s1">&#39;mass&#39;</span><span class="p">])</span>
-<span class="n">df_list</span>    <span class="c1"># in Jupyter notebooks, DataFrames have a pretty display (compare to print above)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">df_list</span><span class="p">)</span>    <span class="c1"># in Jupyter notebooks, DataFrames have a pretty display (compare to print above)</span>
 </pre></div>
 </div>
 </div>
@@ -1137,7 +1135,7 @@ Default is comma (<code class="docutils literal notranslate"><span class="pre">'
 Default is the first row.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">names</span></code>: If you would like to rename your columns.
 This list cannot have duplicates.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">skiprows</span></code>: Extremely useful if there are lines of comments and extra text in the file that you want to avoid reading.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">skiprows</span></code>: Extremely useful if there are lines of comments and extra text at the top of the file that you want to avoid reading.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">nrows</span></code>: Useful if your file is very large, or your data stops before reaching the end of the file (e.g., there’s footer text in the file).</p></li>
 </ul>
 </div>
@@ -1444,6 +1442,7 @@ We’ll also rename the column names to be:</p>
 <p>And there’s all of our data!
 That was pretty efficient.
 To see all of the input/output functions available to you, we point you to <a class="reference external" href="https://pandas.pydata.org/docs/reference/io.html">the documentation</a>.</p>
+<p>The <strong>takeaway</strong> here is that, like the <code class="docutils literal notranslate"><span class="pre">json</span></code> package, we’re using the <code class="docutils literal notranslate"><span class="pre">pandas</span></code> package because that is the most convenient way to process this particular structure of data, and the fastest way to get us what we want.</p>
 </div>
 </div>
 <div class="section" id="working-with-dataframes">
@@ -1468,7 +1467,7 @@ Again, attributes in Python don’t have parentheses; only methods (i.e., functi
 </div>
 <p>Not bad, just like NumPy. 😉
 Note that the column name/header is <em>not</em> part of the “data itself,” which probably aligns with your intuition and we’re just pointing it out for good measure.</p>
-<p><strong>Pause and reflect</strong>: What does the related attribute <code class="docutils literal notranslate"><span class="pre">df.size</span></code> do?</p>
+<p><strong>Try it out</strong>: What does the related attribute <code class="docutils literal notranslate"><span class="pre">df.size</span></code> do?</p>
 <hr class="docutils" />
 <p>If you just want the list of column names, you can get (and set!) them using the <code class="docutils literal notranslate"><span class="pre">df.columns</span></code> attribute.</p>
 <div class="cell docutils container">
@@ -1484,7 +1483,7 @@ Note that the column name/header is <em>not</em> part of the “data itself,” 
 </div>
 </div>
 <p>How about the data types in the DataFrame?
-We claimed that DataFrames are heterogeneously-typed (different columns (Series) can hold different data types) but the proof is in the pudding 😋, which in this case is the <a class="reference external" href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.info.html"><code class="docutils literal notranslate"><span class="pre">df.info()</span></code></a> <em>method</em>.</p>
+We claimed that DataFrames are heterogeneously-typed (different columns (Series) can hold different data types) but the proof is in the pudding, which in this case is the <a class="reference external" href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.info.html"><code class="docutils literal notranslate"><span class="pre">df.info()</span></code></a> <em>method</em>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
@@ -1600,22 +1599,56 @@ In pandas, we can easily do this by calling the <a class="reference external" hr
 </div></div></div>
 </div>
 <p>You may have noticed that the <code class="docutils literal notranslate"><span class="pre">'element'</span></code> column was ignored because that Series has a non-numeric type.
-It is still possible to get statistics on that Series if we single it out.</p>
+It is still possible to get statistics on that Series if we single it out.
+We can select a single column by creating a length 1 list with just that column name, which returns a DataFrame object.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;element&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>   <span class="c1"># More on indexing in a bit!</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;element&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>   <span class="c1"># More on indexing in a bit!</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>count            36
-unique           36
-top       magnesium
-freq              1
-Name: element, dtype: object
-</pre></div>
-</div>
-</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>element</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>36</td>
+    </tr>
+    <tr>
+      <th>unique</th>
+      <td>36</td>
+    </tr>
+    <tr>
+      <th>top</th>
+      <td>cobalt</td>
+    </tr>
+    <tr>
+      <th>freq</th>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
 </div>
 <p>You can also calculate a specific <a class="reference external" href="https://pandas.pydata.org/docs/getting_started/intro_tutorials/06_calculate_statistics.html">summary statistic</a> using the appropriate method (which typically has an <code class="docutils literal notranslate"><span class="pre">axis</span></code> parameter that you can specify).</p>
 <div class="cell docutils container">
@@ -1879,6 +1912,7 @@ Name: hardness, dtype: float64
 </div>
 </div>
 </div>
+<p><strong>Try it out</strong>: What happens if you wrote <code class="docutils literal notranslate"><span class="pre">df[['hardness']]</span></code> above instead?</p>
 <p>To select multiple columns, use a list of column names within brackets <code class="docutils literal notranslate"><span class="pre">[]</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2060,7 +2094,7 @@ Name: hardness, dtype: float64
 <p>Note that these are <strong>square brackets</strong>!
 Which one you choose to use depends on your use case.
 In some of the previous examples, you may have noticed that even after the DataFrame got shuffled, the bold row labels were preserved.
-These are labels one would use for the <code class="docutils literal notranslate"><span class="pre">loc()</span></code> method, for example, and we demonstrate this below.</p>
+These are labels one would use for the <code class="docutils literal notranslate"><span class="pre">loc[]</span></code> property, for example, and we demonstrate this below.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_sub</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;density&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
@@ -2305,8 +2339,8 @@ Try changing the above value to <code class="docutils literal notranslate"><span
 <li><p>Note that in pandas, unlike Python/NumPy, the upper bound is <strong>inclusive</strong>.</p></li>
 </ol>
 <hr class="docutils" />
-<p>Those examples were with <code class="docutils literal notranslate"><span class="pre">df.loc()</span></code>.
-Now for <code class="docutils literal notranslate"><span class="pre">df.iloc()</span></code>:</p>
+<p>Those examples were with <code class="docutils literal notranslate"><span class="pre">df.loc[]</span></code>.
+Now for <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.iloc.html"><code class="docutils literal notranslate"><span class="pre">df.iloc[]</span></code></a>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_sub</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">4</span><span class="p">,</span> <span class="p">:</span><span class="mi">2</span><span class="p">]</span>    <span class="c1"># a chunk subset</span>
@@ -2399,7 +2433,7 @@ Name: number, dtype: int64
 <div class="section" id="looping-through-a-dataframe">
 <h3>Looping through a DataFrame<a class="headerlink" href="#looping-through-a-dataframe" title="Permalink to this headline">¶</a></h3>
 <p>While a DataFrame supports really clever and advanced indexing, there will be times when, for lack of a better method, we simply need to iterate through a DataFrame and access the entries one row/column at a time.
-If you disagree with us, or want to know why one would disagree, please see <a class="reference external" href="https://stackoverflow.com/questions/16476924/how-to-iterate-over-rows-in-a-dataframe-in-pandas">this Stack Overflow discussion</a>. 😉</p>
+If you disagree with us, or want to know why one would disagree, please see <a class="reference external" href="https://stackoverflow.com/questions/16476924/how-to-iterate-over-rows-in-a-dataframe-in-pandas">this Stack Overflow discussion</a>. 😛</p>
 <p>If you want to loop over the rows (more common than looping through columns, simply based on our <a class="reference external" href="#Formatting-tabular-data">formatting conventions</a>), the preferred method is <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.itertuples.html"><code class="docutils literal notranslate"><span class="pre">df.itertuples()</span></code></a>, which returns an iterator over the rows as named tuples.
 Note that by default, the index of the rows is the first element of the tuple, followed by the other elements in the row.</p>
 <div class="cell docutils container">
@@ -2538,7 +2572,7 @@ In addition, the row labels that may have been automatically indexed initially (
 <span class="n">display</span><span class="p">(</span><span class="n">df_smaller</span><span class="p">)</span>
 
 <span class="n">df_smaller</span> <span class="o">=</span> <span class="n">df_smaller</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>   <span class="c1"># arg prevents original index from being inserted as new column</span>
-<span class="n">df_smaller</span>
+<span class="n">df_smaller</span>                                       <span class="c1"># note how indices on far left are reset</span>
 </pre></div>
 </div>
 </div>
@@ -2961,13 +2995,10 @@ In short, the convention for formatting tabular data for MI is:</p>
 In the example above, this would be the element name, number, hardness, and density.</p></li>
 </ul>
 <p>Please don’t get rows and columns transposed!</p>
-<div class="section" id="csv-vs-json">
-<h3>CSV vs. JSON 🥊<a class="headerlink" href="#csv-vs-json" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="exercise-conceptual-csv-vs-json">
-<h4>Exercise (conceptual): CSV vs. JSON<a class="headerlink" href="#exercise-conceptual-csv-vs-json" title="Permalink to this headline">¶</a></h4>
+<h3>Exercise (conceptual): CSV vs. JSON 🥊<a class="headerlink" href="#exercise-conceptual-csv-vs-json" title="Permalink to this headline">¶</a></h3>
 <p>Based on what you’ve seen so far, what are the advantages of CSV over JSON, and vice versa?
 Please record your thoughts somewhere and we’ll discuss this question later!</p>
-</div>
 </div>
 <div class="section" id="exercise-reformatting-dielectric-constants-dataset">
 <h3>Exercise: Reformatting dielectric constants dataset<a class="headerlink" href="#exercise-reformatting-dielectric-constants-dataset" title="Permalink to this headline">¶</a></h3>
@@ -2984,12 +3015,13 @@ The data from their work is featured in the <a class="reference external" href="
 </ul>
 <p>and <strong>organize this information into an appropriate pandas DataFrame</strong>.
 Finally, <strong>save this DataFrame as a CSV file</strong> in a location where you can find it again.
-We will be using the tabular version of this dataset in tomorrow’s exercises, just so you know. 😁</p>
+You might need the tabular version of this dataset in future exercises and research work, just so you know. 😁</p>
 <p><em>Hints</em>:</p>
 <ul class="simple">
-<li><p>You should open the file on your computer, or print out the first element in <code class="docutils literal notranslate"><span class="pre">data</span></code>, to see what the appropriate keys and access patterns should be.</p></li>
-<li><p>You may assume that every material has every property that’s listed above and that each JSON entry is formatted the same way.</p></li>
-<li><p>You may want to display the DataFrame when you’re done, just to confirm that you got all the data you needed (correct dimensions, columns, values, etc.).</p></li>
+<li><p>You should open the file on your computer, <em>or</em> print out the first element in <code class="docutils literal notranslate"><span class="pre">data</span></code> using Python code, to see what the appropriate keys and access patterns should be.</p></li>
+<li><p>You may assume that every material has every property that’s listed above and that each JSON entry is formatted the same way.
+Recall that this wasn’t true for Strehlow and Cook, but that’s the benefit of using computational data like these.</p></li>
+<li><p>You may want to display the final DataFrame when you’re done, just to confirm that you got all the data you needed (correct dimensions, columns, values, etc.).</p></li>
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -3028,7 +3060,8 @@ There will likely be a few errors here and there, but you might find that this s
 <h3>Manual entry<a class="headerlink" href="#manual-entry" title="Permalink to this headline">¶</a></h3>
 <p>It’s possible that at the end of the day, you still have to enter data into CSV files by hand.
 And that’s OK!
-There are pros and cons of taking this route, and since we are teaching you programmatic tools for MI (and benefits like automation, reproducibility, etc.) we haven’t really talked about this, but we definitely don’t want you to think this is off limits. 😆</p>
+There are pros and cons of taking this route, and since we are teaching you programmatic tools for MI (and benefits like automation, reproducibility, etc.) we haven’t really talked about this, but we definitely don’t want you to think this is off limits.
+Sometimes, it’s about using whatever gets the job done. 😆</p>
 </div>
 </div>
 <div class="section" id="conclusion">
@@ -3036,7 +3069,7 @@ There are pros and cons of taking this route, and since we are teaching you prog
 <p>This concludes the introduction to tabular data.
 If you would like to learn more about pandas, we suggest you look at the <a class="reference external" href="https://pandas.pydata.org/docs/user_guide/index.html">official user guide</a>.
 Realistically, there’s way too much to cover about pandas, and a lot of your understanding will be built as you work with it for your own datasets.
-But, we hope that by giving a brief introduction, you at least know what’s available, where to go for help, and <em>how to think about tabular data</em> with pandas. 🐼</p>
+But, we hope that by giving a brief introduction, you at least know what’s available, where to go for help, and <em>how to think about tabular data</em> with pandas.</p>
 <p>For the final notebook lesson of the day, we’ll be learning about databases and the <a class="reference external" href="https://materialsproject.org/">Materials Project</a>!</p>
 </div>
 </div>

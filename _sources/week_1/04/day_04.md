@@ -22,7 +22,7 @@ Today's synchronous activities _will almost surely_ take the whole day. Get pump
 
 ## Timing for today
 
-- We will kick off the day on Zoom at 9:00AM _sharp_.
+- We will kick off the day on Zoom at 9:00AM.
 - We will have a mix of synchronous lectures and group exercises, interspersed with several short breaks.
 - We will take a longer break for lunch between 12:00PM and 1:00PM.
 - We will also take a break from 3:00PM to 3:20PM.

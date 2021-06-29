@@ -42,8 +42,6 @@
     <script src="../../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -803,11 +801,11 @@ Your queries might look like the following:</p>
 </pre></div>
 </div>
 <p>These queries are structured pretty much similarly to what you’d expect (i.e., what you would say if you were asking someone else).
-For error messages, we recommend <em>copying the error message directly</em> from your Jupyter notebook or terminal window output.</p>
+For error messages, we recommend <em>copying the error message directly</em> from your Jupyter notebook or terminal window output and throwing in “python.”</p>
 <p>You will then get a huge list of results to sift through, so we offer some guidance on what sources might be more helpful than others:</p>
 <ol class="simple">
 <li><p><a class="reference external" href="https://stackoverflow.com/">Stack Overflow</a>: Anything from the <code class="docutils literal notranslate"><span class="pre">stackoverflow.com</span></code> domain is a very good place to look for a solution.
-The solutions are contributed <em>and voted on</em> by community members, and there’s a standard of excellence for what makes a good answer (such as providing a <em>minimum working example</em> (MWE) for a solution).</p></li>
+The solutions are contributed <em>and voted on</em> by community members, and there’s a standard of excellence for what makes a good answer (such as providing a <em>minimum working example</em> for a solution).</p></li>
 <li><p>Stack Overflow is part of the larger <a class="reference external" href="https://stackexchange.com/">Stack Exchange</a> community, and you might find answers to more domain-specific questions (like <a class="reference external" href="https://stats.stackexchange.com/">statistics</a>) on other sites (e.g., <code class="docutils literal notranslate"><span class="pre">stats.stackexchange.com</span></code>).</p></li>
 <li><p>Any of the tutorial or blog sites will have plenty of code examples, and some particularly well-known ones are:</p>
 <ul class="simple">
@@ -857,10 +855,11 @@ The ones you’ll likely come across in this module are:</p></li>
 <li><p><a class="reference external" href="https://matplotlib.org/stable/contents.html">Matplotlib</a>: <code class="docutils literal notranslate"><span class="pre">matplotlib.org/stable/contents/html</span></code></p></li>
 <li><p><a class="reference external" href="https://scikit-learn.org/stable/index.html">Scikit-learn</a>: <code class="docutils literal notranslate"><span class="pre">scikit-learn.org/stable/index.html</span></code></p></li>
 <li><p><a class="reference external" href="https://pymatgen.org/index.html">Pymatgen</a>: <code class="docutils literal notranslate"><span class="pre">pymatgen.org/index.html</span></code></p></li>
+<li><p><a class="reference external" href="https://hackingmaterials.lbl.gov/matminer/">Matminer</a>: <code class="docutils literal notranslate"><span class="pre">hackingmaterials.lbl.gov/matminer/</span></code></p></li>
 </ul>
 <p>We offer two more points of guidance regarding your search:</p>
 <ul class="simple">
-<li><p>You can try using the search bar on these sites for direct results, which are generally pretty good.
+<li><p>You can <em>try using the search bar on these sites for direct results</em>, which are generally pretty good.
 In other words, while we did not advise doing this in the previous section (since it’s hard to pinpoint where we’ll find answers to those broad inquiries), we <em>do</em> recommend doing this if there’s a question about how to use a specific package/function.
 An example would be to actually click the NumPy link above and search <code class="docutils literal notranslate"><span class="pre">numpy.mean</span></code> directly on the search bar on that page.</p></li>
 <li><p>If you take the “Google search” route, be aware of <em>different versions</em> of these packages, which may give different results.
@@ -880,11 +879,11 @@ This is followed by the <strong>function header</strong> which shows the input p
 All input parameters with an equal sign (<code class="docutils literal notranslate"><span class="pre">=</span></code>) are <em>optional</em>, with the value that follows being the default value.
 Furthermore, <em>the order of the parameters is important</em>, because that determines how the values from the caller will be assigned if argument names aren’t specified.
 For example, if argument names are specified, we can specify them out of order:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">a</span><span class="o">=</span><span class="n">arr</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">a</span><span class="o">=</span><span class="n">arr</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>But if argument names aren’t specified, then the assignment is based on the order in the header:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>where <code class="docutils literal notranslate"><span class="pre">a=arr</span></code>, <code class="docutils literal notranslate"><span class="pre">axis=1</span></code>, and <code class="docutils literal notranslate"><span class="pre">dtype=np.float64</span></code> is assumed.</p>
