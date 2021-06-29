@@ -1143,7 +1143,7 @@ This list cannot have duplicates.</p></li>
 <h4>Reading in a CSV file<a class="headerlink" href="#reading-in-a-csv-file" title="Permalink to this headline">¶</a></h4>
 <p>Let’s use <code class="docutils literal notranslate"><span class="pre">pd.read_csv()</span></code> to read in our <code class="docutils literal notranslate"><span class="pre">hardness_density.csv</span></code> file!
 We’ll save the DataFrame into a variable called <code class="docutils literal notranslate"><span class="pre">df</span></code>.
-This isn’t great practice because our variable names should be descriptive, but for this tutorial it’s an easy reminder of what we’re working with and save our fingers some work.
+This isn’t great practice because our variable names should be descriptive, but for this tutorial it’s an easy reminder of what we’re working with and saves our fingers some work.
 We’ll also rename the column names to be:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s1">&#39;element&#39;</span><span class="p">,</span> <span class="s1">&#39;number&#39;</span><span class="p">,</span> <span class="s1">&#39;hardness&#39;</span><span class="p">,</span> <span class="s1">&#39;density&#39;</span><span class="p">]</span>
 </pre></div>
@@ -1151,7 +1151,7 @@ We’ll also rename the column names to be:</p>
 <p>which can do if we set <code class="docutils literal notranslate"><span class="pre">header=0</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../../assets/data/week_1/02/hardness_density.csv&#39;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">skiprows</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../../assets/data/week_1/02/hardness_density.csv&#39;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">skiprows</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>  <span class="c1"># skip comment line</span>
                  <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;element&#39;</span><span class="p">,</span> <span class="s1">&#39;number&#39;</span><span class="p">,</span> <span class="s1">&#39;hardness&#39;</span><span class="p">,</span> <span class="s1">&#39;density&#39;</span><span class="p">])</span>   <span class="c1"># we rename for simplicity</span>
 <span class="n">df</span>
 </pre></div>
@@ -1640,7 +1640,7 @@ We can select a single column by creating a length 1 list with just that column 
     </tr>
     <tr>
       <th>top</th>
-      <td>cobalt</td>
+      <td>lithium</td>
     </tr>
     <tr>
       <th>freq</th>
