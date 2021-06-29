@@ -1,6 +1,10 @@
 (h1:02:homework_02)=
 # Homework
 
+The main "new thing" for today's homework is the paper on the dielectric constants, which you saw in the final exercise in {doc}`tabular_data_blank`. 
+We recommend making that paper the priority, and then reviewing any of the code we went over yesterday/today as you need.
+
+
 ## Reading  
 
 To recap some of the topics presented today in preparation for self-directed research, we suggest a few papers below on dielectric datasets and what one might do with that data that might be of interest to you for your self-directed research projects.

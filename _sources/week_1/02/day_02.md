@@ -15,7 +15,7 @@ Today's synchronous activities _will likely_ take a majority of the day. Get pum
 - Work with the most common file types for storing materials data.
 - Learn how to use the [pandas package](https://pandas.pydata.org/) for working with tabular data.
 - Introduce the [Materials Project](https://materialsproject.org/) database user interface (UI) and its application programming interface (API) with [Pymatgen](https://pymatgen.org/).
-- Discuss how to find and read software documentation.
+- Learn how to find and read software documentation.
 
 
 
