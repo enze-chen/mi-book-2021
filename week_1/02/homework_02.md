@@ -9,14 +9,13 @@ These papers can all be found in [this Google Drive folder](https://drive.google
 
 
 1. The dielectric constants dataset on Materials Project (MP) by Ioannis Petousis et al. {cite}`petousis_2017`.
-    - We _strongly recommend_ reading the paper in its entirety because it gives a comprehensive (and not-too-specialized) discussion about the data format, the underlying science, and some interesting trends that can motivate your self-directed research.
+    - We **strongly recommend reading the paper in its entirety** because it gives a comprehensive (and not-too-specialized) discussion about the data format, the underlying science, and some interesting trends that can motivate your self-directed research.
     It's not too long and mostly has tables and figures.
 1. The perspective by [Danielle Szafir](https://danielleszafir.com/) on data visualization {cite}`szafir_2018`.
     - There are many pretty pictures and should be a fun read!
     Just reading the figure captions is fine if you don't have time for the whole article.
 1. (optional) The [Ramprasad group](http://ramprasad.mse.gatech.edu/) (now at Georgia Tech) has published a dataset on hybrid organic-inorganic perovskites by Chiho Kim et al. {cite}`kim_2017`.
 1. (optional) Those interested in polymer dielectrics (MP is mostly concerned with inorganic materials) may be interested in the work by Tran Huan et al. also from the Ramprasad group {cite}`huan_2016`.
-1. (optional) A related dataset to the dielectric constants is the work by Guido Petretto et al. on _phonon_ calculations, something that we did not talk about, but may be of interest to you {cite}`petretto_2018`.
 1. (optional) Examples of the information that can be mined from such databases include the works by Ethan Shapera and [André Schleife](http://schleife.matse.illinois.edu/) {cite}`shapera_2018` and [Arun Mannodi-Kanakkithodi](https://engineering.purdue.edu/MSE/people/ptProfile?resource_id=239950) et al. {cite}`mannodi-kanakkithodi_2017`.
     - These might require a little more physics background to fully comprehend and appreciate.
     The Kasap textbook might be helpful in this regard.

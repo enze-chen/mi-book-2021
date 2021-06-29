@@ -36,7 +36,7 @@ Here is a list of some common materials databases (and data infrastructure, more
 - [Materials Project (MP)](https://materialsproject.org/): First-principles calculated properties similar to AFLOW and OQMD.
 - [Citrination](https://citrination.com/): A database of various materials data contributed by the MI community.
 - [MatWeb](http://matweb.com/): A database for properties of various engineering materials and their datasheets.
-- These aren't _databases per se_, but there are other websites with lots of materials-related data such as Wikipedia, WolframAlpha, etc.
+- These aren't databases _per se_, but there are other websites with lots of materials-related data such as Wikipedia, WolframAlpha, etc.
 
 For more sources, you can try searching on Google, reading MI review papers such as the one by [Himanen et al. _Adv. Sci._, 2019](https://onlinelibrary.wiley.com/doi/abs/10.1002/advs.201900808) {cite}`himanen_2019`, or looking at the "Data availability" sections at the end of relevant papers.
 

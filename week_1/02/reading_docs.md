@@ -35,12 +35,12 @@ python IndexError: list index out of range
 ```
 
 These queries are structured pretty much similarly to what you'd expect (i.e., what you would say if you were asking someone else).
-For error messages, we recommend _copying the error message directly_ from your Jupyter notebook or terminal window output.
+For error messages, we recommend _copying the error message directly_ from your Jupyter notebook or terminal window output and throwing in "python."
 
 You will then get a huge list of results to sift through, so we offer some guidance on what sources might be more helpful than others:
 
 1. [Stack Overflow](https://stackoverflow.com/): Anything from the `stackoverflow.com` domain is a very good place to look for a solution. 
-The solutions are contributed _and voted on_ by community members, and there's a standard of excellence for what makes a good answer (such as providing a _minimum working example_ (MWE) for a solution).
+The solutions are contributed _and voted on_ by community members, and there's a standard of excellence for what makes a good answer (such as providing a _minimum working example_ for a solution).
 1. Stack Overflow is part of the larger [Stack Exchange](https://stackexchange.com/) community, and you might find answers to more domain-specific questions (like [statistics](https://stats.stackexchange.com/)) on other sites (e.g., `stats.stackexchange.com`).
 1. Any of the tutorial or blog sites will have plenty of code examples, and some particularly well-known ones are:
     - [Tutorials Point](https://www.tutorialspoint.com/index.htm): `tutorialspoint.com`
@@ -91,9 +91,10 @@ The ones you'll likely come across in this module are:
 - [Matplotlib](https://matplotlib.org/stable/contents.html): `matplotlib.org/stable/contents/html`
 - [Scikit-learn](https://scikit-learn.org/stable/index.html): `scikit-learn.org/stable/index.html`
 - [Pymatgen](https://pymatgen.org/index.html): `pymatgen.org/index.html`
+- [Matminer](https://hackingmaterials.lbl.gov/matminer/): `hackingmaterials.lbl.gov/matminer/`
 
 We offer two more points of guidance regarding your search:
-- You can try using the search bar on these sites for direct results, which are generally pretty good.
+- You can _try using the search bar on these sites for direct results_, which are generally pretty good.
 In other words, while we did not advise doing this in the previous section (since it's hard to pinpoint where we'll find answers to those broad inquiries), we _do_ recommend doing this if there's a question about how to use a specific package/function.
 An example would be to actually click the NumPy link above and search `numpy.mean` directly on the search bar on that page.
 - If you take the "Google search" route, be aware of _different versions_ of these packages, which may give different results.
@@ -116,13 +117,13 @@ Furthermore, _the order of the parameters is important_, because that determines
 For example, if argument names are specified, we can specify them out of order:
 
 ```python
-np.sum(a=arr, dtype=np.int32, axis=0)
+np.mean(a=arr, dtype=np.int32, axis=0)
 ```
 
 But if argument names aren't specified, then the assignment is based on the order in the header:
 
 ```python
-np.sum(arr, 1, np.float64)
+np.mean(arr, 1, np.float64)
 ```
 
 where `a=arr`, `axis=1`, and `dtype=np.float64` is assumed.

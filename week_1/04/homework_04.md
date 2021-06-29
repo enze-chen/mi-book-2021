@@ -7,17 +7,17 @@ What you'll be reading and why...
 These papers can all be found in [this Google Drive folder](https://drive.google.com/drive/folders/1FuZJyp1yWqoMXNs0_1s8LtSzPUwC5CpM?usp=sharing).
 
 
-1. stuff
-
-As you read, feel free to leave comments _directly on the PDF_ in Google Drive: ask/answer questions, share observations/reactions, link related content, etc.
-Participation is _optional_, but encouraged if you do have questions or thoughts to share. 😊
-Enze will periodically check the Google Drive to respond to your comments.
+1. The review article by J. Robertson on "High dielectric constant oxides" {cite}`robertson_2004`.
+    - This is a pretty hefty article that goes deep into bonding, interfaces, defects, band structures... so please only read _up to and including_ Section **3.2**. 
+    You can skim these sections to get a rough idea, as it will help set the stage for tomorrow's discussion of research and materials selection/screening.
 
 
 
 ## Programming
 
-Today's programming assignment is intended to review....
+There are no specific programming assignments today, though if you would like something to work on, we do recommend:
+- Reviewing the ML exercises from today, which covered quite a lot of information in a very short amount of time.
+- You can start looking at tomorrow's {doc}`../05/best_practices_blank` notebook if you want, as it's a nice summary of a lot of the things we covered in this first week.
 
 
 
