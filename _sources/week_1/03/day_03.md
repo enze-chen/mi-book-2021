@@ -16,13 +16,11 @@ You'll find that the process of making compelling visualizations is not-too-hard
 ## Timing for today
 
 - We will kick off the day on Zoom at 9:00AM.
-- We will have a mix of synchronous lectures and group exercises, interspersed with several short breaks.
+- We will have a mix of synchronous lectures and individual exercises, interspersed with several breaks.
 - We will take a longer break for lunch between 12:00PM and 1:00PM.
-- Enze will hold drop-in OH from 2:00PM to 3:00PM on Zoom.
-- Enze will also hold tea time from 3:00PM to 3:20PM at the same Zoom link as an opportunity for all of us to take a break from work and socialize over something _other than research_.
-Attendance is optional, but recommended (you can also join for just part of the time).
-BYOB is _also_ optional, but _highly_ recommended. 🍵
-- We will convene for a quick debrief on Zoom at 4:00PM.
+- Enze will hold drop-in OH from 2:00PM to 3:00PM on Zoom. 
+Come chat about anything that's on your mind, or if you just want a break! 🍵
+- We will convene for a quick debrief on Zoom at 3:00PM.
 
 
 

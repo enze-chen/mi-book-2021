@@ -42,6 +42,8 @@
     <script src="../../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -270,10 +272,22 @@
      Reading papers
     </a>
    </li>
-   <li class="toctree-l2">
+   <li class="toctree-l2 has-children">
     <a class="reference internal" href="../03/homework_03.html">
      Homework
     </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+    <label for="toctree-checkbox-7">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../03/advanced_viz_blank.html">
+       Advanced visualizations
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -281,8 +295,8 @@
   <a class="reference internal" href="../04/day_04.html">
    Day 04: ML speedrun
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
-  <label for="toctree-checkbox-7">
+  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label for="toctree-checkbox-8">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -296,8 +310,8 @@
     <a class="reference internal" href="../04/intro_ml.html">
      Introduction to ML
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
-    <label for="toctree-checkbox-8">
+    <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+    <label for="toctree-checkbox-9">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -313,8 +327,8 @@
     <a class="reference internal" href="../04/ml_perf.html">
      Quantifying performance
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
-    <label for="toctree-checkbox-9">
+    <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+    <label for="toctree-checkbox-10">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -330,8 +344,8 @@
     <a class="reference internal" href="../04/features.html">
      Featurization
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
-    <label for="toctree-checkbox-10">
+    <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+    <label for="toctree-checkbox-11">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -347,8 +361,8 @@
     <a class="reference internal" href="../04/advanced_ml.html">
      Advanced ML methods
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
-    <label for="toctree-checkbox-11">
+    <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+    <label for="toctree-checkbox-12">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -376,8 +390,8 @@
   <a class="reference internal" href="../05/day_05.html">
    Day 05: MI research
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
-  <label for="toctree-checkbox-12">
+  <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+  <label for="toctree-checkbox-13">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -425,8 +439,8 @@
   <a class="reference internal" href="../../week_2/07/day_07.html">
    Day 07: Research
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
-  <label for="toctree-checkbox-13">
+  <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+  <label for="toctree-checkbox-14">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -442,8 +456,8 @@
   <a class="reference internal" href="../../week_2/08/day_08.html">
    Day 08: Research + guest speaker
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
-  <label for="toctree-checkbox-14">
+  <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
+  <label for="toctree-checkbox-15">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -464,8 +478,8 @@
   <a class="reference internal" href="../../week_2/09/day_09.html">
    Day 09: Research
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
-  <label for="toctree-checkbox-15">
+  <input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
+  <label for="toctree-checkbox-16">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -481,8 +495,8 @@
   <a class="reference internal" href="../../week_2/10/day_10.html">
    Day 10: Research + guest speaker
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
-  <label for="toctree-checkbox-16">
+  <input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
+  <label for="toctree-checkbox-17">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -505,8 +519,8 @@
   <a class="reference internal" href="../../week_3/11/day_11.html">
    Day 11: Research + grad school
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
-  <label for="toctree-checkbox-17">
+  <input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/>
+  <label for="toctree-checkbox-18">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -527,8 +541,8 @@
   <a class="reference internal" href="../../week_3/12/day_12.html">
    Day 12: Research + guest speaker
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/>
-  <label for="toctree-checkbox-18">
+  <input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/>
+  <label for="toctree-checkbox-19">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -549,8 +563,8 @@
   <a class="reference internal" href="../../week_3/13/day_13.html">
    Day 13: Research
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/>
-  <label for="toctree-checkbox-19">
+  <input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/>
+  <label for="toctree-checkbox-20">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -559,8 +573,8 @@
     <a class="reference internal" href="../../week_3/13/deep_learning.html">
      Deep learning (tentative)
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/>
-    <label for="toctree-checkbox-20">
+    <input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/>
+    <label for="toctree-checkbox-21">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -578,8 +592,8 @@
   <a class="reference internal" href="../../week_3/14/day_14.html">
    Day 14: Slam presentations
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/>
-  <label for="toctree-checkbox-21">
+  <input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/>
+  <label for="toctree-checkbox-22">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -600,8 +614,8 @@
   <a class="reference internal" href="../../week_3/15/day_15.html">
    Day 15: Conclusions
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/>
-  <label for="toctree-checkbox-22">
+  <input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/>
+  <label for="toctree-checkbox-23">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -775,21 +789,21 @@ We recommend making that paper the priority, and then reviewing any of the code 
 We also include a paper discussing how to avoid making misleading visualizations in preparation for tomorrow’s lessons.
 These papers can all be found in <a class="reference external" href="https://drive.google.com/drive/folders/1FuZJyp1yWqoMXNs0_1s8LtSzPUwC5CpM?usp=sharing">this Google Drive folder</a>.</p>
 <ol class="simple">
-<li><p>The dielectric constants dataset on Materials Project (MP) by Ioannis Petousis et al. <span id="id1">[<a class="reference internal" href="#id56"><span>1</span></a>]</span>.</p>
+<li><p>The dielectric constants dataset on Materials Project (MP) by Ioannis Petousis et al. <span id="id1">[<a class="reference internal" href="#id57"><span>1</span></a>]</span>.</p>
 <ul class="simple">
 <li><p>We <strong>strongly recommend reading the paper in its entirety</strong> because it gives a comprehensive (and not-too-specialized) discussion about the data format, the underlying science, and some interesting trends that can motivate your self-directed research.
 It’s not too long and mostly has tables and figures.</p></li>
 </ul>
 </li>
-<li><p>The perspective by <a class="reference external" href="https://danielleszafir.com/">Danielle Szafir</a> on data visualization <span id="id2">[<a class="reference internal" href="#id74"><span>2</span></a>]</span>.</p>
+<li><p>The perspective by <a class="reference external" href="https://danielleszafir.com/">Danielle Szafir</a> on data visualization <span id="id2">[<a class="reference internal" href="../03/best_practices_viz.html#id70"><span>1</span></a>]</span>.</p>
 <ul class="simple">
 <li><p>There are many pretty pictures and should be a fun read!
 Just reading the figure captions is fine if you don’t have time for the whole article.</p></li>
 </ul>
 </li>
-<li><p>(optional) The <a class="reference external" href="http://ramprasad.mse.gatech.edu/">Ramprasad group</a> (now at Georgia Tech) has published a dataset on hybrid organic-inorganic perovskites by Chiho Kim et al. <span id="id3">[<a class="reference internal" href="#id34"><span>3</span></a>]</span>.</p></li>
-<li><p>(optional) Those interested in polymer dielectrics (MP is mostly concerned with inorganic materials) may be interested in the work by Tran Huan et al. also from the Ramprasad group <span id="id4">[<a class="reference internal" href="#id28"><span>4</span></a>]</span>.</p></li>
-<li><p>(optional) Examples of the information that can be mined from such databases include the works by Ethan Shapera and <a class="reference external" href="http://schleife.matse.illinois.edu/">André Schleife</a> <span id="id5">[<a class="reference internal" href="#id68"><span>5</span></a>]</span> and <a class="reference external" href="https://engineering.purdue.edu/MSE/people/ptProfile?resource_id=239950">Arun Mannodi-Kanakkithodi</a> et al. <span id="id6">[<a class="reference internal" href="#id44"><span>6</span></a>]</span>.</p>
+<li><p>(optional) The <a class="reference external" href="http://ramprasad.mse.gatech.edu/">Ramprasad group</a> (now at Georgia Tech) has published a dataset on hybrid organic-inorganic perovskites by Chiho Kim et al. <span id="id3">[<a class="reference internal" href="#id35"><span>3</span></a>]</span>.</p></li>
+<li><p>(optional) Those interested in polymer dielectrics (MP is mostly concerned with inorganic materials) may be interested in the work by Tran Huan et al. also from the Ramprasad group <span id="id4">[<a class="reference internal" href="#id29"><span>4</span></a>]</span>.</p></li>
+<li><p>(optional) Examples of the information that can be mined from such databases include the works by Ethan Shapera and <a class="reference external" href="http://schleife.matse.illinois.edu/">André Schleife</a> <span id="id5">[<a class="reference internal" href="#id69"><span>5</span></a>]</span> and <a class="reference external" href="https://engineering.purdue.edu/MSE/people/ptProfile?resource_id=239950">Arun Mannodi-Kanakkithodi</a> et al. <span id="id6">[<a class="reference internal" href="#id45"><span>6</span></a>]</span>.</p>
 <ul class="simple">
 <li><p>These might require a little more physics background to fully comprehend and appreciate.
 The Kasap textbook might be helpful in this regard.</p></li>
@@ -811,22 +825,22 @@ Along the way, if you have any questions or get stuck anywhere, please don’t h
 <div class="section" id="references">
 <h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
 <p id="id7"><dl class="citation">
-<dt class="label" id="id56"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dt class="label" id="id57"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
 <dd><p>Ioannis Petousis, David Mrdjenovich, Eric Ballouz, Miao Liu, Donald Winston, Wei Chen, Tanja Graf, Thomas D. Schladt, Kristin A. Persson, and Fritz B. Prinz. High-throughput screening of inorganic compounds for the discovery of novel dielectric and optical materials. <em>Scientific Data</em>, 4(1):160134, 2017. <a class="reference external" href="https://doi.org/10.1038/sdata.2016.134">doi:10.1038/sdata.2016.134</a>.</p>
 </dd>
-<dt class="label" id="id74"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
+<dt class="label" id="id75"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
 <dd><p>Danielle Albers Szafir. The good, the bad, and the biased: five ways visualizations can mislead (and how to fix them). <em>Interactions</em>, 25(4):26–33, 2018. <a class="reference external" href="https://doi.org/10.1145/3231772">doi:10.1145/3231772</a>.</p>
 </dd>
-<dt class="label" id="id34"><span class="brackets"><a class="fn-backref" href="#id3">3</a></span></dt>
+<dt class="label" id="id35"><span class="brackets"><a class="fn-backref" href="#id3">3</a></span></dt>
 <dd><p>Chiho Kim, Tran Doan Huan, Sridevi Krishnan, and Rampi Ramprasad. A hybrid organic-inorganic perovskite dataset. <em>Scientific Data</em>, 4(1):170057, 2017. <a class="reference external" href="https://doi.org/10.1038/sdata.2017.57">doi:10.1038/sdata.2017.57</a>.</p>
 </dd>
-<dt class="label" id="id28"><span class="brackets"><a class="fn-backref" href="#id4">4</a></span></dt>
+<dt class="label" id="id29"><span class="brackets"><a class="fn-backref" href="#id4">4</a></span></dt>
 <dd><p>Tran Doan Huan, Arun Mannodi-Kanakkithodi, Chiho Kim, Vinit Sharma, Ghanshyam Pilania, and Rampi Ramprasad. A polymer dataset for accelerated property prediction and design. <em>Scientific Data</em>, 3(1):160012, 2016. <a class="reference external" href="https://doi.org/10.1038/sdata.2016.12">doi:10.1038/sdata.2016.12</a>.</p>
 </dd>
-<dt class="label" id="id68"><span class="brackets"><a class="fn-backref" href="#id5">5</a></span></dt>
+<dt class="label" id="id69"><span class="brackets"><a class="fn-backref" href="#id5">5</a></span></dt>
 <dd><p>Ethan P. Shapera and André Schleife. Database-driven materials selection for semiconductor heterojunction design. <em>Advanced Theory and Simulations</em>, 1(10):1800075, 2018. <a class="reference external" href="https://doi.org/10.1002/adts.201800075">doi:10.1002/adts.201800075</a>.</p>
 </dd>
-<dt class="label" id="id44"><span class="brackets"><a class="fn-backref" href="#id6">6</a></span></dt>
+<dt class="label" id="id45"><span class="brackets"><a class="fn-backref" href="#id6">6</a></span></dt>
 <dd><p>Arun Mannodi-Kanakkithodi, Tran Doan Huan, and Rampi Ramprasad. Mining materials design rules from data: The example of polymer dielectrics. <em>Chemistry of Materials</em>, 29(21):9001–9010, 2017. <a class="reference external" href="https://doi.org/10.1021/acs.chemmater.7b02027">doi:10.1021/acs.chemmater.7b02027</a>.</p>
 </dd>
 </dl>
