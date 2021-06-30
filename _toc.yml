@@ -47,6 +47,8 @@
               title     : Follow-along notebook
         - file          : week_1/03/reading_papers
         - file          : week_1/03/homework_03
+          sections:
+            - file      : week_1/03/advanced_viz_blank
 
     - file              : week_1/04/day_04
       sections:

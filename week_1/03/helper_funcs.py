@@ -67,3 +67,18 @@ def plot_dielectric_data():
 
 
 
+def get_api_key():
+    # get API key using one of two ways
+    api_key = None
+    try:       # this is for running locally
+        import os
+        api_key = os.environ['MAPI_KEY']
+    except:    # this is for running on DataHub
+        with open('../../assets/files/mp_api_key.txt', 'r') as f:
+            api_key = f.readlines()[1].strip()
+
+    # assert helps catch potential bugs
+    assert api_key is not None, 'API key not set correctly in environment!'
+    assert api_key != '', 'API key not found in mp_api_key.txt file!'
+
+    return api_key

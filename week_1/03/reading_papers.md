@@ -37,7 +37,7 @@ Google Scholar "Cited by" feature.
 Another place to find relevant papers is in the list of references in a relevant paper that you have already read (or at least know of).
 This is because often times the paper you just read builds upon other work that could have a critical piece of information that you're looking for, and you will know this association based on how the older paper was cited in the newer paper.
 Another cool feature of Google Scholar is their "Cited by" feature that accompanies every search result.
-This address the reverse problem, and finds all of the indexed papers that _cite_ the article that's listed.
+This address the reverse problem, and finds all of the indexed papers that _cite the article that's listed_.
 
 
 
@@ -53,10 +53,10 @@ In short, if you don't have access to an article, you'll only be able to see the
 Luckily, we have a few options available to us to access the full text.
 The first is that we might come across an article that is [**open access**](https://www.openaccess.nl/en/what-is-open-access), which means that somewhere along the publishing pipeline, someone else paid or waived the fees so that anyone can read the published article _for free_.
 These individual articles will be clearly labeled as such on the official publisher's website, and this is part of a broader "open science" movement.
-There are also a few sources, both official journals and **pre-print** servers, that have **all open-access** articles, including [_Nature Communications_](https://www.nature.com/ncomms/), [_npj Computational Materials_](https://www.nature.com/npjcompumats/), [_Scientific Data_](https://www.nature.com/sdata/), [_Science Advances_](https://advances.sciencemag.org/), [_PNAS_](https://www.pnas.org/), [_ACS Central Science_](https://pubs.acs.org/journal/acscii), and [_arXiv_](https://arxiv.org/).
+There are also a few sources, both official journals and _pre-print_ servers, that have _all open-access_ articles, including [_Nature Communications_](https://www.nature.com/ncomms/), [_npj Computational Materials_](https://www.nature.com/npjcompumats/), [_Scientific Data_](https://www.nature.com/sdata/), [_Science Advances_](https://advances.sciencemag.org/), [_PNAS_](https://www.pnas.org/), [_ACS Central Science_](https://pubs.acs.org/journal/acscii), and [_arXiv_](https://arxiv.org/).
 While these titles may not mean anything to you at the moment, they are definitely a blessing when you come across them. 🙏
 
-The second option, which will work for **most articles** that you come across, is to take advantage of the fact that we go to a great research institution like UC Berkeley that _has_ paid the subscription fee for us (the UCs as a whole have, technically).
+The second option, which **works for most articles** that you come across, is to take advantage of the fact that we go to a great research institution like UC Berkeley that _has already paid_ the subscription fee for us (the UCs as a whole have, technically).
 There are many ways to use your UC Berkeley credentials to access papers behind a paywall, but the simplest one we've found is to use the **EZProxy bookmarklet**.
 If you are unfamiliar with setting this up, please see [this helpful video from UCB libraries](https://screencast-o-matic.com/watch/cYfYrfz9iQ).
 
