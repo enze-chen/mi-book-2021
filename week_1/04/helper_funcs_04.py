@@ -92,7 +92,7 @@ def plot_styling(ax, degree):
     ax[0].set_xlabel('$x$')
     ax[0].set_ylabel('$y$')
     ax[0].legend(frameon=False)
-    ax[1].set_xlabel('degree of polynomial')
+    ax[1].set_xlabel('degree of polynomial (complexity)')
     ax[1].set_ylabel('error')
     ax[1].set_xlim(1, degree-1)
     ax[1].legend(frameon=False)
