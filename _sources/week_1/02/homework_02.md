@@ -12,10 +12,10 @@ We also include a paper discussing how to avoid making misleading visualizations
 These papers can all be found in [this Google Drive folder](https://drive.google.com/drive/folders/1FuZJyp1yWqoMXNs0_1s8LtSzPUwC5CpM?usp=sharing).
 
 
-1. The dielectric constants dataset on Materials Project (MP) by Ioannis Petousis et al. {cite}`petousis_2017`.
+1. The [paper about the dielectric constants dataset](https://drive.google.com/file/d/1yGQ7G8n_DrLdpsC9e72gb3eKSAGP5-AU/view?usp=sharing) on Materials Project (MP) by Ioannis Petousis et al. {cite}`petousis_2017`.
     - We **strongly recommend reading the paper in its entirety** because it gives a comprehensive (and not-too-specialized) discussion about the data format, the underlying science, and some interesting trends that can motivate your self-directed research.
     It's not too long and mostly has tables and figures.
-1. The perspective by [Danielle Szafir](https://danielleszafir.com/) on data visualization {cite}`szafir_2018`.
+1. [The perspective](https://drive.google.com/file/d/1t4i6gC-uyLAVXxgWy0k1NiRkEqrLtEn3/view?usp=sharing) by [Danielle Szafir](https://danielleszafir.com/) on data visualization {cite}`szafir_2018`.
     - There are many pretty pictures and should be a fun read!
     Just reading the figure captions is fine if you don't have time for the whole article.
 1. (optional) The [Ramprasad group](http://ramprasad.mse.gatech.edu/) (now at Georgia Tech) has published a dataset on hybrid organic-inorganic perovskites by Chiho Kim et al. {cite}`kim_2017`.

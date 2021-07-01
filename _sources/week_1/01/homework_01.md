@@ -7,11 +7,11 @@ Today's "homework" is a mix of reading and programming.
 
 To help prepare for tomorrow's tutorial on MI, please read the following papers, which can be found in [this Google Drive folder](https://drive.google.com/drive/folders/1FuZJyp1yWqoMXNs0_1s8LtSzPUwC5CpM?usp=sharing).
 
-1. The perspective by [Anubhav Jain](https://eta.lbl.gov/people/anubhav-jain) et al. {cite}`jain_2016`.
+1. [The perspective](https://drive.google.com/file/d/15UQ5rXq0jP8AI4992YcEW8I-3_9QrT0Q/view?usp=sharing) by Jain et al. {cite}`jain_2016`.
     - The most critical sections are I, II, and V. The rest can be safely skipped.
-1. The paper by Kyle Michel and Bryce Meredig {cite}`michel_2016`.
+1. [The paper](https://drive.google.com/file/d/1WQnZgRzIpYCumWlbEWTEcRibTU_fSPTm/view?usp=sharing) by Kyle Michel and Bryce Meredig {cite}`michel_2016`.
     - The exact schema (Physical Information File) is not important, but pay attention to their motivations and design choices, because they raise important issues.
-1. (optional) The viewpoint by [Jeannette Wing](https://datascience.columbia.edu/people/jeannette-m-wing/) {cite}`wing_2006`.
+1. (optional) [The viewpoint](https://drive.google.com/file/d/1TmgvcKmPY-Vn_p_yBMDp_J_6fncinE7k/view?usp=sharing) by Jeannette Wing {cite}`wing_2006`.
     - This is the original paper on computational thinking and nicely encapsulates some of our views on computing education and how we're approaching our role as mentors.
     - It is only three pages, and not too technical. Also, _it truly is optional_!
 
