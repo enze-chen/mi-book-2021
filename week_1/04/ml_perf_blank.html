@@ -1314,7 +1314,7 @@ There are many options, which you can see <a class="reference external" href="ht
 <h3>Exercise: perform 5-fold CV for the atomic mass prediction problem with a linear regression model<a class="headerlink" href="#exercise-perform-5-fold-cv-for-the-atomic-mass-prediction-problem-with-a-linear-regression-model" title="Permalink to this headline">¶</a></h3>
 <p><em>Hints</em>:</p>
 <ul class="simple">
-<li><p>You should construct a <code class="docutils literal notranslate"><span class="pre">KFold()</span></code> object as the input to <code class="docutils literal notranslate"><span class="pre">cross_val_predict()</span></code>.</p></li>
+<li><p>You should construct a <code class="docutils literal notranslate"><span class="pre">KFold()</span></code> object as the input to <code class="docutils literal notranslate"><span class="pre">cross_val_score()</span></code>.</p></li>
 <li><p>For <code class="docutils literal notranslate"><span class="pre">scoring</span></code>, use the <code class="docutils literal notranslate"><span class="pre">'neg_root_mean_squared_error'</span></code>.
 It returns an array of scores, and you should print these.</p></li>
 <li><p>Start with <code class="docutils literal notranslate"><span class="pre">shuffle=False</span></code> inside the <code class="docutils literal notranslate"><span class="pre">KFold()</span></code> constructor.
