@@ -7,7 +7,10 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 from matplotlib.artist import Artist
 
-from sklearn.linear_model import LinearRegression
+from sklearn.linear_model import LinearRegression, Ridge
+from sklearn.preprocessing import PolynomialFeatures
+from sklearn.metrics import mean_squared_error, mean_absolute_error
+from sklearn.model_selection import KFold, cross_val_score, cross_val_predict
 
 
 
@@ -45,3 +48,69 @@ def animate_gd():
     plt.rcParams.update({'animation.html': 'jshtml', 'figure.figsize':(6, 4)})
     anim = animation.FuncAnimation(fig, animate, init_func=init, frames=20, interval=500, repeat=False);
     return anim
+
+
+
+def gen_data(arr):
+    rng = np.random.default_rng(seed=2)
+    n = 10
+
+    X = np.reshape(rng.choice(arr, size=n, replace=False), (-1, 1))
+    y = X ** 2 + 2 * np.reshape(rng.normal(size=n), (-1, 1))
+
+    X2 = rng.choice(arr, size=3, replace=False)
+    y2 = X2 ** 2 + 2 * np.reshape(rng.normal(size=3), (-1, 1))
+
+    return X, y, X2, y2
+
+
+
+def ml_fitting(d, dom, X1, y1, X2, y2):
+    lr = LinearRegression()
+    kfold = KFold(n_splits=5, shuffle=False)
+    featurizer = PolynomialFeatures(d)
+    Xp = featurizer.fit_transform(X1)
+    lr.fit(Xp, y1)
+
+    domp = featurizer.fit_transform(dom)
+    yp = lr.predict(domp)
+
+    yhat = lr.predict(Xp)
+    train_err = mean_squared_error(y1, yhat, squared=False)
+
+    y2hat = lr.predict(featurizer.fit_transform(X2))
+    val_err = mean_squared_error(y2, y2hat, squared=False)
+
+
+    return yp, train_err, val_err
+
+
+
+def plot_styling(ax, degree):
+    ax[0].set_xlim(0, 6)
+    ax[0].set_ylim(-5, 35)
+    ax[0].set_xlabel('$x$')
+    ax[0].set_ylabel('$y$')
+    ax[0].legend(frameon=False)
+    ax[1].set_xlabel('degree of polynomial')
+    ax[1].set_ylabel('error')
+    ax[1].set_xlim(1, degree-1)
+    ax[1].legend(frameon=False)
+    plt.show()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

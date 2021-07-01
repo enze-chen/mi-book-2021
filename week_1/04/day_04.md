@@ -13,7 +13,7 @@ Today's synchronous activities _will almost surely_ take the whole day. Get pump
 
 ## Goals for today
 
-- Introduce fundamental concepts and terms associated with [supervised] ML.
+- Introduce fundamental concepts and terms associated with supervised ML.
 - Practice implementing these concepts using [scikit-learn](https://scikit-learn.org/stable/index.html) in Python.
 - Discuss some advanced ML models and the intuition behind them so we can identify their utility.
 - Discuss practical considerations when doing ML (for MSE, and more broadly).
@@ -25,7 +25,7 @@ Today's synchronous activities _will almost surely_ take the whole day. Get pump
 - We will kick off the day on Zoom at 9:00AM.
 - We will have a mix of synchronous lectures and group exercises, interspersed with several short breaks.
 - We will take a longer break for lunch between 12:00PM and 1:00PM.
-- We will also take a break from 3:00PM to 3:20PM.
+- We will also take a break from 3:00PM to 3:30PM.
 - Since we'll be meeting online for the whole day, we'll debrief as part of the last session.
 
 
