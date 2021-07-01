@@ -1023,7 +1023,7 @@ You can do this in many ways, and we suggest two possible paths:</p>
 <ol class="simple">
 <li><p>You can look in the original dataset (JSON file) to try and extract the space group number, which is buried in the file.
 This is a good exercise.</p></li>
-<li><p>OR you can use Pymatgen to get the <a class="reference external" href="https://pymatgen.org/pymatgen.core.structure.html"><code class="docutils literal notranslate"><span class="pre">Structure</span></code></a> from the material ID, which is part of your DataFrame, and then get the space group from that object.
+<li><p>OR you can use Pymatgen to construct a query for the space group of all of your materials (possible with a criteria on the material ID).
 This is also a good exercise.</p></li>
 </ol>
 <p>You can add the space group number to your DataFrame / tabular dataset of the dielectric constants.

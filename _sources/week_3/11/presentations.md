@@ -115,10 +115,10 @@ Other tools and tips are best found using a Google search.
 
 
 
-## Have something else in mind?
+<!-- ## Have something else in mind?
 
 Traditionally, slam presentations (particularly about data science that involve visualizations) are done with slides, _but_ we understand that scientific communication and creative expression take many forms, so if there's something else you would like to try, feel free to run it by us.
-If it can fit into ~6 minutes of live presentation and showcase your research results, then we'll likely be open to the idea.
+If it can fit into ~6 minutes of live presentation and showcase your research results, then we'll likely be open to the idea. -->
 
 
 ```{admonition} Did you know?

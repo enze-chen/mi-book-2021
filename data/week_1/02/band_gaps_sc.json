@@ -2211,26 +2211,6 @@
         ],
         "properties": [
             {
-                "name": "Color",
-                "scalars": [
-                    {
-                        "value": "Orange"
-                    }
-                ],
-                "dataType": "EXPERIMENTAL"
-            }
-        ],
-        "chemicalFormula": "B2Se3"
-    },
-    {
-        "category": "system.chemical",
-        "references": [
-            {
-                "doi": "10.1063/1.3253115"
-            }
-        ],
-        "properties": [
-            {
                 "name": "Band gap",
                 "scalars": "2.6",
                 "units": "eV",
@@ -2903,26 +2883,6 @@
             }
         ],
         "chemicalFormula": "C1I4"
-    },
-    {
-        "category": "system.chemical",
-        "references": [
-            {
-                "doi": "10.1063/1.3253115"
-            }
-        ],
-        "properties": [
-            {
-                "name": "Thermoluminescence",
-                "scalars": [
-                    {
-                        "value": "True"
-                    }
-                ],
-                "dataType": "EXPERIMENTAL"
-            }
-        ],
-        "chemicalFormula": "NaN"
     },
     {
         "category": "system.chemical",
@@ -4493,35 +4453,6 @@
         ],
         "properties": [
             {
-                "name": "Photoluminescence",
-                "scalars": [
-                    {
-                        "value": "True"
-                    }
-                ],
-                "dataType": "EXPERIMENTAL"
-            },
-            {
-                "name": "Thermoluminescence",
-                "scalars": [
-                    {
-                        "value": "True"
-                    }
-                ],
-                "dataType": "EXPERIMENTAL"
-            }
-        ],
-        "chemicalFormula": "Mg1F2"
-    },
-    {
-        "category": "system.chemical",
-        "references": [
-            {
-                "doi": "10.1063/1.3253115"
-            }
-        ],
-        "properties": [
-            {
                 "name": "Crystallinity",
                 "scalars": [
                     {
@@ -4922,26 +4853,6 @@
             }
         ],
         "chemicalFormula": "Mg3P2"
-    },
-    {
-        "category": "system.chemical",
-        "references": [
-            {
-                "doi": "10.1063/1.3253115"
-            }
-        ],
-        "properties": [
-            {
-                "name": "Photoluminescence",
-                "scalars": [
-                    {
-                        "value": "True"
-                    }
-                ],
-                "dataType": "EXPERIMENTAL"
-            }
-        ],
-        "chemicalFormula": "Mg1Cl1"
     },
     {
         "category": "system.chemical",
@@ -18702,100 +18613,6 @@
             }
         ],
         "chemicalFormula": "Co1O1"
-    },
-    {
-        "category": "system.chemical",
-        "references": [
-            {
-                "doi": "10.1063/1.3253115"
-            }
-        ],
-        "properties": [
-            {
-                "name": "Crystallinity",
-                "scalars": [
-                    {
-                        "value": "Polycrystalline"
-                    }
-                ]
-            },
-            {
-                "name": "Morphology",
-                "scalars": [
-                    {
-                        "value": "Thin film"
-                    }
-                ]
-            },
-            {
-                "name": "Photoluminescence",
-                "scalars": [
-                    {
-                        "value": "True"
-                    }
-                ],
-                "conditions": [
-                    {
-                        "name": "Temperature",
-                        "scalars": [
-                            {
-                                "value": "300"
-                            }
-                        ],
-                        "units": "K"
-                    }
-                ],
-                "dataType": "EXPERIMENTAL"
-            }
-        ],
-        "chemicalFormula": "Co1F2"
-    },
-    {
-        "category": "system.chemical",
-        "references": [
-            {
-                "doi": "10.1063/1.3253115"
-            }
-        ],
-        "properties": [
-            {
-                "name": "Crystallinity",
-                "scalars": [
-                    {
-                        "value": "Polycrystalline"
-                    }
-                ]
-            },
-            {
-                "name": "Morphology",
-                "scalars": [
-                    {
-                        "value": "Thin film"
-                    }
-                ]
-            },
-            {
-                "name": "Photoluminescence",
-                "scalars": [
-                    {
-                        "value": "True"
-                    }
-                ],
-                "conditions": [
-                    {
-                        "name": "Temperature",
-                        "scalars": [
-                            {
-                                "value": "300"
-                            }
-                        ],
-                        "units": "K"
-                    }
-                ],
-                "dataType": "EXPERIMENTAL"
-            }
-        ],
-        "chemicalFormula": "Co1F2"
     },
     {
         "category": "system.chemical",
@@ -54502,26 +54319,6 @@
         ],
         "properties": [
             {
-                "name": "Photoluminescence",
-                "scalars": [
-                    {
-                        "value": "True"
-                    }
-                ],
-                "dataType": "EXPERIMENTAL"
-            }
-        ],
-        "chemicalFormula": "Cs2S1"
-    },
-    {
-        "category": "system.chemical",
-        "references": [
-            {
-                "doi": "10.1063/1.3253115"
-            }
-        ],
-        "properties": [
-            {
                 "name": "Crystallinity",
                 "scalars": [
                     {
@@ -56255,35 +56052,6 @@
         ],
         "properties": [
             {
-                "name": "Photoluminescence",
-                "scalars": [
-                    {
-                        "value": "True"
-                    }
-                ],
-                "dataType": "EXPERIMENTAL"
-            },
-            {
-                "name": "Thermoluminescence",
-                "scalars": [
-                    {
-                        "value": "True"
-                    }
-                ],
-                "dataType": "EXPERIMENTAL"
-            }
-        ],
-        "chemicalFormula": "BaI"
-    },
-    {
-        "category": "system.chemical",
-        "references": [
-            {
-                "doi": "10.1063/1.3253115"
-            }
-        ],
-        "properties": [
-            {
                 "name": "Crystallinity",
                 "scalars": [
                     {
@@ -56616,35 +56384,6 @@
             }
         ],
         "chemicalFormula": "La2S3"
-    },
-    {
-        "category": "system.chemical",
-        "references": [
-            {
-                "doi": "10.1063/1.3253115"
-            }
-        ],
-        "properties": [
-            {
-                "name": "Photoluminescence",
-                "scalars": [
-                    {
-                        "value": "True"
-                    }
-                ],
-                "dataType": "EXPERIMENTAL"
-            },
-            {
-                "name": "Thermoluminescence",
-                "scalars": [
-                    {
-                        "value": "True"
-                    }
-                ],
-                "dataType": "EXPERIMENTAL"
-            }
-        ],
-        "chemicalFormula": "La1Cl3"
     },
     {
         "category": "system.chemical",
@@ -60677,26 +60416,6 @@
         ],
         "properties": [
             {
-                "name": "Photoluminescence",
-                "scalars": [
-                    {
-                        "value": "True"
-                    }
-                ],
-                "dataType": "EXPERIMENTAL"
-            }
-        ],
-        "chemicalFormula": "Tb1F3"
-    },
-    {
-        "category": "system.chemical",
-        "references": [
-            {
-                "doi": "10.1063/1.3253115"
-            }
-        ],
-        "properties": [
-            {
                 "name": "Crystallinity",
                 "scalars": [
                     {
@@ -63968,26 +63687,6 @@
             }
         ],
         "chemicalFormula": "Pt1Sb2"
-    },
-    {
-        "category": "system.chemical",
-        "references": [
-            {
-                "doi": "10.1063/1.3253115"
-            }
-        ],
-        "properties": [
-            {
-                "name": "Photoluminescence",
-                "scalars": [
-                    {
-                        "value": "True"
-                    }
-                ],
-                "dataType": "EXPERIMENTAL"
-            }
-        ],
-        "chemicalFormula": "Au1Cl1"
     },
     {
         "category": "system.chemical",
@@ -72812,26 +72511,6 @@
             }
         ],
         "chemicalFormula": "Bi2O3"
-    },
-    {
-        "category": "system.chemical",
-        "references": [
-            {
-                "doi": "10.1063/1.3253115"
-            }
-        ],
-        "properties": [
-            {
-                "name": "Color",
-                "scalars": [
-                    {
-                        "value": "Gray"
-                    }
-                ],
-                "dataType": "EXPERIMENTAL"
-            }
-        ],
-        "chemicalFormula": "Bi1F3"
     },
     {
         "category": "system.chemical",

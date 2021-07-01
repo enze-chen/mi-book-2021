@@ -25,8 +25,7 @@ Again, it's totally OK if things change!
 - We will have a mix of synchronous lectures and group exercises, interspersed with several short breaks.
 - We will take a longer break for lunch between 12:00PM and 1:00PM.
 - Enze will hold drop-in OH from 2:00PM to 3:00PM on Zoom.
-- Enze will also hold tea time from 3:00PM to 3:20PM PDT on Zoom. 🍵
-- We will convene for a quick debrief on Zoom at 4:00PM.
+- We will convene for a quick debrief on Zoom at 3:00PM.
 
 
 
