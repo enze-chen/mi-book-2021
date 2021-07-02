@@ -8,7 +8,7 @@ Welcome to day 🖐 of Module 2 where we will pivot from discussing programmatic
 ## Goals for today
 
 - Discuss some more about MI research for high-κ dielectrics.
-- Brainstorm with peers what's been done/learned, what needs to be done/learned, .
+- Brainstorm with peers what's been done/learned, what needs to be done/learned, an initial gameplan, etc.
 
 <!-- ```{admonition} Milestone
 :class: important
