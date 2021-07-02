@@ -4,6 +4,7 @@
 ## Reading  
 
 No new readings!
+Though you may want to have a [Markdown cheat sheet](https://www.markdownguide.org/cheat-sheet) handy for stylizing your _Markdown cells_ in the Jupyter notebook so you can write notes/prose to yourself and your teammates (we only covered how to write Python code in Code cells).
 
 
 
