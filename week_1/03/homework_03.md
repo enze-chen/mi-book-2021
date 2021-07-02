@@ -7,10 +7,10 @@ Today's lesson was meant to be pretty light to give you all a break from the fir
 
 Today's reading consists of two papers, both of which can be found in [this Google Drive folder](https://drive.google.com/drive/folders/1FuZJyp1yWqoMXNs0_1s8LtSzPUwC5CpM?usp=sharing).
 
-1. The first is a short 2-page paper on, well, how to read a paper, by S. Keshav {cite}`keshav_2007`. 
+1. The first is [a short 2-page paper](https://drive.google.com/file/d/1YMPXFK3XPTCBDWABkOYEeeF_Sua-K3Us/view?usp=sharing) on, well, how to read a paper, by S. Keshav {cite}`keshav_2007`. 
 More information can be found on the previous page, {doc}`reading_papers`.
     - We recommend taking a look so that all of your future readings will feel more bearable and productive.
-1. The second is a review paper by Keith Butler et al. on the topic of machine learning in materials science {cite}`butler_2018`, and arguably one of the best review papers in MI.
+1. The second is [a review paper](https://drive.google.com/file/d/1m908yMJb6WnSuxqlvpx_m-ey7xCblkhy/view?usp=sharing) by Keith Butler et al. on the topic of machine learning in materials science {cite}`butler_2018`, and arguably one of the best review papers in MI.
     - This is an _advanced_ article with several challenging concepts, but we **strongly recommend you read all of it**.
     It's OK if very little (or none) of it makes sense at the moment.
     The last section (Frontiers in machine learning) is less important for our purposes.

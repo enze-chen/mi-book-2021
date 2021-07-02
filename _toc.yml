@@ -69,14 +69,15 @@
           sections:
             - file      : week_1/04/advanced_ml_blank
               title     : Follow-along notebook
-        - file          : week_1/04/practical
         - file          : week_1/04/homework_04
 
     - file              : week_1/05/day_05
       sections:
         - file          : week_1/05/recap_ml
-        - file          : week_1/05/res_discuss
-        - file          : week_1/05/best_practices_blank
+        - file          : week_1/05/research_discuss
+        - file          : week_1/05/practical
+          sections:
+            - file      : week_1/05/best_practices_blank
         - file          : week_1/05/homework_05
         - file          : week_1/05/install_python
 
