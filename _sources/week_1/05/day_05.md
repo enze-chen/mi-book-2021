@@ -23,7 +23,7 @@ Again, it's totally OK if things change!
 - We will start the day on Zoom at 9:00AM.
 - Mark will lead a research discussion at 10:00AM.
 - Enze will hold drop-in OH from 2:00PM to 3:00PM on Zoom.
-- We will convene for a quick debrief on Zoom at 3:00PM.
+- We will convene for a check-in on Zoom at 1:00PM.
 
 
 
