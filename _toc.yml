@@ -76,8 +76,6 @@
         - file          : week_1/05/recap_ml
         - file          : week_1/05/research_discuss
         - file          : week_1/05/practical
-          sections:
-            - file      : week_1/05/best_practices_blank
         - file          : week_1/05/homework_05
         - file          : week_1/05/install_python
 

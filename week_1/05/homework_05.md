@@ -3,21 +3,15 @@
 
 ## Reading  
 
-What you'll be reading and why... 
-These papers can all be found in [this Google Drive folder](https://drive.google.com/drive/folders/1FuZJyp1yWqoMXNs0_1s8LtSzPUwC5CpM?usp=sharing).
-
-
-1. stuff
-
-As you read, feel free to leave comments _directly on the PDF_ in Google Drive: ask/answer questions, share observations/reactions, link related content, etc.
-Participation is _optional_, but encouraged if you do have questions or thoughts to share. 😊
-Enze will periodically check the Google Drive to respond to your comments.
+No new readings!
+Though you may want to have a [Markdown cheat sheet](https://www.markdownguide.org/cheat-sheet) handy for stylizing your _Markdown cells_ in the Jupyter notebook so you can write notes/prose to yourself and your teammates (we only covered how to write Python code in Code cells).
 
 
 
 ## Programming
 
-Today's programming assignment is intended to review....
+No new programming assignments! 
+We encourage you to work with your team to decide what data you will need and how to consolidate it in one place (e.g., a single table that you can save as a CSV file for repeated future use).
 
 
 
