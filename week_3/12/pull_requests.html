@@ -42,8 +42,6 @@
     <script src="../../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -441,8 +439,8 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../week_2/07/survey_07.html">
-     Check-in survey
+    <a class="reference internal" href="../../week_2/07/welcome_back.html">
+     Welcome back!
     </a>
    </li>
   </ul>
@@ -481,7 +479,7 @@
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../../week_2/09/check_in.html">
-     Check-in meeting
+     Check-in meeting instructions
     </a>
    </li>
   </ul>
@@ -554,41 +552,17 @@
    </li>
   </ul>
  </li>
- <li class="toctree-l1 has-children">
+ <li class="toctree-l1">
   <a class="reference internal" href="../13/day_13.html">
    Day 13: Research
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/>
-  <label for="toctree-checkbox-20">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="../13/deep_learning.html">
-     Deep learning (tentative)
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/>
-    <label for="toctree-checkbox-21">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../13/deep_learning_blank.html">
-       Deep learning notebook
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../14/day_14.html">
    Day 14: Slam presentations
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/>
-  <label for="toctree-checkbox-22">
+  <input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/>
+  <label for="toctree-checkbox-20">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -609,8 +583,8 @@
   <a class="reference internal" href="../15/day_15.html">
    Day 15: Conclusions
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/>
-  <label for="toctree-checkbox-23">
+  <input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/>
+  <label for="toctree-checkbox-21">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -862,7 +836,7 @@ Cancel the changes for now (Enze will be periodically merging in others’ chang
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>To avoid this going, ha-ha, <em>terribly wrong</em> (i.e., “merge conflicts” in GitHub lingo), please make sure you edit your section and your section <strong>only</strong>.
-Don’t touch any other lines, including adding/removing spaces!</p>
+Please don’t touch any other lines, including adding/removing spaces in others’ sections!</p>
 </div>
 <p>For the emoji, title, and description, replace the entire <code class="docutils literal notranslate"><span class="pre">[guiding_text]</span></code> parts.
 <a class="reference external" href="https://emojipedia.org/">Emojipedia</a> is a good source for selecting cross-platform emojis.
@@ -889,7 +863,7 @@ Time to change that.</p>
 <p class="sidebar-title"></p>
 <a class="reference internal image-reference" href="../../_images/github_forked.png"><img alt="github_forked" class="align-center" src="../../_images/github_forked.png" style="width: 75%;" /></a>
 </div>
-<p>First, navigate to your forked repo by clicking [Your avatar] <code class="docutils literal notranslate"><span class="pre">&gt;</span></code> <span class="guilabel">Your repositories</span> <code class="docutils literal notranslate"><span class="pre">&gt;</span></code> <strong>mi-book</strong>, which should take you to a very similar page as the main repo, except the header has the image in the sidebar, saying “forked from enze-chen/mi-book.”</p>
+<p>First, navigate to your forked repo by clicking [Your avatar in the top-right corner] <code class="docutils literal notranslate"><span class="pre">&gt;</span></code> <span class="guilabel">Your repositories</span> <code class="docutils literal notranslate"><span class="pre">&gt;</span></code> <strong>mi-book</strong>, which should take you to a very similar page as the main repo, except the header has the image in the sidebar, saying “forked from enze-chen/mi-book.”</p>
 <div class="margin sidebar">
 <p class="sidebar-title"></p>
 <a class="reference internal image-reference" href="../../_images/github_branch.png"><img alt="github_branch" class="align-center" src="../../_images/github_branch.png" style="width: 90%;" /></a>
@@ -898,7 +872,7 @@ Time to change that.</p>
 As the surrounding text implies, these are different <strong>branches</strong> of your project, and this is an important feature when using git.
 In essence, brances allow you to keep several different versions of your code (with say, different files edited/present in each one) so that different project members can independently work on different sections/features, and only merge them with the main branch (called <code class="docutils literal notranslate"><span class="pre">master</span></code>) when ready.
 When you proposed changes with your presentation information, those changes were saved into the <code class="docutils literal notranslate"><span class="pre">patch-1</span></code> branch, and so you want to add your figure to that branch as well.
-Clicking the branch name will switch you to that branch.</p>
+<strong>Click the branch name</strong> to switch you to that branch.</p>
 <p>Next, navigate by clicking on the folders to <code class="docutils literal notranslate"><span class="pre">assets/fig/week_3/12</span></code> where you should only see <code class="docutils literal notranslate"><span class="pre">temp.svg</span></code>, <code class="docutils literal notranslate"><span class="pre">temp.png</span></code>, and maybe a few other figures, depending on how quickly Enze has merged other students’ PRs.
 Once here, click on <span class="guilabel">Add file</span> <code class="docutils literal notranslate"><span class="pre">&gt;</span></code> <span class="guilabel">Upload files</span> and choose the image from your computer (make sure it matches the name you entered in <code class="docutils literal notranslate"><span class="pre">final_presentations.md</span></code>).
 Then enter a descriptive title for this change and click <span class="guilabel">Commit changes</span> (commit directly to the <code class="docutils literal notranslate"><span class="pre">patch-1</span></code> branch).</p>
@@ -924,7 +898,8 @@ Woohoo! 🎉</p>
 <hr class="docutils" />
 <div class="tip admonition">
 <p class="admonition-title">Submission deadline</p>
-<p>Reminder that you should submit your PR <strong>by EOD Wednesday</strong>, 07/14.</p>
+<p>Reminder that you should submit your PR <strong>by 5:00PM PDT Wednesday, 07/14</strong>.
+This gives us enough time to merge it in and fix things if something breaks.</p>
 </div>
 </div>
 </div>

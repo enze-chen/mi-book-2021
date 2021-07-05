@@ -3,7 +3,7 @@
 
 Welcome back! 
 We hope you enjoyed the long weekend.
-It's the start of week 2, and from here on out, we will be applying the concepts and tools we learned in the first week (along with your prior knowledge) towards answering the research question of interest to you.
+It's the start of week 2, and from here on out, we will be applying the concepts and tools we learned in the first week towards building a predictive model for selecting dielectric materials (see {doc}`../../week_1/05/research_discuss`).
 
 
 
@@ -17,10 +17,10 @@ It's the start of week 2, and from here on out, we will be applying the concepts
 
 ## Timing for today
 
-- We will start the day with morning scrum on Zoom at 9:00AM PDT _sharp_.
-- Enze will hold drop-in OH from 2:00PM to 3:00PM PDT on Zoom.
-- Enze will also hold tea time from 3:00PM to 3:20PM PDT on Zoom. 🍵
-- We will convene for a quick debrief on Zoom at 4:00PM PDT.
+- We will start the day with morning scrum on Zoom at 9:00AM.
+- We will convene for a check-in on Zoom at 1:00PM.
+- Enze will hold drop-in OH from 2:00PM to 3:00PM on Zoom. 🐱‍💻
+- We will convene for a quick debrief on Zoom at 3:00PM.
 
 
 

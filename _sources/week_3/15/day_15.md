@@ -21,8 +21,9 @@ Please complete [the final survey](https://forms.gle/1yB81vKCfXx3BRNB9) for Modu
 
 ## Timing for today
 
-- We will start the day with morning scrum on Zoom at 9:00AM _sharp_.
-- We will _most likely_ be done with everything before noon! Then you're free! 🎈
+- We will start the day with morning scrum on Zoom at 9:00AM.
+- We will _most likely_ be done with everything before 11:00AM. 
+Then you're free! 🎈
 
 
 

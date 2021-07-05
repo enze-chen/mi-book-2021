@@ -20,8 +20,8 @@ It is the penultimate day of Module 2 and we're super excited to see everyone's 
 
 ## Timing for today
 
-- We will start the day with morning scrum on Zoom at 9:00AM _sharp_.
-- Enze will hold drop-in OH from 1:00PM to 2:00PM on Zoom.
+- We will start the day with morning scrum on Zoom at 9:00AM.
+- Enze will hold drop-in OH from 1:00PM to 2:00PM on Zoom. 🎋
 - Final presentations will start at 2:00PM on Zoom. ⭐
 - We will convene for a quick debrief on Zoom following the presentations.
 

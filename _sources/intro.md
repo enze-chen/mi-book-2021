@@ -19,7 +19,7 @@ For the most part, you can use the navigation panel on the left to jump quickly 
 The `Day XX` pages will have a more detailed summary of all of the pages/activities for that day, which can be expanded by clicking the down chevron (⌄).
 You can also navigate between adjacent pages using the navigation buttons at the bottom of each page.
 
-Most of the curriculum will be accessible to everyone (the interactive exercises can be completed using Google Colaboratory instead of JupyterHub), although a few special features will require a UC Berkeley login (mostly to avoid spam).
+Most of the curriculum will be accessible to everyone (the interactive exercises can be completed using Google Colaboratory instead of JupyterHub), although a few special features will require a UC Berkeley login (to avoid spam and protect IP).
 If you want to view the source code of this textbook, you can hover over [Octocat](https://github.com/octocat) in the top-right corner and click {guilabel}`repository` or [click here](https://github.com/enze-chen/mi-book).
 
 
@@ -27,5 +27,5 @@ If you want to view the source code of this textbook, you can hover over [Octoca
 ### Note on external links
 
 The default behavior of Jupyter Book/Sphinx/HTML is to open all links _in the current tab_, so if you want to open external links in a new tab, you will have to `Ctrl+Click` the link or right click and select {guilabel}`Open link in new tab`.
-Otherwise you'll have to keep clicking the ⬅ button in your browser to return to (and likely reload) the Jupyter Book.
+Otherwise you'll have to keep clicking the ⬅ button in your browser to return to (and reload) the Jupyter Book.
 

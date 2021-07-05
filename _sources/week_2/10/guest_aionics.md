@@ -12,8 +12,8 @@
 The world is facing an energy crisis, and new materials are certainly going to be a part of the solution.
 That's one of the reasons why we choose to focus on dielectric materials in this module, as they are integral components in energy storage devices, electronics, and photovoltaics.
 As we increase renewable energy output, however, we must also develop new technology to store and move this energy—and that calls for, in addition to dielectric capacitors, better batteries. 🔋
-Batteries are a hot technology (see Prof. [Kristin Persson](https://perssongroup.lbl.gov/)'s and Prof. [Gerd Ceder](https://ceder.berkeley.edu/)'s work in UCB MSE) that are also tough to understand given their reactive kinetics and multiscale characteristics.
-This means traditional batteries R&D is incredibly slow and faces a lot of the challenges that we've previously discussed that plague materials design and development.
+Batteries are a hot technology (see Prof. [Kristin Persson](https://perssongroup.lbl.gov/)'s and Prof. [Gerd Ceder](https://ceder.berkeley.edu/)'s work in UCB MSE for examples) that are also tough to understand given their reactive kinetics and multiscale characteristics.
+This means traditional batteries R&D is incredibly slow and faces a lot of the challenges that we've previously discussed that plague materials design and development. 🐌
 
 To help address this need, Austin co-founded the battery informatics startup [Aionics](https://aionics.io/) to leverage the power of AI to improve the performance, cost, and safety of batteries.
 This is based off of the research he did during his Ph.D. in [Applied Physics at Stanford University](http://appliedphysics.stanford.edu/) working with Prof. [Evan Reed](https://reedgroup.stanford.edu/) and Prof. [Yi Cui](https://web.stanford.edu/group/cui_group/).

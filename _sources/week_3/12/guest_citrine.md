@@ -11,7 +11,7 @@
 By now, you've gained a lot of experience working with datasets in all forms: text, tables (CSV), JSON, and databases queried through an API.
 In your self-directed research projects, you may have come across other data formats as well that you had to learn how to use and how to clean the data.
 All of the different file formats make MI work kinda painful when it comes to data processing and storage, and that's just for public data, which, on the whole, are relatively well organized.
-What about data in the ~ _real world_? ~ 
+What about data ~ _in the real world_? ~ 
 How do you handle proprietary customer data that span different materials classes and industries?
 How do you communicate with R&D scientists who may not understand all of the best practices in MI that you all know?
 And how do you accomplish all this without upsetting your clients? 

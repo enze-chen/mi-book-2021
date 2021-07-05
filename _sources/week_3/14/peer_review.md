@@ -25,7 +25,7 @@ Since giving feedback and receiving feedback is valuable to everyone, we will pr
 | Megan   | Mack       | Luis       |
 
 As can be seen from the table, each speaker will have two reviewers (and each student reviews two others), which we think will be a healthy balance between:
-- Giving each speaker enough feedback, and 
+- Giving each speaker multiple perspectives for feedback, and 
 - Not burdening each person with too many reviews to write.
 
 Please fill out your review in [the peer review form](https://forms.gle/jXaZ3jZ4Qi2XL3zL8) _by the end of the day_.
@@ -44,9 +44,9 @@ You _can_ also take notes directly in [the peer review form](https://forms.gle/j
 1. Ask the speaker questions if you feel like something is unclear or missing.
 You can still point this out in the review itself, but since the presentations are live, this is a nice opportunity for you to collect more information and _strengthen_ your peer review.
 1. Repeat the above steps for the second speaker.
-1. After all the talks are over, go through your notes, compare with the presentation details provided on the {doc}`final_presentations` page, and organize all of your thoughts into a coherent structure (see peer review form) for a cogent peer review!
+1. After all the talks are over, go through your notes, maybe compare with the presentation details provided on the {doc}`final_presentations` page, and organize all of your thoughts into a coherent structure for a cogent peer review!
 As long as you aren't commiting the sin of [Reviewer #2](https://drive.google.com/file/d/1POe0LbFDCBEwaTJ6y8JG7C7hlgsc2B3I/view?usp=sharing), you'll be fine.
-1. Submit [the peer review form](https://forms.gle/jXaZ3jZ4Qi2XL3zL8)!
+1. Submit [the peer review form](https://forms.gle/jXaZ3jZ4Qi2XL3zL8) for both speakers!
 
 
 

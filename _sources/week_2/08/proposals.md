@@ -9,9 +9,11 @@ It might seem a little weird that you have to describe your entire project, incl
 Writing a proposal will also help you get a sense of what needs to be accomplished in what sequence, and what pain points might be encountered along the way.
 Our hope is that by writing a short proposal, you will gain clarity on:
 
-- The specific steps you need take towards answering your research question.
+- The specific steps you need take for your project.
 - What steps are easier and what steps are harder.
 - How your approach fits into the bigger picture (e.g., what are the [_broader impacts_](https://www.nsf.gov/od/oia/special/broaderimpacts/)).
+
+Your proposal will _not_ be graded, but **we will give constructive feedback** to help support you in your research—and in order to do that effectively, we need to understand your thinking. 🙂
 
 
 
@@ -20,7 +22,9 @@ Our hope is that by writing a short proposal, you will gain clarity on:
 Full research proposals span anywhere from two to two dozen pages depending on the funding opportunity.
 We will not ask for something that long.
 Instead, we ask that you write a proposal roughly between **150-300 words**, not including {ref}`h2:08:headers` and {ref}`h2:08:references`.
-These are soft limits, meant as a guide to ensure you 1) have sufficient ideas to tell a complete story, but 2) don't go overboard and write a 5-page essay.
+These are _soft limits_, meant as a guide to ensure you:
+1. Have sufficient ideas to tell a complete story.
+1. But don't go overboard and write a 5-page essay.
 
 
 
@@ -30,20 +34,19 @@ These are soft limits, meant as a guide to ensure you 1) have sufficient ideas t
 There are two things you need in the header area of your proposal.
 
 **Title**: Come up with a title for your proposal that is between 5-15 words.
+This title should be **descriptive** and a one-sentence summary of what you're doing.
 You can look up guidance on how to phrase the title, and we suggest writing the title _after_ you've written the body of your proposal.
 
 **Author**: This is you! 
 Write your name and affiliation underneath the title, where the affiliation is generally your department name and your school's address.
 For example, on Enze's proposals/papers/presentations, he would write:
 ```markdown
-Enze Chen
-Department of Materials Science and Engineering
-University of California, Berkeley, CA 94720
+Enze Chen, Department of Materials Science and Engineering, University of California, Berkeley, CA 94720
 ```
 
 
 
-### Content
+### Body
 
 ```{margin}
 As an example, here's [the proposal guide](https://foundry.lbl.gov/user-program/proposal-guide/proposal-questions-and-evaluation-criteria/) from LBL's [Molecular Foundry](https://foundry.lbl.gov/), which is specific to the Foundry's instruments.
@@ -52,35 +55,36 @@ As an example, here's [the proposal guide](https://foundry.lbl.gov/user-program/
 What actually goes into the body of a proposal? 
 The bullets we list below might not apply to every proposal, but we try to include the salient features in a sensible order:
 - What is the scientific problem you're trying to address and why is it significant?
-- What are you proposing to do? 
-    - Typically this has novelty to it, but don't worry about it for this proposal.
-    - Typically this also has a timeline consideration (i.e., is what you're proposing feasible for the funding period?), but we only have two weeks, lol. So you can dream a little bigger. 🙂
+- What are you proposing to do? Describe the sequence of steps.
+    - Typically this also has a timeline consideration (i.e., is what you're proposing feasible for the funding period?), which for our case is two weeks, but don't be afraid to dream big. 🌈
     - Note: As this is only a _proposal_, you only have to write what you're _planning to accomplish_, even if you're not sure of all the nitty-gritty details at this stage.
 - Why are you the right person for this job?
     - Typically this includes previous experience, particularly publications. 
-    But that's not really relevant here, so feel to free to list previous courses, previous experiences, things you've learned in this module so far, and/or why this problem is so important to _you_.
+    But that's not really relevant here, so feel to free to list previous courses, previous experiences, things you've learned in this module so far, etc.
 - What is the metric for success?
     - For example, is there a material that's commonly used today whose performance you're trying to exceed?
 - What will be the impact of this work on science/society?
-Just to hammer the message home, and it can reiterate elements of the introduction.
+Just to hammer the message home, and it can reiterate elements of the introductory sentence(s).
 
 
 
 ### Figures
 
 Generally speaking, it is helpful to include a figure in the proposal; in some cases, you even _need one_ if you want to have a shot of winning.
-We encourage you to try and find a suitable figure that illustrates some idea in your proposal.
-This could be:
-- A figure you generated regarding some data you found (e.g., what we practiced in week 1).
-- A figure describing the steps you're taking (e.g., with boxes and arrows).
-- A figure/illustration of something cool made by someone else, which we'll allow for this assignment as long as it's properly cited.
+We encourage you to **try to include a figure** that illustrates some idea in your proposal.
+This figure could be:
+- A data figure you generated regarding some data you found (e.g., what we practiced in week 1).
+- A methods figure describing the steps you're taking (e.g., with boxes and arrows).
+- A figure/illustration of something relevant made by someone else, which we'll allow for this assignment as long as it's properly cited.
 
+If you include a figure, please don't forget to _include a short caption_!
 
 
 (h2:08:references)=
 ## References
 
-We ask that you include **at least one citation** in your proposal.
+We ask that you include **at least two citations** in your proposal.
+The citations can be about the particular application/impact of dielectrics, the underlying science, the ML/DS methods you're using, etc.
 This gives you practice searching for relevant literature (see {doc}`../../week_1/03/reading_papers`), building your ideas off of others, and giving proper attributions.
 There are several papers in [the Google Drive](https://drive.google.com/drive/folders/1FuZJyp1yWqoMXNs0_1s8LtSzPUwC5CpM?usp=sharing) and you can refer to the week 1 pages (like {doc}`../../week_1/02/databases`) for how to format your references.
 
@@ -88,7 +92,7 @@ There are several papers in [the Google Drive](https://drive.google.com/drive/fo
 
 ```{admonition} Submission deadline
 :class: tip
-The proposal is **due EOD Thursday**, 07/08.
+The proposal is **due 11:59PM [AoE](https://en.wikipedia.org/wiki/Anywhere_on_Earth) Thursday, 07/08**.
 When you're ready, please submit a link to your proposal using [this Google Form](https://forms.gle/9SjkKXiRLemKC8768).
 ```
 
