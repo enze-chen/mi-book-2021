@@ -13,18 +13,18 @@ We're 50% of the way through the module! How time flies.
 
 ```{admonition} Milestone
 :class: important
-Please submit a short proposal for your research project in [this Google Form](https://forms.gle/9SjkKXiRLemKC8768) by the end of the day.
-We will provide written feedback on your proposal and it can be a topic of discussion during tomorrow's check-in.
+Please submit a short proposal for your research project in [this Google Form](https://forms.gle/9SjkKXiRLemKC8768) by **5:00PM today**.
+We will provide feedback on your proposal and it can be a topic of discussion during tomorrow's check-in.
 ```
 
 
 
 ## Timing for today
 
-- We will start the day with morning scrum on Zoom at 9:00AM _sharp_.
-- Enze will hold drop-in OH from 2:00PM to 3:00PM on Zoom.
-- Enze will also hold tea time from 3:00PM to 3:20PM on Zoom. 🍵
-- We will convene for a quick debrief on Zoom at 4:00PM.
+- We will start the day with morning scrum on Zoom at 9:00AM.
+- We will convene for a check-in on Zoom at 1:00PM.
+- Enze will hold drop-in OH from 2:00PM to 3:00PM on Zoom. 🌱
+- We will convene for a quick debrief on Zoom at 3:00PM.
 
 
 

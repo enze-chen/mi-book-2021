@@ -89,7 +89,7 @@ Cancel the changes for now (Enze will be periodically merging in others' changes
 
 ```{attention}
 To avoid this going, ha-ha, _terribly wrong_ (i.e., "merge conflicts" in GitHub lingo), please make sure you edit your section and your section **only**.
-Don't touch any other lines, including adding/removing spaces!
+Please don't touch any other lines, including adding/removing spaces in others' sections!
 ```
 
 For the emoji, title, and description, replace the entire `[guiding_text]` parts.
@@ -136,7 +136,7 @@ Time to change that.
 ```
 ````
 
-First, navigate to your forked repo by clicking [Your avatar] `>` {guilabel}`Your repositories` `>` **mi-book**, which should take you to a very similar page as the main repo, except the header has the image in the sidebar, saying "forked from enze-chen/mi-book."
+First, navigate to your forked repo by clicking [Your avatar in the top-right corner] `>` {guilabel}`Your repositories` `>` **mi-book**, which should take you to a very similar page as the main repo, except the header has the image in the sidebar, saying "forked from enze-chen/mi-book."
 
 ````{margin}
 ```{image} ../../assets/fig/week_3/12/github_branch.png
@@ -150,7 +150,7 @@ Next, find the dropdown that says {guilabel}`master ▾` and select the name ass
 As the surrounding text implies, these are different **branches** of your project, and this is an important feature when using git.
 In essence, brances allow you to keep several different versions of your code (with say, different files edited/present in each one) so that different project members can independently work on different sections/features, and only merge them with the main branch (called `master`) when ready.
 When you proposed changes with your presentation information, those changes were saved into the `patch-1` branch, and so you want to add your figure to that branch as well.
-Clicking the branch name will switch you to that branch.
+**Click the branch name** to switch you to that branch.
 
 Next, navigate by clicking on the folders to `assets/fig/week_3/12` where you should only see `temp.svg`, `temp.png`, and maybe a few other figures, depending on how quickly Enze has merged other students' PRs.
 Once here, click on {guilabel}`Add file` `>` {guilabel}`Upload files` and choose the image from your computer (make sure it matches the name you entered in `final_presentations.md`).
@@ -193,6 +193,7 @@ Woohoo! 🎉
 
 ```{admonition} Submission deadline
 :class: tip
-Reminder that you should submit your PR **by EOD Wednesday**, 07/14.
+Reminder that you should submit your PR **by 5:00PM PDT Wednesday, 07/14**.
+This gives us enough time to merge it in and fix things if something breaks.
 ```
 
