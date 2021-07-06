@@ -25,7 +25,7 @@ If none of the times work for you, please let Enze know.
 
 ## Summary slides
 
-To help focus the conversation, we ask that you prepare the following for this meeting: **a super short presentation with _no more than_ two (2) slides**.
+To help focus the conversation, we ask that you prepare the following for this meeting: **a super short presentation with _no more than_ two slides**.
 The following are suggested contents, that you can also merge on a single slide if you want.
 
 - The first slide could summarize some things you learned, tried, and/or found interesting so far. 

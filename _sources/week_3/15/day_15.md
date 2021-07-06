@@ -10,7 +10,6 @@ It is the **final day** of Module 2, and while we're sad to be leaving you 😭,
 - Summarize everything we explored in the past three weeks.
 - Reflect on your learning experience in this module.
 - Discuss directions for future learning and look ahead to Module 3 (led by Sinéad).
-- Wrap up the module with a final survey and some resources.
 
 ```{admonition} Milestone (last one, promise!)
 :class: important

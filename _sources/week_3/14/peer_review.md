@@ -15,20 +15,17 @@ Since giving feedback and receiving feedback is valuable to everyone, we will pr
 
 ## Reviewer assignments
 
-| Speaker | Reviewer 1 | Reviewer 2 |
-| :------ | :--------- | :--------- |
-| Alexa   | Megan      | Mack       |
-| Eddie   | Alexa      | Megan      |
-| Kevin   | Eddie      | Alexa      |
-| Luis    | Kevin      | Eddie      |
-| Mack    | Luis       | Kevin      |
-| Megan   | Mack       | Luis       |
+| Speaker | Reviewer |
+| :------ | :------- |
+| Alexa   | Megan    |
+| Eddie   | Alexa    |
+| Kevin   | Eddie    |
+| Luis    | Kevin    |
+| Mack    | Luis     |
+| Megan   | Mack     |
 
-As can be seen from the table, each speaker will have two reviewers (and each student reviews two others), which we think will be a healthy balance between:
-- Giving each speaker multiple perspectives for feedback, and 
-- Not burdening each person with too many reviews to write.
-
-Please fill out your review in [the peer review form](https://forms.gle/jXaZ3jZ4Qi2XL3zL8) _by the end of the day_.
+As can be seen from the table, each speaker will have one reviewer, which will hopefully be good practice without feeling overly burdened.
+Please fill out your review in [the peer review form](https://forms.gle/jXaZ3jZ4Qi2XL3zL8) by **11:59PM AoE today**.
 After all the reviews are in, we'll send them out to the speakers through Slack DMs.
 
 
