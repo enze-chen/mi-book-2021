@@ -19,7 +19,7 @@ To give us a sense of what we've done well so far and where we've fallen short, 
 ## Yikes 😱
 
 We understand that after last week's intense learning extravaganza and this long weekend, for us to now tell you to "go do self-directed research" can feel like we're tossing you into the deep end—and you'd be completely right!
-We've opened the floodgates and inundated you with data and tools, and now we're asking you to make sense of it all and chart your path forward.
+We've opened the floodgates and inundated you with science, data, and programming tools, and now we're asking you to make sense of it all and chart your path forward.
 And you have a presentation in two weeks' time.
 The task sounds daunting.
 The path forward appears nebulous.
@@ -43,7 +43,7 @@ Fun! 💪
 
 To get our mindset back in the game, we recommend taking some time to review the concepts from last week, starting from the science/research topics.
 You might ask yourself the following:
-- Do I have enough information to get started or should I do more reading on the science (lit review)?
+- Do I have enough information to get started or should I do a little more reading on the science (lit review)?
 - What properties are important for this application or might be helpful for modeling the dielectric constant?
 - Do I have a dataset that I can work with? Is it in a usable, cleaned form? What do the data look like?
 - What programming examples from last week will enable me to put my ideas into practice?

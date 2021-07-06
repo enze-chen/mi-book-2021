@@ -14,7 +14,7 @@ It is the penultimate day of Module 2 and we're super excited to see everyone's 
 ```{admonition} Milestone
 :class: important
 1. Present your work to an audience (that's all of us!).
-1. Submit a short [peer review](https://forms.gle/jXaZ3jZ4Qi2XL3zL8) for the people you are assigned.
+1. Submit a short [peer review](https://forms.gle/jXaZ3jZ4Qi2XL3zL8) for the person you are assigned.
 ```
 
 

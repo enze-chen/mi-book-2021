@@ -110,16 +110,10 @@ Family, friends, mentors, or anyone else you think is appropriate.
 ## Tools
 
 For your presentation slides, you can use Microsoft PowerPoint, Apple Keynote, Google Slides, [Canva](https://www.canva.com/), or a software of your choice.
-For any figures that you make, we suggest that the DPI (dots per inch) be _at least 300_, which is also the minimum requirement for top-tier scientific journals.
-If you use figures from other sources, that's also fine, but _make sure to cite it_, unless it's from the public domain or a royalty free site like [Unsplash](https://unsplash.com/) or [Pexels](https://www.pexels.com/royalty-free-images).
-Other tools and tips are best found using a Google search.
+For any figures that you make, we suggest that the DPI (dots per inch) be _at least 300_, which is something you can set in matplotlib using [`fig.savefig(fname, dpi=300)`](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.savefig.html).
+If you use figures from other sources, that's also fine, but _please cite it_.
+Other tools and tips for styling your presentation are best found using a Google search.
 
-
-
-<!-- ## Have something else in mind?
-
-Traditionally, slam presentations (particularly about data science that involve visualizations) are done with slides, _but_ we understand that scientific communication and creative expression take many forms, so if there's something else you would like to try, feel free to run it by us.
-If it can fit into ~6 minutes of live presentation and showcase your research results, then we'll likely be open to the idea. -->
 
 
 ```{admonition} Did you know?
