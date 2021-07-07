@@ -26,9 +26,9 @@ Please submit a pull request **by 5:00PM** with your presentation abstract accor
 
 
 
-## Activities for today
+<!-- ## Activities for today
 
 ```{tableofcontents}
-```
+``` -->
 
 

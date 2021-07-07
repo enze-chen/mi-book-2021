@@ -4,7 +4,7 @@ import json
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import matplotlib.animation as animation
+from matplotlib.animation import FuncAnimation
 from matplotlib.artist import Artist
 
 from sklearn.linear_model import LinearRegression, Ridge
@@ -46,7 +46,7 @@ def animate_gd():
         return h, t
 
     plt.rcParams.update({'animation.html': 'jshtml', 'figure.figsize':(6, 4)})
-    anim = animation.FuncAnimation(fig, animate, init_func=init, frames=20, interval=500, repeat=False);
+    anim = FuncAnimation(fig, animate, init_func=init, frames=20, interval=500, repeat=False);
     return anim
 
 
@@ -97,14 +97,6 @@ def plot_styling(ax, degree):
     ax[1].set_xlim(1, degree-1)
     ax[1].legend(frameon=False)
     plt.show()
-
-
-
-
-
-
-
-
 
 
 

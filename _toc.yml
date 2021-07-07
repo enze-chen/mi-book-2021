@@ -93,6 +93,7 @@
       sections:
         - file          : week_2/08/guest_ucb
         - file          : week_2/08/proposals 
+        - file          : week_2/08/matminer_features_blank
 
     - file              : week_2/09/day_09
       sections:
