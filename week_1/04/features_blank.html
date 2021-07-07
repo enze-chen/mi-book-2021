@@ -469,6 +469,11 @@
      Proposals
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week_2/08/matminer_features_blank.html">
+     Review of matminer features
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
@@ -1272,10 +1277,14 @@ The <code class="docutils literal notranslate"><span class="pre">col_id</span></
 </div>
 <div class="section" id="enumerating-elemental-properties">
 <h3>Enumerating elemental properties<a class="headerlink" href="#enumerating-elemental-properties" title="Permalink to this headline">¶</a></h3>
+<p><img alt="Magpie features" src="../../_images/magpie_features.png" /></p>
 <p>Once we have a column of Composition objects, we’re ready to perform the featurization!
 We will use one of the featurizers from the <a class="reference external" href="https://hackingmaterials.lbl.gov/matminer/featurizer_summary.html#composition"><code class="docutils literal notranslate"><span class="pre">matminer.featurizers.composition</span></code></a> submodule, namely <a class="reference external" href="https://hackingmaterials.lbl.gov/matminer/matminer.featurizers.composition.html#matminer.featurizers.composition.composite.ElementProperty"><code class="docutils literal notranslate"><span class="pre">ElementProperty</span></code></a> (although there are many, <em>many</em> more).
 For the <code class="docutils literal notranslate"><span class="pre">ElementProperty</span></code>, we will demonstrate the <a class="reference external" href="https://hackingmaterials.lbl.gov/matminer/matminer.featurizers.composition.html#matminer.featurizers.composition.composite.ElementProperty.from_preset"><code class="docutils literal notranslate"><span class="pre">featurizer.from_preset('magpie')</span></code></a> class method, which creates an object that can automatically engineer <strong>132 new features</strong> based on the method by <a class="reference external" href="https://www.nature.com/articles/npjcompumats201628">Ward et al. <em>npj Comput. Mater.</em>, 2016</a>. 🤯</p>
-<p>The object from this class can then call the <a class="reference external" href="https://hackingmaterials.lbl.gov/matminer/matminer.featurizers.html#matminer.featurizers.base.BaseFeaturizer.featurize_dataframe"><code class="docutils literal notranslate"><span class="pre">featurize_dataframe(df,</span> <span class="pre">col_id='comp_col_name')</span></code></a> method to generate all the columns with features.</p>
+<p>It does this by first calculating what the property (e.g., electronegativity) is for <em>each element</em> in the composition.
+It then computes a set of <strong>statistical quantities</strong> based on the set of elemental properties for each composition, such as the mean, minimum, maximum, etc.
+These statistical quantities of the elemental properties then become the new features for that material.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">ElementProperty</span></code> object can then call the <a class="reference external" href="https://hackingmaterials.lbl.gov/matminer/matminer.featurizers.html#matminer.featurizers.base.BaseFeaturizer.featurize_dataframe"><code class="docutils literal notranslate"><span class="pre">featurize_dataframe(df,</span> <span class="pre">col_id='comp_col_name')</span></code></a> method to generate all the columns with features.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">matminer.featurizers.composition</span> <span class="kn">import</span> <span class="n">ElementProperty</span>

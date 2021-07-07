@@ -21,6 +21,14 @@ If you don't like that advice, you can search for many more on Google.
 
 ## Finding papers
 
+````{margin}
+```{figure} ../../assets/fig/week_1/03/google_scholar.png
+:alt: google_scholar
+:width: 100%
+:align: center
+Google Scholar home page search bar.
+````
+
 There are many resources that you can use for finding papers, but for simplicity and generally-good results, we recommend you enter search queries on [**Google Scholar**](https://scholar.google.com/) (different from Google search!).
 We're all pretty familiar with how _general_ Google search works, including its advanced search/filters, and this website has indexed essentially all of the relevant journals for our needs.
 If you've never used this platform before, we suggest you try it out with terms like "screening dielectric materials" or "materials informatics" and seeing what pops up.
