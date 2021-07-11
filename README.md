@@ -18,7 +18,7 @@ You may read the book here: https://enze-chen.github.io/mi-book
 You may use the following BibTeX citation:
 
 ```
-@misc{chen_intro_mi_2021,
+@misc{chen_asta_intro_mi_2021,
     title = {Introduction to Materials Informatics},
     authors = {Chen, Enze and Asta, Mark},
     year = {2021},
@@ -31,6 +31,8 @@ or perhaps the more conventional:
 
 - Enze Chen and Mark Asta. _Introduction to Materials Informatics_. 2021. _GitHub Pages_, https://enze-chen.github.io/mi-book/.
 
+
+-----------
 
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.

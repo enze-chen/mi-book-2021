@@ -102,7 +102,7 @@ You can continue to finalize your research and your presentation.
 The presentation itself you can and should still work on, and you don't have to submit that.
 
 **Thursday**: In the morning scrum, we'll decide the speaking order. 😁
-In the afternoon, we'll start the slam presentations on Zoom **at a unique Zoom link in the calendar event**.
+In the afternoon, we'll start the slam presentations on Zoom **at a unique Zoom link** in the calendar event.
 **Please feel free to invite guests** to come see your (and others') work!
 Family, friends, mentors, or anyone else you think is appropriate.
 
@@ -113,12 +113,12 @@ Family, friends, mentors, or anyone else you think is appropriate.
 For your presentation slides, you can use Microsoft PowerPoint, Apple Keynote, Google Slides, [Canva](https://www.canva.com/), or a software of your choice.
 For any figures that you make, we suggest that the DPI (dots per inch) be _at least 300_, which is something you can set in matplotlib using [`fig.savefig('my_figure_name.png', dpi=300, bbox_inches='tight')`](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.savefig.html).
 If you use figures from other sources (not made by you), that's also fine, but _please cite it_.
-Other tools and tips for styling your presentation are best found online.
+Other tools and tips for styling your presentation that we haven't covered here are best found online.
 
 
 
 ```{admonition} Did you know?
 :class: tip
-[_Science_ magazine](https://science.sciencemag.org/), one of the top journals that covers all fields of science, sponsors an annual [Dance Your Ph.D. contest](https://www.sciencemag.org/projects/dance-your-phd), and it's pretty awesome.
+[_Science_ magazine](https://science.sciencemag.org/), one of the top journals that covers all fields of science, sponsors an annual [Dance Your Ph.D. contest](https://www.sciencemag.org/projects/dance-your-phd), and it's pretty neat.
 ```
 

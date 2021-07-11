@@ -3,7 +3,7 @@
 
 We hope everyone had a great weekend and welcome to day 11 of Module 2.
 We are now in the home stretch 😢, so it's time to start thinking about our final project presentations.
-But also, to kick off the final week, Mark will be hosting a panel/discussion on all things graduate school related, so you _definitely_ don't want to miss this!
+But also, to kick off the final week, Mark will be leading a Q&A on all things graduate school related, so you _definitely_ don't want to miss this!
 
 
 
