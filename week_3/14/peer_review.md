@@ -34,16 +34,15 @@ After all the reviews are in, we'll send them out to the speakers through Slack 
 
 Here we'd like to offer a _suggested_ course of action, but ultimately we leave it up to you to determine what will enable you to write an effective peer review.
 
-1. Know which speakers you're reviewing!!
-Obviously we hope you'll pay attention to all the presentations, but for these two in particular you'll want to pay _close_ attention. 😜
+1. Know which speaker you're reviewing!!
+Obviously we hope you'll pay attention to all the presentations, but for that one in particular you'll want to pay _extra close attention_. 😜
 1. Take notes on a piece of paper or an electronic document. 
 You _can_ also take notes directly in [the peer review form](https://forms.gle/jXaZ3jZ4Qi2XL3zL8), but that might overly constrain your ideas in the moment, so we invite the stream of consciousness to occur separately and you can organize your thoughts later.
 1. Ask the speaker questions if you feel like something is unclear or missing.
 You can still point this out in the review itself, but since the presentations are live, this is a nice opportunity for you to collect more information and _strengthen_ your peer review.
-1. Repeat the above steps for the second speaker.
 1. After all the talks are over, go through your notes, maybe compare with the presentation details provided on the {doc}`final_presentations` page, and organize all of your thoughts into a coherent structure for a cogent peer review!
 As long as you aren't commiting the sin of [Reviewer #2](https://drive.google.com/file/d/1POe0LbFDCBEwaTJ6y8JG7C7hlgsc2B3I/view?usp=sharing), you'll be fine.
-1. Submit [the peer review form](https://forms.gle/jXaZ3jZ4Qi2XL3zL8) for both speakers!
+1. Submit [the peer review form](https://forms.gle/jXaZ3jZ4Qi2XL3zL8)!
 
 
 

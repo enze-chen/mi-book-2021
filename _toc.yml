@@ -111,8 +111,6 @@
       sections:
         - file          : week_3/11/presentations
         - file          : week_3/11/grad_school
-          sections:
-            - file      : week_3/11/grad_school_slides
 
     - file              : week_3/12/day_12
       sections:

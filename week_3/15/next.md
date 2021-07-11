@@ -65,7 +65,7 @@ You might even notice some structural similarities with this module, such as the
 ### Machine learning
 
 Last but not least, maybe all this talk about ML has made you excited to learn more about these algorithms.
-This is a huge field with a lot of classes filling this bill, depending on your interests and skill level.
+This is a huge field with a lot of classes fitting this bill, depending on your interests and skill level.
 [CS 189: Introduction to Machine Learning](https://www2.eecs.berkeley.edu/Courses/CS189/) is probably the most comprehensive course on this topic, although it is admittedly not for the faint of heart and requires mathematical maturity.
 [EECS 127: Optimization Models in Engineering](https://www2.eecs.berkeley.edu/Courses/EECS127/) and [EE 221A: Linear System Theory](https://www2.eecs.berkeley.edu/Courses/EE221A/) could be nice classes to take as prerequisites.
 

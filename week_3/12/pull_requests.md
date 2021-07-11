@@ -3,15 +3,14 @@
 
 In Module 1, you learned a little bit about GitHub and how it can be used to share code between developers and with the general public.
 More specifically, you used the command-line interface (CLI) to clone repositories (repos) to your local computing environment.
-In this lesson, we'll continue the discussion and explore two more features of GitHub: the **web user interface (UI)** and **pull requests**.
+In this lesson, we'll continue the discussion and explore two more features of GitHub: the **web user interface (UI)** and **pull requests (PRs)**.
 
 
 
 ## Web UI
 
 Chances are, you have already seen the GitHub web UI if you've cloned a repo before, because that's where you will find the correct URL to clone.
-At the very least you will have glanced it while setting up your GitHub account for this module. (_right???_ 😉) 
-In case you haven't seen a full repo before, [here is the webpage](https://github.com/enze-chen/mi-book) for this textbook's repo as an example.
+As an example, [here is the repo for this textbook](https://github.com/enze-chen/mi-book).
 
 As you can see, the UI is fairly clean with many symbols, lots of whitespace, and light colors.
 This simplicity was [intentionally designed](https://github.blog/changelog/2020-06-23-design-updates-to-repositories-and-github-ui/) to better surface repo elements and key GitHub features.
@@ -39,6 +38,7 @@ As stated on the first day, _we are a team_, and a team functions best when ever
 In GitHub lingo, the phrase associated with a personal contribution to a project is a **pull request**, or PR.
 When you "open a PR" or "submit a PR," what this means is that you made some changes to your personal version of a repo and you're ready to incorporate those changes into the main, public version of that repo.
 The "pull" part of the name refers to the fact that the main project has to grab your changes, and the "request" part of the name refers to the fact that the maintainers of the project need to review and accept your changes before they can be incorporated (**merged** in GitHub lingo).
+
 PRs are used _all the time_ on GitHub and in software engineering as it allows for individual contributions while maintaining certain consistency checks.
 While we cannot _git_ into all the details at the moment 🤦‍, we hope you can at least appreciate why we're teaching you this concept and now we will put these ideas into practice.
 Once you have made some changes, submitted a PR, and that PR gets approved, you will become a contributor on this project!
@@ -92,7 +92,7 @@ To avoid this going, ha-ha, _terribly wrong_ (i.e., "merge conflicts" in GitHub 
 Please don't touch any other lines, including adding/removing spaces in others' sections!
 ```
 
-For the emoji, title, and description, replace the entire `[guiding_text]` parts.
+For the emoji, title, and description, replace the entire `[your_XXX]` parts.
 [Emojipedia](https://emojipedia.org/) is a good source for selecting cross-platform emojis.
 For the image, change just `temp.png` to the name of your own figure file, with the extension.
 Your figure name has to be unique to you, so we suggest something like `name_final.png` (e.g., `enze_final.png`), provided this is what you named the actual figure (PNG) file on your computer!
@@ -109,7 +109,6 @@ We'll upload this image to the repo shortly.
 ```
 
 When you have completed your section, scroll to the bottom and create a short title for this set of edits that you made (see above).
-By naming each set of changes, we are able to reference them later, so make sure the title is sufficiently descriptive.
 When you are done, click {guilabel}`Propose changes` to take you to the next page where you can see the lines you've changed. 
 Near the top, you should see a box that says something like {guilabel}`compare: patch-1`.
 Make a note of the number.
@@ -152,7 +151,7 @@ In essence, brances allow you to keep several different versions of your code (w
 When you proposed changes with your presentation information, those changes were saved into the `patch-1` branch, and so you want to add your figure to that branch as well.
 **Click the branch name** to switch you to that branch.
 
-Next, navigate by clicking on the folders to `assets/fig/week_3/12` where you should only see `temp.svg`, `temp.png`, and maybe a few other figures, depending on how quickly Enze has merged other students' PRs.
+Next, navigate by clicking on the folders to `assets/fig/week_3/14` where you should only see `temp.svg`, `temp.png`, and maybe a few other figures, depending on how quickly Enze has merged other students' PRs.
 Once here, click on {guilabel}`Add file` `>` {guilabel}`Upload files` and choose the image from your computer (make sure it matches the name you entered in `final_presentations.md`).
 Then enter a descriptive title for this change and click {guilabel}`Commit changes` (commit directly to the `patch-1` branch).
 
@@ -186,7 +185,7 @@ This takes you to the PR dialogue, and you should note the following:
 - Leave the box "Allow edits by maintainers" **checked** ☑.
 - At the bottom, you can further verify that the "2 files changed" are `final_presentations.md` and `name_final.png`.
 
-If everything looks good, you can click {guilabel}`Create pull request` and then ping Enze on Slack to merge your PR!
+If everything looks good, you can click {guilabel}`Create pull request` and then ping Enze on Slack!
 Woohoo! 🎉
 
 -------- 

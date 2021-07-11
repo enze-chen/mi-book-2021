@@ -20,7 +20,6 @@ But also, to kick off the final week, Mark will be hosting a panel/discussion on
 - We will start the day with morning scrum on Zoom at 9:00AM.
 - Mark will host a discussion on Zoom (same link) from 10:00AM to 11:00AM.
 - We will convene for a check-in on Zoom at 1:00PM.
-- Enze will hold drop-in OH from 2:00PM to 3:00PM at the same Zoom link. 👌
 - We will convene for a quick debrief on Zoom at 3:00PM.
 
 
