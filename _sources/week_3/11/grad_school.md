@@ -1,5 +1,5 @@
 (h1:11:grad_school)=
-# Grad school talk: Mark!
+# Grad school Q&A: Mark!
 
 ```{image} ../../assets/fig/preamble/mark.jpg
 :alt: mark_grad

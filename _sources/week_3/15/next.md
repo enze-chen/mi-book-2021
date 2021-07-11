@@ -31,7 +31,7 @@ It's helpful to work alongside others and learn from them, and getting the oppor
 
 Of course, if you want to set out on your own, that's cool too!
 You can review some of the materials we've shared here to identify the research topics that interest you, and once you find a suitable dataset(s), you can try to blaze your own trail.
-If you're interested in just practicing with building ML models, occasionally but not always related to science problems, check out [Kaggle](https://www.kaggle.com/) which regularly hosts data science competitions open to anyone—it can be pretty fun!
+If you're interested in just practicing with building ML models, occasionally but not always related to science problems, check out [Kaggle](https://www.kaggle.com/) which regularly hosts data science competitions open to anyone—they're pretty fun!
 
 
 
