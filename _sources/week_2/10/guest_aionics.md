@@ -9,7 +9,7 @@
 
 &nbsp;
 
-The world is facing an energy crisis, and new materials are certainly going to be a part of the solution.
+The world is facing an energy crisis {cite}`davis_2018`, and new materials are certainly going to be a part of the solution.
 That's one of the reasons why we choose to focus on dielectric materials in this module, as they are integral components in energy storage devices and microelectronics.
 As we increase renewable energy output, however, we must also develop new technology to store and move this energy—and that calls for, in addition to dielectric capacitors, better batteries. 🔋
 Batteries are a hot technology (see Prof. [Kristin Persson](https://perssongroup.lbl.gov/)'s and Prof. [Gerd Ceder](https://ceder.berkeley.edu/)'s work in UCB MSE for examples) that are also tough to understand given their reactive kinetics and multiscale characteristics.

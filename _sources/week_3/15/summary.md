@@ -6,9 +6,5 @@
 
 
 
-## Module survey
-
-[the final survey](https://forms.gle/1yB81vKCfXx3BRNB9)
-
 
 
