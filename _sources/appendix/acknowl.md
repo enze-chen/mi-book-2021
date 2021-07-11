@@ -9,7 +9,7 @@ We also thank the [DataHub](https://datahub.berkeley.edu/) developers at UC Berk
 
 We are grateful for the support from our friends, colleagues, and mentors over the years, whose incredible wisdom and insights into teaching helped refine our own pedagogy.
 Enze thanks Prof. [Michelle Wilkerson](https://gse.berkeley.edu/michelle-h-wilkerson) in the UCB [Graduate School of Education](https://gse.berkeley.edu/) for her motivating comments and suggestions.
-And of course, to all of our former and current students (Alexa, Eddie, Kevin, Luis, Mack, and Megan): thank you for your patience and invaluable feedback as you have challenged and continue to challenge us to always perform at our best.
+And of course, to all of our former and current students (Alexa, Eddie, Kevin, Luis, Mack, and Megan): thank you for your patience and invaluable feedback as you have challenged us to always perform at our best.
 
 Enze further acknowledges Ph.D. funding through the [NSF Graduate Research Fellowship Program](https://www.nsfgrfp.org/) under Grant No. DGE-1752814.
 Any opinions, findings, and conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of the [National Science Foundation](https://www.nsf.gov/).

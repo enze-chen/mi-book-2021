@@ -15,7 +15,7 @@ The other is an astronomical object. 😁
 ```
 
 One of the main goals of this entire summer internship—and why you chose to sign up—is to give you all some research experience and for you to see what life as a graduate researcher is like.
-By now, you have already accumulated significant experience working with EUV lithography, MATLAB, MI, and Python—with DFT and ferroelectrics to come(!)—and maybe, _just maybe_, you feel like this is where you belong. 😊
+By now, you have already accumulated significant experience working with EUV lithography, MATLAB, MI, dielectrics, and Python—with DFT and ferroelectrics to come(!)—and maybe, _just maybe_, you feel like this is where you belong. 😊
 But then as you thought a little deeper, you might have realized that situated squarely on the path between where you are now and your [potential] future life as a graduate student is the nebulous fog that is graduate school admissions.
 Like undergraduate admissions (unfortunately), the process is anything but clear and rife with pain points, inequities, and pitfalls. 
 Unlike undergraduate admissions (unfortunately), there is also a different set of evaluation criteria that almost surely has changed in light of recent events.
@@ -26,3 +26,14 @@ As you know from the introduction, Mark is currently a Professor of MSE at UCB a
 What you may not know is that previously Mark served as Chair of the [UCB MSE department](https://mse.berkeley.edu/) (2012-2018) and before that held professorships at [Northwestern University](https://www.mccormick.northwestern.edu/materials-science/) (2000-2005) and [UC Davis](https://mse.engineering.ucdavis.edu/) (2005-2009).
 He has been on several graduate admissions committees (and chaired a few) and has mentored dozens of undergraduate and graduate students in his academic career.
 Bring your energy and questions for Mark as we get a special opportunity to hear about what it's all like _from a man on the inside_. 👀
+
+
+
+## Pre-reading slides
+
+We ask that you skim the following slides (not necessarily the links) _before_ Mark's session to help situate ourselves and spur some questions:
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRlFSDwK3pKKnnkYEjU1fyrCk9FC4SUgfbUNQnUNbOXb_H6zoUrLQVGIlLNQ_XnjFSRjHWTPsHFOZWO/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="480" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+
+

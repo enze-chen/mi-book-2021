@@ -7,8 +7,8 @@ It is the penultimate day of Module 2 and we're super excited to see everyone's 
 
 ## Goals for today
 
-- Reveal the presentation order (randomized) and discuss peer review.
-- Put the finishing touches on your research projects and final presentation.
+- Determine the presentation order and discuss peer review.
+- **Rehearse _and time_** your final presentations.
 - Give a final presentation to your peers (and any other guests)!
 
 ```{admonition} Milestone
@@ -21,9 +21,8 @@ It is the penultimate day of Module 2 and we're super excited to see everyone's 
 ## Timing for today
 
 - We will start the day with morning scrum on Zoom at 9:00AM.
-- Enze will hold drop-in OH from 1:00PM to 2:00PM on Zoom. 🎋
-- Final presentations will start at 2:00PM on Zoom. ⭐
-- We will convene for a quick debrief on Zoom following the presentations.
+- Enze will hold drop-in OH from 1:00PM to 2:00PM on Zoom at the same Zoom link as the presentations. 🎋
+- Final presentations will start at 2:00PM on Zoom **at the Zoom link in the calendar event**, not the usual one. ⭐
 
 
 
