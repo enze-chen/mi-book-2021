@@ -192,7 +192,14 @@ Woohoo! 🎉
 
 ```{admonition} Submission deadline
 :class: tip
-Reminder that you should submit your PR **by 5:00PM PDT Wednesday, 07/14**.
+A reminder that you should submit your PR **by 5:00PM PT Wednesday, 07/14**.
 This gives us enough time to merge it in and fix things if something breaks.
 ```
+
+### Wait, I made a mistake!
+
+That's alright, just make the changes to your copy of the files/figures in your `patch-1` branch and submit another PR to `enze-chen/mi-book:master`.
+That's the beauty of it. 🙂
+
+
 
