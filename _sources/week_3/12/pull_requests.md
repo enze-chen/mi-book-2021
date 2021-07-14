@@ -192,7 +192,7 @@ Woohoo! 🎉
 
 ```{admonition} Submission deadline
 :class: tip
-A reminder that you should submit your PR **by 5:00PM PT Wednesday, 07/14**.
+A reminder that you should submit your PR **by 11:59PM PT Wednesday, 07/14**.
 This gives us enough time to merge it in and fix things if something breaks.
 ```
 
