@@ -46,7 +46,7 @@ To our guests: Check out the cool projects these students have made! 😎
 
 
 
-## Kevin [Your emoji]
+## Kevin 🤯
 
 **Title**: Machine learning-driven methods to predict the unknown dielectric constant of materials
 
