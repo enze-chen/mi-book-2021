@@ -61,7 +61,7 @@ To our guests: Check out the cool projects these students have made! 😎
 
 ## Luis [Your emoji]
 
-**Title**: [Your title]
+**Title**: Predicting Tomorrow’s High-k Dielectric Materials Using Machine Learning
 
 ```{image} ../../assets/fig/week_3/14/temp.png
 :width: 50%
