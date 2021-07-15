@@ -46,7 +46,7 @@ To our guests: Check out the cool projects these students have made! 😎
 
 
 
-## Kevin 🤯
+## Kevin [Your emoji]
 
 **Title**: Machine learning-driven methods to predict the unknown dielectric constant of materials
 
@@ -56,6 +56,7 @@ To our guests: Check out the cool projects these students have made! 😎
 ```
 
 **Description**: With Moore’s Law coming into play, electronics are becoming smaller as the amount of transistors doubles around every two years. These transistors therefore need to have incorporated a dielectric material capable of storing more charge as well as have a band gap large enough to prevent current leakage. These characteristics generally have an inverse relationship, which makes it difficult to select dielectric material that can accommodate both. There are also many materials that do not have a dielectric constant documented, and require a strenuous density functional theory calculation to figure out. Using a random forest regression machine learning model and data provided from the Materials Project, our group was able to provide estimations of these unknown dielectric constants with a 47% relative error. This provides further materials to explore as potential dielectrics with both a relatively high dielectric constant and large band gap, both ideal for advancing electronics.
+
 
 
 
@@ -85,15 +86,16 @@ To our guests: Check out the cool projects these students have made! 😎
 
 
 
-## Megan [Your emoji]
+## Megan 🚀 
 
-**Title**: [Your title]
+**Title**: The Future of CMOS transistors
 
-```{image} ../../assets/fig/week_3/14/temp.png
+```{image} ../../assets/fig/week_3/14/megan_final.png
 :width: 50%
 :align: center
 ```
 
-**Description**: [Your abstract]
+**Description**: Is the most fabricated device in the history of humankind facing a performance plateau? As the thickness of dielectrics become even smaller, the associated leakage effects from this have forced the search for novel materials with high-k dielectric constants. The development of these new materials is essential for advancement in modern electronics and critical to high-performance device fabrication. Our research team sought to find potential material candidates for the next generation of CMOS transistors using a data-driven approach by leveraging the Materials Project database and machine learning (ML). Using a random forests ML model, we were able to analyze the importance score of each feature from our training data set, which in turn allowed for further prioritization of features that had a stronger influence on predicting our desired output of the electronic dielectric contribution. Our ML model continued to improve in accuracy and reached a relative error between 0.39 – 0.41. Furthermore, the results from the ML model enabled for prediction of material candidates that had band gaps > 3 eV and predicted electronic dielectric constants within a range of 5.0 – 5.5. 
+
 
 
