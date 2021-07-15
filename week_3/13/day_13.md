@@ -14,7 +14,7 @@ We're almost across the finish line! 🏁
 
 ```{admonition} Milestone
 :class: important
-Please submit a pull request **by 5:00PM** with your presentation abstract according to the instructions in {doc}`../12/pull_requests`.
+Please submit a pull request **by 11:59PM** with your presentation abstract according to the instructions in {doc}`../12/pull_requests`.
 ```
 
 

@@ -109,8 +109,8 @@
   chapters:
     - file              : week_3/11/day_11
       sections:
-        - file          : week_3/11/presentations
         - file          : week_3/11/grad_school
+        - file          : week_3/11/presentations
 
     - file              : week_3/12/day_12
       sections:
