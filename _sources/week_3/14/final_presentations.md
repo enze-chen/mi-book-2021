@@ -20,16 +20,16 @@ To our guests: Check out the cool projects these students have made! 😎
 
 
 
-## Alexa [Your emoji]
+## Alexa 🍉
 
-**Title**: [Your title]
+**Title**: Using Machine Learning to Predict High-k Dielectrics
 
-```{image} ../../assets/fig/week_3/14/temp.png
+```{image} ../../assets/fig/week_3/14/alexa.png
 :width: 50%
 :align: center
 ```
 
-**Description**: [Your abstract]
+**Description**: To meet demands for high-k dielectrics, we must train a machine learning model to predict the total dielectric contribution for elements in the Materials Project that don't already have dielectric constants. With the use of linear regression and cross-validating our data, we were able to achieve low relative error. This means that after minimizing the features and properties that would give us the best results to observe, our models get better predictions at the end of our data analysis. After gathering some promising materials, we are ready to consider their sustainability, requiring more research and experimental validation to finalize our list.
 
 
 
