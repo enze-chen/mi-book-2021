@@ -24,7 +24,7 @@ To our guests: Check out the cool projects these students have made! 😎
 
 **Title**: [Your title]
 
-```{image} ./temp.png
+```{image} ../../assets/fig/week_3/14/temp.png
 :width: 50%
 :align: center
 ```
@@ -37,7 +37,7 @@ To our guests: Check out the cool projects these students have made! 😎
 
 **Title**: Screening Materials Project for high-k dielectrics using machine learning methods
 
-```{image} ./Eddie_figure.png
+```{image} ../../assets/fig/week_3/14/Eddie_figure.png
 :width: 50%
 :align: center
 ```
@@ -50,7 +50,7 @@ To our guests: Check out the cool projects these students have made! 😎
 
 **Title**: [Your title]
 
-```{image} ./temp.png
+```{image} ../../assets/fig/week_3/14/temp.png
 :width: 50%
 :align: center
 ```
@@ -63,7 +63,7 @@ To our guests: Check out the cool projects these students have made! 😎
 
 **Title**: [Your title]
 
-```{image} ./temp.png
+```{image} ../../assets/fig/week_3/14/temp.png
 :width: 50%
 :align: center
 ```
@@ -76,7 +76,7 @@ To our guests: Check out the cool projects these students have made! 😎
 
 **Title**: [Your title]
 
-```{image} ./temp.png
+```{image} ../../assets/fig/week_3/14/temp.png
 :width: 50%
 :align: center
 ```
@@ -89,7 +89,7 @@ To our guests: Check out the cool projects these students have made! 😎
 
 **Title**: [Your title]
 
-```{image} ./temp.png
+```{image} ../../assets/fig/week_3/14/temp.png
 :width: 50%
 :align: center
 ```
