@@ -48,14 +48,14 @@ To our guests: Check out the cool projects these students have made! 😎
 
 ## Kevin 🤯
 
-**Title**: Machine-learning-driven methods to predict the unknown dielectric constant of materials
+**Title**: Machine learning-driven methods to predict the unknown dielectric constant of materials
 
-```{image} ../../assets/fig/week_3/14/temp.png
+```{image} ../../assets/fig/week_3/14/Kevin_final.png
 :width: 50%
 :align: center
 ```
 
-**Description**: With Moore’s Law coming into play, electronics are becoming smaller as the amount of transistors doubles around every two years. These transistors therefore need to have incorporated a dielectric material capable of storing more charge as well as have a band gap large enough to prevent current leakage. These characteristics generally have an inverse relationship, which makes it difficult to select dielectric material that can accommodate both. There are also many materials that do not have a dielectric constant documented, and require a strenuous density functional theory calculation to figure out . Using a random forest regression machine learning model and data provided from the Materials Project, our group was able to provide estimations of these unknown dielectric constants with a 47% relative error. This provides further materials to explore as potential dielectrics with both a relatively high dielectric constant and large band gap, both ideal for advancing electronics.
+**Description**: With Moore’s Law coming into play, electronics are becoming smaller as the amount of transistors doubles around every two years. These transistors therefore need to have incorporated a dielectric material capable of storing more charge as well as have a band gap large enough to prevent current leakage. These characteristics generally have an inverse relationship, which makes it difficult to select dielectric material that can accommodate both. There are also many materials that do not have a dielectric constant documented, and require a strenuous density functional theory calculation to figure out. Using a random forest regression machine learning model and data provided from the Materials Project, our group was able to provide estimations of these unknown dielectric constants with a 47% relative error. This provides further materials to explore as potential dielectrics with both a relatively high dielectric constant and large band gap, both ideal for advancing electronics.
 
 
 
