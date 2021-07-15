@@ -59,29 +59,29 @@ To our guests: Check out the cool projects these students have made! 😎
 
 
 
-## Luis [Your emoji]
+## Luis 🏋️‍♂️
 
 **Title**: Predicting Tomorrow’s High-k Dielectric Materials Using Machine Learning
 
-```{image} ../../assets/fig/week_3/14/temp.png
+```{image} ../../assets/fig/week_3/14/tableOfNewCompounds.png
 :width: 50%
 :align: center
 ```
 
-**Description**: [Your abstract]
+**Description**: Moore’s Law is the observation that the number of transistors in an integrated circuit doubles about every two years. In order to keep up with this law, scientists and engineers have been searching for the next dielectric materials that will continue to push this law forward. Using data acquired from the Materials Project database, we were able to predict the electronic dielectric component for materials which had not yet been analyzed before via density functional theory by using machine learning. The model used was a random forest regression and it was trained using materials who’s electronic contribution to the dielectric was already compiled using DFT. Although actual scientific experimentation is needed to verify the results, the model seems to have successfully predicted a new list of promising materials which may usher in a new golden age of technology.
 
 
 
 ## Mack 🌄
 
-**Title**: Using machine learning to seek ecological high-k dialectrics for microelectronics
+**Title**: Using machine learning to seek ecological high-k dielectrics for microelectronics
 
 ```{image} ../../assets/fig/week_3/14/Mack_mod2.png
 :width: 50%
 :align: center
 ```
 
-**Description**: As electronics become smaller, we must redesign components that don’t scale down. Silicon Dioxide dielectrics experience electron tunneling and charge leakage in micro-transistors, so a compound with a high dielectric constant and a large band gap is required. Generally, these are inversely related, but there are exceptions. Since not all conceivable compounds have a calculated dielectric value, a model was trained on the Material Project database to predict the values with a low relative error of 0.48. Filtering these predictions for compounds comprised of abundant elements produced multiple candidates for further investigation. Considering materials that are non-toxic and easily obtained for engineering problems is a vital application of machine learning.
+**Description**: As electronics become smaller, we must redesign components that don’t scale down. Silicon dioxide dielectrics experience electron tunneling and charge leakage in micro-transistors, so a compound with a high dielectric constant and a large band gap is required. Generally, these are inversely related, but there are exceptions. Since not all conceivable compounds have a calculated dielectric value, a model was trained on the Materials Project database to predict the values with a low relative error of 0.48. Filtering these predictions for compounds comprised of abundant elements produced multiple candidates for further investigation. Considering materials that are non-toxic and easily obtained for engineering problems is a vital application of machine learning.
 
 
 
