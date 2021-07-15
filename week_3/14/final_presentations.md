@@ -59,16 +59,16 @@ To our guests: Check out the cool projects these students have made! 😎
 
 
 
-## Luis [Your emoji]
+## Luis 🏋️‍♂️
 
-**Title**: [Your title]
+**Title**: Predicting Tomorrow’s High Dielectric Materials Using Machine Learning
 
-```{image} ../../assets/fig/week_3/14/temp.png
+```{image} ../../assets/fig/week_3/14/tableOfNewCompounds.png
 :width: 50%
 :align: center
 ```
 
-**Description**: [Your abstract]
+**Description**: Moore’s Law is the observation that the number of transistors in an integrated circuit doubles about every two years. In order to keep up with this law, scientists and engineers have been searching for the next dielectric materials that will continue to push this law forward. Using data acquired from the Materials Project database, we were able to predict the electronic dielectric component for materials which had not yet been analyzed before via Density Functional Theory by using machine learning. The model used was a random forest regression and it was trained using materials who’s electronic contribution to the dielectric was already compiled using DFT. Although actual scientific experimentation is needed to verify the results, the model seems to have successfully predicted a new list of promising materials which may usher in a new golden age of technology.
 
 
 
