@@ -29,7 +29,7 @@ To our guests: Check out the cool projects these students have made! 😎
 :align: center
 ```
 
-**Description**: To meet demands for high-k dielectrics, we must train a machine learning model to predict the total dielectric contribution for elements in the Material Project that don't already have dielectric constants. With the use of getting linear regressions and cross-validating our data, we were able to get a relatively low error. This means that after minimizing the features and properties that would give us the best results to observe, our models get better predictions at the end of our data analysis. After gathering some promising elements, we are ready to consider their sustainability, requiring more research to finalize our list. After considering cost and performance, the materials are ready to be reviewed by experimentalists.
+**Description**: To meet demands for high-k dielectrics, we must train a machine learning model to predict the total dielectric contribution for elements in the Materials Project that don't already have dielectric constants. With the use of linear regression and cross-validating our data, we were able to achieve low relative error. This means that after minimizing the features and properties that would give us the best results to observe, our models get better predictions at the end of our data analysis. After gathering some promising materials, we are ready to consider their sustainability, requiring more research and experimental validation to finalize our list.
 
 
 
