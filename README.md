@@ -20,7 +20,7 @@ You may use the following BibTeX citation:
 ```
 @misc{chen_asta_intro_mi_2021,
     title = {Introduction to Materials Informatics},
-    authors = {Chen, Enze and Asta, Mark},
+    author = {Chen, Enze and Asta, Mark},
     year = {2021},
     howpublished = {GitHub Pages},
     url = {https://enze-chen.github.io/mi-book/},
