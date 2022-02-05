@@ -9,7 +9,7 @@ It is designed using the open-source [Jupyter Book](https://jupyterbook.org/intr
 
 ## Reading the book
 
-You may read the book here: https://enze-chen.github.io/mi-book
+You may read the book here: https://enze-chen.github.io/mi-book-2021
 
 
 
@@ -23,13 +23,13 @@ You may use the following BibTeX citation:
     author = {Chen, Enze and Asta, Mark},
     year = {2021},
     howpublished = {GitHub Pages},
-    url = {https://enze-chen.github.io/mi-book/},
+    url = {https://enze-chen.github.io/mi-book-2021/},
 }
 ```
 
 or perhaps the more conventional:
 
-- Enze Chen and Mark Asta. _Introduction to Materials Informatics_. 2021. _GitHub Pages_, https://enze-chen.github.io/mi-book/.
+- Enze Chen and Mark Asta. _Introduction to Materials Informatics_. 2021. _GitHub Pages_, https://enze-chen.github.io/mi-book-2021/.
 
 
 -----------

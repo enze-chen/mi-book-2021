@@ -20,7 +20,7 @@ The `Day XX` pages will have a more detailed summary of all of the pages/activit
 You can also navigate between adjacent pages using the navigation buttons at the bottom of each page.
 
 Most of the curriculum will be accessible to everyone (the interactive exercises can be completed using Google Colaboratory instead of JupyterHub), although a few special features will require a UC Berkeley login (to avoid spam and protect IP).
-If you want to view the source code of this textbook, you can hover over [Octocat](https://github.com/octocat) in the top-right corner and click {guilabel}`repository` or [click here](https://github.com/enze-chen/mi-book).
+If you want to view the source code of this textbook, you can hover over [Octocat](https://github.com/octocat) in the top-right corner and click {guilabel}`repository` or [click here](https://github.com/enze-chen/mi-book-2021).
 
 
 
