@@ -2,6 +2,7 @@
 
 *Authors: [Enze Chen](https://enze-chen.github.io/) and [Mark Asta](https://mse.berkeley.edu/people_new/asta/) (University of California, Berkeley)*
 
+**NOTE**: A second iteration of this text for the 2022 program can be found [here](https://github.com/enze-chen/mi-book-2022).
 
 This is a 3-week curriculum for one of three modules for a remote summer 2021 research internship in the [Materials Sciences Division](https://www2.lbl.gov/msd/) at [Lawrence Berkeley National Laboratory](https://www.lbl.gov/).
 It is designed using the open-source [Jupyter Book](https://jupyterbook.org/intro.html) software and interactivity is made possible with the generous support of the [DataHub](https://datahub.berkeley.edu/) program at UC Berkeley (non-Berkeley students may also use [Google Colaboratory](https://colab.research.google.com/)).
@@ -18,18 +19,18 @@ You may read the book here: https://enze-chen.github.io/mi-book-2021
 You may use the following BibTeX citation:
 
 ```
-@misc{chen_asta_intro_mi_2021,
+@book{chen_asta_intro_mi_2021,
     title = {Introduction to Materials Informatics},
     author = {Chen, Enze and Asta, Mark},
     year = {2021},
-    howpublished = {GitHub Pages},
+    publisher = {GitHub},
     url = {https://enze-chen.github.io/mi-book-2021/},
 }
 ```
 
 or perhaps the more conventional:
 
-- Enze Chen and Mark Asta. _Introduction to Materials Informatics_. 2021. _GitHub Pages_, https://enze-chen.github.io/mi-book-2021/.
+- Enze Chen and Mark Asta. _Introduction to Materials Informatics_. 2021. _GitHub_, https://enze-chen.github.io/mi-book-2021/.
 
 
 -----------
