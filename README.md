@@ -16,7 +16,26 @@ You may read the book here: https://enze-chen.github.io/mi-book-2021
 
 ## Citing this work
 
-You may use the following BibTeX citation:
+This work was recently published in the _Journal of Chemical Education_ and can be cited as:
+
+```
+@article{chen_asta_jce_2022,
+  title = {Using {Jupyter} Tools to Design an Interactive Textbook to Guide Undergraduate Research in Materials Informatics},
+  author = {Chen, Enze and Asta, Mark},
+  year = {2022},
+  journal = {Journal of Chemical Education},
+  volume = {99},
+  number = {10},
+  pages = {3601--3606},
+  doi = {10.1021/acs.jchemed.2c00640}
+}
+```
+
+or perhaps the more conventional:
+
+- Enze Chen and Mark Asta. "Using Jupyter Tools to Design an Interactive Textbook to Guide Undergraduate Research in Materials Informatics." [_Journal of Chemical Education_](https://pubs.acs.org/doi/10.1021/acs.jchemed.2c00640), **99** (10), 2022, 3601–3606.
+
+You may also use the following BibTeX citation:
 
 ```
 @book{chen_asta_intro_mi_2021,
